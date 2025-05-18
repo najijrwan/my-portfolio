@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #282828;
+  font-family: 'Poppins', sans-serif;
+}
+
+@theme {
+  --color-background: #3C3C3E;
+  --color-highlight: #FFFFA7;
+  --color-base: #F7F7FF;
+}
+
+@utility flex-center-col {
+  @apply flex justify-center items-center flex-col;
+}
+
+@utility flex-center {
+  @apply flex justify-center items-center;
+}
+
+@layer components {
+  .list-items {
+    @apply absolute top-1/2 left-1/2;
+    transform-origin: 50% 100%;
+    rotate: var(--rotate-angle, 0deg);
+    translate: 0 -9.5rem;
+  }
+
+  .list-items:nth-child(1) { --rotate-angle: 0deg; }
+  .list-items:nth-child(2) { --rotate-angle: 72deg; }
+  .list-items:nth-child(3) { --rotate-angle: 144deg; }
+  .list-items:nth-child(4) { --rotate-angle: 216deg; }
+}
+
