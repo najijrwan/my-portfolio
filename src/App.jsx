@@ -11,7 +11,7 @@ const App = () => {
           id={`section${i}`}
           className="h-screen flex items-center justify-center text-4xl font-bold bg-gray-100 odd:bg-white"
         >
-          Section {i}
+          Sectionnn {i}
         </section>
       ))}
     </div>
