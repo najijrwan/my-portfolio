@@ -7,6 +7,7 @@ html {
 body {
   background-color: #282828;
   font-family: 'Poppins', sans-serif;
+  position: relative;
 }
 
 @theme {
@@ -23,17 +24,14 @@ body {
   @apply flex justify-center items-center;
 }
 
-@layer components {
-  .list-items {
-    @apply absolute top-1/2 left-1/2;
-    transform-origin: 50% 100%;
-    rotate: var(--rotate-angle, 0deg);
-    translate: 0 -9.5rem;
+@layer components{
+  .navbar-link {
+    @apply py-5 px-0.5 hover:text-base/50;
   }
-
-  .list-items:nth-child(1) { --rotate-angle: 0deg; }
-  .list-items:nth-child(2) { --rotate-angle: 72deg; }
-  .list-items:nth-child(3) { --rotate-angle: 144deg; }
-  .list-items:nth-child(4) { --rotate-angle: 216deg; }
+  .navbar-link.active{
+    @apply text-highlight;
+  }
+  section{
+    @apply text-base;
+  }
 }
-

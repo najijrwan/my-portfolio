@@ -1,21 +1,24 @@
+// App.jsx
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Resume from "./pages/Resume";
+import Contact from "./pages/Contact";
 
-const App = () => {
+function App() {
   return (
-    <div className="relative">
+    <Router>
       <Navbar />
-
-      {[1, 2, 3, 4, 5].map((i) => (
-        <section
-          key={i}
-          id={`section${i}`}
-          className="h-screen flex items-center justify-center text-4xl font-bold bg-gray-100 odd:bg-white"
-        >
-          Sectionnn {i}
-        </section>
-      ))}
-    </div>
+      <Routes>
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
-};
+}
 
 export default App;
+
