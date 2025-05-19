@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+:root {
+  --text-gradient-yellow:
+    linear-gradient(to right,
+      hsl(45, 100%, 72%),
+      hsl(35, 100%, 68%));
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -11,8 +18,9 @@ body {
 }
 
 @theme {
-  --color-background: #3C3C3E;
-  --color-highlight: #FFFFA7;
+  --color-background: #39393B;
+  --color-background2: #414145;
+  --color-highlight: yellow;
   --color-base: #F7F7FF;
 }
 
@@ -24,14 +32,61 @@ body {
   @apply flex justify-center items-center;
 }
 
-@layer components{
+@layer components {
   .navbar-link {
-    @apply py-5 px-0.5 hover:text-base/50;
+    @apply py-1 px-0.5 font-[1000] hover:text-base/50;
   }
-  .navbar-link.active{
-    @apply text-highlight;
+
+  .navbar-link.active {
+    @apply text-highlight border-t-1;
   }
-  section{
-    @apply text-base;
+
+  .about {
+    @apply relative bg-background p-5 pl-7 rounded-3xl;
+  }
+
+  .about::before {
+    content: "";
+    display: block;
+    height: calc(100% - 116px);
+    @apply absolute top-[85px] left-2.5 w-0.25 
+    bg-yellow-200;
+  }
+
+  section {
+    @apply text-base rounded-[20px];
+  }
+
+  section p {
+    @apply mb-2;
+  }
+
+  .heading1 {
+    @apply relative mb-4 pb-2 text-3xl font-[1000] text-base;
+  }
+
+  .heading1::after {
+    content: "";
+    @apply absolute bottom-0 left-0 w-[50px] h-[5px] rounded-[3px] bg-gradient-to-r from-yellow-200 to-yellow-400;
+  }
+
+  .heading2 {
+    @apply relative text-base font-[1000] text-xl my-4 ml-6;
+  }
+
+  .heading2::before {
+    content: "";
+    @apply absolute w-9 h-0.25 left-[-42px] bottom-1/2 bg-amber-200
+  }
+
+  .indicator-inside {
+    @apply absolute left-[-45px] top-1/2 -translate-y-1/2 
+    size-1.75 bg-amber-100 rounded-full
+  }
+
+  .indicator-outside {
+    @apply 
+    absolute left-[-48px] top-1/2 -translate-y-1/2 
+    size-[13px] bg-amber-100/50 rounded-full
   }
 }
