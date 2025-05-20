@@ -15,12 +15,26 @@ body {
   background-color: #282828;
   font-family: 'Poppins', sans-serif;
   position: relative;
+  overflow-x: hidden;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('../src/assets/image.png');
+  background-size: cover;
+  background-position: center;
+  transform: skewY(6deg);
+  filter: blur(2px);
+  opacity: 0.3;
+  z-index: -10;
 }
 
 @theme {
   --color-background: #39393B;
   --color-background2: #414145;
-  --color-highlight: yellow;
+  --color-highlight: #ffe666;
   --color-base: #F7F7FF;
 }
 
@@ -38,7 +52,7 @@ body {
   }
 
   .navbar-link.active {
-    @apply text-highlight border-t-1;
+    @apply text-highlight;
   }
 
   .about {
@@ -46,11 +60,9 @@ body {
   }
 
   .about::before {
-    content: "";
     display: block;
     height: calc(100% - 116px);
-    @apply absolute top-[85px] left-2.5 w-0.25 
-    bg-yellow-200;
+    @apply absolute top-[85px] left-2.5 w-0.25 bg-yellow-200 content-[''];
   }
 
   section {
@@ -66,27 +78,22 @@ body {
   }
 
   .heading1::after {
-    content: "";
-    @apply absolute bottom-0 left-0 w-[50px] h-[5px] rounded-[3px] bg-gradient-to-r from-yellow-200 to-yellow-400;
+    @apply absolute bottom-0 left-0 w-[50px] h-[5px] rounded-[3px] content-[''] bg-gradient-to-r from-yellow-200 to-yellow-400;
   }
 
   .heading2 {
-    @apply relative text-base font-[1000] text-xl my-4 ml-6;
+    @apply relative text-highlight font-[1000] text-xl my-4 ml-6;
   }
 
   .heading2::before {
-    content: "";
-    @apply absolute w-9 h-0.25 left-[-42px] bottom-1/2 bg-amber-200
+    @apply absolute w-9 h-0.25 left-[-42px] bottom-1/2 bg-amber-200 content-[''];
   }
 
   .indicator-inside {
-    @apply absolute left-[-45px] top-1/2 -translate-y-1/2 
-    size-1.75 bg-amber-100 rounded-full
+    @apply absolute left-[-45px] top-1/2 -translate-y-1/2 size-1.75 bg-amber-100 rounded-full
   }
 
   .indicator-outside {
-    @apply 
-    absolute left-[-48px] top-1/2 -translate-y-1/2 
-    size-[13px] bg-amber-100/50 rounded-full
+    @apply absolute left-[-48px] top-1/2 -translate-y-1/2 size-[13px] bg-amber-100/50 rounded-full
   }
 }

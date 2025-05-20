@@ -1,48 +1,38 @@
 // Navbar.jsx
-import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const getNavLinkClass = ({ isActive }) =>
+  `navbar-link ${isActive ? "active" : ""}`;
+
+export default function BottomNav() {
   return (
-    <nav className="fixed bottom-4 left-1/2 -translate-x-1/2 w-3xs bg-background/70 rounded p-3 shadow-2xl border border-gray-700 backdrop-blur-xs">
-      <ul className="flex justify-center gap-3 text-[13px] text-base">
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            `navbar-link ${isActive ? "active" : ""}`
-          }
-        >
-          About
-        </NavLink>
-        <NavLink
-          to="/projects"
-          className={({ isActive }) =>
-            `navbar-link ${isActive ? "active" : ""}`
-          }
-        >
-          Projects
-        </NavLink>
-        <NavLink
-          to="/resume"
-          className={({ isActive }) =>
-            `navbar-link ${isActive ? "active" : ""}`
-          }
-        >
-          Resume
-        </NavLink>
-        <NavLink
-          to="/contact"
-          className={({ isActive }) =>
-            `navbar-link ${isActive ? "active" : ""}`
-          }
-        >
-          Contact
-        </NavLink>
+    <nav className="fixed bottom-4 z-20 left-1/2 -translate-x-1/2 w-min bg-background/50 rounded-xl p-3 shadow-2xl 
+    border border-gray-400 border-dotted backdrop-blur-sm">
+      <ul className="flex justify-center gap-5 text-[13px] text-base">
+        <li>
+          <NavLink to="/about" className={getNavLinkClass}>
+            About
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/projects" className={getNavLinkClass}>
+            Projects
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/resume" className={getNavLinkClass}>
+            Resume
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/contact" className={getNavLinkClass}>
+            Contact
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
-};
+}
 
-export default Navbar;
 
 

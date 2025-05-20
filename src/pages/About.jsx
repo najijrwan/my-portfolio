@@ -5,7 +5,7 @@ const About = () => {
       <h2 className="heading1">About Me</h2>
       <section>
         <p>
-          A passionate Flutter developer with strong expertise in cross-platform apps, REST APIs, UI/UX, widgets, and state management solutions.
+          A passionate Flutterr developer with strong expertise in cross-platform apps, REST APIs, UI/UX, widgets, and state management solutions.
           Proven track record in delivering cutting-edge solutions, including API integration, third-party libraries, and performance optimization.
           Adept at debugging to ensure high-quality, responsive apps and An agile collaborator committed to staying current with industry trends.
         </p>
