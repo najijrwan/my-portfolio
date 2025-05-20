@@ -18,19 +18,6 @@ body {
   overflow-x: hidden;
 }
 
-body::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url('../src/assets/image.png');
-  background-size: cover;
-  background-position: center;
-  transform: skewY(6deg);
-  filter: blur(2px);
-  opacity: 0.3;
-  z-index: -10;
-}
-
 @theme {
   --color-background: #39393B;
   --color-background2: #414145;
