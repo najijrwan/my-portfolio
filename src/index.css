@@ -12,14 +12,14 @@ html {
 }
 
 body {
-  background-color: #282828;
+  background-color: #121212;
   font-family: 'Poppins', sans-serif;
   position: relative;
   overflow-x: hidden;
 }
 
 @theme {
-  --color-background: #39393B;
+  --color-background: hsl(240, 2%, 12%);
   --color-background2: #414145;
   --color-highlight: #ffe666;
   --color-base: #F7F7FF;
@@ -57,7 +57,21 @@ body {
   }
 
   section p {
-    @apply mb-2;
+    @apply mb-5;
+  }
+
+  section li {
+    box-shadow: 0 16px 30px rgb(0, 0, 0, 0.25);
+  }
+
+  section li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: inherit;
+    inset: 1px;
+    z-index: -1;
+    background: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
   }
 
   .heading1 {
@@ -73,7 +87,7 @@ body {
   }
 
   .heading2::before {
-    @apply absolute w-9 h-0.25 left-[-42px] bottom-1/2 bg-amber-200 content-[''];
+    @apply absolute w-9 h-0.5 left-[-42px] bottom-1/2 bg-amber-200 content-[''];
   }
 
   .indicator-inside {
