@@ -5,11 +5,11 @@ const About = () => {
       <h2 className="heading1">About Me</h2>
       <section>
         <p>
-          I'm a detail-oriented and growth-focused software engineer who takes pride in writing clean, maintainable code and building thoughtful, user-centered applications. 
+          I'm a detail-oriented and growth-focused software engineer who takes pride in writing clean, maintainable code and building thoughtful, user-centered applications.
           I’m constantly refining my work to improve structure, performance, and experience, with a strong belief in best practices and continuous learning.
         </p>
         <p>
-          My portfolio reflects how I think—intentional, precise, and always evolving. 
+          My portfolio reflects how I think—intentional, precise, and always evolving.
           I approach development with a balance of discipline and creativity, aiming to create solutions that are not only functional, but polished and purposeful.
         </p>
       </section>
@@ -65,13 +65,13 @@ const About = () => {
       </h3>
       <div className="mb-4">
         <ul className="skills has-scrollbar">
-          <li className="min-w-[50%] snap-start"><img src="src/assets/js-img.jpg" alt="javascript image"/></li>
-          <li className="min-w-[50%] snap-start"><img src="src/assets/js-img.jpg" alt="javascript image"/></li>
-          <li className="min-w-[50%] snap-start"><img src="src/assets/js-img.jpg" alt="javascript image"/></li>
-          <li className="min-w-[50%] snap-start"><img src="src/assets/js-img.jpg" alt="javascript image"/></li>
-          <li className="min-w-[50%] snap-start"><img src="src/assets/js-img.jpg" alt="javascript image"/></li>
-          <li className="min-w-[50%] snap-start"><img src="src/assets/js-img.jpg" alt="javascript image"/></li>
-          <li className="min-w-[50%] snap-start"><img src="src/assets/js-img.jpg" alt="javascript image"/></li>
+          <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl "><img src="src/assets/react.png" alt="react image" /></li>
+          <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl "><img src="src/assets/java.png" alt="java image" /></li>
+          <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl "><img src="src/assets/js-img.webp" alt="javascript image" /></li>
+          <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl "><img src="src/assets/tailwind-css.png" alt="tailwind image" /></li>
+          <li className="min-w-[50%] snap-start bg-[rgb(38,70,124)] rounded-4xl "><img src="src/assets/php.png" alt="php image" /></li>
+          <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl "><img src="src/assets/python.png" alt="python image" /></li>
+          <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl "><img src="src/assets/csharp.png" alt="c sharp image" /></li>
         </ul>
       </div>
     </article>

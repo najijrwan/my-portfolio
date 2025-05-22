@@ -42,8 +42,9 @@ body {
     @apply text-highlight;
   }
 
-  .about {
-    @apply relative bg-background p-5 pl-7 rounded-3xl;
+  .about, aside {
+    @apply relative bg-background p-5 pl-7 rounded-3xl 
+    border-[1px] border-solid border-[#383838];
   }
 
   .about::before {
@@ -115,9 +116,7 @@ body {
 
   .has-scrollbar::-webkit-scrollbar {
     width: 5px;
-    /* for vertical scrollbar */
     height: 10px;
-    /* for horizontal scrollbar */
   }
 
   .has-scrollbar::-webkit-scrollbar-track {
@@ -132,5 +131,10 @@ body {
 
   .has-scrollbar::-webkit-scrollbar-button {
     width: 20px;
+  }
+
+  .contact-info{
+    max-width: calc(100% - 46px);
+    width: calc(100% - 46px);
   }
 }
