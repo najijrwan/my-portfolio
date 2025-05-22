@@ -5,6 +5,13 @@
     linear-gradient(to right,
       hsl(45, 100%, 72%),
       hsl(35, 100%, 68%));
+  --bg-gradient-jet: linear-gradient(to bottom right,
+      hsla(240, 1%, 18%, 0.251) 0%,
+      hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+  --transition-1: 0.25s ease;
+  --border-gradient-onyx: linear-gradient(to bottom right,
+      hsl(0, 0%, 25%) 0%,
+      hsla(0, 0%, 25%, 0) 50%);
 }
 
 html {
@@ -42,9 +49,8 @@ body {
     @apply text-highlight;
   }
 
-  .about, aside {
-    @apply relative bg-background p-5 pl-7 rounded-3xl 
-    border-[1px] border-solid border-[#383838];
+  .about {
+    @apply relative bg-background p-5 pl-7 rounded-3xl border-[1px] border-solid border-[#383838];
   }
 
   .about::before {
@@ -99,7 +105,7 @@ body {
     @apply absolute left-[-48px] top-1/2 -translate-y-1/2 size-[13px] bg-amber-100/50 rounded-full
   }
 
-  .skills{
+  .skills {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -133,8 +139,22 @@ body {
     width: 20px;
   }
 
-  .contact-info{
+  .contact-info {
     max-width: calc(100% - 46px);
     width: calc(100% - 46px);
+  }
+
+  aside button {
+    background-color: var(--border-gradient-onyx);
+  }
+
+  aside button::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border-radius: inherit;
+    background: var(--bg-gradient-jet);
+    transition: var(--transition-1);
+    z-index: -1;
   }
 }
