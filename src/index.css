@@ -5,13 +5,16 @@
     linear-gradient(to right,
       hsl(45, 100%, 72%),
       hsl(35, 100%, 68%));
-  --bg-gradient-jet: linear-gradient(to bottom right,
-      hsla(240, 1%, 18%, 0.251) 0%,
-      hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+  --bg-gradient-jet:
+    linear-gradient(to bottom right,
+      hsla(50, 100%, 65%, 0.2) 0%,
+      hsla(48, 100%, 55%, 0.05) 40%,
+      hsla(45, 100%, 45%, 0) 100%),
+    linear-gradient(135deg,
+      hsla(0, 0%, 100%, 0.05) 0%,
+      hsla(0, 0%, 0%, 0.15) 100%);
   --transition-1: 0.25s ease;
-  --border-gradient-onyx: linear-gradient(to bottom right,
-      hsl(0, 0%, 25%) 0%,
-      hsla(0, 0%, 25%, 0) 50%);
+  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
 }
 
 html {
@@ -30,14 +33,19 @@ body {
   --color-background2: #414145;
   --color-highlight: #ffe666;
   --color-base: #F7F7FF;
-}
-
-@utility flex-center-col {
-  @apply flex justify-center items-center flex-col;
+  --gradient-onyx: linear-gradient(to bottom right,
+      hsl(0, 0%, 25%) 0%,
+      hsla(0, 0%, 25%, 0) 50%);
+  --color-eerie-1: hsl(240, 2%, 13%);
+  --shadow-one: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
 }
 
 @utility flex-center {
   @apply flex justify-center items-center;
+}
+
+@utility flex-center-col{
+  @apply flex justify-center items-center flex-col;
 }
 
 @layer components {
@@ -64,7 +72,7 @@ body {
   }
 
   section p {
-    @apply mb-5;
+    @apply mb-5 text-base/80;
   }
 
   section li {
@@ -144,10 +152,6 @@ body {
     width: calc(100% - 46px);
   }
 
-  aside button {
-    background-color: var(--border-gradient-onyx);
-  }
-
   aside button::before {
     content: "";
     position: absolute;
@@ -155,6 +159,16 @@ body {
     border-radius: inherit;
     background: var(--bg-gradient-jet);
     transition: var(--transition-1);
+    z-index: -1;
+  }
+
+  .before-style::before {
+    content: "";
+    position: absolute;
+    display: block;
+    inset: 1px;
+    background-color: var(--eerie-black-1);
+    border-radius: inherit;
     z-index: -1;
   }
 }
