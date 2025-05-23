@@ -1,11 +1,13 @@
 // Hero.jsx
 import { useState } from "react";
 
-export const iconBox =
-    `relative bg-[image:var(--gradient-onyx)] size-8 rounded-[8px] flex-center text-lg shadow-one z-[10] text-highlight
+export const ele1 =
+    `relative bg-[image:var(--gradient-onyx)] size-7 rounded-[8px] flex-center text-lg shadow-one z-[10] text-highlight
  before:content-[""] before:absolute before:block before:inset-px before:bg-eerie-1 before:rounded-[inherit] before:-z-10`;
-export const contactItem =
+export const ele2 =
     `min-w-full flex items-center gap-4`;
+const ele3 =
+    `text-base/50 text-[11px] tracking-widest mb-[2px]`;
 const Hero = () => {
     const [isExpanded, setIsExpanded] = useState(false);
 
@@ -21,10 +23,10 @@ const Hero = () => {
                     <span className="size-3 rounded-[50%] bg-[#39ff14] animate-pulse absolute bottom-0 right-0"></span>
                 </figure>
                 <div>
-                    <h1 className="text-base text-lg font-[500] mb-2.5" title="Naji Al-Jrwan">
-                        Naji Al-Jrwan
+                    <h1 className="text-base text-lg font-[500] mb-2.5 ml-1 tracking-tight" title="Naji Al-Jrwan">
+                        Naji Aljarawan
                     </h1>
-                    <p className="text-base/80 bg-white/10 text-[10px] w-fit py-[3px] px-3 rounded-[8px]">
+                    <p className="text-base bg-onyx text-[11px]/5 font-[100]! w-max py-[3px] px-3 rounded-[8px]">
                         Full Stack Developer
                     </p>
                 </div>
@@ -54,40 +56,56 @@ const Hero = () => {
             <div className={`transition-all duration-500 ease-in-out ${isExpanded ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
                 <div className="w-full h-[1px] bg-[#383838] my-4 mx-0"></div>
                 <ul className="grid grid-cols-1 gap-4">
-                    <li className={contactItem}>
-                        <div className={iconBox}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg>
+                    <li className={ele2}>
+                        <div className={ele1}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg>
                         </div>
                         <div>
-                            <p className="text-base/50 text-[11px]/1.5 tracking-widest mb-[2px]">EMAIL</p>
-                            <a href="mailto:najijrwanyt@gmail.com" className="text-base text-[13px] font-[400] tracking-widest">najijrwanyt@gmail.com</a>
+                            <p className={ele3}>EMAIL</p>
+                            <a href="mailto:najijrwanyt@gmail.com" className="text-base text-[13px] font-[400] mb-10">najijrwanyt@gmail.com</a>
                         </div>
                     </li>
-                    <li className={contactItem}>
-                        <div className={iconBox}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-call-icon lucide-phone-call"><path d="M13 2a9 9 0 0 1 9 9" /><path d="M13 6a5 5 0 0 1 5 5" /><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>
+                    <li className={ele2}>
+                        <div className={ele1}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-call-icon lucide-phone-call"><path d="M13 2a9 9 0 0 1 9 9" /><path d="M13 6a5 5 0 0 1 5 5" /><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>
                         </div>
                         <div>
-                            <p className="text-base/50 text-[11px]/1.5 tracking-widest mb-[2px]">PHONE</p>
-                            <a href="tel:+96170504841" className="text-base text-[13px] font-[400] tracking-[3px]">+961 70504841</a>
+                            <p className={ele3}>PHONE</p>
+                            <a href="tel:+96170504841" className="text-base text-[13px] font-[400] mb-10">+961 70504841</a>
                         </div>
                     </li>
-                    <li className={contactItem}>
-                        <div className={iconBox}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                    <li className={ele2}>
+                        <div className={ele1}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
                         </div>
                         <div>
-                            <p className="text-base/50 text-[11px]/1.5 tracking-widest mb-[2px]">LOCATION</p>
-                            <a href="tel:+96170504841" className="text-base text-[13px] font-[400] tracking-widest">Lebanon - West Beqaa</a>
+                            <p className={ele3}>LOCATION</p>
+                            <a href="tel:+96170504841" className="text-base text-[13px] font-[400] mb-2">Lebanon - West Beqaa</a>
                         </div>
                     </li>
                 </ul>
                 <div className="w-full h-[1px] bg-[#383838] my-4 mx-0"></div>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <ul className="flex justify-start items-center gap-4 pb-[4px] pl-[7px]">
+                    <li>
+                        <a href="https://www.linkedin.com/in/aakash569" className="social-link">
+                            <img src="src/assets/linkedin-brands.svg" alt="Linkedin" className="size-4 hover:invert-50"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/aakashx58" className="social-link text-light-gray">
+                            <img src="src/assets/github-brands.svg" alt="gitHub" className="size-4 hover:invert-50"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://g.dev/aakash569" className="social-link text-light-gray">
+                            <img src="src/assets/google-brands.svg" alt="Google" className="size-4 hover:invert-50"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/itzakax" className="social-link text-light-gray">
+                            <img src="src/assets/instagram-brands.svg" alt="Instagram" className="size-4 hover:invert-50"/>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </aside>

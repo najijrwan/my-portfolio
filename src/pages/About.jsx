@@ -21,39 +21,39 @@ const About = () => {
       <section className="mb-9">
         <ul className="grid grid-cols-1 gap-5">
           <li className="relative flex-center-col p-5 rounded-3xl bg-[linear-gradient(to_bottom_right,hsl(0,0%,25%)_0%,hsla(0,0%,25%,0)_50%)] shadow-[0_16px_30px_hsla(0,0%,0%,0.25)] z-[1]">
-            <div className="mb-5">
-              <img src="src/assets/icon-app.svg" alt="mobile app icon" className="size-10" />
+            <div className="mb-2.5">
+              <img src="src/assets/icon-app.svg" alt="mobile app icon" className="size-10 m-auto" />
             </div>
             <div>
-              <h4 className="font-extrabold text-base text-xl text-center mb-2">Mobile Applications</h4>
-              <p className="text-gray-300 text-center">Professional & modern development of applications for Android and ios.</p>
+              <h4 className="font-bold text-base text-[15px] text-center mb-2">Mobile Apps</h4>
+              <p className="text-gray-300 text-center text-[13px]">Professional & modern development of applications for Android and ios.</p>
             </div>
           </li>
           <li className="relative flex-center-col p-5 rounded-3xl bg-[linear-gradient(to_bottom_right,hsl(0,0%,25%)_0%,hsla(0,0%,25%,0)_50%)] shadow-[0_16px_30px_hsla(0,0%,0%,0.25)] z-[1]">
-            <div className="mb-5">
+            <div className="mb-2.5">
               <img src="src/assets/icon-dev.svg" alt="web development icon" className="size-10" />
             </div>
             <div>
-              <h4 className="font-extrabold text-base text-xl text-center mb-2">Web Development</h4>
-              <p className="text-gray-300 text-center">High-quality development of sites at the professional level.</p>
+              <h4 className="font-bold text-base text-[15px] text-center mb-2">Web Development</h4>
+              <p className="text-gray-300 text-center text-[13px]">High-quality development of sites at the professional level.</p>
             </div>
           </li>
           <li className="relative flex-center-col p-5 rounded-3xl bg-[linear-gradient(to_bottom_right,hsl(0,0%,25%)_0%,hsla(0,0%,25%,0)_50%)] shadow-[0_16px_30px_hsla(0,0%,0%,0.25)] z-[1]">
-            <div className="mb-5">
+            <div className="mb-2.5">
               <img src="src/assets/icon-backend.svg" alt="backend development icon" className="size-10" />
             </div>
             <div>
-              <h4 className="font-extrabold text-base text-xl text-center mb-2">Back-End Development</h4>
-              <p className="text-gray-300 text-center">High-performance backend services designed for scalability and seamless user experience.</p>
+              <h4 className="font-bold text-base text-[15px] text-center mb-2">Back-End Development</h4>
+              <p className="text-gray-300 text-center text-[13px]">High-performance backend services designed for scalability and seamless user experience.</p>
             </div>
           </li>
           <li className="relative flex-center-col p-5 rounded-3xl bg-[linear-gradient(to_bottom_right,hsl(0,0%,25%)_0%,hsla(0,0%,25%,0)_50%)] shadow-[0_16px_30px_hsla(0,0%,0%,0.25)] z-[1]">
-            <div className="mb-5">
+            <div className="mb-2.5">
               <img src="src/assets/icon-research.svg" alt="backend development icon" className="size-10" />
             </div>
             <div>
-              <h4 className="font-extrabold text-base text-xl text-center mb-2">Research & Reports</h4>
-              <p className="text-gray-300 text-center">Expert in conducting thorough investigations and delivering clear, structured reports on findings and methodologies.</p>
+              <h4 className="font-bold text-base text-[15px] text-center mb-2">Research & Reports</h4>
+              <p className="text-gray-300 text-center text-[13px]">Expert in conducting thorough investigations and delivering clear, structured reports on findings and methodologies.</p>
             </div>
           </li>
         </ul>

@@ -17,13 +17,34 @@
   --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
 }
 
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  background: none;
+  font: inherit;
+}
+
+::selection {
+  background: var(--orange-yellow-crayola);
+  color: var(--smoky-black);
+}
+
 html {
   scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
   background-color: #121212;
-  font-family: 'Poppins', sans-serif;
   position: relative;
   overflow-x: hidden;
 }
@@ -32,19 +53,32 @@ body {
   --color-background: hsl(240, 2%, 12%);
   --color-background2: #414145;
   --color-highlight: #ffe666;
-  --color-base: #F7F7FF;
+  --color-base: #FFFFFF;
   --gradient-onyx: linear-gradient(to bottom right,
       hsl(0, 0%, 25%) 0%,
       hsla(0, 0%, 25%, 0) 50%);
   --color-eerie-1: hsl(240, 2%, 13%);
   --shadow-one: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+  --color-onyx: hsl(240, 1%, 17%);
+
+  --animate-pulse: 1.5s pulse infinite ease-in-out;
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 #39ff14;
+    }
+
+    100% {
+      box-shadow: 0 0 0 14px #69ffa800;
+    }
+  }
 }
 
 @utility flex-center {
   @apply flex justify-center items-center;
 }
 
-@utility flex-center-col{
+@utility flex-center-col {
   @apply flex justify-center items-center flex-col;
 }
 
@@ -72,7 +106,7 @@ body {
   }
 
   section p {
-    @apply mb-5 text-base/80;
+    @apply mb-5 text-[#d6d6d6] text-[14px] font-[400];
   }
 
   section li {
@@ -90,15 +124,15 @@ body {
   }
 
   .heading1 {
-    @apply relative mb-4 pb-2 text-3xl font-[1000] text-base;
+    @apply relative mb-4 pb-2 text-[24px] font-[600] text-base;
   }
 
   .heading1::after {
-    @apply absolute bottom-0 left-0 w-[50px] h-[5px] rounded-[3px] content-[''] bg-gradient-to-r from-yellow-200 to-yellow-400;
+    @apply absolute bottom-0 left-0 w-[30px] h-[5px] rounded-[3px] content-[''] bg-gradient-to-r from-yellow-200 to-yellow-400;
   }
 
   .heading2 {
-    @apply relative text-highlight font-[1000] text-xl my-4 ml-6;
+    @apply relative text-highlight font-[1000] text-[18px] my-4 ml-6;
   }
 
   .heading2::before {
