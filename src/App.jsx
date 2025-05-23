@@ -10,8 +10,8 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <Router>
-      <Hero />
       <Navbar />
+      <Hero />
       <Routes>
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />

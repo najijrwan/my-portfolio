@@ -1,4 +1,10 @@
 // About.jsx
+export const ele1 =
+  `relative p-5 rounded-3xl bg-[image:var(--gradient-jet)] shadow-two z-[1]`;
+export const ele2 =
+  `font-bold text-base text-[16px] mb-2`;
+export const ele3 =
+  `text-gray-300 text-[14px]/5 m-0`;
 const About = () => {
   return (
     <article className="about">
@@ -20,40 +26,40 @@ const About = () => {
       </h3>
       <section className="mb-9">
         <ul className="grid grid-cols-1 gap-5">
-          <li className="relative flex-center-col p-5 rounded-3xl bg-[linear-gradient(to_bottom_right,hsl(0,0%,25%)_0%,hsla(0,0%,25%,0)_50%)] shadow-[0_16px_30px_hsla(0,0%,0%,0.25)] z-[1]">
+          <li className={ele1}>
             <div className="mb-2.5">
               <img src="src/assets/icon-app.svg" alt="mobile app icon" className="size-10 m-auto" />
             </div>
-            <div>
-              <h4 className="font-bold text-base text-[15px] text-center mb-2">Mobile Apps</h4>
-              <p className="text-gray-300 text-center text-[13px]">Professional & modern development of applications for Android and ios.</p>
+            <div className="text-center">
+              <h4 className={ele2}>Mobile Apps</h4>
+              <p className={ele3}>Professional & modern development of applications for Android and ios.</p>
             </div>
           </li>
-          <li className="relative flex-center-col p-5 rounded-3xl bg-[linear-gradient(to_bottom_right,hsl(0,0%,25%)_0%,hsla(0,0%,25%,0)_50%)] shadow-[0_16px_30px_hsla(0,0%,0%,0.25)] z-[1]">
+          <li className={ele1}>
             <div className="mb-2.5">
-              <img src="src/assets/icon-dev.svg" alt="web development icon" className="size-10" />
+              <img src="src/assets/icon-dev.svg" alt="web development icon" className="size-10 m-auto" />
             </div>
-            <div>
-              <h4 className="font-bold text-base text-[15px] text-center mb-2">Web Development</h4>
-              <p className="text-gray-300 text-center text-[13px]">High-quality development of sites at the professional level.</p>
+            <div className="text-center">
+              <h4 className={ele2}>Web Development</h4>
+              <p className={ele3}>High-quality development of sites at the professional level.</p>
             </div>
           </li>
-          <li className="relative flex-center-col p-5 rounded-3xl bg-[linear-gradient(to_bottom_right,hsl(0,0%,25%)_0%,hsla(0,0%,25%,0)_50%)] shadow-[0_16px_30px_hsla(0,0%,0%,0.25)] z-[1]">
+          <li className={ele1}>
             <div className="mb-2.5">
-              <img src="src/assets/icon-backend.svg" alt="backend development icon" className="size-10" />
+              <img src="src/assets/icon-backend.svg" alt="backend development icon" className="size-10 m-auto" />
             </div>
-            <div>
-              <h4 className="font-bold text-base text-[15px] text-center mb-2">Back-End Development</h4>
-              <p className="text-gray-300 text-center text-[13px]">High-performance backend services designed for scalability and seamless user experience.</p>
+            <div className="text-center">
+              <h4 className={ele2}>Back-End Development</h4>
+              <p className={ele3}>High-performance backend services designed for scalability and seamless user experience.</p>
             </div>
           </li>
-          <li className="relative flex-center-col p-5 rounded-3xl bg-[linear-gradient(to_bottom_right,hsl(0,0%,25%)_0%,hsla(0,0%,25%,0)_50%)] shadow-[0_16px_30px_hsla(0,0%,0%,0.25)] z-[1]">
+          <li className={ele1}>
             <div className="mb-2.5">
-              <img src="src/assets/icon-research.svg" alt="backend development icon" className="size-10" />
+              <img src="src/assets/icon-research.svg" alt="backend development icon" className="size-10 m-auto" />
             </div>
-            <div>
-              <h4 className="font-bold text-base text-[15px] text-center mb-2">Research & Reports</h4>
-              <p className="text-gray-300 text-center text-[13px]">Expert in conducting thorough investigations and delivering clear, structured reports on findings and methodologies.</p>
+            <div className="text-center">
+              <h4 className={ele2}>Research & Reports</h4>
+              <p className={ele3}>Expert in conducting thorough investigations and delivering clear, structured reports on findings and methodologies.</p>
             </div>
           </li>
         </ul>

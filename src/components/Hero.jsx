@@ -14,13 +14,13 @@ const Hero = () => {
     const toggleExpanded = () => setIsExpanded(prev => !prev);
 
     return (
-        <aside className={`mb-4 w-full overflow-hidden transition-all duration-500 ease-in-out bg-background border 
-        border-solid border-[#383838] rounded-[20px] p-4 shadow-[-4px_8px_24px_hsla(0,0%,0%,0.25)] 
+        <aside className={`mb-4 mt-13 w-full overflow-hidden transition-all duration-500 ease-in-out bg-background border 
+        border-solid border-jet rounded-[20px] p-4 shadow-[-4px_8px_24px_hsla(0,0%,0%,0.25)] 
         ${isExpanded ? 'max-h-[405px]' : 'max-h-[112px]'}`}>
             <div className="relative flex justify-start items-center gap-4">
-                <figure className="bg-white/10 rounded-[20px] relative">
+                <figure className="bg-white/10 rounded-full border-solid border-yellow-300/20 border-1 relative">
                     <img src="src/assets/my-avatar.png" alt="Naji Al-Jrwan" className="block size-20" />
-                    <span className="size-3 rounded-[50%] bg-[#39ff14] animate-pulse absolute bottom-0 right-0"></span>
+                    <span className="size-3 rounded-full bg-[#39ff14] animate-pulse absolute bottom-2 right-1"></span>
                 </figure>
                 <div>
                     <h1 className="text-base text-lg font-[500] mb-2.5 ml-1 tracking-tight" title="Naji Al-Jrwan">

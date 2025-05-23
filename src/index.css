@@ -5,14 +5,6 @@
     linear-gradient(to right,
       hsl(45, 100%, 72%),
       hsl(35, 100%, 68%));
-  --bg-gradient-jet:
-    linear-gradient(to bottom right,
-      hsla(50, 100%, 65%, 0.2) 0%,
-      hsla(48, 100%, 55%, 0.05) 40%,
-      hsla(45, 100%, 45%, 0) 100%),
-    linear-gradient(135deg,
-      hsla(0, 0%, 100%, 0.05) 0%,
-      hsla(0, 0%, 0%, 0.15) 100%);
   --transition-1: 0.25s ease;
   --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
 }
@@ -57,8 +49,18 @@ body {
   --gradient-onyx: linear-gradient(to bottom right,
       hsl(0, 0%, 25%) 0%,
       hsla(0, 0%, 25%, 0) 50%);
+  --gradient-jet:
+    linear-gradient(to bottom right,
+      hsla(50, 100%, 65%, 0.2) 0%,
+      hsla(48, 100%, 55%, 0.05) 40%,
+      hsla(45, 100%, 45%, 0) 100%),
+    linear-gradient(135deg,
+      hsla(0, 0%, 100%, 0.05) 0%,
+      hsla(0, 0%, 0%, 0.15) 100%);
   --color-eerie-1: hsl(240, 2%, 13%);
+  --color-jet: hsl(0, 0%, 22%);
   --shadow-one: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+  --shadow-two: 0 16px 30px hsla(0, 0%, 0%, 0.25);
   --color-onyx: hsl(240, 1%, 17%);
 
   --animate-pulse: 1.5s pulse infinite ease-in-out;
@@ -92,7 +94,7 @@ body {
   }
 
   .about {
-    @apply relative bg-background p-5 pl-7 rounded-3xl border-[1px] border-solid border-[#383838];
+    @apply relative bg-background p-5 pl-7 rounded-3xl border-[1px] border-solid border-jet;
   }
 
   .about::before {

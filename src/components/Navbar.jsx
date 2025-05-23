@@ -6,8 +6,8 @@ const getNavLinkClass = ({ isActive }) =>
 
 export default function BottomNav() {
   return (
-    <nav className="fixed bottom-4 z-20 left-1/2 -translate-x-1/2 w-min bg-background/80 rounded-xl p-3 shadow-2xl 
-    border border-gray-900 backdrop-blur-sm">
+    <nav className={`fixed w-full top-0 z-20 mb-4 mt-0 overflow-hidden transition-all duration-500 ease-in-out bg-background/60 backdrop-blur-md border 
+        border-solid border-jet rounded-br-[20px] rounded-bl-[20px] p-4 shadow-one`}>
       <ul className="flex justify-center gap-5 text-[13px] text-base">
         <li>
           <NavLink to="/about" className={getNavLinkClass}>
