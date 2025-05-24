@@ -13,20 +13,16 @@
   --gradient-yellow-2: linear-gradient(135deg,
       hsla(45, 100%, 71%, 0.251) 0%,
       hsla(35, 100%, 68%, 0) 59.86%), hsl(240, 2%, 13%);
-  --text-gradient-yellow: linear-gradient(to right,
+  --gradient-yellow-3: linear-gradient(to right,
       hsl(45, 100%, 72%),
       hsl(35, 100%, 68%));
+
+  --orange-yellow-crayola: hsl(45, 100%, 72%);
+
+  --bittersweet-shimmer: hsl(0, 43%, 51%);
 }
 
-input,
-textarea {
-  display: block;
-  width: 100%;
-  background: none;
-  font: inherit;
-}
-
-::selection {
+body::selection {
   background: var(--orange-yellow-crayola);
   color: var(--smoky-black);
 }
@@ -42,19 +38,51 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(40, 40, 40, 0.5);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ffe666;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-button {
+  height: 0;
+  width: 0;
+}
+
 @theme {
   --color-background: hsl(240, 2%, 12%);
   --color-background2: #414145;
   --color-highlight: #ffe666;
   --color-base: #FFFFFF;
   --color-eerie-1: hsl(240, 2%, 13%);
+  --color-eerie-2: hsl(240, 2%, 12%);
   --color-jet: hsl(0, 0%, 22%);
   --color-onyx: hsl(240, 1%, 17%);
+  --color-smoky-black: #121212;
+  --color-vegas-gold: hsl(45, 100%, 72%);
+  --color-light-gray: hsl(0, 0%, 84%);
+  --color-light-gray-70: hsla(0, 0%, 84%, 0.7);
 
-  --shadow-one: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-  --shadow-two: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+  --color-gradient-yellow-3: linear-gradient(to right,
+      hsl(45, 100%, 72%),
+      hsl(35, 100%, 68%));
+
+  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
+  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
 
   --animate-pulse: 1.5s pulse infinite ease-in-out;
+
+  --breakpoint-sm: 580px;
 
   @keyframes pulse {
     0% {
@@ -79,8 +107,20 @@ body {
   background: var(--gradient-yellow);
 }
 
-@utility bg-gradient-yellow-2{
+@utility bg-gradient-yellow-2 {
   background: var(--gradient-yellow-2);
+}
+
+@utility bg-gradient-yellow-3 {
+  background: var(--gradient-yellow-3);
+}
+
+@utility custom-transition-1 {
+  @apply transition-all duration-250 ease-linear;
+}
+
+@utility custom-transition-2 {
+  @apply transition-all duration-700 ease-in-out;
 }
 
 @layer utilities {
@@ -99,6 +139,14 @@ body {
   .flex-start-col {
     @apply flex justify-center items-start;
   }
+
+  .flex-start-start {
+    @apply flex justify-start items-start;
+  }
+
+  .flex-start-start-col {
+    @apply flex justify-start items-start flex-col;
+  }
 }
 
 
@@ -116,7 +164,7 @@ body {
   }
 
   .about::before {
-    height: calc(100% - 116px);
+    height: calc(100% - 125px);
     @apply absolute top-[85px] left-2.5 w-0.25 bg-yellow-200 content-[''];
   }
 
@@ -125,51 +173,12 @@ body {
   }
 
   section p {
-    @apply mb-5 text-[#d6d6d6] text-[14px] font-[400];
-  }
-
-  .heading1 {
-    @apply relative mb-4 pb-2 text-[24px] font-[600] text-base;
-  }
-
-  .heading1::after {
-    @apply absolute bottom-0 left-0 w-[30px] h-[3px] rounded-[3px] content-[''] bg-gradient-to-r from-yellow-200 to-yellow-400;
-  }
-
-  .heading2 {
-    @apply relative text-highlight font-[1000] text-[18px] my-4 ml-6;
-  }
-
-  .heading2::before {
-    @apply absolute w-9 h-0.5 left-[-42px] bottom-1/2 bg-amber-200 content-[''];
-  }
-
-  .indicator-inside {
-    @apply absolute left-[-45px] top-1/2 -translate-y-1/2 size-1.75 bg-amber-100 rounded-full
-  }
-
-  .indicator-outside {
-    @apply absolute left-[-48px] top-1/2 -translate-y-1/2 size-[13px] bg-amber-100/50 rounded-full
-  }
-
-  .skills {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 15px;
-    margin: 0 -15px;
-    padding: 25px;
-    padding-bottom: 25px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    overscroll-behavior-inline: contain;
-    scroll-snap-type: inline mandatory;
-    scroll-padding-inline: 25px;
+    @apply mb-5 text-light-gray text-[14px] font-[400];
   }
 
   .has-scrollbar::-webkit-scrollbar {
     width: 5px;
-    height: 10px;
+    height: 5px;
   }
 
   .has-scrollbar::-webkit-scrollbar-track {
@@ -189,26 +198,6 @@ body {
   .contact-info {
     max-width: calc(100% - 46px);
     width: calc(100% - 46px);
-  }
-
-  aside button::before {
-    content: "";
-    position: absolute;
-    inset: 1px;
-    border-radius: inherit;
-    background: var(--gradient-jet);
-    transition: var(--transition-one);
-    z-index: -10;
-  }
-
-  .before-style::before {
-    content: "";
-    position: absolute;
-    display: block;
-    inset: 1px;
-    background-color: var(--eerie-black-1);
-    border-radius: inherit;
-    z-index: -1;
   }
 }
 

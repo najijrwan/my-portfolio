@@ -2,24 +2,24 @@
 import { useState } from "react";
 
 export const ele1 =
-    `relative bg-[image:var(--gradient-onyx)] size-7 rounded-[8px] flex-center text-lg shadow-one z-[10] text-highlight
+    `relative bg-[image:var(--gradient-onyx)] size-7 rounded-[8px] flex-center text-lg shadow-1 z-[10] text-highlight
  before:content-[""] before:absolute before:block before:inset-px before:bg-eerie-1 before:rounded-[inherit] before:-z-10`;
 export const ele2 =
     `min-w-full flex items-center gap-4`;
 const ele3 =
-    `text-base/50 text-[11px] tracking-widest mb-[2px]`;
+    `text-base/50 text-[11px] tracking-widest mb-0`;
 const Hero = () => {
     const [isExpanded, setIsExpanded] = useState(false);
 
     const toggleExpanded = () => setIsExpanded(prev => !prev);
 
     return (
-        <aside className={`mb-4 mt-13 w-full overflow-hidden transition-all duration-500 ease-in-out bg-background border 
-        border-solid border-jet rounded-[20px] p-4 shadow-one
+        <aside className={`mb-4 mt-13 w-full overflow-hidden custom-transition-2 bg-background border 
+        border-solid border-jet rounded-[20px] p-4 shadow-1 sm:max-h-45 sm:mb-7.5 sm:w-[520px] sm:my-auto sm:p-7.5
         ${isExpanded ? 'max-h-[405px]' : 'max-h-[112px]'}`}>
-            <div className="relative flex justify-start items-center gap-4">
-                <figure className="bg-white/10 rounded-[20px] relative">
-                    <img src="src/assets/my-avatar.png" alt="Naji Al-Jrwan" className="block size-20" />
+            <div className="relative flex justify-start items-center gap-4 sm:gap-[25px]">
+                <figure className="bg-white/10 rounded-[20px] relative sm:rounded-[30px]">
+                    <img src="src/assets/my-avatar.png" alt="Naji Al-Jrwan" className="block size-20 sm:size-[120px]" />
                     <span className="size-3 rounded-full bg-[#39ff14] animate-pulse absolute bottom-0 right-0"></span>
                 </figure>
                 <div>
@@ -32,10 +32,13 @@ const Hero = () => {
                 </div>
                 <button
                     onClick={toggleExpanded}
-                    className="absolute -top-[16px] -right-[16px] rounded-tr-[15px] rounded-bl-[15px] text-[13px] text-highlight p-[10px] z-10 
-                    bg-gradient-onyx hover:bg-gradient-yellow focus:bg-gradient-yellow focus:outline-amber-200 hover:before:bg-gradient-yellow-2 
+                    className="
+                    absolute -top-[16px] -right-[16px] rounded-tr-[15px] rounded-bl-[15px] text-[13px] text-highlight p-[10px] z-10 
+                    bg-gradient-onyx before:content-[''] before:absolute before:inset-px before:rounded-[inherit] before:bg-gradient-jet 
+                    before:custom-transition-1 before:-z-10
+                    hover:bg-gradient-yellow focus:bg-gradient-yellow focus:outline-amber-200 hover:before:bg-gradient-yellow-2 
                     focus:before:bg-gradient-yellow-2
-                    shadow-two transition-all duration-200 ease-linear cursor-pointer"
+                    shadow-2 custom-transtion-1 cursor-pointer"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -47,15 +50,16 @@ const Hero = () => {
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        className={`lucide lucide-chevron-down block transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}
+                        className={`lucide lucide-chevron-down block sm:hidden transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}
                     >
                         <path d="m6 9 6 6 6-6" />
                     </svg>
+                    <span className="hidden sm:block">Show Contant</span>
                 </button>
             </div>
 
             {/* Expandable section */}
-            <div className={`transition-all duration-500 ease-in-out ${isExpanded ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+            <div className={`custom-transition-2 ${isExpanded ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
                 <div className="w-full h-[1px] bg-[#383838] my-4 mx-0"></div>
                 <ul className="grid grid-cols-1 gap-4">
                     <li className={ele2}>
@@ -64,7 +68,7 @@ const Hero = () => {
                         </div>
                         <div>
                             <p className={ele3}>EMAIL</p>
-                            <a href="mailto:najijrwanyt@gmail.com" className="text-base text-[13px] font-[400] mb-10">najijrwanyt@gmail.com</a>
+                            <a href="mailto:najijrwanyt@gmail.com" className="text-base text-[13px] font-[400]">najijrwanyt@gmail.com</a>
                         </div>
                     </li>
                     <li className={ele2}>
@@ -90,22 +94,22 @@ const Hero = () => {
                 <ul className="flex justify-start items-center gap-4 pb-[4px] pl-[7px]">
                     <li>
                         <a href="https://www.linkedin.com/in/aakash569" className="social-link">
-                            <img src="src/assets/linkedin-brands.svg" alt="Linkedin" className="size-4 hover:invert-50"/>
+                            <img src="src/assets/linkedin-brands.svg" alt="Linkedin" className="size-4 hover:invert-50" />
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/aakashx58" className="social-link text-light-gray">
-                            <img src="src/assets/github-brands.svg" alt="gitHub" className="size-4 hover:invert-50"/>
+                            <img src="src/assets/github-brands.svg" alt="gitHub" className="size-4 hover:invert-50" />
                         </a>
                     </li>
                     <li>
                         <a href="https://g.dev/aakash569" className="social-link text-light-gray">
-                            <img src="src/assets/google-brands.svg" alt="Google" className="size-4 hover:invert-50"/>
+                            <img src="src/assets/google-brands.svg" alt="Google" className="size-4 hover:invert-50" />
                         </a>
                     </li>
                     <li>
                         <a href="https://x.com/itzakax" className="social-link text-light-gray">
-                            <img src="src/assets/instagram-brands.svg" alt="Instagram" className="size-4 hover:invert-50"/>
+                            <img src="src/assets/instagram-brands.svg" alt="Instagram" className="size-4 hover:invert-50" />
                         </a>
                     </li>
                 </ul>
