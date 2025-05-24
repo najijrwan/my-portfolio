@@ -15,12 +15,12 @@ const Hero = () => {
 
     return (
         <aside className={`mb-4 mt-13 w-full overflow-hidden transition-all duration-500 ease-in-out bg-background border 
-        border-solid border-jet rounded-[20px] p-4 shadow-[-4px_8px_24px_hsla(0,0%,0%,0.25)] 
+        border-solid border-jet rounded-[20px] p-4 shadow-one
         ${isExpanded ? 'max-h-[405px]' : 'max-h-[112px]'}`}>
             <div className="relative flex justify-start items-center gap-4">
-                <figure className="bg-white/10 rounded-full border-solid border-yellow-300/20 border-1 relative">
+                <figure className="bg-white/10 rounded-[20px] relative">
                     <img src="src/assets/my-avatar.png" alt="Naji Al-Jrwan" className="block size-20" />
-                    <span className="size-3 rounded-full bg-[#39ff14] animate-pulse absolute bottom-2 right-1"></span>
+                    <span className="size-3 rounded-full bg-[#39ff14] animate-pulse absolute bottom-0 right-0"></span>
                 </figure>
                 <div>
                     <h1 className="text-base text-lg font-[500] mb-2.5 ml-1 tracking-tight" title="Naji Al-Jrwan">
@@ -32,8 +32,10 @@ const Hero = () => {
                 </div>
                 <button
                     onClick={toggleExpanded}
-                    className="absolute -top-[17px] -right-[17px] rounded-tr-[15px] rounded-bl-[15px] text-[13px] text-highlight p-[10px] z-[1]
-                    bg-[var(--border-gradient-onyx)] shadow-[0_16px_30px_hsla(0,0%,0%,0.25)] transition-all duration-200 ease-linear"
+                    className="absolute -top-[16px] -right-[16px] rounded-tr-[15px] rounded-bl-[15px] text-[13px] text-highlight p-[10px] z-10 
+                    bg-gradient-onyx hover:bg-gradient-yellow focus:bg-gradient-yellow focus:outline-amber-200 hover:before:bg-gradient-yellow-2 
+                    focus:before:bg-gradient-yellow-2
+                    shadow-two transition-all duration-200 ease-linear cursor-pointer"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"

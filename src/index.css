@@ -1,20 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  --text-gradient-yellow:
-    linear-gradient(to right,
+  --gradient-onyx: linear-gradient(to bottom right,
+      hsl(0, 0%, 25%) 0%,
+      hsla(0, 0%, 25%, 0) 50%);
+  --gradient-jet: linear-gradient(to bottom right,
+      hsla(240, 1%, 18%, 0.251) 0%,
+      hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+  --gradient-yellow: linear-gradient(to bottom right,
+      hsl(45, 100%, 71%) 0%,
+      hsla(36, 100%, 69%, 0) 50%);
+  --gradient-yellow-2: linear-gradient(135deg,
+      hsla(45, 100%, 71%, 0.251) 0%,
+      hsla(35, 100%, 68%, 0) 59.86%), hsl(240, 2%, 13%);
+  --text-gradient-yellow: linear-gradient(to right,
       hsl(45, 100%, 72%),
       hsl(35, 100%, 68%));
-  --transition-1: 0.25s ease;
-  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-}
-
-button {
-  font: inherit;
-  background: none;
-  border: none;
-  text-align: left;
-  cursor: pointer;
 }
 
 input,
@@ -46,22 +47,12 @@ body {
   --color-background2: #414145;
   --color-highlight: #ffe666;
   --color-base: #FFFFFF;
-  --gradient-onyx: linear-gradient(to bottom right,
-      hsl(0, 0%, 25%) 0%,
-      hsla(0, 0%, 25%, 0) 50%);
-  --gradient-jet:
-    linear-gradient(to bottom right,
-      hsla(50, 100%, 65%, 0.2) 0%,
-      hsla(48, 100%, 55%, 0.05) 40%,
-      hsla(45, 100%, 45%, 0) 100%),
-    linear-gradient(135deg,
-      hsla(0, 0%, 100%, 0.05) 0%,
-      hsla(0, 0%, 0%, 0.15) 100%);
   --color-eerie-1: hsl(240, 2%, 13%);
   --color-jet: hsl(0, 0%, 22%);
+  --color-onyx: hsl(240, 1%, 17%);
+
   --shadow-one: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
   --shadow-two: 0 16px 30px hsla(0, 0%, 0%, 0.25);
-  --color-onyx: hsl(240, 1%, 17%);
 
   --animate-pulse: 1.5s pulse infinite ease-in-out;
 
@@ -76,13 +67,40 @@ body {
   }
 }
 
-@utility flex-center {
-  @apply flex justify-center items-center;
+@utility bg-gradient-onyx {
+  background-image: var(--gradient-onyx);
 }
 
-@utility flex-center-col {
-  @apply flex justify-center items-center flex-col;
+@utility bg-gradient-jet {
+  background: var(--gradient-jet);
 }
+
+@utility bg-gradient-yellow {
+  background: var(--gradient-yellow);
+}
+
+@utility bg-gradient-yellow-2{
+  background: var(--gradient-yellow-2);
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-center-col {
+    @apply flex justify-center items-center flex-col
+  }
+
+  .flex-start-row {
+    @apply flex justify-start items-center;
+  }
+
+  .flex-start-col {
+    @apply flex justify-center items-start;
+  }
+}
+
 
 @layer components {
   .navbar-link {
@@ -93,12 +111,11 @@ body {
     @apply text-highlight;
   }
 
-  .about {
+  article {
     @apply relative bg-background p-5 pl-7 rounded-3xl border-[1px] border-solid border-jet;
   }
 
   .about::before {
-    display: block;
     height: calc(100% - 116px);
     @apply absolute top-[85px] left-2.5 w-0.25 bg-yellow-200 content-[''];
   }
@@ -111,26 +128,12 @@ body {
     @apply mb-5 text-[#d6d6d6] text-[14px] font-[400];
   }
 
-  section li {
-    box-shadow: 0 16px 30px rgb(0, 0, 0, 0.25);
-  }
-
-  section li::before {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: inherit;
-    inset: 1px;
-    z-index: -1;
-    background: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
-  }
-
   .heading1 {
     @apply relative mb-4 pb-2 text-[24px] font-[600] text-base;
   }
 
   .heading1::after {
-    @apply absolute bottom-0 left-0 w-[30px] h-[5px] rounded-[3px] content-[''] bg-gradient-to-r from-yellow-200 to-yellow-400;
+    @apply absolute bottom-0 left-0 w-[30px] h-[3px] rounded-[3px] content-[''] bg-gradient-to-r from-yellow-200 to-yellow-400;
   }
 
   .heading2 {
@@ -193,9 +196,9 @@ body {
     position: absolute;
     inset: 1px;
     border-radius: inherit;
-    background: var(--bg-gradient-jet);
-    transition: var(--transition-1);
-    z-index: -1;
+    background: var(--gradient-jet);
+    transition: var(--transition-one);
+    z-index: -10;
   }
 
   .before-style::before {
@@ -206,5 +209,11 @@ body {
     background-color: var(--eerie-black-1);
     border-radius: inherit;
     z-index: -1;
+  }
+}
+
+@layer base {
+  button {
+    @apply text-[inherit] bg-none border-none cursor-pointer;
   }
 }

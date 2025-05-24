@@ -1,6 +1,7 @@
 // About.jsx
 export const ele1 =
-  `relative p-5 rounded-3xl bg-[image:var(--gradient-jet)] shadow-two z-[1]`;
+  `relative p-5 rounded-3xl shadow-two z-[1] bg-gradient-onyx
+  before:content-[""] before:block before:absolute before:rounded-[inherit] before:inset-[1px] before:-z-[1] before:bg-gradient-jet`;
 export const ele2 =
   `font-bold text-base text-[16px] mb-2`;
 export const ele3 =
@@ -19,7 +20,7 @@ const About = () => {
           I approach development with a balance of discipline and creativity, aiming to create solutions that are not only functional, but polished and purposeful.
         </p>
       </section>
-      <h3 className="heading2 relative">
+      <h3 className="heading2">
         <span className="indicator-inside"></span>
         <span className="indicator-outside"></span>
         What I Do
