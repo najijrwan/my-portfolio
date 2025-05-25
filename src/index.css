@@ -82,7 +82,9 @@ body::-webkit-scrollbar-button {
 
   --animate-pulse: 1.5s pulse infinite ease-in-out;
 
+  --breakpoint-xs: 450px;
   --breakpoint-sm: 580px;
+  --breakpoint-xl: 1250px;
 
   @keyframes pulse {
     0% {
@@ -152,7 +154,7 @@ body::-webkit-scrollbar-button {
 
 @layer components {
   .navbar-link {
-    @apply py-1 px-0.5 font-[1000] hover:text-base/50;
+    @apply py-1 px-0.5 font-[1000] hover:text-base/50 sm:text-[14px] md:text-[15px];
   }
 
   .navbar-link.active {
@@ -160,12 +162,12 @@ body::-webkit-scrollbar-button {
   }
 
   article {
-    @apply relative bg-background p-5 pl-7 rounded-3xl border-[1px] border-solid border-jet;
+    @apply relative bg-background p-5 pl-7 rounded-3xl border-[1px] border-solid border-jet sm:w-[520px] sm:mx-auto sm:p-[30px] md:w-[700px] lg:w-[950px] lg:shadow-5;
   }
 
   .about::before {
     height: calc(100% - 125px);
-    @apply absolute top-[85px] left-2.5 w-0.25 bg-yellow-200 content-[''];
+    @apply absolute top-[85px] left-2.5 w-0.25 bg-yellow-200 content-[''] sm:w-[40px] sm:h-[5px];
   }
 
   section {
@@ -195,9 +197,34 @@ body::-webkit-scrollbar-button {
     width: 20px;
   }
 
+  @media (min-width: 450px) {
+    .clients-item {
+      min-width: calc(33.33% - 10px);
+    }
+  }
+
+  @media (min-width: 580px) {
+    .clients-item {
+      min-width: calc(33.33% - 35px);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .clients-item {
+      min-width: calc(25% - 38px);
+    }
+  }
+
   .contact-info {
     max-width: calc(100% - 46px);
     width: calc(100% - 46px);
+  }
+
+  @media (min-width: 580px) {
+    .contact-info {
+      max-width: calc(100% - 64px);
+      width: calc(100% - 64px);
+    }
   }
 }
 
