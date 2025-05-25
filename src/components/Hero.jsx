@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 export const ele1 =
-    `relative bg-[image:var(--gradient-onyx)] size-7 rounded-[8px] flex-center text-lg shadow-1 z-[10] text-highlight
+    `relative bg-[image:var(--gradient-onyx)] size-[30px] rounded-[8px] flex-center text-[16px] shadow-1 z-[10] text-highlight
  before:content-[""] before:absolute before:block before:inset-px before:bg-eerie-1 before:rounded-[inherit] before:-z-10 
  sm:size-[48px] sm:rounded-[12px] sm:text-[18px]`;
 export const ele2 =
@@ -15,25 +15,26 @@ const Hero = () => {
     const toggleExpanded = () => setIsExpanded(prev => !prev);
 
     return (
-        <aside className={`mb-[15px] overflow-hidden custom-transition-2 bg-eerie-2 border 
+        <aside className={`
+        mb-[15px] overflow-hidden custom-transition-2 bg-eerie-2 border 
         border-solid border-jet rounded-[20px] p-[15px] shadow-1 z-10
         sm:max-h-[180px] sm:mb-[30px] sm:w-[520px] sm:mx-auto sm:p-[30px] 
         md:w-[700px] 
         lg:w-[950px] lg:shadow-5 
         xl:sticky xl:top-[60px] xl:max-h-max xl:h-full xl:mb-0 xl:pt-[60px] xl:z-10 xl:w-auto
-        ${isExpanded ? 'max-h-[405px]' : 'max-h-[112px]'}`}>
+        ${isExpanded ? 'max-h-[405px] sm:max-h-[584px]' : 'max-h-[112px]'}`}>
             <div className="relative flex-start-row gap-[15px] sm:gap-[25px] xl:flex-col">
-                <figure className="bg-white/10 rounded-[20px] relative sm:rounded-[30px]">
+                <figure className="bg-gradient-onyx-2 rounded-[20px] relative sm:rounded-[30px]">
                     <img src="src/assets/my-avatar.png" alt="Naji Al-Jrwan" className="block size-20 sm:size-[120px] xl:size-[150px]" />
                     <span className="size-3 rounded-full bg-[#39ff14] animate-pulse absolute bottom-0 right-0"></span>
                 </figure>
                 <div>
-                    <h1 className="text-base text-lg font-[500] mb-2.5 ml-1 tracking-tight 
+                    <h1 className="text-base text-[26px] font-[500] mb-[10px] tracking-tight 
                     sm:mb-[15px] 
-                    xl:whitespace-nowrap xl:text-center" title="Naji Al-Jrwan">
+                    xl:whitespace-nowrap xl:text-center xl:tracking-wider xl:text-3xl" title="Naji Al-Jrwan">
                         Naji Aljarawan
                     </h1>
-                    <p className="text-base bg-onyx text-[11px]/5 font-[100]! w-max py-[3px] px-3 rounded-[8px] 
+                    <p className="text-base bg-onyx text-[12px] font-[300]! w-max py-[3px] px-[12px] rounded-[8px] 
                     sm:py-[5px] sm:px-[18px] 
                     xl:m-auto">
                         Full Stack Developer
@@ -42,15 +43,16 @@ const Hero = () => {
                 <button
                     onClick={toggleExpanded}
                     className="
-                    absolute -top-[16px] -right-[16px] rounded-tr-[15px] rounded-bl-[15px] text-[13px] text-highlight p-[10px] z-10 
-                    bg-gradient-onyx before:content-[''] before:absolute before:inset-px before:rounded-[inherit] before:bg-gradient-jet 
+                    absolute -top-[15px] -right-[15px] rounded-tr-[15px] rounded-bl-[15px] text-[13px] text-highlight p-[10px] z-10 
+                    bg-gradient-onyx shadow-2 custom-transtion-1 cursor-pointer 
+                    before:content-[''] before:absolute before:inset-px before:rounded-[inherit] before:bg-gradient-jet 
                     before:custom-transition-1 before:-z-10
                     hover:bg-gradient-yellow focus:bg-gradient-yellow focus:outline-amber-200 hover:before:bg-gradient-yellow-2 
                     focus:before:bg-gradient-yellow-2
-                    shadow-2 custom-transtion-1 cursor-pointer 
                     sm:top-[-30px] sm:right-[-30px] sm:py-[10px] sm:px-[15px] 
                     xl:hidden"
                 >
+                    <span className="hidden sm:block sm:text-[12px]">Show Contant</span>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="15"
@@ -66,41 +68,40 @@ const Hero = () => {
                     >
                         <path d="m6 9 6 6 6-6" />
                     </svg>
-                    <span className="hidden sm:block sm:text-[12px]">Show Contant</span>
                 </button>
             </div>
 
             {/* Expandable section */}
             <div className={`custom-transition-2 xl:opacity-100 xl:visible ${isExpanded ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
-                <div className="w-full h-[1px] bg-[#383838] my-4 mx-0 sm:my-[32px] sm:mx-0"></div>
-                <ul className="grid grid-cols-1 gap-4 sm:gap-[20px] md:grid-cols-2 md:gap-y-[30px] md:gap-x-[15px] xl:grid-cols-1">
+                <div className="w-full h-[1px] bg-jet my-4 mx-0 sm:my-[32px] sm:mx-0"></div>
+                <ul className="grid grid-cols-1 gap-4 sm:gap-[20px] md:grid-cols-2 md:gap-y-[30px] md:gap-x-[15px] xl:grid-cols-1!">
                     <li className={ele2}>
                         <div className={ele1}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg>
                         </div>
                         <div className="contact-info">
                             <p className={ele3}>EMAIL</p>
-                            <a href="mailto:najijrwanyt@gmail.com" className="text-base text-[13px] font-[400] 
+                            <a href="mailto:najijrwanyt@gmail.com" className="text-base text-[13px] font-[300] 
                             xl:text-[14px] xl:font-[300] xl:whitespace-nowrap xl:overflow-hidden xl:overflow-ellipsis">najijrwanyt@gmail.com</a>
                         </div>
                     </li>
                     <li className={ele2}>
                         <div className={ele1}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-call-icon lucide-phone-call"><path d="M13 2a9 9 0 0 1 9 9" /><path d="M13 6a5 5 0 0 1 5 5" /><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-call-icon lucide-phone-call"><path d="M13 2a9 9 0 0 1 9 9" /><path d="M13 6a5 5 0 0 1 5 5" /><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>
                         </div>
                         <div className="contact-info">
                             <p className={ele3}>PHONE</p>
-                            <a href="tel:+96170504841" className="text-base text-[13px] font-[400] 
+                            <a href="tel:+96170504841" className="text-base text-[13px] font-[300] 
                             xl:text-[14px] xl:font-[300] xl:whitespace-nowrap xl:overflow-hidden xl:overflow-ellipsis">+961 70504841</a>
                         </div>
                     </li>
                     <li className={ele2}>
                         <div className={ele1}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
                         </div>
                         <div className="contact-info">
                             <p className={ele3}>LOCATION</p>
-                            <a href="tel:+96170504841" className="text-base text-[13px] font-[400] 
+                            <a href="tel:+96170504841" className="text-base text-[13px] font-[300] 
                             xl:text-[14px] xl:font-[300] xl:whitespace-nowrap xl:overflow-hidden xl:overflow-ellipsis">Lebanon - West Beqaa</a>
                         </div>
                     </li>

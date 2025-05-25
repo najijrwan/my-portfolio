@@ -4,6 +4,9 @@
   --gradient-onyx: linear-gradient(to bottom right,
       hsl(0, 0%, 25%) 0%,
       hsla(0, 0%, 25%, 0) 50%);
+  --gradient-onyx-2: linear-gradient(to bottom right,
+      hsl(240, 1%, 25%) 3%,
+      hsl(0, 0%, 19%) 97%);
   --gradient-jet: linear-gradient(to bottom right,
       hsla(240, 1%, 18%, 0.251) 0%,
       hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
@@ -80,11 +83,12 @@ body::-webkit-scrollbar-button {
   --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
   --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
 
-  --animate-pulse: 1.5s pulse infinite ease-in-out;
 
   --breakpoint-xs: 450px;
   --breakpoint-sm: 580px;
   --breakpoint-xl: 1250px;
+
+  --animate-pulse: 1.5s pulse infinite ease-in-out;
 
   @keyframes pulse {
     0% {
@@ -95,10 +99,26 @@ body::-webkit-scrollbar-button {
       box-shadow: 0 0 0 14px #69ffa800;
     }
   }
+
+  --animate-fade: fade 0.5s ease backwards;
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 }
 
 @utility bg-gradient-onyx {
   background-image: var(--gradient-onyx);
+}
+
+@utility bg-gradient-onyx-2 {
+  background-image: var(--gradient-onyx-2);
 }
 
 @utility bg-gradient-jet {
@@ -154,7 +174,7 @@ body::-webkit-scrollbar-button {
 
 @layer components {
   .navbar-link {
-    @apply py-1 px-0.5 font-[1000] hover:text-base/50 sm:text-[14px] md:text-[15px];
+    @apply text-light-gray text-[15px] py-[20px] px-[7px] custom-transition-1 hover:text-base/50 sm:text-[14px] md:text-[15px] lg:font-[500];
   }
 
   .navbar-link.active {
@@ -162,20 +182,20 @@ body::-webkit-scrollbar-button {
   }
 
   article {
-    @apply relative bg-background p-5 pl-7 rounded-3xl border-[1px] border-solid border-jet sm:w-[520px] sm:mx-auto sm:p-[30px] md:w-[700px] lg:w-[950px] lg:shadow-5;
+    @apply bg-eerie-2 p-5 rounded-[20px] border border-solid shadow-1 z-10 
+    border-jet animate-fade
+    sm:w-[520px] sm:mx-auto sm:p-[30px] 
+    md:w-[700px] 
+    lg:w-[950px] lg:shadow-5 
+    xl:min-h-full xl:w-[900px]!;
   }
-
-  .about::before {
-    height: calc(100% - 125px);
-    @apply absolute top-[85px] left-2.5 w-0.25 bg-yellow-200 content-[''] sm:w-[40px] sm:h-[5px];
-  }
-
+  
   section {
     @apply text-base rounded-[20px];
   }
 
   section p {
-    @apply mb-5 text-light-gray text-[14px] font-[400];
+    @apply mb-[15px] text-light-gray text-[14px] font-[400];
   }
 
   .has-scrollbar::-webkit-scrollbar {
@@ -197,21 +217,26 @@ body::-webkit-scrollbar-button {
     width: 20px;
   }
 
+  .clients-item img {
+    width: 100%;
+    transition: var(--transition-1);
+  }
+
   @media (min-width: 450px) {
     .clients-item {
-      min-width: calc(33.33% - 10px);
+      min-width: calc(33.33% - 10px) !important;
     }
   }
 
   @media (min-width: 580px) {
     .clients-item {
-      min-width: calc(33.33% - 35px);
+      min-width: calc(33.33% - 35px) !important;
     }
   }
 
   @media (min-width: 1024px) {
     .clients-item {
-      min-width: calc(25% - 38px);
+      min-width: calc(25% - 38px) !important;
     }
   }
 

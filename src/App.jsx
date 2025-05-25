@@ -10,9 +10,8 @@ function App() {
   return (
     <Router>
       <Hero />
-      <Navbar />
-      
       <div className="lg:relative lg:w-max lg:m-auto xl:min-w-[75%] xl:w-[75%] xl:m-0">
+        <Navbar />
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
