@@ -21,7 +21,7 @@ const Hero = () => {
         sm:max-h-[180px] sm:mb-[30px] sm:w-[520px] sm:mx-auto sm:p-[30px] 
         md:w-[700px] 
         lg:w-[950px] lg:shadow-5 
-        xl:sticky xl:top-[60px] xl:max-h-max xl:h-full xl:mb-0 xl:pt-[60px] xl:z-10 xl:w-auto
+        xl:sticky xl:top-[60px] xl:max-h-max xl:h-full xl:mb-0 xl:pt-[60px] xl:z-10 xl:w-max!
         ${isExpanded ? 'max-h-[405px] sm:max-h-[584px]' : 'max-h-[112px]'}`}>
             <div className="relative flex-start-row gap-[15px] sm:gap-[25px] xl:flex-col">
                 <figure className="bg-gradient-onyx-2 rounded-[20px] relative sm:rounded-[30px]">

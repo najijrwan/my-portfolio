@@ -9,9 +9,11 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <Router>
-      <Hero />
-      <div className="lg:relative lg:w-max lg:m-auto xl:min-w-[75%] xl:w-[75%] xl:m-0">
+      <div className="xl:flex xl:flex-col xl:items-end xl:gap-[25px]">
+        <Hero />
         <Navbar />
+      </div>
+      <div className="lg:relative lg:w-max lg:m-auto xl:min-w-[75%] xl:w-[75%] xl:m-0">
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
