@@ -145,36 +145,33 @@ body::-webkit-scrollbar-button {
   @apply transition-all duration-700 ease-in-out;
 }
 
-@layer utilities {
-  .flex-center {
-    @apply flex justify-center items-center;
-  }
-
-  .flex-center-col {
-    @apply flex justify-center items-center flex-col
-  }
-
-  .flex-start-row {
-    @apply flex justify-start items-center;
-  }
-
-  .flex-start-col {
-    @apply flex justify-center items-start;
-  }
-
-  .flex-start-start {
-    @apply flex justify-start items-start;
-  }
-
-  .flex-start-start-col {
-    @apply flex justify-start items-start flex-col;
-  }
+@utility flex-center {
+  @apply flex justify-center items-center;
 }
 
+@utility flex-center-col {
+  @apply flex justify-center items-center flex-col;
+}
+
+@utility flex-start-row {
+  @apply flex justify-start items-center;
+}
+
+@utility flex-start-col {
+  @apply flex justify-center items-start;
+}
+
+@utility flex-start-start {
+  @apply flex justify-start items-start;
+}
+
+@utility flex-start-start-col {
+  @apply flex justify-start items-start flex-col;
+}
 
 @layer components {
   .navbar-link {
-    @apply text-light-gray text-[15px] py-[20px] px-[7px] custom-transition-1 hover:text-base/50 sm:text-[14px] md:text-[15px] lg:font-[500];
+    @apply text-light-gray text-[17px]! py-[20px] px-[7px] custom-transition-1 hover:text-base/50 sm:text-[14px] md:text-[15px] lg:font-[500];
   }
 
   .navbar-link.active {
@@ -182,20 +179,15 @@ body::-webkit-scrollbar-button {
   }
 
   article {
-    @apply bg-eerie-2 p-5 rounded-[20px] border border-solid shadow-1 z-10 
-    border-jet animate-fade
-    sm:w-[520px] sm:mx-auto sm:p-[30px] 
-    md:w-[700px] 
-    lg:w-[950px] lg:shadow-5 
-    xl:min-h-full xl:w-[900px]!;
+    @apply bg-eerie-2 p-5 rounded-[20px] border border-solid shadow-1 z-10 border-jet animate-fade sm:w-[520px] sm:mx-auto sm:p-[30px] md:w-[700px] lg:w-[950px] lg:shadow-5 xl:min-h-full xl:w-[900px]!;
   }
-  
+
   section {
     @apply text-base rounded-[20px];
   }
 
   section p {
-    @apply mb-[15px] text-light-gray text-[14px] font-[400];
+    @apply mb-[15px] text-light-gray text-[15px]/6 font-[300];
   }
 
   .has-scrollbar::-webkit-scrollbar {
@@ -256,5 +248,9 @@ body::-webkit-scrollbar-button {
 @layer base {
   button {
     @apply text-[inherit] bg-none border-none cursor-pointer;
+  }
+
+  img {
+    @apply max-w-none max-h-none;
   }
 }
