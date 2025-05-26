@@ -8,9 +8,9 @@ export const ele2 =
 export const ele3 =
   `text-gray-300 text-[15px]/5 m-0`;
 export const h2Ele =
-  `relative mb-[15px] pb-2 text-[32px] font-[600] text-base 
+  `relative mb-[30px] pb-[7px] text-[24px] font-[600] text-base 
 after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-7.5 after:h-0.75 after:bg-gradient-yellow-3 after:rounded-[3px] 
-sm:mb-[20px] sm:pb-[15px] md:pb-[20px] sm:after:w-[40px] sm:after:h-[5px]`;
+sm:mb-[30px] sm:pb-[15px] sm:text-[32px] md:pb-[20px] sm:after:w-[40px] sm:after:h-[5px]`;
 export const h3Ele =
   `relative text-highlight font-[600] text-[24px] mb-[20px] ml-6 flex-start-row
 before:absolute before:w-[10px] before:h-px before:left-[-15px] before:bottom-[49.5%] before:bg-amber-100/50 before:content-[""]`;

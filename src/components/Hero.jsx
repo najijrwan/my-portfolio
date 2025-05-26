@@ -21,7 +21,7 @@ const Hero = () => {
         sm:max-h-[180px] sm:mb-[30px] sm:w-[520px] sm:mx-auto sm:p-[30px] 
         md:w-[700px] 
         lg:w-[950px] lg:shadow-5 
-        xl:sticky xl:top-[150px] xl:max-h-max xl:h-full xl:mb-0 xl:pt-[60px] xl:z-10 xl:w-max!
+        xl:sticky xl:top-[60px] xl:max-h-max xl:h-full xl:mb-0 xl:pt-[60px] xl:z-10 xl:w-max!
         ${isExpanded ? 'max-h-[405px] sm:max-h-[584px]' : 'max-h-[112px]'}`}>
             <div className="relative flex-start-row gap-[15px] sm:gap-[25px] xl:flex-col">
                 <figure className="bg-gradient-onyx-2 rounded-[20px] relative sm:rounded-[30px]">
@@ -29,10 +29,10 @@ const Hero = () => {
                     <span className="size-3 rounded-full bg-[#39ff14] animate-pulse absolute bottom-0 right-0"></span>
                 </figure>
                 <div>
-                    <h1 className="text-base text-[26px] font-[500] mb-[10px] tracking-tight 
+                    <h1 className="text-base text-[17px] sm:text-[26px] font-[600] mb-[10px] tracking-tight 
                     sm:mb-[15px] 
                     xl:whitespace-nowrap xl:text-center xl:tracking-wider xl:text-3xl" title="Naji Al-Jrwan">
-                        Naji Aljarawan
+                        Naji Al - Jarawan
                     </h1>
                     <p className="text-base bg-onyx text-[12px] font-[300]! w-max py-[3px] px-[12px] rounded-[8px] 
                     sm:py-[5px] sm:px-[18px] 
