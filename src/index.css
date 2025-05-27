@@ -32,7 +32,7 @@ body::selection {
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif!important;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 body {
@@ -84,7 +84,7 @@ body::-webkit-scrollbar-button {
   --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
 
 
-  --breakpoint-xs: 350px;
+  --breakpoint-xs: 370px;
   --breakpoint-sm: 580px;
   --breakpoint-xl: 1250px;
 
@@ -175,7 +175,7 @@ body::-webkit-scrollbar-button {
 
 @layer components {
   .navbar-link {
-    @apply text-light-gray py-[20px] custom-transition-1 hover:text-base/50 ;
+    @apply text-light-gray py-[20px] custom-transition-1 hover:text-base/50;
   }
 
   .navbar-link.active {
@@ -183,8 +183,7 @@ body::-webkit-scrollbar-button {
   }
 
   article {
-    @apply relative bg-eerie-2 rounded-[20px] border border-solid shadow-1 z-10 border-jet animate-fade 
-    sm:w-[520px] sm:mx-auto md:w-[700px] lg:w-[950px] lg:shadow-5 xl:min-h-full xl:w-[900px]!;
+    @apply relative bg-eerie-2 rounded-[20px] border border-solid shadow-1 z-10 border-jet animate-fade sm:w-[520px] sm:mb-[20px] sm:mx-auto md:w-[700px] lg:w-[950px] lg:shadow-5 xl:min-h-full xl:w-[900px] !;
   }
 
   section {
@@ -252,10 +251,15 @@ body::-webkit-scrollbar-button {
 
 @layer base {
   button {
-    @apply text-[inherit] bg-none border-none cursor-pointer;
+    @apply text-[inherit] text-left bg-none border-none cursor-pointer;
   }
 
   img {
     @apply max-w-none max-h-none;
+  }
+
+  input,
+  textarea {
+    @apply block bg-transparent w-full font-[inherit];
   }
 }

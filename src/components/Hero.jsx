@@ -130,6 +130,7 @@ const Hero = () => {
                     </li>
                 </ul>
             </div>
+
         </aside>
     );
 };

@@ -24,7 +24,7 @@ const spanEle1 =
   `text-vegas-gold font-[400] text-[14px]/6`;
 const Resume = () => {
   return (
-    <article className=" sm:mb-[20px] " >
+    <article>
       <Navbar />
       <div className="p-[20px] sm:p-[30px] ">
         <h2 className={h2Ele} >Resume</h2>

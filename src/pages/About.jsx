@@ -21,7 +21,7 @@ const spanEle2 =
   `absolute left-[-28px] top-1/2 -translate-y-1/2 size-[13px] bg-amber-100/50 rounded-full`;
 const About = () => {
   return (
-    <article className="sm:mb-[20px]">
+    <article>
       <Navbar />
       <div className="p-[20px] sm:p-[30px]">
         <h2 className={h2Ele}>About Me</h2>
