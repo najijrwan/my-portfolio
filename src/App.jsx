@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
+import Career from "./pages/Career";
 
 function App() {
   return (
@@ -11,11 +12,12 @@ function App() {
       <Hero />
       <div className="lg:relative lg:w-max lg:m-auto xl:min-w-[75%] xl:w-[75%] xl:m-0">
         <Routes>
-          <Route path="/" element={<About />} />
+          <Route path="/" element={<About className = "active"/>} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/career" element={<Career />} />
         </Routes>
       </div>
     </Router>

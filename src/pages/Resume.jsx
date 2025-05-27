@@ -25,8 +25,8 @@ const spanEle1 =
 const Resume = () => {
   return (
     <article className=" sm:mb-[20px] " >
-      <div className="p-[15px]">
-        <Navbar />
+      <Navbar />
+      <div className="p-[20px] sm:p-[30px] ">
         <h2 className={h2Ele} >Resume</h2>
         <section className=' mb-[30px] ' >
           <div className={divEle1} >

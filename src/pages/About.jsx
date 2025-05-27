@@ -23,7 +23,7 @@ const About = () => {
   return (
     <article className="sm:mb-[20px]">
       <Navbar />
-      <div className="p-[15px] w-full">
+      <div className="p-[20px] sm:p-[30px]">
         <h2 className={h2Ele}>About Me</h2>
         <section className="sm:mb-[40px]">
           <p>
