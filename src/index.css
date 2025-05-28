@@ -42,16 +42,16 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 8px;
+  width: 14px;
 }
 
 body::-webkit-scrollbar-track {
-  background: rgba(40, 40, 40, 0.5);
+  background: #121212;
 }
 
 body::-webkit-scrollbar-thumb {
   background: #ffe666;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 body::-webkit-scrollbar-button {
@@ -62,8 +62,8 @@ body::-webkit-scrollbar-button {
 @theme {
   --color-background: hsl(240, 2%, 12%);
   --color-background2: #414145;
-  --color-highlight: #ffe666;
-  --color-yellow-crayola: hsl(45, 100%, 72%);
+  --color-highlight: #ffdb70;
+  --color-yellow-crayola: #ffdb70;
   --color-base: #FFFFFF;
   --color-eerie-1: hsl(240, 2%, 13%);
   --color-eerie-2: hsl(240, 2%, 12%);
@@ -191,10 +191,6 @@ body::-webkit-scrollbar-button {
   top: calc(100% + 6px);
 }
 
-@utliity {
-  bottom: calc(100% + 6px);
-}
-
 @layer components {
   .navbar-link {
     @apply text-light-gray py-[20px] custom-transition-1 hover:text-base/50;
@@ -204,12 +200,8 @@ body::-webkit-scrollbar-button {
     @apply text-highlight;
   }
 
-  .li-active {
-    @apply block --animate-scaleUp;
-  }
-
   article {
-    @apply relative bg-eerie-2 rounded-[20px] border border-solid shadow-1 z-10 border-jet animate-fade sm:w-[520px] sm:mb-[20px] sm:mx-auto md:w-[700px] lg:w-[950px] lg:shadow-5 xl:min-h-full xl:w-[900px] !;
+    @apply relative bg-eerie-2 rounded-[20px] border border-solid shadow-1 z-10 border-jet animate-fade sm:w-[520px] sm:mb-[20px] sm:mx-auto md:w-[700px] lg:w-[950px] lg:shadow-5 xl:min-h-full xl:w-[900px]!;
   }
 
   section {

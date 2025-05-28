@@ -52,7 +52,7 @@ const Hero = () => {
                     sm:top-[-30px] sm:right-[-30px] sm:py-[10px] sm:px-[15px] 
                     xl:hidden"
                 >
-                    <span className="hidden sm:block sm:text-[12px]">Show Contant</span>
+                    <span className="hidden sm:block sm:text-[12px] tracking-wider">Show Contacts</span>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="15"
