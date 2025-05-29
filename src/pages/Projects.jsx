@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react"
 import Navbar from "../components/Navbar";
 import { h2Ele } from './About.jsx';
 
@@ -25,8 +26,24 @@ const divEle3 = `
   custom-transition-1 p-[14px] rounded-[12px] z-10`;
 
 const Projects = () => {
-  const [selectedCategory, setSelectedCategory] = useState("all");
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  // Get category from URL
+  const queryParams = new URLSearchParams(location.search);
+  const urlCategory = queryParams.get("category") || "all";
+
+  const [selectedCategory, setSelectedCategory] = useState(urlCategory);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  // Sync category to URL when it changes
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    if (selectedCategory !== params.get("category")) {
+      params.set("category", selectedCategory);
+      navigate({ search: params.toString() }, { replace: true });
+    }
+  }, [selectedCategory, location.search, navigate]);
 
   const categories = [
     { label: "All", value: "all" },
@@ -55,6 +72,7 @@ const Projects = () => {
   ];
 
   return (
+
     <article>
       <Navbar />
       <div className="p-[15px] sm:p-[30px]">
@@ -62,13 +80,13 @@ const Projects = () => {
 
         <section>
           {/* Desktop Filter Buttons */}
-          <ul className="hidden md:flex gap-2 mb-4">
+          <ul className="hidden md:flex gap-2 mb-7.5">
             {categories.map(({ label, value }) => (
               <li key={value}>
                 <button
-                  className={`px-4 py-2 rounded-full ${selectedCategory === value
+                  className={`px-4 py-2 rounded-full custom-transition-1 ${selectedCategory === value
                     ? "bg-yellow-crayola text-black"
-                    : "bg-eerie-2 text-light-gray"
+                    : "bg-eerie-2 text-light-gray hover:text-light-gray-70"
                     }`}
                   onClick={() => setSelectedCategory(value)}
                 >
@@ -86,30 +104,34 @@ const Projects = () => {
               onClick={() => setDropdownOpen(prev => !prev)}
             >
               <div>{categories.find(c => c.value === selectedCategory)?.label ?? "All"}</div>
-              <svg xmlns="http://www.w3.org/2000/svg" className="ionicon s-ion-icon w-4 h-4" viewBox="0 0 512 512">
-                <title>Chevron Down</title>
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="48" d="M112 184l144 144 144-144" />
-              </svg>
+              <ion-icon name="chevron-down" role="img" className={`md hydrated ${dropdownOpen ? "rotate-180" : ""}`} aria-label="chevron down ">
+                <div class="icon-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="ionicon s-ion-icon " viewBox="0 0 512 512">
+                    <title>Chevron Down</title>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" class="ionicon-fill-none"></path>
+                  </svg>
+                </div>
+              </ion-icon>
             </button>
 
-              <ul
-                className={`bg-eerie-2 absolute top-full mt-2 w-full p-[6px] border border-solid border-jet rounded-[14px] z-20 dropdown-transition ${dropdownOpen ? "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none"
-                  }`}
-              >
-                {categories.map(({ label, value }) => (
-                  <li key={value}>
-                    <button
-                      className="w-full text-left px-4 py-2 hover:bg-jet"
-                      onClick={() => {
-                        setSelectedCategory(value);
-                        setDropdownOpen(false);
-                      }}
-                    >
-                      {label}
-                    </button>
-                  </li>
-                ))}
-              </ul>
+            <ul
+              className={`bg-eerie-2 absolute top-full mt-2 w-full p-[6px] border border-solid border-jet rounded-[14px] z-20 dropdown-transition ${dropdownOpen ? "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none"
+                }`}
+            >
+              {categories.map(({ label, value }) => (
+                <li key={value}>
+                  <button
+                    className="bg-eerie-2 text-light-gray text-[15px] font-[300] w-full text-left px-2.5 py-2 rounded-[8px] hover:bg-jet"
+                    onClick={() => {
+                      setSelectedCategory(value);
+                      setDropdownOpen(false);
+                    }}
+                  >
+                    {label}
+                  </button>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Projects Grid */}

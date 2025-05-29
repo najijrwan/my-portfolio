@@ -1,25 +1,36 @@
 // About.jsx
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import { useNavigate } from "react-router-dom";
+
 export const ele1 =
   `relative p-[20px] rounded-[14px] shadow-2 z-10 bg-gradient-onyx
   before:content-[""] before:block before:absolute before:rounded-[inherit] before:inset-[1px] before:-z-[1] before:bg-gradient-jet 
   sm:flex-start-start sm:gap-[25px] sm:p-[30px]`;
+
 export const ele2 =
   `font-bold text-base text-[18px] mb-2`;
+
 export const ele3 =
   `text-gray-300 text-[15px]/5 m-0`;
+
 export const h2Ele =
   `relative mb-[30px] pb-[7px] text-[24px] font-[600] text-base 
 after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-7.5 after:h-0.75 after:bg-gradient-yellow-3 after:rounded-[3px] 
 sm:mb-[30px] sm:pb-[15px] sm:text-[32px] md:pb-[20px] sm:after:w-[40px] sm:after:h-[5px]`;
+
 export const h3Ele =
   `relative text-highlight font-[600] text-[24px] mb-[20px] ml-6 flex-start-row
 before:absolute before:w-[10px] before:h-px before:left-[-15px] before:bottom-[49.5%] before:bg-amber-100/50 before:content-[""]`;
+
 const spanEle1 =
   `absolute left-[-25px] top-1/2 -translate-y-1/2 size-1.75 bg-amber-100 rounded-full`;
+
 const spanEle2 =
   `absolute left-[-28px] top-1/2 -translate-y-1/2 size-[13px] bg-amber-100/50 rounded-full`;
+
 const About = () => {
+  const navigate = useNavigate();
   return (
     <article>
       <Navbar />
@@ -42,24 +53,28 @@ const About = () => {
         </h3>
         <section className="mb-9">
           <ul className="grid grid-cols-1 gap-5 lg:grid-cols-2 lg:gap-y-[20px] lg:gap-x-[25px]">
-            <li className={ele1}>
-              <div className="mb-[10px] sm:mb-0 sm:mt-[5px]">
-                <img src="src/assets/icon-app.svg" alt="mobile app icon" className="block size-10 m-auto" />
-              </div>
-              <div className="text-center sm:text-left">
-                <h4 className={ele2}>Mobile Apps</h4>
-                <p className={ele3}>Professional & modern development of applications for Android and ios.</p>
-              </div>
-            </li>
-            <li className={ele1}>
-              <div className="mb-2.5">
-                <img src="src/assets/icon-dev.svg" alt="web development icon" className="block size-10 m-auto" />
-              </div>
-              <div className="text-center sm:text-left">
-                <h4 className={ele2}>Web Development</h4>
-                <p className={ele3}>High-quality development of sites at the professional level.</p>
-              </div>
-            </li>
+            <a href="/projects?category=applications">
+              <li className={ele1}>
+                <div className="mb-[10px] sm:mb-0 sm:mt-[5px]">
+                  <img src="src/assets/icon-app.svg" alt="mobile app icon" className="block size-10 m-auto" />
+                </div>
+                <div className="text-center sm:text-left">
+                  <h4 className={ele2}>Mobile Apps</h4>
+                  <p className={ele3}>Professional & modern development of applications for Android and ios.</p>
+                </div>
+              </li>
+            </a>
+            <a href="/projects?category=websites">
+              <li className={ele1}>
+                <div className="mb-2.5">
+                  <img src="src/assets/icon-dev.svg" alt="web development icon" className="block size-10 m-auto" />
+                </div>
+                <div className="text-center sm:text-left">
+                  <h4 className={ele2}>Web Development</h4>
+                  <p className={ele3}>High-quality development of sites at the professional level.</p>
+                </div>
+              </li>
+            </a>
             <li className={ele1}>
               <div className="mb-2.5">
                 <img src="src/assets/icon-backend.svg" alt="backend development icon" className="block size-10 m-auto" />

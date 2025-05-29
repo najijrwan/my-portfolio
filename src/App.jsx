@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import Hero from './components/Hero';
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -12,7 +12,7 @@ function App() {
       <Hero />
       <div className="lg:relative lg:w-max lg:m-auto xl:min-w-[75%] xl:w-[75%] xl:m-0">
         <Routes>
-          <Route path="/" element={<About className = "active"/>} />
+          <Route path="/" element={<Navigate to="/about" replace />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
