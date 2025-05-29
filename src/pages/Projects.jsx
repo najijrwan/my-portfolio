@@ -51,12 +51,8 @@ const Projects = () => {
       type: "others",
       img: "src/assets/nagarikapp.png"
     },
-    // Add more projects here
-  ];
 
-  const filteredProjects = selectedCategory === "all"
-    ? projectData
-    : projectData.filter(project => project.type === selectedCategory);
+  ];
 
   return (
     <article>
@@ -96,8 +92,10 @@ const Projects = () => {
               </svg>
             </button>
 
-            {dropdownOpen && (
-              <ul className="bg-eerie-2 absolute top-full mt-2 w-full p-[6px] border border-solid border-jet rounded-[14px] z-20">
+              <ul
+                className={`bg-eerie-2 absolute top-full mt-2 w-full p-[6px] border border-solid border-jet rounded-[14px] z-20 dropdown-transition ${dropdownOpen ? "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none"
+                  }`}
+              >
                 {categories.map(({ label, value }) => (
                   <li key={value}>
                     <button
@@ -112,30 +110,36 @@ const Projects = () => {
                   </li>
                 ))}
               </ul>
-            )}
           </div>
 
           {/* Projects Grid */}
           <ul className="grid grid-cols-1 gap-7.5 mb-2.5 md:grid-cols-2 lg:grid-cols-3">
-            {filteredProjects.map((project, index) => (
-              <li key={index} className="block animate-scaleUp">
-                <a href="#" className="block w-full group">
-                  <figure className={figureEle1}>
-                    <div className={divEle3}>
-                      <EyeOutlineIcon />
-                    </div>
-                    <img
-                      src={project.img}
-                      alt={project.title}
-                      loading="lazy"
-                      className="w-full h-full object-cover block custom-transition-1 group-hover:scale-[1.1]"
-                    />
-                  </figure>
-                  <h3 className="text-base text-[15px]/4 font-[400] ml-[10px]">{project.title}</h3>
-                  <p className="text-light-gray-70 text-[15px] font-[300] ml-2.5 capitalize">{project.type}</p>
-                </a>
-              </li>
-            ))}
+            {projectData.map((project, index) => {
+              const isVisible = selectedCategory === "all" || project.type === selectedCategory;
+
+              return (
+                <li
+                  key={index}
+                  className={`block ${isVisible ? "animate-scaleUp" : "hidden"}`}
+                >
+                  <a href="#" className="block w-full group">
+                    <figure className={figureEle1}>
+                      <div className={divEle3}>
+                        <EyeOutlineIcon />
+                      </div>
+                      <img
+                        src={project.img}
+                        alt={project.title}
+                        loading="lazy"
+                        className="w-full h-full object-cover block custom-transition-1 group-hover:scale-[1.1]"
+                      />
+                    </figure>
+                    <h3 className="text-base text-[15px]/4 font-[400] ml-[10px]">{project.title}</h3>
+                    <p className="text-light-gray-70 text-[15px] font-[300] ml-2.5 capitalize">{project.type}</p>
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </section>
       </div>

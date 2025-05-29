@@ -159,6 +159,10 @@ body::-webkit-scrollbar-button {
   @apply transition-all duration-700 ease-in-out;
 }
 
+@utility dropdown-transition {
+  @apply transition-all duration-200 ease-in-out;
+}
+
 @utility flex-center {
   @apply flex justify-center items-center;
 }
