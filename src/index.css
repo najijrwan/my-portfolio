@@ -90,6 +90,8 @@ body::-webkit-scrollbar-button {
   --breakpoint-sm: 580px;
   --breakpoint-xl: 1250px;
 
+  --delay-1: 2000ms;
+
   --animate-pulse: 1.5s pulse infinite ease-in-out;
 
   @keyframes pulse {
@@ -123,6 +125,103 @@ body::-webkit-scrollbar-button {
 
     100% {
       transform: scale(1);
+    }
+  }
+
+  --animate-height: height 5s ease forwards;
+
+  @keyframes height {
+    0% {
+      height: 0;
+    }
+
+    100% {
+      height: 100vh;
+    }
+  }
+
+  --animate-width: width 0.5s ease 550ms forwards;
+  @keyframes width {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 2.5rem;
+    }
+  }
+
+  --animate-height-2: height2 0.5s ease forwards;
+  @keyframes height2 {
+    0% {
+      height: 0;
+    }
+
+    100% {
+      height: 100%;
+    }
+  }
+
+  --animate-scaleHeight: scaleHeight 1s ease 800ms forwards;
+  @keyframes scaleHeight {
+    0% {
+      transform: scaleY(0);
+      opacity: 1;
+    }
+
+    100% {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+
+  --animate-growLeftHeight: scaleHeightFromBottom 1s ease 3.5s forwards;
+  @keyframes scaleHeightFromBottom {
+    0% {
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      height: 50%;
+      opacity: 1;
+    }
+  }
+  --animate-width2: width2 1s ease 1400ms forwards;
+  @keyframes width2 {
+    0% {
+      width: 0;
+      opacity: 1;
+    }
+
+    100% {
+      width: 60px;
+      opacity: 1;
+    }
+  }
+
+  --animate-fade2: fade2 1s ease 2.1s forwards;
+  @keyframes fade2 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  --animate-width3: width3 1s ease 2.3s forwards;
+  @keyframes width3 {
+    0% {
+      width: 0;
+      opacity: 1;
+      transform-origin: left;
+    }
+
+    100% {
+      width: 60px;
+      opacity: 1;
+      transform-origin: left;
     }
   }
 }

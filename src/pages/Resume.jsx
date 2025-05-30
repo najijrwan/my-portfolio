@@ -10,12 +10,12 @@ export const divEle2 =
 export const liEle1 =
   `relative not-last:mb-[20px] 
   not-last:before:content-[""] not-last:before:absolute not-last:before:top-[-25px] 
-  not-last:before:left-[-30px] not-last:before:w-px not-last:before:ch not-last:before:bg-jet 
+  not-last:before:left-[-30px] not-last:before:w-px not-last:before:ch not-last:before:bg-jet
   sm:not-last:before:left-[-40px] 
   after:content-[""] after:absolute after:top-[5px] after:left-[-33px] after:size-[6px] after:bg-gradient-yellow-3 after:rounded-full after:shadow-[0_0_0_4px_var(--color-jet)] 
   sm:after:size-2 sm:after:left-[-43px]`;
 export const liEle2 =
-  `relative pl-[1.5em] before:content-[''] before:absolute before:left-0 before:top-[9px] before:size-[5px] before:bg-[#ffd700] before:rounded-full`;
+  `relative pl-[1.5em] before:content-[''] before:absolute before:left-0 before:top-[9px] before:size-[5px] before:bg-[#ffd700] before:rounded-full `;
 export const h4Ele1 =
   `text-[15px]/5 sm:-text-[14px] mb-[7px] font-bold`;
 export const pEle1 =

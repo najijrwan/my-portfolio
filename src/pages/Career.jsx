@@ -4,19 +4,17 @@ import {
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { Briefcase, Code2, Rocket } from 'lucide-react';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar.jsx';
 import { h2Ele } from './About.jsx';
 
 export default function Career() {
   return (
-    <article className="bg-[#121212] min-h-screen text-white font-sans">
+    <article>
       <Navbar />
       <div className="p-5 sm:p-8">
-        <h2 className={`${h2Ele} text-center text-3xl sm:text-4xl font-bold text-yellow-400 mb-10`}>
-          🚀 Career Timeline
-        </h2>
+        <h2 className={h2Ele}>Journey</h2>
 
-        <VerticalTimeline lineColor="#ffdb70">
+        <VerticalTimeline animate={false} lineColor="#ffdb70" className='before:w-px! before:animate-progress'>
           {/* Software Engineer */}
           <VerticalTimelineElement
             contentStyle={{
