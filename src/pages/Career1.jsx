@@ -10,45 +10,35 @@ const Career = () => {
       <div className="p-[20px] sm:p-[30px]">
         <h2 className={h2Ele} >Journey</h2>
         <div className="
-        relative w-full max-w-[1250px] my-0 mx-auto flex-center-col gap-[50px]
-        before:content-[''] before:absolute before:top-0 before:left-0 before:w-0.5 before:bg-highlight before:animate-height">
-          <section className="relative w-full">
+          relative w-full max-w-[1250px] my-0 mx-auto flex-center-col gap-[50px]">
+          <section className="relative w-full mt-25">
             <div className="
-              absolute ml-10 size-50 border-highlight 
-              before:content-[''] before:absolute before:bg-highlight before:h-0.5 
-              before:top-1/2 before:-left-10 before:animate-width">
-
-              {/* Top Left Label */}
-              <span className="absolute -top-2.5 left-15 w-20 opacity-0 animate-fade2">20-02-22</span>
-
-              {/* Top Horizontal Line Left */}
-              <span className="absolute top-0 w-15 h-0.5 bg-highlight opacity-0 animate-width2"></span>
-
-              {/* Left Vertical Line */}
-              <span className="absolute left-0 top-0 h-full w-0.5 bg-highlight opacity-0 animate-scaleHeight"></span>
-
-              {/* Top Horizontal Line Right */}
-              <span className="absolute top-0 left-35 w-15 h-0.5 bg-highlight origin-left opacity-0 animate-width3"></span>
-
-              {/* Bottom Left Label */}
-              <span className="absolute -bottom-2.5 left-15 w-20 opacity-0 animate-fade2">01-06-22</span>
-
-              {/* Bottom Horizontal Line Right */}
-              <span className="absolute bottom-0 left-35 w-15 h-0.5 bg-highlight opacity-0 animate-width3"></span>
-
-              {/* Right Vertical Line (split top & bottom for inward animation) */}
-              {/* Top Half */}
-              <span className="absolute right-0 top-0 h-1/2 w-0.5 bg-highlight opacity-0 animate-growLeftHeight"></span>
-
-              {/* Bottom Half */}
-              <span className="absolute right-0 bottom-0 h-1/2 w-0.5 bg-highlight opacity-0 animate-growLeftHeight"></span>
-
-              {/* Bottom Horizontal Line Left */}
-              <span className="absolute bottom-0 w-15 h-0.5 bg-highlight opacity-0 animate-width2"></span>
-
+            w-0 h-0.5 bg-highlight animate-width relative
+            after:absolute after:right-0 after:top-1/2 after:translate-y-[-45%] after:w-0 after:h-0 after:border-t-6 
+            after:border-b-6 after:border-l-8 after:border-transparent after:border-l-highlight">
+              <span className="absolute left-10 top-0 translate-y-[-100%] h-3 w-px bg-highlight opacity-0 animate-bounce-1">
+                <div className="absolute left-0 top-0 translate-x-[-50%] translate-y-[-110%] flex-center-col w-20 opacity-0 animate-bounce-1">
+                  <img src="src/assets/html.png" alt="HTML" className="w-full" />
+                  <p className="m-0 mt-2 font-extrabold text-xs">HTML</p>
+                </div>
+                <div className="absolute left-0 top-9 translate-x-[-50%] size-20"></div>
+              </span>
+              <span className="absolute left-35 top-0 translate-y-[-100%] h-3 w-px bg-highlight opacity-0 animate-bounce-2">
+                <div className="absolute left-0 top-0 translate-x-[-50%] translate-y-[-110%] flex-center-col w-20 opacity-0 animate-bounce-2">
+                  <img src="src/assets/css.png" alt="HTML" className="size-14" />
+                  <p className="m-0 font-extrabold text-xs">HTML</p>
+                </div>
+                <div className="absolute left-0 top-9 translate-x-[-50%] size-20"></div>
+              </span>
+              <span className="absolute left-60 top-0 translate-y-[-100%] h-3 w-px bg-highlight opacity-0 animate-bounce-3">
+                <div className="absolute left-0 top-0 translate-x-[-50%] translate-y-[-110%] flex-center-col w-20 opacity-0 animate-bounce-3">
+                  <img src="src/assets/js-img.webp" alt="HTML" className="size-16" />
+                  <p className="m-0 font-extrabold text-xs">HTML</p>
+                </div>
+                <div className="absolute left-0 top-9 translate-x-[-50%] size-20"></div>
+              </span>
             </div>
           </section>
-
         </div>
       </div>
     </article>
