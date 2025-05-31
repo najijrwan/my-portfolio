@@ -27,7 +27,7 @@
 
 body::selection {
   background: var(--orange-yellow-crayola);
-  color: var(--smoky-black);
+  color: black;
 }
 
 html {
@@ -128,7 +128,7 @@ body::-webkit-scrollbar-button {
     }
   }
 
-  --animate-fade-2: fade2 0.5s ease 2s forwards;
+  --animate-fade-2: fade2 0.5s ease forwards;
   @keyframes fade2 {
     0% {
       opacity: 0;
@@ -139,55 +139,7 @@ body::-webkit-scrollbar-button {
     }
   }
 
-  --animate-height: height 5s ease forwards;
-
-  @keyframes height {
-    0% {
-      height: 0;
-    }
-
-    100% {
-      height: 100vh;
-    }
-  }
-
-  --animate-height-2: height2 0.5s ease forwards;
-  @keyframes height2 {
-    0% {
-      height: 0;
-    }
-
-    100% {
-      height: 100%;
-    }
-  }
-
-  --animate-scaleHeight: scaleHeight 0.5s ease 800ms forwards;
-  @keyframes scaleHeight {
-    0% {
-      transform: scaleY(0);
-      opacity: 1;
-    }
-
-    100% {
-      transform: scaleY(1);
-      opacity: 1;
-    }
-  }
-
-  --animate-growLeftHeight: scaleHeightFromBottom 0.5s ease 3.3s forwards;
-  @keyframes scaleHeightFromBottom {
-    0% {
-      height: 0;
-      opacity: 1;
-    }
-    100% {
-      height: 50%;
-      opacity: 1;
-    }
-  }
-
-  --animate-width: width 2s ease 0.3s forwards;
+  --animate-width: width 2s ease 0.1s forwards;
   @keyframes width {
     0% {
       width: 0;
@@ -198,85 +150,66 @@ body::-webkit-scrollbar-button {
     }
   }
 
-  --animate-bounce-1: bounce1 0.5s ease 0.5s forwards;
+  --animate-bounce-1: bounce1 0.5s ease 1s forwards;
   @keyframes bounce1 {
     0% {
       transform: translateY(0);
-      opacity: 0;
+      opacity: 1;
+      scale: 0;
     }
 
     50% {
       transform: translateY(-20px);
-      opacity: 0.3;
+      opacity: 1;
+      scale: 1.1;
     }
 
     100% {
       transform: translateY(0);
       opacity: 1;
+      scale: 1;
     }
   }
 
-  --animate-bounce-2: bounce2 0.5s ease 0.8s forwards;
+  --animate-bounce-2: bounce2 0.5s ease 0.9s forwards;
   @keyframes bounce2 {
     0% {
       transform: translateY(0);
-      opacity: 0;
+      scale: 1;
+      opacity: 1;
     }
 
     50% {
       transform: translateY(-20px);
-      opacity: 0.3;
+      scale: 1.1;
+      opacity: 1;
     }
 
     100% {
       transform: translateY(0);
+      scale: 1;
       opacity: 1;
     }
   }
 
-  --animate-bounce-3: bounce3 0.5s ease 1.1s forwards;
+  --animate-bounce-3: bounce3 0.5s ease 1.3s forwards;
   @keyframes bounce3 {
     0% {
       transform: translateY(0);
-      opacity: 0;
+      scale: 0;
+      opacity: 1;
     }
 
     50% {
       transform: translateY(-20px);
-      opacity: 0.3;
+      scale: 1.1;
+      opacity: 1;
     }
 
     100% {
       transform: translateY(0);
+      scale: 1;
       opacity: 1;
-    }
-  }
-
-  --animate-width2: width2 0.5s ease 1300ms forwards;
-  @keyframes width2 {
-    0% {
-      width: 0;
-      opacity: 1;
-    }
-
-    100% {
-      width: 60px;
-      opacity: 1;
-    }
-  }
-
-  --animate-width3: width3 0.5s ease 2s forwards;
-  @keyframes width3 {
-    0% {
-      width: 0;
-      opacity: 1;
-      transform-origin: left;
-    }
-
-    100% {
-      width: 60px;
-      opacity: 1;
-      transform-origin: left;
     }
   }
 }

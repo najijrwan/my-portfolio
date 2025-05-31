@@ -6,7 +6,7 @@ const getNavLinkClass = ({ isActive }) =>
 
 export default function BottomNav() {
   return (
-    <nav className={`block w-full text-[14px] font-[600] p-3 z-50 mb-0 overflow-hidden custom-transition-2 bg-[#2b2b2cbf] backdrop-blur-[10px] 
+    <nav className={`block w-full text-[13px] font-[600] p-3 z-50 mb-0 overflow-hidden custom-transition-2 bg-[#2b2b2cbf] backdrop-blur-[10px] 
         border-b border-b-jet rounded-tr-[20px] rounded-tl-[20px] shadow-2 
         xs:text-[3.1vw]
         sm:rounded-tl-[20px] sm:rounded-tr-[20px] sm:text-[18px]
