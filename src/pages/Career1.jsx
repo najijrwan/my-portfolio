@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import { h2Ele } from './About.jsx';
-import { timeLineData1, timeLineData2, timeLineData3 } from "../components/timelineData";
+import { timeLineData1, timeLineData2, timeLineData3, timeLineDataMain } from "../components/timeLineData";
 import TimelineItem from "../components/TimelineItem";
 
 // Career.jsx
@@ -11,13 +11,24 @@ const divEle1 = `
 `;
 const Career = () => {
   return (
-    <article className="h-screen">
+    <article>
       <Navbar />
       <div className="p-[20px] sm:p-[30px]">
         <h2 className={h2Ele}>Journey</h2>
-        <div className="relative w-full flex-center-col gap-[50px]">
+        <div className="relative w-full flex-center-col gap-[50px] lg:gap-[100px]">
           {/* Timeline Section */}
-          <section className="relative w-full mt-25 flex justify-center">
+          <section className="relative w-full mt-25 justify-center hidden lg:flex">
+            {/* Arrow Line */}
+            <div className="w-full max-w-[350px] h-0.5 relative lg:max-w-full">
+              <div className={divEle1}>
+                {timeLineDataMain.map((item, index) => (
+                  <TimelineItem key={item.name} item={item} index={index} />
+                ))}
+              </div>
+            </div>
+          </section>
+          {/* Timeline Section */}
+          <section className="relative w-full mt-25 flex justify-center lg:hidden">
             {/* Arrow Line */}
             <div className="w-full max-w-[350px] h-0.5 relative">
               <div className={divEle1}>
@@ -28,7 +39,7 @@ const Career = () => {
             </div>
           </section>
           {/* Timeline Section */}
-          <section className="relative w-full mt-40 flex justify-center">
+          <section className="relative w-full mt-40 flex justify-center lg:hidden">
             {/* Arrow Line */}
             <div className="w-full max-w-[350px] h-0.5 relative">
               <div className={divEle1}>
@@ -39,7 +50,7 @@ const Career = () => {
             </div>
           </section>
           {/* Timeline Section */}
-          <section className="relative w-full mt-30 flex justify-center">
+          <section className="relative w-full mt-30 flex justify-center lg:hidden">
             {/* Arrow Line */}
             <div className="w-full max-w-[350px] h-0.5 relative">
               <div className={divEle1}>

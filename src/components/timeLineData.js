@@ -53,7 +53,7 @@ const timeLineData2 = [
     color: "#239120",
     date: "Oct 2024",
     bounceAnim: "animate-bounce-2",
-    fadeDelay: 0.5,
+    fadeDelay: 0.75,
     left: "17.5rem",
   },
 ];
@@ -79,4 +79,79 @@ const timeLineData3 = [
   },
 ];
 
-export { timeLineData1, timeLineData2, timeLineData3 };
+const timeLineDataMain = [
+  {
+    name: "Java",
+    imgSrc: "src/assets/java.png",
+    color: "#F89820",
+    date: "Mar 2023\nOct 2023\nMar 2024\nOct 2024",
+    bounceAnim: "animate-bounce-1",
+    fadeDelay: 0.25,
+    left: "2.5rem",
+  },
+  {
+    name: "HTML",
+    imgSrc: "src/assets/html.png",
+    color: "#F66B4E",
+    date: "Mar 2024\nPresent",
+    bounceAnim: "animate-bounce-1",
+    fadeDelay: 0.5,
+    left: "9rem",
+  },
+  {
+    name: "CSS",
+    imgSrc: "src/assets/css.png",
+    color: "#45A8F2",
+    date: "Apr 2024\nPresent",
+    bounceAnim: "animate-bounce-2",
+    fadeDelay: 0.75,
+    left: "15.5rem",
+  },
+  {
+    name: "JavaScript",
+    imgSrc: "src/assets/javascript.png",
+    color: "#F7DF1E",
+    date: "May 2024\nPresent",
+    bounceAnim: "animate-bounce-3",
+    fadeDelay: 1,
+    left: "22rem",
+  },
+  {
+    name: "PHP",
+    imgSrc: "src/assets/php.png",
+    color: "#777BB4",
+    date: "May-2024\nOct 2024",
+    bounceAnim: "animate-bounce-1",
+    fadeDelay: 1.25,
+    left: "28.5rem",
+  },
+  {
+    name: "C#",
+    imgSrc: "src/assets/csharp.png",
+    color: "#239120",
+    date: "Oct 2024",
+    bounceAnim: "animate-bounce-2",
+    fadeDelay: 1.5,
+    left: "35rem",
+  },
+  {
+    name: "Tailwind",
+    imgSrc: "src/assets/tailwind-css.png",
+    color: "#06B6D4",
+    date: "May 2024\nPresent",
+    bounceAnim: "animate-bounce-1",
+    fadeDelay: 1.75,
+    left: "41.5rem",
+  },
+  {
+    name: "React",
+    imgSrc: "src/assets/react.png",
+    color: "#61DAFB",
+    date: "May 2024\nPending",
+    bounceAnim: "animate-bounce-2",
+    fadeDelay: 2,
+    left: "48rem",
+  },
+];
+
+export { timeLineData1, timeLineData2, timeLineData3, timeLineDataMain };
