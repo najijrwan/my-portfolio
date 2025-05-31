@@ -1,31 +1,82 @@
-const timelineData = [
+const timeLineData1 = [
+  {
+    name: "Java",
+    imgSrc: "src/assets/java.png",
+    color: "#F89820",
+    date: "Mar 2023\nOct 2023\nMar 2024\nOct 2024",
+    bounceAnim: "animate-bounce-1",
+    fadeDelay: 0.25,
+    left: "2.5rem",
+  },
   {
     name: "HTML",
     imgSrc: "src/assets/html.png",
     color: "#F66B4E",
-    date: "Mar 2022",
+    date: "Mar 2024\nPresent",
     bounceAnim: "animate-bounce-1",
-    fadeDelay: 0.25,
-    left: "2.5rem", // Tailwind's left-10
+    fadeDelay: 0.5,
+    left: "10rem",
   },
   {
     name: "CSS",
     imgSrc: "src/assets/css.png",
     color: "#45A8F2",
-    date: "Apr 2022",
+    date: "Apr 2024\nPresent",
     bounceAnim: "animate-bounce-2",
-    fadeDelay: 0.5,
-    left: "10rem", // Tailwind's left-40
-  },
-  {
-    name: "JavaScript",
-    imgSrc: "src/assets/js-img.webp",
-    color: "#F7DF1E",
-    date: "May 2022",
-    bounceAnim: "animate-bounce-3",
     fadeDelay: 0.75,
-    left: "17.5rem", // Tailwind's left-70
+    left: "17.5rem",
   },
 ];
 
-export default timelineData;
+const timeLineData2 = [
+  {
+    name: "JavaScript",
+    imgSrc: "src/assets/javascript.png",
+    color: "#F7DF1E",
+    date: "May 2024\nPresent",
+    bounceAnim: "animate-bounce-3",
+    fadeDelay: 0.25,
+    left: "2.5rem",
+  },
+  {
+    name: "PHP",
+    imgSrc: "src/assets/php.png",
+    color: "#777BB4",
+    date: "May-2024\nOct 2024",
+    bounceAnim: "animate-bounce-1",
+    fadeDelay: 0.5,
+    left: "10rem",
+  },
+  {
+    name: "C#",
+    imgSrc: "src/assets/csharp.png",
+    color: "#239120",
+    date: "Oct 2024",
+    bounceAnim: "animate-bounce-2",
+    fadeDelay: 0.5,
+    left: "17.5rem",
+  },
+];
+
+const timeLineData3 = [
+  {
+    name: "Tailwind",
+    imgSrc: "src/assets/tailwind-css.png",
+    color: "#06B6D4",
+    date: "May 2024\nPresent",
+    bounceAnim: "animate-bounce-1",
+    fadeDelay: 0.25,
+    left: "2.5rem",
+  },
+  {
+    name: "React",
+    imgSrc: "src/assets/react.png",
+    color: "#61DAFB",
+    date: "May 2024\nPending",
+    bounceAnim: "animate-bounce-2",
+    fadeDelay: 0.5,
+    left: "10rem",
+  },
+];
+
+export { timeLineData1, timeLineData2, timeLineData3 };

@@ -29,7 +29,7 @@ const TimelineItem = ({ item }) => {
         <img
           src={imgSrc}
           alt={name}
-          className={name === "JavaScript" ? "size-16" : "size-14"}
+          className="size-14"
         />
         <p className="m-0 font-extrabold text-xs">{name}</p>
       </div>

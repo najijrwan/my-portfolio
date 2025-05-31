@@ -1,7 +1,5 @@
 // About.jsx
-import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import { useNavigate } from "react-router-dom";
 
 export const ele1 =
   `relative p-[20px] rounded-[14px] shadow-2 z-10 bg-gradient-onyx
@@ -30,7 +28,6 @@ const spanEle2 =
   `absolute left-[-28px] top-1/2 -translate-y-1/2 size-[13px] bg-amber-100/50 rounded-full`;
 
 const About = () => {
-  const navigate = useNavigate();
   return (
     <article>
       <Navbar />
@@ -109,10 +106,10 @@ const About = () => {
             <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
               <img src="src/assets/java.png" alt="java image" className="block" /></li>
             <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
-              <img src="src/assets/js-img.webp" alt="javascript image" className="block" /></li>
+              <img src="src/assets/javascript.png" alt="javascript image" className="block" /></li>
             <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
               <img src="src/assets/tailwind-css.png" alt="tailwind image" className="block" /></li>
-            <li className="min-w-[50%] snap-start bg-[rgb(38,70,124)] rounded-4xl clients-item">
+            <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
               <img src="src/assets/php.png" alt="php image" className="block" /></li>
             <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
               <img src="src/assets/python.png" alt="python image" className="block" /></li>
