@@ -13,7 +13,12 @@ const TimelineItem = ({ item }) => {
 
   return (
     <span
-      className="absolute top-0 translate-y-[-100%] h-3 w-px bg-highlight opacity-0 animate-fade-2"
+      className={`
+        absolute top-0 translate-y-[-100%] h-3 w-px bg-highlight opacity-0 animate-fade-2 
+        ${name === "JavaScript"
+          ? `before:content-[''] before:absolute before:bottom-[-60%] before:left-15 before:-translate-x-1/2 before:size-3.5 before:bg-red-500 before:rounded-full `
+          : ""
+        }`}
       style={{
         left,
         animationDelay: `${fadeDelay}s`,

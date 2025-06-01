@@ -21,10 +21,10 @@ export const h3Ele =
   `relative text-highlight font-[600] text-[24px] mb-[20px] ml-6 flex-start-row
 before:absolute before:w-[10px] before:h-px before:left-[-15px] before:bottom-[49.5%] before:bg-amber-100/50 before:content-[""]`;
 
-const spanEle1 =
+export const spanEle1 =
   `absolute left-[-25px] top-1/2 -translate-y-1/2 size-1.75 bg-amber-100 rounded-full`;
 
-const spanEle2 =
+export const spanEle2 =
   `absolute left-[-28px] top-1/2 -translate-y-1/2 size-[13px] bg-amber-100/50 rounded-full`;
 
 const About = () => {
