@@ -15,7 +15,7 @@ import {
   timeLineDataForADVAtMD,
   timeLineDataForADVAtLG,
 } from "../components/timeLineData";
-import TimelineItem from "../components/TimelineItem";
+import TimelineItem from "../components/TimeLineItem";
 
 
 export const section = `
@@ -51,6 +51,13 @@ export const explanationContainer = `
 
 export const sections2 = `
   relative w-full ml-8 max-w-fit tracking-wide`;
+
+export const indicator = `
+  relative inline-block h-3.5 w-7 transition-all duration-300 cursor-pointer
+  before:absolute before:top-1/2 before:left-1.5 before:-translate-y-1/2
+  before:text-white before:text-sm before:transition-opacity before:duration-300
+  before:opacity-0 before:flex-center hover:before:opacity-100
+  hover:w-12 hover:p-3 hover:rounded-[5px]`;
 
 const Career = () => {
   return (
@@ -253,7 +260,7 @@ const Career = () => {
             Journey Explanation
           </h3>
 
-          <ul>
+          <ul className="mb-5">
             <li className="list-disc list- text-base ml-5 mb-2">
               <p className="text-light-gray-70">
                 My learning journey—from <i>Java</i> to <i>Python</i> and beyond—began as part of my Bachelor's degree in Computer Science.
@@ -290,8 +297,13 @@ const Career = () => {
           </ul>
 
           <section className={sections2}>
-            <div className={explanationContainer + ` before:bg-red-500`}>
-              <h3 className="font-extrabold ml-5">Fitnessoo – Website</h3>
+            <div className={explanationContainer + ` before:bg-red-500`} >
+              <h3 className="font-extrabold ml-5 w-fit flex items-center gap-4">
+                Fitnessoo – Website
+                <span className="bg-html h-3.5 w-7 inline-block"></span>
+                <span className="bg-css h-3.5 w-7 inline-block"></span>
+                <span className="bg-js h-3.5 w-7 inline-block"></span>
+              </h3>
               <p className="text-light-gray-70 ml-5 mb-2">
                 In my second year of college, I took my first <i>Web Development</i> course in March 2024. It introduced core web technologies such
                 as <i>HTML</i>, <i>CSS</i>, <i>JavaScript</i>, and <i>PHP</i>.
@@ -306,7 +318,13 @@ const Career = () => {
 
           <section className={sections2}>
             <div className={explanationContainer + ` before:bg-green-500`}>
-              <h3 className="font-extrabold ml-5">Fitnessoo – Website (Continued)</h3>
+              <h3 className="font-extrabold ml-5 w-fit flex items-center gap-4">
+                Fitnessoo – Website
+                <span className="bg-html h-3.5 w-7 inline-block"></span>
+                <span className="bg-css h-3.5 w-7 inline-block"></span>
+                <span className="bg-js h-3.5 w-7 inline-block"></span>
+                <span className="bg-php h-3.5 w-7 inline-block"></span>
+              </h3>
               <p className="text-light-gray-70 ml-5 mb-2">
                 In my third year (October 2024), I enrolled in the advanced <i>Web Programming</i> course, which emphasized back-end technologies.
                 We explored <i>PHP</i> and <i>MySQL</i> to build database-driven applications.
@@ -322,7 +340,12 @@ const Career = () => {
 
           <section className={sections2}>
             <div className={explanationContainer + ` before:bg-blue-500`}>
-              <h3 className="font-extrabold ml-5">POS Application – Ma7ali</h3>
+              <h3 className="font-extrabold ml-5 w-fit flex items-center gap-4">
+                POS Application – Ma7ali
+                <span className="bg-html h-3.5 w-7 inline-block"></span>
+                <span className="bg-css h-3.5 w-7 inline-block"></span>
+                <span className="bg-js h-3.5 w-7 inline-block"></span>
+              </h3>
               <p className="text-light-gray-70 ml-5 mb-2">
                 In the spring semester of my third year (March 2025), I began my senior project: a complete <i>Point of Sale (POS) </i>
                 web application named <a href="/projects?category=applications" className="font-extrabold text-highlight tracking-widest">Ma7ali</a>.
@@ -339,7 +362,20 @@ const Career = () => {
 
           <section className={sections2}>
             <div className={explanationContainer + ` before:bg-amber-500`}>
-              <h3 className="font-extrabold ml-5">My Portfolio</h3>
+              <header className="flex flex-col gap-2 mb-2 sm:flex-row">
+                <h3 className="font-extrabold ml-5">My Portfolio</h3>
+                <div className="flex items-center gap-4 ml-5">
+                  <span class="relative inline-block h-3.5 w-7 bg-html rounded transition-all duration-300 cursor-pointer hover:p-px group hover:w-auto hover:h-auto">
+                    <span class="hidden group-hover:inline-block text-white text-xs w-full text-center transition-all duration-300">
+                      html
+                    </span>
+                  </span>
+                  <span className={indicator + ` bg-css hover:before:content-['CSS']`}></span>
+                  <span className={indicator + ` bg-js hover:before:content-['JS'] hover:w-auto`}></span>
+                  <span className={indicator + ` bg-tailwind hover:before:content-['Tailwind'] hover:before:w-auto`}></span>
+                  <span className={indicator + ` bg-react hover:before:content-['RT']`}></span>
+                </div>
+              </header>
               <p className="text-light-gray-70 ml-5 mb-2">
                 After completing the <i>POS Application</i>, I wanted to explore modern frameworks and tools.
                 I studied <i>React</i> and <i>Tailwind CSS</i> through self-learning and tutorials, and used them to build this very website—my portfolio.
@@ -353,7 +389,10 @@ const Career = () => {
 
           <section className={sections2}>
             <div className={explanationContainer + ` before:bg-base`}>
-              <h3 className="font-extrabold ml-5">Other</h3>
+              <h3 className="font-extrabold ml-5 w-fit flex items-center gap-4">
+                Other
+                <span className="bg-csharp h-3.5 w-7 inline-block"></span>
+              </h3>
               <p className="text-light-gray-70 ml-5">
                 In addition to my main projects, I have also worked on various other projects.
                 These projects have allowed me to experiment different technologies, such as windows form application using <i>C#</i>, where

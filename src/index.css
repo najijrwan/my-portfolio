@@ -73,6 +73,22 @@ body::-webkit-scrollbar-button {
   --color-vegas-gold: hsl(45, 100%, 72%);
   --color-light-gray: hsl(0, 0%, 84%);
   --color-light-gray-70: hsla(0, 0%, 84%, 0.7);
+  --color-java: #D43609;
+  --color-html: #F66B4E;
+  --color-css: #45A8F2;
+  --color-js: #F7DF1E;
+  --color-php: #777BB4;
+  --color-csharp: #8A2BE2;
+  --color-python: #3776AB;
+  --color-tailwind: #06B6D4;
+  --color-react: #61DAFB;
+  --color-nextjs: #FFFFFF;
+  --color-typescript: #3178C6;
+  --color-nodejs: #98FB98;
+  --color-react-native: #61DAFB;
+  --color-dart: #00B4AB;
+  --color-flutter: #02569B;
+  --color-swift: #FA7343;
 
   --color-gradient-yellow-3: linear-gradient(to right,
       hsl(45, 100%, 72%),

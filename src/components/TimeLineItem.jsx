@@ -1,5 +1,4 @@
 // src/components/TimelineItem.jsx
-
 const TimelineItem = ({ item }) => {
   const {
     name,
