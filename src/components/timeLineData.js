@@ -116,6 +116,48 @@ const timeLineData4 = [
   },
 ];
 
+const timeLineData5 = [
+  {
+    name: "React Native",
+    imgSrc: "src/assets/reactnative.webp",
+    color: "#61DAFB",
+    date: "Next",
+    bounceAnim: "animate-bounce-1",
+    fadeDelay: 0.25,
+    left: "2.5rem",
+  },
+  {
+    name: "Dart",
+    imgSrc: "src/assets/dart.png",
+    color: "#00B4AB",
+    date: "Next",
+    bounceAnim: "animate-bounce-2",
+    fadeDelay: 0.5,
+    left: "10rem",
+  },
+  {
+    name: "Flutter",
+    imgSrc: "src/assets/flutter.png",
+    color: "#02569B",
+    date: "Next",
+    bounceAnim: "animate-bounce-3",
+    fadeDelay: 0.75,
+    left: "17.5rem",
+  },
+];
+
+const timeLineData6 = [
+  {
+    name: "Swift",
+    imgSrc: "src/assets/swift.png",
+    color: "#FA7343",
+    date: "Next",
+    bounceAnim: "animate-bounce-1",
+    fadeDelay: 0.25,
+    left: "2.5rem",
+  },
+];
+
 const timeLineDataAtSM = [
   {
     name: "Java",
@@ -233,6 +275,45 @@ const timeLineDataAtSM3 = [
   },
 ];
 
+const timeLineDataAtSM4 = [
+  {
+    name: "React Native",
+    imgSrc: "src/assets/reactnative.webp",
+    color: "#61DAFB",
+    date: "Next",
+    bounceAnim: "animate-bounce-1",
+    fadeDelay: 0.25,
+    left: "2.5rem",
+  },
+  {
+    name: "Dart",
+    imgSrc: "src/assets/dart.png",
+    color: "#00B4AB",
+    date: "Next",
+    bounceAnim: "animate-bounce-2",
+    fadeDelay: 0.5,
+    left: "10rem",
+  },
+  {
+    name: "Flutter",
+    imgSrc: "src/assets/flutter.png",
+    color: "#02569B",
+    date: "Next",
+    bounceAnim: "animate-bounce-3",
+    fadeDelay: 0.75,
+    left: "17.5rem",
+  },
+  {
+    name: "Swift",
+    imgSrc: "src/assets/swift.png",
+    color: "#FA7343",
+    date: "Next",
+    bounceAnim: "animate-bounce-1",
+    fadeDelay: 1,
+    left: "25rem",
+  },
+];
+
 const timeLineDataAtMD = [
   ...timeLineDataAtSM,
   {
@@ -300,7 +381,7 @@ const timeLineDataAtMD3 = [
     imgSrc: "src/assets/typescript.png",
     color: "#3178C6",
     date: "Next",
-    bounceAnim: "animate-bounce-2",
+    bounceAnim: "animate-bounce-1",
     fadeDelay: 0.25,
     left: "2.5rem",
   },
@@ -309,11 +390,50 @@ const timeLineDataAtMD3 = [
     imgSrc: "src/assets/nodejavascript.png",
     color: "#98FB98",
     date: "Next",
-    bounceAnim: "animate-bounce-3",
+    bounceAnim: "animate-bounce-2",
     fadeDelay: 0.5,
     left: "10rem",
   },
+  {
+    name: "React Native",
+    imgSrc: "src/assets/reactnative.webp",
+    color: "#61DAFB",
+    date: "Next",
+    bounceAnim: "animate-bounce-3",
+    fadeDelay: 0.75,
+    left: "17.5rem",
+  },
+  {
+    name: "Dart",
+    imgSrc: "src/assets/dart.png",
+    color: "#00B4AB",
+    date: "Next",
+    bounceAnim: "animate-bounce-1",
+    fadeDelay: 1,
+    left: "25rem",
+  },
+  {
+    name: "Flutter",
+    imgSrc: "src/assets/flutter.png",
+    color: "#02569B",
+    date: "Next",
+    bounceAnim: "animate-bounce-2",
+    fadeDelay: 1.25,
+    left: "32.5rem",
+  },
 ]
+
+const timeLineDataAtMD4 = [
+  {
+    name: "Swift",
+    imgSrc: "src/assets/swift.png",
+    color: "#FA7343",
+    date: "Next",
+    bounceAnim: "animate-bounce-1",
+    fadeDelay: 0.25,
+    left: "2.5rem",
+  },
+];
 
 const timeLineDataAtLG = [
   {
@@ -426,6 +546,42 @@ const timeLineDataAtLG2 = [
     bounceAnim: "animate-bounce-3",
     fadeDelay: 1,
     left: "22rem",
+  },
+  {
+    name: "React Native",
+    imgSrc: "src/assets/reactnative.webp",
+    color: "#61DAFB",
+    date: "Next",
+    bounceAnim: "animate-bounce-1",
+    fadeDelay: 1.25,
+    left: "28.5rem",
+  },
+  {
+    name: "Dart",
+    imgSrc: "src/assets/dart.png",
+    color: "#00B4AB",
+    date: "Next",
+    bounceAnim: "animate-bounce-2",
+    fadeDelay: 1.5,
+    left: "35rem",
+  },
+  {
+    name: "Flutter",
+    imgSrc: "src/assets/flutter.png",
+    color: "#02569B",
+    date: "Next",
+    bounceAnim: "animate-bounce-3",
+    fadeDelay: 1.75,
+    left: "41.5rem",
+  },
+  {
+    name: "Swift",
+    imgSrc: "src/assets/swift.png",
+    color: "#FA7343",
+    date: "Next",
+    bounceAnim: "animate-bounce-1",
+    fadeDelay: 2,
+    left: "48rem",
   },
 ]
 
@@ -739,7 +895,7 @@ const timeLineDataForFSDAtLG = [
 ];
 
 const timeLineDataForFSDAtLG2 = [
-    {
+  {
     name: "Node JS",
     imgSrc: "src/assets/nodejavascript.png",
     color: "#98FB98",
@@ -749,10 +905,23 @@ const timeLineDataForFSDAtLG2 = [
     fadeDelay: 0.25,
     left: "2.5rem",
   },
+];
+
+const timeLineDataForADV = [
   {
     name: "React Native",
     imgSrc: "src/assets/reactnative.webp",
     color: "#61DAFB",
+    date: "Next",
+    bounceAnim: "animate-bounce-1",
+    hasPoint: false,
+    fadeDelay: 0.25,
+    left: "2.5rem",
+  },
+  {
+    name: "Dart",
+    imgSrc: "src/assets/dart.png",
+    color: "#00B4AB",
     date: "Next",
     bounceAnim: "animate-bounce-2",
     hasPoint: false,
@@ -760,24 +929,27 @@ const timeLineDataForFSDAtLG2 = [
     left: "10rem",
   },
   {
-    name: "Dart",
-    imgSrc: "src/assets/dart.png",
-    color: "#00B4AB",
-    date: "Next",
-    bounceAnim: "animate-bounce-1",
-    hasPoint: false,
-    fadeDelay: 0.75,
-    left: "17.5rem",
-  },
-  {
     name: "Flutter",
     imgSrc: "src/assets/flutter.png",
     color: "#02569B",
     date: "Next",
+    bounceAnim: "animate-bounce-3",
+    hasPoint: false,
+    fadeDelay: 0.75,
+    left: "17.5rem",
+  },
+];
+
+const timeLineDataForADV2 = [
+  {
+    name: "Java",
+    imgSrc: "src/assets/java.png",
+    color: "#D43609",
+    date: "Mar 2023",
     bounceAnim: "animate-bounce-1",
     hasPoint: false,
-    fadeDelay: 1,
-    left: "25rem",
+    fadeDelay: 0.25,
+    left: "2.5rem",
   },
   {
     name: "Swift",
@@ -786,18 +958,67 @@ const timeLineDataForFSDAtLG2 = [
     date: "Next",
     bounceAnim: "animate-bounce-2",
     hasPoint: false,
+    fadeDelay: 0.5,
+    left: "10rem",
+  },
+]
+
+const timeLineDataForADVAtSM = [
+  ...timeLineDataForADV,
+  {
+    name: "Java",
+    imgSrc: "src/assets/java.png",
+    color: "#D43609",
+    date: "Mar 2023",
+    bounceAnim: "animate-bounce-1",
+    hasPoint: false,
+    fadeDelay: 1,
+    left: "25rem",
+  },
+];
+
+const timeLineDataForADVAtSM2 = [
+  {
+    name: "Swift",
+    imgSrc: "src/assets/swift.png",
+    color: "#FA7343",
+    date: "Next",
+    bounceAnim: "animate-bounce-1",
+    hasPoint: false,
+    fadeDelay: 0.25,
+    left: "2.5rem",
+  },
+]
+
+const timeLineDataForADVAtMD = [
+  ...timeLineDataForADVAtSM,
+  {
+    name: "Swift",
+    imgSrc: "src/assets/swift.png",
+    color: "#FA7343",
+    date: "Next",
+    bounceAnim: "animate-bounce-1",
+    hasPoint: false,
     fadeDelay: 1.25,
     left: "32.5rem",
   },
 ];
 
+const timeLineDataForADVAtLG = [
+  ...timeLineDataForADVAtSM,
+];
+
 export {
-  timeLineData1, timeLineData2, timeLineData3, timeLineData4,
-  timeLineDataAtSM, timeLineDataAtSM2, timeLineDataAtSM3,
-  timeLineDataAtMD, timeLineDataAtMD2, timeLineDataAtMD3,
+  timeLineData1, timeLineData2, timeLineData3, timeLineData4, timeLineData5, timeLineData6,
+  timeLineDataAtSM, timeLineDataAtSM2, timeLineDataAtSM3, timeLineDataAtSM4,
+  timeLineDataAtMD, timeLineDataAtMD2, timeLineDataAtMD3, timeLineDataAtMD4,
   timeLineDataAtLG, timeLineDataAtLG2,
   timeLineDataForFSD, timeLineDataForFSD2, timeLineDataForFSD3,
   timeLineDataForFSDAtSM, timeLineDataForFSDAtSM2, timeLineDataForFSDAtSM3,
   timeLineDataForFSDAtMD, timeLineDataForFSDAtMD2,
-  timeLineDataForFSDAtLG, timeLineDataForFSDAtLG2
+  timeLineDataForFSDAtLG, timeLineDataForFSDAtLG2,
+  timeLineDataForADV, timeLineDataForADV2,
+  timeLineDataForADVAtSM, timeLineDataForADVAtSM2,
+  timeLineDataForADVAtMD,
+  timeLineDataForADVAtLG,
 };

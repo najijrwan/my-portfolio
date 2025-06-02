@@ -12,7 +12,7 @@ function App() {
     <Router>
       <Hero />
       <div className="
-      lg:relative lg:w-max lg:m-auto xl:min-w-[75%] xl:w-[75%] xl:m-0!">
+      lg:relative lg:w-max lg:m-auto xl:min-w-[75%] xl:w-[75%] xl:mt-0!">
         <Routes>
           <Route path="/" element={<Navigate to="/about" replace />} />
           <Route path="/about" element={<About />} />

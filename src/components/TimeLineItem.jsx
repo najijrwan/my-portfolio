@@ -7,11 +7,10 @@ const TimelineItem = ({ item }) => {
     color,
     date,
     bounceAnim,
-    hasPoint,
+    hasPoint = true,
     fadeDelay,
     left,
   } = item;
-  console.log(item);
 
   return (
     <span

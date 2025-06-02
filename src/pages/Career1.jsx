@@ -2,14 +2,18 @@
 import Navbar from "../components/Navbar";
 import { h2Ele, h3Ele, spanEle1, spanEle2 } from './About.jsx';
 import {
-  timeLineData1, timeLineData2, timeLineData3, timeLineData4,
-  timeLineDataAtSM, timeLineDataAtSM2, timeLineDataAtSM3,
-  timeLineDataAtMD, timeLineDataAtMD2, timeLineDataAtMD3,
+  timeLineData1, timeLineData2, timeLineData3, timeLineData4, timeLineData5, timeLineData6,
+  timeLineDataAtSM, timeLineDataAtSM2, timeLineDataAtSM3, timeLineDataAtSM4,
+  timeLineDataAtMD, timeLineDataAtMD2, timeLineDataAtMD3, timeLineDataAtMD4,
   timeLineDataAtLG, timeLineDataAtLG2,
   timeLineDataForFSD, timeLineDataForFSD2, timeLineDataForFSD3,
   timeLineDataForFSDAtSM, timeLineDataForFSDAtSM2, timeLineDataForFSDAtSM3,
   timeLineDataForFSDAtMD, timeLineDataForFSDAtMD2,
-  timeLineDataForFSDAtLG, timeLineDataForFSDAtLG2
+  timeLineDataForFSDAtLG, timeLineDataForFSDAtLG2,
+  timeLineDataForADV, timeLineDataForADV2,
+  timeLineDataForADVAtSM, timeLineDataForADVAtSM2,
+  timeLineDataForADVAtMD,
+  timeLineDataForADVAtLG,
 } from "../components/timeLineData";
 import TimelineItem from "../components/TimelineItem";
 
@@ -99,6 +103,28 @@ const Career = () => {
               </div>
             </div>
           </section>
+          {/* Timeline Section */}
+          <section className={section}>
+            {/* Arrow Line */}
+            <div className={arrowLineContainer}>
+              <div className={arrowLine}>
+                {timeLineData5.map((item, index) => (
+                  <TimelineItem key={item.name} item={item} index={index} />
+                ))}
+              </div>
+            </div>
+          </section>
+          {/* Timeline Section */}
+          <section className={section}>
+            {/* Arrow Line */}
+            <div className={arrowLineContainer}>
+              <div className={arrowLine}>
+                {timeLineData6.map((item, index) => (
+                  <TimelineItem key={item.name} item={item} index={index} />
+                ))}
+              </div>
+            </div>
+          </section>
           {/* Timeline Section at small*/}
           <section className={sectionAtSM}>
             {/* Arrow Line */}
@@ -127,6 +153,17 @@ const Career = () => {
             <div className={arrowLineContainerAtSMandMD}>
               <div className={arrowLine}>
                 {timeLineDataAtSM3.map((item, index) => (
+                  <TimelineItem key={item.name} item={item} index={index} />
+                ))}
+              </div>
+            </div>
+          </section>
+          {/* Timeline Section at small*/}
+          <section className={sectionAtSM}>
+            {/* Arrow Line */}
+            <div className={arrowLineContainerAtSMandMD}>
+              <div className={arrowLine}>
+                {timeLineDataAtSM4.map((item, index) => (
                   <TimelineItem key={item.name} item={item} index={index} />
                 ))}
               </div>
@@ -165,6 +202,17 @@ const Career = () => {
               </div>
             </div>
           </section>
+          {/* Timeline Section at medium*/}
+          <section className={sectionAtMD}>
+            {/* Arrow Line */}
+            <div className={arrowLineContainerAtSMandMD}>
+              <div className={arrowLine}>
+                {timeLineDataAtMD4.map((item, index) => (
+                  <TimelineItem key={item.name} item={item} index={index} />
+                ))}
+              </div>
+            </div>
+          </section>
           {/* Timeline Section at large*/}
           <section className={sectionAtLG}>
             {/* Arrow Line */}
@@ -188,7 +236,7 @@ const Career = () => {
             </div>
           </section>
         </div>
-        <div className="animate-fade-2 opacity-0" style={{ animationDelay: "2s" }}>
+        <div className="animate-fade-3 opacity-0 invisible h-0 overflow-hidden" style={{ animationDelay: "2.5s" }}>
           <h3 className={h3Ele}>
             <span className={spanEle1}></span>
             <span className={spanEle2}></span>
@@ -325,7 +373,7 @@ const Career = () => {
             Full Stack Developer Roadmap
           </h3>
 
-          <div className="flex-center-col gap-[150px] w-full mt-30 mb-30">
+          <div className="flex-center-col gap-[150px] w-full mt-30 mb-20">
 
             <section className={section}>
               {/* Arrow Line */}
@@ -434,6 +482,77 @@ const Career = () => {
               <div className={arrowLineContainerAtLG}>
                 <div className={arrowLine}>
                   {timeLineDataForFSDAtLG2.map((item, index) => (
+                    <TimelineItem key={item.name} item={item} index={index} />
+                  ))}
+                </div>
+              </div>
+            </section>
+          </div>
+          <h3 className={h3Ele}>
+            <span className={spanEle1}></span>
+            <span className={spanEle2}></span>
+            Apps Development Roadmap
+          </h3>
+
+          <div className="flex-center-col gap-[150px] w-full mt-30 mb-30">
+            <section className={section}>
+              {/* Arrow Line */}
+              <div className={arrowLineContainer}>
+                <div className={arrowLine}>
+                  {timeLineDataForADV.map((item, index) => (
+                    <TimelineItem key={item.name} item={item} index={index} />
+                  ))}
+                </div>
+              </div>
+            </section>
+            <section className={section}>
+              {/* Arrow Line */}
+              <div className={arrowLineContainer}>
+                <div className={arrowLine}>
+                  {timeLineDataForADV2.map((item, index) => (
+                    <TimelineItem key={item.name} item={item} index={index} />
+                  ))}
+                </div>
+              </div>
+            </section>
+            <section className={sectionAtSM}>
+              {/* Arrow Line */}
+              <div className={arrowLineContainerAtSMandMD}>
+                <div className={arrowLine}>
+                  {timeLineDataForADVAtSM.map((item, index) => (
+                    <TimelineItem key={item.name} item={item} index={index} />
+                  ))}
+                </div>
+              </div>
+            </section>
+            <section className={sectionAtSM}>
+              {/* Arrow Line */}
+              <div className={arrowLineContainerAtSMandMD}>
+                <div className={arrowLine}>
+                  {timeLineDataForADVAtSM2.map((item, index) => (
+                    <TimelineItem key={item.name} item={item} index={index} />
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            {/* Timeline Section at medium*/}
+            <section className={sectionAtMD}>
+              {/* Arrow Line */}
+              <div className={arrowLineContainerAtSMandMD}>
+                <div className={arrowLine}>
+                  {timeLineDataForADVAtMD.map((item, index) => (
+                    <TimelineItem key={item.name} item={item} index={index} />
+                  ))}
+                </div>
+              </div>
+            </section>
+            {/* Timeline Section at large*/}
+            <section className={sectionAtLG}>
+              {/* Arrow Line */}
+              <div className={arrowLineContainerAtLG}>
+                <div className={arrowLine}>
+                  {timeLineDataForADVAtLG.map((item, index) => (
                     <TimelineItem key={item.name} item={item} index={index} />
                   ))}
                 </div>
