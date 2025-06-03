@@ -52,13 +52,6 @@ export const explanationContainer = `
 export const sections2 = `
   relative w-full ml-8 max-w-fit tracking-wide`;
 
-export const indicator = `
-  relative inline-block h-3.5 w-7 transition-all duration-300 cursor-pointer
-  before:absolute before:top-1/2 before:left-1.5 before:-translate-y-1/2
-  before:text-white before:text-sm before:transition-opacity before:duration-300
-  before:opacity-0 before:flex-center hover:before:opacity-100
-  hover:w-12 hover:p-3 hover:rounded-[5px]`;
-
 const Career = () => {
   return (
     <article className="">
@@ -244,15 +237,6 @@ const Career = () => {
           </section>
         </div>
         <div className="animate-fade-3 opacity-0 invisible h-0 overflow-hidden" style={{ animationDelay: "2.5s" }}>
-          <h3 className={h3Ele}>
-            <span className={spanEle1}></span>
-            <span className={spanEle2}></span>
-            Figures info
-          </h3>
-
-          <sectoin>
-
-          </sectoin>
 
           <h3 className={h3Ele}>
             <span className={spanEle1}></span>
@@ -298,14 +282,16 @@ const Career = () => {
 
           <section className={sections2}>
             <div className={explanationContainer + ` before:bg-red-500`} >
-              <h3 className="font-extrabold ml-5 w-fit flex items-center gap-4">
-                Fitnessoo – Website
-                <span className="bg-html h-3.5 w-7 inline-block"></span>
-                <span className="bg-css h-3.5 w-7 inline-block"></span>
-                <span className="bg-js h-3.5 w-7 inline-block"></span>
-              </h3>
+              <header className="flex flex-col gap-2 mb-2 md:flex-row">
+                <h3 className="font-extrabold ml-5">Fitnessoo - Website</h3>
+                <div className="flex items-center gap-4 ml-5">
+                  <span className="bg-html rounded-[3px] h-4 w-7"></span>
+                  <span className="bg-css rounded-[3px] h-4 w-7"></span>
+                  <span className="bg-js rounded-[3px] h-4 w-7"></span>
+                </div>
+              </header>
               <p className="text-light-gray-70 ml-5 mb-2">
-                In my second year of college, I took my first <i>Web Development</i> course in March 2024. It introduced core web technologies such
+                In my second year of college (Mar 2024), I took my first <i>Web Programming</i> course. It introduced core web technologies such
                 as <i>HTML</i>, <i>CSS</i>, <i>JavaScript</i>, and <i>PHP</i>.
               </p>
               <p className="text-light-gray-70 ml-5">
@@ -313,20 +299,28 @@ const Career = () => {
                 website: <a href="/projects?category=websites" className="font-extrabold text-highlight tracking-widest">Fitnessoo</a>,
                 a fitness-themed website. It marked the beginning of my practical experience with front-end development.
               </p>
+              <p className="text-light-gray-70 ml-5">
+                Because it was my first web project, I faced the challenge of finding a suitable desing and content for a fitness wesbite.
+                At first I had no clue how to start developing it, and I spent hours trying to figure what first <i>HTML</i> file I should create and trying
+                to write the first line of code. <br />
+                Once I started writing, all ideas started to flow one after the other.
+              </p>
             </div>
           </section>
 
           <section className={sections2}>
             <div className={explanationContainer + ` before:bg-green-500`}>
-              <h3 className="font-extrabold ml-5 w-fit flex items-center gap-4">
-                Fitnessoo – Website
-                <span className="bg-html h-3.5 w-7 inline-block"></span>
-                <span className="bg-css h-3.5 w-7 inline-block"></span>
-                <span className="bg-js h-3.5 w-7 inline-block"></span>
-                <span className="bg-php h-3.5 w-7 inline-block"></span>
-              </h3>
+              <header className="flex flex-col gap-2 mb-2 md:flex-row">
+                <h3 className="font-extrabold ml-5">Fitnessoo - Website</h3>
+                <div className="flex items-center gap-4 ml-5">
+                  <span className="bg-html rounded-[3px] h-4 w-7"></span>
+                  <span className="bg-css rounded-[3px] h-4 w-7"></span>
+                  <span className="bg-js rounded-[3px] h-4 w-7"></span>
+                  <span className="bg-php rounded-[3px] h-4 w-7"></span>
+                </div>
+              </header>
               <p className="text-light-gray-70 ml-5 mb-2">
-                In my third year (October 2024), I enrolled in the advanced <i>Web Programming</i> course, which emphasized back-end technologies.
+                In my third year (October 2024), I enrolled in the <i>Web Programming Advnaced</i> course, which emphasized back-end technologies.
                 We explored <i>PHP</i> and <i>MySQL</i> to build database-driven applications.
               </p>
               <p className="text-light-gray-70 ml-5">
@@ -335,26 +329,39 @@ const Career = () => {
                 integrating features like user data storage, form handling, and dynamic content.
                 This helped me understand the full-stack development lifecycle more deeply.
               </p>
+              <p className="text-light-gray-70 ml-5">
+                Integrating back-end and server-side features was challenging at first, and the first challenge was organizing the files and assets and write
+                a maintable code for scalability.<br />
+                The second challenge I faced is to record sessions using cookies and allow the user to stay logged-in whenever he closes the website
+                or the browser to save his data, and at the same time allow him to log-out and delete the sessions.
+              </p>
             </div>
           </section>
 
           <section className={sections2}>
             <div className={explanationContainer + ` before:bg-blue-500`}>
-              <h3 className="font-extrabold ml-5 w-fit flex items-center gap-4">
-                POS Application – Ma7ali
-                <span className="bg-html h-3.5 w-7 inline-block"></span>
-                <span className="bg-css h-3.5 w-7 inline-block"></span>
-                <span className="bg-js h-3.5 w-7 inline-block"></span>
-              </h3>
+              <header className="flex flex-col gap-2 mb-2 md:flex-row">
+                <h3 className="font-extrabold ml-5">Ma7ali - POS Web Applicaton</h3>
+                <div className="flex items-center gap-4 ml-5">
+                  <span className="bg-html rounded-[3px] h-4 w-7"></span>
+                  <span className="bg-css rounded-[3px] h-4 w-7"></span>
+                  <span className="bg-js rounded-[3px] h-4 w-7"></span>
+                </div>
+              </header>
               <p className="text-light-gray-70 ml-5 mb-2">
-                In the spring semester of my third year (March 2025), I began my senior project: a complete <i>Point of Sale (POS) </i>
+                In my third year (March 2025), I began my senior project: a complete <i>Point of Sale (POS) </i>
                 web application named <a href="/projects?category=applications" className="font-extrabold text-highlight tracking-widest">Ma7ali</a>.
               </p>
               <p className="text-light-gray-70 ml-5">
                 This project brought together everything I had learned. I built the UI using <i>HTML, CSS, and JavaScript</i>,
-                and used <i>Firebase Firestore</i> as a real-time NoSQL database. Key features included inventory tracking, dynamic dashboards,
+                and used <i>Firebase Firestore</i> as a real-time NoSQL database. Key features included inventory and sales tracking, dynamic dashboards,
                 PDF exports, authentication, and a fully responsive interface. This project strengthened my ability to design and implement
                 scalable web applications.
+              </p>
+              <p className="text-light-gray-70 ml-5">
+                The biggest challenge I faced developing this applicaton was allowing the user to take full control of the integrated features,
+                give him real-time updates accross all interfaces, and make the dynamic content displayed fast and effecient with clean desgin and navigations, all
+                while keeping the code maintable, scalable and not repeated.
               </p>
             </div>
           </section>
@@ -362,18 +369,14 @@ const Career = () => {
 
           <section className={sections2}>
             <div className={explanationContainer + ` before:bg-amber-500`}>
-              <header className="flex flex-col gap-2 mb-2 sm:flex-row">
-                <h3 className="font-extrabold ml-5">My Portfolio</h3>
+              <header className="flex flex-col gap-2 mb-2 md:flex-row">
+                <h3 className="font-extrabold ml-5">My Portfolio - Website</h3>
                 <div className="flex items-center gap-4 ml-5">
-                  <span class="relative inline-block h-3.5 w-7 bg-html rounded transition-all duration-300 cursor-pointer hover:p-px group hover:w-auto hover:h-auto">
-                    <span class="hidden group-hover:inline-block text-white text-xs w-full text-center transition-all duration-300">
-                      html
-                    </span>
-                  </span>
-                  <span className={indicator + ` bg-css hover:before:content-['CSS']`}></span>
-                  <span className={indicator + ` bg-js hover:before:content-['JS'] hover:w-auto`}></span>
-                  <span className={indicator + ` bg-tailwind hover:before:content-['Tailwind'] hover:before:w-auto`}></span>
-                  <span className={indicator + ` bg-react hover:before:content-['RT']`}></span>
+                  <span className="bg-html rounded-[3px] h-4 w-7"></span>
+                  <span className="bg-css rounded-[3px] h-4 w-7"></span>
+                  <span className="bg-js rounded-[3px] h-4 w-7"></span>
+                  <span className="bg-tailwind rounded-[3px] h-4 w-7"></span>
+                  <span className="bg-react rounded-[3px] h-4 w-7"></span>
                 </div>
               </header>
               <p className="text-light-gray-70 ml-5 mb-2">
@@ -384,19 +387,33 @@ const Career = () => {
                 This site showcases my projects, skills, and growth as a developer. It also serves as a milestone to reflect on how far I’ve come—and how
                 much more I aspire to learn.
               </p>
+              <p className="text-light-gray-70 ml-5">
+                When I decided to create my portfolio I did not had a clue of what portfolios contain or look like, and I did not know how to desgin it or what
+                to include in it. So I started exploring various online portfolios from sources like <i>Git Hub</i> and others, extracting idea after idea until I
+                got a start up and began to implement it.
+              </p>
+              <p className="text-light-gray-70 ml-5">'
+                After learning <i>Tailwind</i>, it was super challenging to set it up and use it to its full potentials from writing the styles using <i>Tailwind</i>'s
+                syntax, to be able to fully customize it, and to using the directories, all with best practices and maintenance.
+              </p>
             </div>
           </section>
 
           <section className={sections2}>
             <div className={explanationContainer + ` before:bg-base`}>
-              <h3 className="font-extrabold ml-5 w-fit flex items-center gap-4">
-                Other
-                <span className="bg-csharp h-3.5 w-7 inline-block"></span>
-              </h3>
+              <header className="flex flex-col gap-2 mb-2 md:flex-row">
+                <h3 className="font-extrabold ml-5">Quizo - Windows Form Application</h3>
+                <div className="flex items-center gap-4 ml-5">
+                  <span className="bg-csharp rounded-[3px] h-4 w-7"></span>
+                </div>
+              </header>
               <p className="text-light-gray-70 ml-5">
                 In addition to my main projects, I have also worked on various other projects.
                 These projects have allowed me to experiment different technologies, such as windows form application using <i>C#</i>, where
                 I created a simple quiz application and other more tasks, and <i>Python</i> for data analysis and machine learning tasks.
+              </p>
+              <p className="text-light-gray-70 ml-5">
+                Because it was a different project using a different technology, I had a hard time finding 
               </p>
             </div>
           </section>

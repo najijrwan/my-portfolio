@@ -1005,7 +1005,7 @@ const timeLineDataForADVAtMD = [
 ];
 
 const timeLineDataForADVAtLG = [
-  ...timeLineDataForADVAtSM,
+  ...timeLineDataForADVAtMD,
 ];
 
 export {
