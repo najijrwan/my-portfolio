@@ -48,14 +48,15 @@ export const arrowLine = `
 
 export const explanationContainer = `
   w-full relative
-  before:content-[''] before:absolute before:top-3.5 before:-left-1 before:size-3 before:rounded-full`;
+  before:content-[''] before:absolute before:top-3.5 before:-left-[5px] before:size-3 before:rounded-full`;
 
 export const sections2 = `
-  relative w-full ml-8 max-w-fit tracking-wide`;
+  relative w-full ml-5 max-w-fit tracking-wide`;
 
 const projectSections = [
   {
     id: 'Fitnessoo',
+    point: ' before:bg-red-500',
     title: 'Fitnessoo - Website',
     techColors: ['bg-html', 'bg-css', 'bg-js'],
     content: (
@@ -78,9 +79,9 @@ const projectSections = [
       </>
     )
   },
-  // Add more sections here...
   {
     id: 'Fitnessoo-Continued',
+    point: ' before:bg-green-500',
     title: 'Fitnessoo - Website',
     techColors: ['bg-html', 'bg-css', 'bg-js', 'bg-php'],
     content: (
@@ -105,7 +106,28 @@ const projectSections = [
     )
   },
   {
+    id: 'Quizo',
+    point: ' before:bg-white',
+    title: 'Quizo - Windows Application',
+    techColors: ['bg-csharp'],
+    content: (
+      <>
+        <p className="text-light-gray-70 ml-5">
+          In addition to my main projects, I have also worked on various other projects.
+          These projects have allowed me to experiment different technologies, such as windows form application using <i>C#</i>, where
+          I created a simple quiz application and other more tasks, and <i>Python</i> for data analysis and machine learning tasks.
+        </p>
+        <p className="text-light-gray-70 ml-5">
+          It was challenging to control how questions are integrated in different levels and categories, and only allow the user
+          to go to the next question, level, and category when he has finished the previous ones, all while keeping the user informed
+          with the flow and time and score tracking.
+        </p>
+      </>
+    )
+  },
+  {
     id: 'Ma7ali',
+    point: ' before:bg-blue-500',
     title: 'Ma7ali - Web Application',
     techColors: ['bg-html', 'bg-css', 'bg-js'],
     content: (
@@ -130,11 +152,12 @@ const projectSections = [
   },
   {
     id: 'Portfolio',
+    point: ' before:bg-amber-500',
     title: 'My Portfolio - Website',
     techColors: ['bg-html', 'bg-css', 'bg-js', 'bg-tailwind', 'bg-react'],
     content: (
       <>
-        <p className="text-light-gray-70 ml-5 mb-2">
+        <p className="text-light-gray-70 ml-5">
           After completing the <i>POS Application</i>, I wanted to explore modern frameworks and tools.
           I studied <i>React</i> and <i>Tailwind CSS</i> through self-learning and tutorials, and used them to build this very website—my portfolio.
         </p>
@@ -147,47 +170,30 @@ const projectSections = [
           to include in it. So I started exploring various online portfolios from sources like <i>Git Hub</i> and others, extracting idea after idea until I
           got a start up and began to implement it.
         </p>
-        <p className="text-light-gray-70 ml-5">'
-          After learning <i>Tailwind</i>, it was super challenging to set it up and use it to its full potentials from writing the styles using <i>Tailwind</i>'s
+        <p className="text-light-gray-70 ml-5">
+          After learning <i>Tailwind</i>, it was super challenging to set it up and use it to its full potentials from writing the styles using <i>Tailwind </i>'s
           syntax, to be able to fully customize it, and to using the directories, all with best practices and maintenance.
-        </p>
-      </>
-    )
-  },
-  {
-    id: 'Quizo',
-    title: 'Quizo - Windows Application',
-    techColors: ['bg-csharp'],
-    content: (
-      <>
-        <p className="text-light-gray-70 ml-5">
-          In addition to my main projects, I have also worked on various other projects.
-          These projects have allowed me to experiment different technologies, such as windows form application using <i>C#</i>, where
-          I created a simple quiz application and other more tasks, and <i>Python</i> for data analysis and machine learning tasks.
-        </p>
-        <p className="text-light-gray-70 ml-5">
-          It was challenging to control how questions are integrated in different levels and categories, and only allow the user
-          to go to the next question, level, and category when he has finished the previous ones, all while keeping the user informed
-          with the flow and time and score tracking.
         </p>
       </>
     )
   },
 ];
 
-const ProjectSection = ({ title, techColors, children, isExpanded, onToggle }) => {
+const ProjectSection = ({ point, title, techColors, children, isExpanded, onToggle }) => {
   return (
     <section className={sections2}>
-      <div className={explanationContainer + ` before:bg-red-500`}>
-        <header className="flex flex-col gap-2 mb-2 md:flex-row">
+      <div className={explanationContainer + point}>
+        <header className="flex flex-col gap-2 mb-3 ml-5 md:flex-row">
           <ProjectButton onClick={onToggle} isExpanded={isExpanded} label={title} />
-          <div className="flex items-center gap-4 ml-5 mb-3">
+          <div className="
+          relative flex items-center gap-4 ml-5 mb-3 bg-gradient-onyx shadow-2 rounded-[10px] p-3 w-fit z-20 before:content-[''] before:absolute before:inset-px before:rounded-[inherit] before:bg-gradient-jet 
+          before:custom-transition-1 before:-z-10">
             {techColors.map((cls, i) => (
               <span key={i} className={`${cls} rounded-[3px] h-4 w-7`}></span>
             ))}
           </div>
         </header>
-        <div className={`custom-transition-2 duration-1000 overflow-hidden ${isExpanded ? 'h-auto' : 'h-0'}`}>
+        <div className={`overflow-hidden before:absolute before:content[''] before:h-full before:bg-highlight before:w-px before:top-0 before:-z-10 ${isExpanded ? 'h-auto' : 'h-0'}`}>
           {children}
         </div>
       </div>
@@ -201,7 +207,7 @@ const ProjectButton = ({ onClick, isExpanded, label }) => {
     <button
       onClick={onClick}
       className="
-        relative flex flex-row justify-start items-center gap-2 w-fit ml-4 mb-2 text-highlight p-2 rounded-[10px] z-20
+        relative flex flex-row justify-start items-center gap-2 w-fit ml-4 text-highlight p-2 rounded-[10px] z-20
         bg-gradient-onyx shadow-2 custom-transtion-1 cursor-pointer 
         before:content-[''] before:absolute before:inset-px before:rounded-[inherit] before:bg-gradient-jet 
         before:custom-transition-1 before:-z-10"
@@ -225,7 +231,6 @@ const ProjectButton = ({ onClick, isExpanded, label }) => {
   );
 };
 
-
 const Career = () => {
   const [expandedSections, setExpandedSections] = useState({});
 
@@ -235,6 +240,10 @@ const Career = () => {
       [id]: !prev[id],
     }));
   };
+
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpandedList = () => setIsExpanded(prev => !prev);
 
   return (
     <article className="">
@@ -437,39 +446,54 @@ const Career = () => {
             <span className={spanEle2}></span>
             Journey Explanation
           </h3>
-
-          <ul className="mb-5">
-            <li className="list-disc list- text-base ml-5 mb-2">
-              <p className="text-light-gray-70">
+          <div className="mb-5">
+            <ProjectButton onClick={toggleExpandedList} isExpanded={isExpanded} label={'Read More'} />
+          </div>
+          <ul className={`
+            ${isExpanded ? 'block' : 'hidden'}
+            relative my-5 custom-transition-2 before:absolute before:content-[''] before:h-full before:w-px before:-z-10 before:bg-jet before:top-1 before:left-[7px] 
+            `}>
+            <li className="list-disc list- text-highlight ml-5 mb-2">
+              <p className="
+              text-light-gray-70 relative 
+              before:absolute before:content-[''] before:-left-[18px] before:top-[7px] before:bg-transparent before:size-2.5 before:rounded-full before:border before:border-highlight 
+              before:rotate-45">
                 My learning journey—from <i>Java</i> to <i>Python</i> and beyond—began as part of my Bachelor's degree in Computer Science.
                 I was first introduced to programming through <i>Java</i>, which I studied across three core
                 courses: <i>Introduction to Programming</i>, <i>Intermediate Programming with Objects</i>,
                 and <i>Data Structures</i>, all based on the textbook <i>Introduction to Java Programming (9th Edition) by Y. Daniel Liang</i>.
               </p>
             </li>
-            <li className="list-disc list- text-base ml-5 mb-2">
+            <li className="list-disc list- text-highlight ml-5 mb-2">
               <p className="text-light-gray-70">
                 I later explored web development fundamentals—<i>HTML, CSS, JavaScript</i>, and <i>PHP</i>—through two specialized courses:
                 <i>Web Programming</i> and <i>Web Programming Advanced</i>. I also gained exposure to Windows-based GUI development in a course
                 called <i>Visual Programming</i>, and later transitioned to learning <i>Python</i> through a <i>Machine Learning</i> course.
               </p>
             </li>
-            <li className="list-disc list- text-base ml-5 mb-2">
+            <li className="list-disc list- text-highlight ml-5 mb-2">
               <p className="text-light-gray-70">
                 Near the end of my degree, I began independently exploring new technologies, focusing on modern tools
                 like <i>Tailwind CSS</i> and <i>React</i> by studying open-source projects and official documentation.
                 My goal is to continually expand my skills and build practical, full-stack websites and applications.
               </p>
             </li>
-            <li className="list-disc list- text-base ml-5 mb-2">
+            <li className="list-disc list- text-highlight ml-5 mb-2">
               <p className="text-light-gray-70">
                 Each date shown under a language or tool represents when I first started learning it. The colored circles indicate the corresponding
                 projects I developed afterwards.
               </p>
             </li>
-            <li className="list-disc list- text-base ml-5 mb-2">
+            <li className="list-disc list- text-highlight ml-5 mb-2">
               <p className="text-light-gray-70">
                 Below is a breakdown of the major projects I completed during my learning journey.
+              </p>
+            </li>
+            <li className="list-disc list- text-highlight ml-5 mb-2">
+              <p className="text-light-gray-70">
+                Each of these projects has contributed to my growth as a developer, helping me to refine my skills and expand my knowledge.
+                I am always eager to learn new technologies and take on new challenges, and I look forward to continuing my journey in
+                web and application development.
               </p>
             </li>
           </ul>
@@ -477,6 +501,7 @@ const Career = () => {
           {projectSections.map((section) => (
             <ProjectSection
               key={section.id}
+              point={section.point}
               title={section.title}
               techColors={section.techColors}
               isExpanded={!!expandedSections[section.id]} // ✅ scoped to this section
@@ -485,12 +510,6 @@ const Career = () => {
               {section.content}
             </ProjectSection>
           ))}
-
-          <p className="text-light-gray-70 ml-5 mb-6">
-            Each of these projects has contributed to my growth as a developer, helping me to refine my skills and expand my knowledge.
-            I am always eager to learn new technologies and take on new challenges, and I look forward to continuing my journey in
-            web and application development.
-          </p>
 
           <h3 className={h3Ele}>
             <span className={spanEle1}></span>
