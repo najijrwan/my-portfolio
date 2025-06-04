@@ -18,14 +18,14 @@ after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-7.5 after:
 sm:mb-[30px] sm:pb-[15px] sm:text-[32px] md:pb-[20px] sm:after:w-[40px] sm:after:h-[5px]`;
 
 export const h3Ele =
-  `relative text-highlight font-[600] text-[24px] mb-[20px] ml-6 flex-start-row
-before:absolute before:w-[10px] before:h-px before:left-[-15px] before:bottom-[49.5%] before:bg-amber-100/50 before:content-[""]`;
+  `relative text-base font-[600] text-[24px] mb-[20px] ml-8 flex-start-row
+before:absolute before:w-[15px] before:h-px before:left-[-23px] before:bottom-[49.5%] before:bg-highlight/30 before:content-[""]`;
 
 export const spanEle1 =
-  `absolute left-[-25px] top-1/2 -translate-y-1/2 size-1.75 bg-amber-100 rounded-full`;
+  `absolute left-[-33px] top-1/2 -translate-y-1/2 size-1.75 bg-highlight rounded-full`;
 
 export const spanEle2 =
-  `absolute left-[-28px] top-1/2 -translate-y-1/2 size-[13px] bg-amber-100/50 rounded-full`;
+  `absolute left-[-36px] top-1/2 -translate-y-1/2 size-[13px] bg-highlight/30 rounded-full`;
 
 const About = () => {
   return (
