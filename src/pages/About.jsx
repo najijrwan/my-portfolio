@@ -102,19 +102,23 @@ const About = () => {
         overscroll-x-contain snap-both scroll-px-6 
         sm:gap-[50px] sm:my-0 sm:mx-[-30px] sm:p-[45px] sm:scroll-px-[45px]">
             <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
-              <img src="src/assets/react.png" alt="react image" className="block" /></li>
-            <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
               <img src="src/assets/java.png" alt="java image" className="block" /></li>
+            <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
+              <img src="src/assets/html.png" alt="react image" className="block" /></li>
+            <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
+              <img src="src/assets/css.png" alt="react image" className="block" /></li>
             <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
               <img src="src/assets/javascript.png" alt="javascript image" className="block" /></li>
             <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
-              <img src="src/assets/tailwind-css.png" alt="tailwind image" className="block" /></li>
-            <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
               <img src="src/assets/php.png" alt="php image" className="block" /></li>
+            <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
+              <img src="src/assets/csharp.png" alt="c sharp image" className="block" /></li>
             <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
               <img src="src/assets/python.png" alt="python image" className="block" /></li>
             <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
-              <img src="src/assets/csharp.png" alt="c sharp image" className="block" /></li>
+              <img src="src/assets/tailwind-css.png" alt="tailwind image" className="block" /></li>
+            <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
+              <img src="src/assets/react.png" alt="react image" className="block" /></li>
           </ul>
         </div>
       </div>

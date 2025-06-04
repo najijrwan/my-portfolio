@@ -6,7 +6,7 @@ const TimelineItem = ({ item }) => {
     color,
     date,
     bounceAnim,
-    hasPoint = true,
+    hasPoint,
     fadeDelay,
     left,
   } = item;
@@ -15,10 +15,11 @@ const TimelineItem = ({ item }) => {
     <span
       className={`
         absolute top-0 translate-y-[-100%] h-3 w-px bg-highlight opacity-0 animate-fade-2 
-        ${name === "PHP" && hasPoint ? "before:content-[''] before:absolute before:bottom-[-60%] before:left-13 lg:before:left-11.5 before:size-3 before:bg-green-500 before:rounded-full after:content-[''] after:absolute after:bottom-[-60%] after:-left-16.5 after:sm:-left-11 after:md:-left-16.5 lg:after:-left-14 after:size-3 after:bg-red-500 after:rounded-full" : ""}
-        ${name === "C#" && hasPoint ? "before:content-[''] before:absolute before:bottom-[-60%] before:left-13 lg:before:left-11.5 before:size-3 before:bg-base before:rounded-full" : ""}
-        ${name === "Python" && hasPoint ? "before:content-[''] before:absolute before:bottom-[-60%] before:left-13 lg:before:left-11.5 before:size-3 before:bg-blue-500 before:rounded-full" : ""}
-        ${name === "React" && hasPoint ? "before:content-[''] before:absolute before:bottom-[-60%] before:left-13 lg:before:left-11.5 before:size-3 before:bg-amber-500 before:rounded-full" : ""}
+        ${name === "JavaScript" && hasPoint ? "before:content-[''] before:absolute before:bottom-[-60%] before:left-13 before:size-3 before:bg-red-500 before:rounded-full" : ""}
+        ${name === "PHP" && hasPoint ? "before:content-[''] before:absolute before:bottom-[-60%] before:left-13 before:size-3 before:bg-green-500 before:rounded-full" : ""}
+        ${name === "C#" && hasPoint ? "before:content-[''] before:absolute before:bottom-[-60%] before:left-13 before:size-3 before:bg-base before:rounded-full" : ""}
+        ${name === "Python" && hasPoint ? "before:content-[''] before:absolute before:bottom-[-60%] before:left-13 before:size-3 before:bg-blue-500 before:rounded-full" : ""}
+        ${name === "React" && hasPoint ? "before:content-[''] before:absolute before:bottom-[-60%] before:left-13 before:size-3 before:bg-amber-500 before:rounded-full" : ""}
       `}
       style={{
         left,
@@ -27,7 +28,11 @@ const TimelineItem = ({ item }) => {
     >
       {/* Top Container: icon + label */}
       <div
-        className={`absolute left-0 top-0 translate-x-[-50%] translate-y-[-110%] flex-center-col w-20 opacity-0 ${bounceAnim}`}
+        className={`
+          absolute left-0 top-0 translate-x-[-50%] translate-y-[-110%] flex-center-col shadow-2 z-10 bg-gradient-onyx py-1 rounded-[25px] 
+          w-25 opacity-0 
+          before:content-[""] before:block before:absolute before:rounded-[inherit] before:inset-[1px] before:-z-[1] before:bg-gradient-jet 
+          ${bounceAnim}`}
         style={{
           animationDelay: `${fadeDelay}s`,
         }}
@@ -37,7 +42,7 @@ const TimelineItem = ({ item }) => {
           alt={name}
           className="size-14"
         />
-        <p className="m-0 font-extrabold text-xs">{name}</p>
+        <p className="m-0 font-extrabold text-[10px]">{name}</p>
       </div>
 
       {/* Bottom Container: color bar + date */}

@@ -85,7 +85,7 @@ body::-webkit-scrollbar-button {
   --color-nextjs: #FFFFFF;
   --color-typescript: #3178C6;
   --color-nodejs: #98FB98;
-  --color-react-native: #61DAFB;
+  --color-react-native: linear-gradient(to right, #000000, #FFFFFF);
   --color-dart: #00B4AB;
   --color-flutter: #02569B;
   --color-swift: #FA7343;
@@ -182,8 +182,8 @@ body::-webkit-scrollbar-button {
     }
   }
 
-  --animate-bounce-1: bounce1 0.5s ease 1s forwards;
-  @keyframes bounce1 {
+  --animate-bounce: bounce 0.5s ease forwards;
+  @keyframes bounce {
     0% {
       transform: translateY(0);
       opacity: 1;
