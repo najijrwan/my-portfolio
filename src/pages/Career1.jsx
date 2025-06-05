@@ -2,49 +2,10 @@
 import Navbar from "../components/Navbar";
 import { useState } from "react";
 import { h2Ele, h3Ele, spanEle1, spanEle2 } from './About.jsx';
-import {
-  timeLineData1, timeLineData2, timeLineData3, timeLineData4, timeLineData5, timeLineData6,
-  timeLineDataAtSM1, timeLineDataAtSM2, timeLineDataAtSM3, timeLineDataAtSM4,
-  timeLineDataAtMD1, timeLineDataAtMD2, timeLineDataAtMD3, timeLineDataAtMD4,
-  timeLineDataAtLG1, timeLineDataAtLG2, timeLineDataAtLG3,
-  timeLineDataForFSD1, timeLineDataForFSD2, timeLineDataForFSD3,
-  timeLineDataForFSDAtSM1, timeLineDataForFSDAtSM2, timeLineDataForFSDAtSM3,
-  timeLineDataForFSDAtMD1, timeLineDataForFSDAtMD2,
-  timeLineDataForFSDAtLG1, timeLineDataForFSDAtLG2,
-  timeLineDataForADV1, timeLineDataForADV2,
-  timeLineDataForADVAtSM1, timeLineDataForADVAtSM2,
-  timeLineDataForADVAtMD1,
-  timeLineDataForADVAtLG1,
-} from "../components/timeLineData";
-import TimelineItem from "../components/TimeLineItem";
+import { timelineGroups, TimelineSection } from "../components/timelineGroups";
 
-
-export const section = `
-  relative w-full flex justify-center sm:hidden lg:hidden`;
-
-export const sectionAtSM = `
-  relative w-full hidden sm:block md:hidden lg:hidden`;
-
-export const sectionAtMD = `
-  relative w-full hidden md:block lg:hidden`;
-
-export const sectionAtLG = `
-  relative w-full hidden lg:flex lg:justify-center`;
-
-export const arrowLineContainer = `
-  w-full max-w-[350px] h-0.5 relative`;
-
-export const arrowLineContainerAtSMandMD = `
-  w-full h-0.5 relative`;
-
-export const arrowLineContainerAtLG = `
-  w-full max-w-[350px] h-0.5 relative lg:max-w-full`;
-
-export const arrowLine = `
-  w-0 h-0.5 bg-highlight animate-width relative
-  after:absolute after:right-[-8px] after:top-1/2 after:translate-y-[-50%] after:w-0 after:h-0
-  after:border-t-6 after:border-b-6 after:border-l-8 after:border-transparent after:border-l-highlight
-`;
+export const sections2 = `
+  relative w-full m-2 mb-3.5 max-w-fit tracking-wide`;
 
 export const explanationContainer = `
   w-full relative
@@ -56,8 +17,20 @@ export const explanationPara = `
   after:shadow-[0px_0px_5px] after:shadow-highlight before:shadow-[0px_0px_5px] before:shadow-highlight
   after:absolute after:content-[''] after:bg-highlight after:left-[-16px] after:top-[9px] after:size-[7px] after:rounded-full`;
 
-export const sections2 = `
-  relative w-full m-2 mb-3.5 max-w-fit tracking-wide`;
+const renderTimelineGroup = (label) => {
+  const group = timelineGroups.find((g) => g.label === label);
+  if (!group) return null;
+
+  return group.timelines.map(({ data, sectionClass, containerClass }, index) => (
+    <TimelineSection
+      key={`${label}-${index}`}
+      data={data}
+      sectionClass={sectionClass}
+      containerClass={containerClass}
+    />
+  ));
+};
+
 
 const projectSections = [
   {
@@ -191,15 +164,15 @@ const ProjectSection = ({ point, title, techColors, children, isExpanded, onTogg
       <div className={explanationContainer + point}>
         <header className="flex flex-col justify-start items-start gap-1.5 mb-1 ml-5 md:flex-row">
           <ProjectButton onClick={onToggle} isExpanded={isExpanded} label={title} />
-          <div className="
-          relative flex items-center gap-1 bg-gradient-onyx shadow-2 rounded-[10px] p-3 w-full z-20 
-          before:content-[''] before:absolute before:inset-px before:rounded-[inherit] before:bg-gradient-jet before:custom-transition-1 before:-z-10">
-            {techColors.map((cls, i) => (
-              <span key={i} className={`${cls} rounded-[3px] flex flex-grow h-4 w-7`}></span>
-            ))}
-          </div>
         </header>
         <div className={`flex flex-col gap-2 overflow-hidden before:absolute before:content[''] before:h-full before:bg-jet before:w-px before:top-0 before:-z-10 ${isExpanded ? 'h-auto' : 'h-0'}`}>
+          <div className="
+          relative flex items-center gap-1 bg-gradient-onyx shadow-2 rounded-[10px] p-3 w-full z-20 ml-5
+          before:content-[''] before:absolute before:inset-px before:rounded-[inherit] before:bg-gradient-jet before:custom-transition-1 before:-z-10">
+            {techColors.map((cls, i) => (
+              <span key={i} className={`${cls} rounded-[3px] h-4 w-7`}></span>
+            ))}
+          </div>
           {children}
         </div>
       </div>
@@ -258,192 +231,7 @@ const Career = () => {
         <h2 className={h2Ele}>Journey</h2>
         {/* Timeline Section */}
         <div className="flex-center-col gap-[170px] w-full mt-5">
-          <section className={section}>
-            {/* Arrow Line */}
-            <div className={arrowLineContainer}>
-              <div className={arrowLine}>
-                {timeLineData1.map((item, index) => (
-                  <TimelineItem key={item.name} item={item} index={index} />
-                ))}
-              </div>
-            </div>
-          </section>
-          {/* Timeline Section */}
-          <section className={section}>
-            {/* Arrow Line */}
-            <div className={arrowLineContainer}>
-              <div className={arrowLine}>
-                {timeLineData2.map((item, index) => (
-                  <TimelineItem key={item.name} item={item} index={index} />
-                ))}
-              </div>
-            </div>
-          </section>
-          {/* Timeline Section */}
-          <section className={section}>
-            {/* Arrow Line */}
-            <div className={arrowLineContainer}>
-              <div className={arrowLine}>
-                {timeLineData3.map((item, index) => (
-                  <TimelineItem key={item.name} item={item} index={index} />
-                ))}
-              </div>
-            </div>
-          </section>
-          {/* Timeline Section */}
-          <section className={section}>
-            {/* Arrow Line */}
-            <div className={arrowLineContainer}>
-              <div className={arrowLine}>
-                {timeLineData4.map((item, index) => (
-                  <TimelineItem key={item.name} item={item} index={index} />
-                ))}
-              </div>
-            </div>
-          </section>
-          {/* Timeline Section */}
-          <section className={section}>
-            {/* Arrow Line */}
-            <div className={arrowLineContainer}>
-              <div className={arrowLine}>
-                {timeLineData5.map((item, index) => (
-                  <TimelineItem key={item.name} item={item} index={index} />
-                ))}
-              </div>
-            </div>
-          </section>
-          {/* Timeline Section */}
-          <section className={section}>
-            {/* Arrow Line */}
-            <div className={arrowLineContainer}>
-              <div className={arrowLine}>
-                {timeLineData6.map((item, index) => (
-                  <TimelineItem key={item.name} item={item} index={index} />
-                ))}
-              </div>
-            </div>
-          </section>
-          {/* Timeline Section at small*/}
-          <section className={sectionAtSM}>
-            {/* Arrow Line */}
-            <div className={arrowLineContainerAtSMandMD}>
-              <div className={arrowLine}>
-                {timeLineDataAtSM1.map((item, index) => (
-                  <TimelineItem key={item.name} item={item} index={index} />
-                ))}
-              </div>
-            </div>
-          </section>
-          {/* Timeline Section at small*/}
-          <section className={sectionAtSM}>
-            {/* Arrow Line */}
-            <div className={arrowLineContainerAtSMandMD}>
-              <div className={arrowLine}>
-                {timeLineDataAtSM2.map((item, index) => (
-                  <TimelineItem key={item.name} item={item} index={index} />
-                ))}
-              </div>
-            </div>
-          </section>
-          {/* Timeline Section at small*/}
-          <section className={sectionAtSM}>
-            {/* Arrow Line */}
-            <div className={arrowLineContainerAtSMandMD}>
-              <div className={arrowLine}>
-                {timeLineDataAtSM3.map((item, index) => (
-                  <TimelineItem key={item.name} item={item} index={index} />
-                ))}
-              </div>
-            </div>
-          </section>
-          {/* Timeline Section at small*/}
-          <section className={sectionAtSM}>
-            {/* Arrow Line */}
-            <div className={arrowLineContainerAtSMandMD}>
-              <div className={arrowLine}>
-                {timeLineDataAtSM4.map((item, index) => (
-                  <TimelineItem key={item.name} item={item} index={index} />
-                ))}
-              </div>
-            </div>
-          </section>
-          {/* Timeline Section at medium*/}
-          <section className={sectionAtMD}>
-            {/* Arrow Line */}
-            <div className={arrowLineContainerAtSMandMD}>
-              <div className={arrowLine}>
-                {timeLineDataAtMD1.map((item, index) => (
-                  <TimelineItem key={item.name} item={item} index={index} />
-                ))}
-              </div>
-            </div>
-          </section>
-          {/* Timeline Section at medium*/}
-          <section className={sectionAtMD}>
-            {/* Arrow Line */}
-            <div className={arrowLineContainerAtSMandMD}>
-              <div className={arrowLine}>
-                {timeLineDataAtMD2.map((item, index) => (
-                  <TimelineItem key={item.name} item={item} index={index} />
-                ))}
-              </div>
-            </div>
-          </section>
-          {/* Timeline Section at medium*/}
-          <section className={sectionAtMD}>
-            {/* Arrow Line */}
-            <div className={arrowLineContainerAtSMandMD}>
-              <div className={arrowLine}>
-                {timeLineDataAtMD3.map((item, index) => (
-                  <TimelineItem key={item.name} item={item} index={index} />
-                ))}
-              </div>
-            </div>
-          </section>
-          {/* Timeline Section at medium*/}
-          <section className={sectionAtMD}>
-            {/* Arrow Line */}
-            <div className={arrowLineContainerAtSMandMD}>
-              <div className={arrowLine}>
-                {timeLineDataAtMD4.map((item, index) => (
-                  <TimelineItem key={item.name} item={item} index={index} />
-                ))}
-              </div>
-            </div>
-          </section>
-          {/* Timeline Section at large*/}
-          <section className={sectionAtLG}>
-            {/* Arrow Line */}
-            <div className={arrowLineContainerAtLG}>
-              <div className={arrowLine}>
-                {timeLineDataAtLG1.map((item, index) => (
-                  <TimelineItem key={item.name} item={item} index={index} />
-                ))}
-              </div>
-            </div>
-          </section>
-          {/* Timeline Section at large*/}
-          <section className={sectionAtLG}>
-            {/* Arrow Line */}
-            <div className={arrowLineContainerAtLG}>
-              <div className={arrowLine}>
-                {timeLineDataAtLG2.map((item, index) => (
-                  <TimelineItem key={item.name} item={item} index={index} />
-                ))}
-              </div>
-            </div>
-          </section>
-          {/* Timeline Section at large*/}
-          <section className={sectionAtLG}>
-            {/* Arrow Line */}
-            <div className={arrowLineContainerAtLG}>
-              <div className={arrowLine}>
-                {timeLineDataAtLG3.map((item, index) => (
-                  <TimelineItem key={item.name} item={item} index={index} />
-                ))}
-              </div>
-            </div>
-          </section>
+          {renderTimelineGroup("Main")}
         </div>
         <div className="animate-fade-3 opacity-0 invisible h-0 overflow-hidden" style={{ animationDelay: "2.5s" }}>
 
@@ -517,119 +305,7 @@ const Career = () => {
           </h3>
 
           <div className="flex-center-col gap-[170px] w-full mt-30 mb-20">
-
-            <section className={section}>
-              {/* Arrow Line */}
-              <div className={arrowLineContainer}>
-                <div className={arrowLine}>
-                  {timeLineDataForFSD1.map((item, index) => (
-                    <TimelineItem key={item.name} item={item} index={index} />
-                  ))}
-                </div>
-              </div>
-            </section>
-
-            <section className={section}>
-              {/* Arrow Line */}
-              <div className={arrowLineContainer}>
-                <div className={arrowLine}>
-                  {timeLineDataForFSD2.map((item, index) => (
-                    <TimelineItem key={item.name} item={item} index={index} />
-                  ))}
-                </div>
-              </div>
-            </section>
-
-            <section className={section}>
-              {/* Arrow Line */}
-              <div className={arrowLineContainer}>
-                <div className={arrowLine}>
-                  {timeLineDataForFSD3.map((item, index) => (
-                    <TimelineItem key={item.name} item={item} index={index} />
-                  ))}
-                </div>
-              </div>
-            </section>
-
-            <section className={sectionAtSM}>
-              {/* Arrow Line */}
-              <div className={arrowLineContainerAtSMandMD}>
-                <div className={arrowLine}>
-                  {timeLineDataForFSDAtSM1.map((item, index) => (
-                    <TimelineItem key={item.name} item={item} index={index} />
-                  ))}
-                </div>
-              </div>
-            </section>
-
-            <section className={sectionAtSM}>
-              {/* Arrow Line */}
-              <div className={arrowLineContainerAtSMandMD}>
-                <div className={arrowLine}>
-                  {timeLineDataForFSDAtSM2.map((item, index) => (
-                    <TimelineItem key={item.name} item={item} index={index} />
-                  ))}
-                </div>
-              </div>
-            </section>
-
-            <section className={sectionAtSM}>
-              {/* Arrow Line */}
-              <div className={arrowLineContainerAtSMandMD}>
-                <div className={arrowLine}>
-                  {timeLineDataForFSDAtSM3.map((item, index) => (
-                    <TimelineItem key={item.name} item={item} index={index} />
-                  ))}
-                </div>
-              </div>
-            </section>
-
-            {/* Timeline Section at medium*/}
-            <section className={sectionAtMD}>
-              {/* Arrow Line */}
-              <div className={arrowLineContainerAtSMandMD}>
-                <div className={arrowLine}>
-                  {timeLineDataForFSDAtMD1.map((item, index) => (
-                    <TimelineItem key={item.name} item={item} index={index} />
-                  ))}
-                </div>
-              </div>
-            </section>
-
-            {/* Timeline Section at medium*/}
-            <section className={sectionAtMD}>
-              {/* Arrow Line */}
-              <div className={arrowLineContainerAtSMandMD}>
-                <div className={arrowLine}>
-                  {timeLineDataForFSDAtMD2.map((item, index) => (
-                    <TimelineItem key={item.name} item={item} index={index} />
-                  ))}
-                </div>
-              </div>
-            </section>
-
-            {/* Timeline Section at large*/}
-            <section className={sectionAtLG}>
-              {/* Arrow Line */}
-              <div className={arrowLineContainerAtLG}>
-                <div className={arrowLine}>
-                  {timeLineDataForFSDAtLG1.map((item, index) => (
-                    <TimelineItem key={item.name} item={item} index={index} />
-                  ))}
-                </div>
-              </div>
-            </section>
-            {/* Timeline Section at large*/}
-            <section className={sectionAtLG}>
-              {/* Arrow Line */}
-              <div className={arrowLineContainerAtLG}>
-                <div className={arrowLine}>
-                  {timeLineDataForFSDAtLG2.map((item, index) => (
-                    <TimelineItem key={item.name} item={item} index={index} />
-                  ))}
-                </div>
-              </div>
-            </section>
+            {renderTimelineGroup("Full Stack Developer")}
           </div>
           <h3 className={h3Ele}>
             <span className={spanEle1}></span>
@@ -638,69 +314,7 @@ const Career = () => {
           </h3>
 
           <div className="flex-center-col gap-[170px] w-full mt-30 mb-30">
-            <section className={section}>
-              {/* Arrow Line */}
-              <div className={arrowLineContainer}>
-                <div className={arrowLine}>
-                  {timeLineDataForADV1.map((item, index) => (
-                    <TimelineItem key={item.name} item={item} index={index} />
-                  ))}
-                </div>
-              </div>
-            </section>
-            <section className={section}>
-              {/* Arrow Line */}
-              <div className={arrowLineContainer}>
-                <div className={arrowLine}>
-                  {timeLineDataForADV2.map((item, index) => (
-                    <TimelineItem key={item.name} item={item} index={index} />
-                  ))}
-                </div>
-              </div>
-            </section>
-            <section className={sectionAtSM}>
-              {/* Arrow Line */}
-              <div className={arrowLineContainerAtSMandMD}>
-                <div className={arrowLine}>
-                  {timeLineDataForADVAtSM1.map((item, index) => (
-                    <TimelineItem key={item.name} item={item} index={index} />
-                  ))}
-                </div>
-              </div>
-            </section>
-            <section className={sectionAtSM}>
-              {/* Arrow Line */}
-              <div className={arrowLineContainerAtSMandMD}>
-                <div className={arrowLine}>
-                  {timeLineDataForADVAtSM2.map((item, index) => (
-                    <TimelineItem key={item.name} item={item} index={index} />
-                  ))}
-                </div>
-              </div>
-            </section>
-
-            {/* Timeline Section at medium*/}
-            <section className={sectionAtMD}>
-              {/* Arrow Line */}
-              <div className={arrowLineContainerAtSMandMD}>
-                <div className={arrowLine}>
-                  {timeLineDataForADVAtMD1.map((item, index) => (
-                    <TimelineItem key={item.name} item={item} index={index} />
-                  ))}
-                </div>
-              </div>
-            </section>
-            {/* Timeline Section at large*/}
-            <section className={sectionAtLG}>
-              {/* Arrow Line */}
-              <div className={arrowLineContainerAtLG}>
-                <div className={arrowLine}>
-                  {timeLineDataForADVAtLG1.map((item, index) => (
-                    <TimelineItem key={item.name} item={item} index={index} />
-                  ))}
-                </div>
-              </div>
-            </section>
+            {renderTimelineGroup("Application Development")}
           </div>
         </div>
       </div>
