@@ -155,17 +155,18 @@ body::-webkit-scrollbar-button {
     }
   }
 
-  --animate-fade-3: fade3 2s ease forwards;
+  --animate-fade-3: fade3 0.5s ease 2.5s forwards;
   @keyframes fade3 {
     0% {
       opacity: 0;
-      visibility: hidden;
+      height: 0;
+      display: none;
       overflow: hidden;
     }
 
     100% {
       opacity: 1;
-      visibility: visible;
+      display: block;
       height: 100%;
       overflow: visible;
     }
@@ -173,6 +174,17 @@ body::-webkit-scrollbar-button {
 
   --animate-width: width 2s ease 0.1s forwards;
   @keyframes width {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 100%;
+    }
+  }
+
+  --animate-width2: width2 3s ease 0.1s forwards;
+  @keyframes width2 {
     0% {
       width: 0;
     }
@@ -200,48 +212,6 @@ body::-webkit-scrollbar-button {
       transform: translateY(0);
       opacity: 1;
       scale: 1;
-    }
-  }
-
-  --animate-bounce-2: bounce2 0.5s ease 0.9s forwards;
-  @keyframes bounce2 {
-    0% {
-      transform: translateY(0);
-      scale: 1;
-      opacity: 1;
-    }
-
-    50% {
-      transform: translateY(-20px);
-      scale: 1.1;
-      opacity: 1;
-    }
-
-    100% {
-      transform: translateY(0);
-      scale: 1;
-      opacity: 1;
-    }
-  }
-
-  --animate-bounce-3: bounce3 0.5s ease 1.3s forwards;
-  @keyframes bounce3 {
-    0% {
-      transform: translateY(0);
-      scale: 0;
-      opacity: 1;
-    }
-
-    50% {
-      transform: translateY(-20px);
-      scale: 1.1;
-      opacity: 1;
-    }
-
-    100% {
-      transform: translateY(0);
-      scale: 1;
-      opacity: 1;
     }
   }
 }
