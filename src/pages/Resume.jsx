@@ -31,19 +31,19 @@ const Resume = () => {
         <section className=' mb-[30px] ' >
           <div className={divEle1} >
             <div className={divEle2} >
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open-icon lucide-book-open"><path d="M12 7v14" /><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" /></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-book-open-icon lucide-book-open"><path d="M12 7v14" /><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" /></svg>
             </div>
             <h3 className=' text-[18px] sm:text-[24px] font-bold text-vegas-gold'>Education</h3>
           </div>
           <ol className=' text-[14px] sm:text-[15px] ml-[45px] sm:ml-[65px] '>
             <li className={liEle1} >
               <h4 className={h4Ele1} >Nihareeka College of Management and Information Technology</h4>
-              <p class={pEle1} >Bachelor of Science in Computer Science and Information Technology (B.Sc. CSIT)</p>
+              <p className={pEle1} >Bachelor of Science in Computer Science and Information Technology (B.Sc. CSIT)</p>
               <span className={spanEle1}>2017 — 2021</span>
             </li>
             <li className={liEle1}>
               <h4 className={h4Ele1} >Lebanese International University</h4>
-              <p class={pEle1} >+2 Science</p>
+              <p className={pEle1} >+2 Science</p>
               <span className={spanEle1}>2017 — 2021</span>
             </li>
           </ol>
@@ -51,7 +51,7 @@ const Resume = () => {
         <section className=' mb-[30px] ' >
           <div className={divEle1} >
             <div className={divEle2} >
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open-icon lucide-book-open"><path d="M12 7v14" /><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" /></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-book-open-icon lucide-book-open"><path d="M12 7v14" /><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" /></svg>
             </div>
             <h3 className=' text-[18px] sm:text-[24px] font-bold text-vegas-gold'>Experience</h3>
           </div>

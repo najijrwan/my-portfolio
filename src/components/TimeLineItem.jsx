@@ -29,9 +29,8 @@ const TimelineItem = ({ item }) => {
       {/* Top Container: icon + label */}
       <div
         className={`
-          absolute left-0 top-0 translate-x-[-50%] translate-y-[-110%] flex-center-col shadow-2 z-10 bg-gradient-onyx py-1 rounded-[40px] 
+          absolute left-0 top-0 translate-x-[-50%] translate-y-[-110%] flex-center-col z-10 py-1 rounded-[40px] 
           w-25 opacity-0 
-          before:content-[""] before:block before:absolute before:rounded-[inherit] before:inset-[1px] before:-z-[1] before:bg-gradient-jet 
           ${bounceAnim}`}
         style={{
           animationDelay: `${fadeDelay}s`,

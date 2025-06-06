@@ -6,13 +6,16 @@ import { projectSections, ProjectButton, ProjectSection } from "../components/pr
 import { renderTimelineGroup } from "../components/timelineGroups";
 
 export const explanationPara = `
-  text-light-gray-70 relative 
+  text-light-gray-70 relative pl-3
   before:absolute before:content-[''] before:-left-[19px] before:top-[6px] before:bg-transparent before:size-[13px] before:rounded-full before:border before:border-highlight 
   after:shadow-[0px_0px_5px] after:shadow-highlight before:shadow-[0px_0px_5px] before:shadow-highlight
   after:absolute after:content-[''] after:bg-highlight after:left-[-16px] after:top-[9px] after:size-[7px] after:rounded-full`;
 
 const Career = () => {
   const [expandedSections, setExpandedSections] = useState({});
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const sectionIds = ['Fitnessoo', 'Fitnessoo-Continued', 'Quizo', 'Ma7ali', 'Portfolio'];
 
   const toggleExpanded = (id) => {
     setExpandedSections((prev) => ({
@@ -21,22 +24,38 @@ const Career = () => {
     }));
   };
 
-  const [isExpanded, setIsExpanded] = useState(false);
+  const toggleExpandedList = () => {
+    const newState = !isExpanded;
+    setIsExpanded(newState);
 
-  const toggleExpandedList = () => setIsExpanded(prev => !prev);
+    const updatedSections = {};
+    sectionIds.forEach(id => {
+      updatedSections[id] = newState;
+    });
+    setExpandedSections(updatedSections);
+  };
 
-  // Set to true if screen width is lg (1024px) or larger
   useEffect(() => {
     const mediaQuery = window.matchMedia('(min-width: 1024px)');
+
     const handleResize = () => {
-      setIsExpanded(mediaQuery.matches);
+      const isLarge = mediaQuery.matches;
+      setIsExpanded(isLarge);
+
+      const allExpanded = {};
+      sectionIds.forEach(id => {
+        allExpanded[id] = isLarge;
+      });
+      setExpandedSections(allExpanded);
     };
 
-    handleResize(); // Set initially
+    handleResize(); // Run once on mount
     mediaQuery.addEventListener('change', handleResize);
 
     return () => mediaQuery.removeEventListener('change', handleResize);
-  }, []);
+  }, []); // ❗️No need to include `sectionIds` if it’s defined in the same component
+
+
   return (
     <article className="">
       <Navbar />
@@ -53,7 +72,7 @@ const Career = () => {
             Journey Explanation
           </h3>
           <div className="flex flex-col gap-3 mb-7">
-            <div className="md:w-[70%]">
+            <div className="md:w-[70%] lg:w-[50%]">
               <ProjectButton onClick={toggleExpandedList} isExpanded={isExpanded} label={isExpanded ? 'Read Less' : 'Read More'} />
             </div>
 
@@ -100,7 +119,7 @@ const Career = () => {
             </ul>
           </div>
 
-          <div className="lg:grid lg:grid-cols-2 ">
+          <div className="md:grid md:grid-cols-2 lg:grid-cols-2 gap-4 items-start">
             {projectSections.map((section) => (
               <ProjectSection
                 key={section.id}

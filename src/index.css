@@ -42,7 +42,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 14px;
+  width: 5px;
 }
 
 body::-webkit-scrollbar-track {
@@ -306,13 +306,13 @@ body::-webkit-scrollbar-button {
   }
 
   .has-scrollbar::-webkit-scrollbar {
-    width: 5px;
+    width: 1px;
     height: 5px;
   }
 
   .has-scrollbar::-webkit-scrollbar-track {
     background: rgba(40, 40, 40, 0.5);
-    border-radius: 5px;
+    border-radius: 10px;
   }
 
   .has-scrollbar::-webkit-scrollbar-thumb {

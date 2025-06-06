@@ -8,7 +8,7 @@ export const ele1 =
 export const ele2 =
     `min-w-full flex items-center gap-4`;
 const ele3 =
-    `text-base/50 text-[11px] tracking-widest mb-0`;
+    `text-light-gray-70 text-[11px] lg:text-[12px] mb-0.5 tracking-widest `;
 const Hero = () => {
     const [isExpanded, setIsExpanded] = useState(false);
 
@@ -79,32 +79,35 @@ const Hero = () => {
                 <ul className="grid grid-cols-1 gap-4 sm:gap-[20px] md:grid-cols-2 md:gap-y-[30px] md:gap-x-[15px] xl:grid-cols-1!">
                     <li className={ele2}>
                         <div className={ele1}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg>
                         </div>
-                        <div className="contact-info">
+                        <div className="contact-info xl:max-w-fit">
                             <p className={ele3}>EMAIL</p>
-                            <a href="mailto:najijrwanyt@gmail.com" className="text-base text-[13px] font-[300] 
-                            xl:text-[14px] xl:font-[300] xl:whitespace-nowrap xl:overflow-hidden xl:overflow-ellipsis">najijrwanyt@gmail.com</a>
+                            <a href="mailto:najijrwanyt@gmail.com" className="block truncate text-base text-[13px] font-[300]  xl:text-[14px] xl:font-[300]">
+                                najijrwanyt@gmail.com
+                            </a>
                         </div>
                     </li>
                     <li className={ele2}>
                         <div className={ele1}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-call-icon lucide-phone-call"><path d="M13 2a9 9 0 0 1 9 9" /><path d="M13 6a5 5 0 0 1 5 5" /><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-phone-call-icon lucide-phone-call"><path d="M13 2a9 9 0 0 1 9 9" /><path d="M13 6a5 5 0 0 1 5 5" /><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>
                         </div>
-                        <div className="contact-info">
+                        <div className="contact-info xl:max-w-fit">
                             <p className={ele3}>PHONE</p>
-                            <a href="tel:+96170504841" className="text-base text-[13px] font-[300] 
-                            xl:text-[14px] xl:font-[300] xl:whitespace-nowrap xl:overflow-hidden xl:overflow-ellipsis">+961 70504841</a>
+                            <a href="tel:+96170504841" className="block truncate text-base text-[13px] font-[300]  xl:text-[14px] xl:font-[300]">
+                                +961 70504841
+                            </a>
                         </div>
                     </li>
                     <li className={ele2}>
                         <div className={ele1}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
                         </div>
-                        <div className="contact-info">
+                        <div className="contact-info xl:max-w-fit">
                             <p className={ele3}>LOCATION</p>
-                            <a href="tel:+96170504841" className="text-base text-[13px] font-[300] 
-                            xl:text-[14px] xl:font-[300] xl:whitespace-nowrap xl:overflow-hidden xl:overflow-ellipsis">Lebanon - West Beqaa</a>
+                            <a href="tel:+96170504841" className="block truncate text-base text-[14px] font-[300]  xl:text-[13px] xl:font-[300]">
+                                Lebanon - West Beqaa
+                            </a>
                         </div>
                     </li>
                 </ul>

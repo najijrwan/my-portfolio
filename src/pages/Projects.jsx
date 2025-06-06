@@ -105,10 +105,10 @@ const Projects = () => {
             >
               <div>{categories.find(c => c.value === selectedCategory)?.label ?? "All"}</div>
               <ion-icon name="chevron-down" role="img" className={`md hydrated ${dropdownOpen ? "rotate-180" : ""}`} aria-label="chevron down ">
-                <div class="icon-inner">
+                <div className="icon-inner">
                   <svg xmlns="http://www.w3.org/2000/svg" className="ionicon s-ion-icon " viewBox="0 0 512 512">
                     <title>Chevron Down</title>
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" class="ionicon-fill-none"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" className="ionicon-fill-none"></path>
                   </svg>
                 </div>
               </ion-icon>

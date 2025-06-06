@@ -1,8 +1,8 @@
 export const sections2 = `
-  relative w-full m-2 mb-3.5 max-w-fit tracking-wide`;
+  relative m-2 mb-3.5 tracking-wide`;
 
 export const explanationContainer = `
-  w-full relative
+  relative w-full
   before:content-[''] before:absolute before:top-0 before:-left-[5px] before:size-3 before:rounded-full`;
 
 export const projectSections = [
@@ -159,18 +159,20 @@ export const ProjectButton = ({ onClick, isExpanded, label }) => {
         </button>
     );
 };
-
 export const ProjectSection = ({ point, title, techColors, children, isExpanded, onToggle }) => {
     return (
         <section className={sections2}>
             <div className={explanationContainer + point}>
-                <header className="mb-1.5 ml-5 md:w-[60%]">
+                <header className="mb-1.5 px-5 w-full">
                     <ProjectButton onClick={onToggle} isExpanded={isExpanded} label={title} />
                 </header>
-                <div className={`flex flex-col gap-2 overflow-hidden before:absolute before:content[''] before:h-full before:bg-jet before:w-px before:top-0 before:-z-10 ${isExpanded ? 'h-auto' : 'h-0'}`}>
+                <div className={`
+                flex flex-col gap-2 pr-5 w-full overflow-hidden has-scrollbar md:overflow-y-scroll scroll-smooth overscroll-y-contain snap-both scroll-px-6
+                before:absolute before:content[''] before:h-full before:bg-jet before:w-px before:top-0 before:-z-10 
+                    ${isExpanded ? 'h-full md:max-h-[300px]' : 'h-0'}`}>
                     <div className="
-                        relative flex items-center gap-1 bg-gradient-onyx shadow-2 rounded-[10px] p-3 w-full md:w-[60%] z-20 ml-5
-                        before:content-[''] before:absolute before:inset-px before:rounded-[inherit] before:bg-gradient-jet before:custom-transition-1 before:-z-10">
+                        relative flex items-center gap-1 bg-gradient-onyx shadow-2 rounded-[10px] p-3 z-20 ml-5
+                        before:content-[''] before:absolute before:inset-px before:rounded-[inherit] before:bg-gradient-jet before:custom-transition-1 before:-z-10 ">
                         {techColors.map((cls, i) => (
                             <span key={i} className={`${cls} rounded-[3px] h-4 w-7`}></span>
                         ))}
