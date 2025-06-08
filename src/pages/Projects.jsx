@@ -69,7 +69,7 @@ const Projects = () => {
       title: "Quizo",
       type: "Desktop Application",
       img: "src/assets/Quizo.png",
-      link: "http://localhost:5173/src/assets/Quizo.png"
+      link: "https://github.com/najijrwan/Quizo"
     },
 
   ];

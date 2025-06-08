@@ -112,22 +112,17 @@ const Hero = () => {
                 <div className="w-full h-[1px] bg-[#383838] my-4 mx-0 xl:my-[15px] xl:opacity-0"></div>
                 <ul className="flex justify-start items-center gap-4 pb-[4px] pl-[7px] xl:justify-center">
                     <li>
-                        <a href="https://www.linkedin.com/in/aakash569" className="social-link">
+                        <a href="https://www.linkedin.com/in/naji-jarwan/" target="_blank" className="social-link">
                             <img src="src/assets/linkedin-brands.svg" alt="Linkedin" className="size-4 hover:invert-50" />
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/aakashx58" className="social-link text-light-gray">
+                        <a href="https://github.com/najijrwan" target="_blank" className="social-link text-light-gray">
                             <img src="src/assets/github-brands.svg" alt="gitHub" className="size-4 hover:invert-50" />
                         </a>
                     </li>
                     <li>
-                        <a href="https://g.dev/aakash569" className="social-link text-light-gray">
-                            <img src="src/assets/google-brands.svg" alt="Google" className="size-4 hover:invert-50" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://x.com/itzakax" className="social-link text-light-gray">
+                        <a href="https://www.instagram.com/najijrwan" target="_blank" className="social-link text-light-gray">
                             <img src="src/assets/instagram-brands.svg" alt="Instagram" className="size-4 hover:invert-50" />
                         </a>
                     </li>
