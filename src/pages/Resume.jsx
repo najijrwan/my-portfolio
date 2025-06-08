@@ -19,7 +19,7 @@ export const liEle2 =
 export const h4Ele1 =
   `text-[15px]/5 sm:-text-[14px] mb-[7px] font-bold`;
 export const pEle1 =
-  `text-light-gray text-[15px]/6 font-[300] xl:max-w-[700px] mb-0`;
+  `text-light-gray text-[15px]/6 font-[300] xl:max-w-[700px] mb-2`;
 const spanEle1 =
   `text-vegas-gold font-[400] text-[14px]/6`;
 const Resume = () => {
@@ -84,7 +84,7 @@ const Resume = () => {
               <ul className={pEle1} >
                 <li className={liEle2}><strong className="font-[1000] text-base">Languages & Scripting: </strong><i>HTML, CSS, JavaScript, PHP, C#, Python, Java </i></li>
                 <li className={liEle2}><strong className="font-[1000] text-base">Frameworks & Libraries: </strong><i>React, Tailwind CSS </i></li>
-                <li className={liEle2}><strong className="font-[1000] text-base">Tools & Platforms: </strong><i>Firebase, Git, Visual Studio Code, Chrome DevTools, Microsoft Edge </i></li>
+                <li className={liEle2}><strong className="font-[1000] text-base">Tools & Platforms: </strong><i>Firebase, Git, Visual Studio Code, DevTools, Microsoft Edge </i></li>
                 <li className={liEle2}><strong className="font-[1000] text-base">Additional Skills: </strong>Responsive Design, Technical Documentation, Problem Solving, Windows Productivity & Automation </li>
               </ul>
             </li>
@@ -111,21 +111,25 @@ const Resume = () => {
           </div>
           <ol className=' text-[14px] sm:text-[15px] ml-[45px] sm:ml-[65px] '>
             <li className={liEle1} >
-              <h4 className={h4Ele1} >Fitnessoo • Simple fitness tracking website</h4>
+              <h4 className={h4Ele1} ><i className="font-serif tracking-wider">Fitnessoo</i> &nbsp; • &nbsp; Simple fitness tracking website</h4>
               <p className={pEle1} >A basic fitness-focused website that tracks user metrics and personal data with clean structure and design. </p>
-              <p className={pEle1} >Stack: <i>HTML, CSS, JavaScript, PHP </i></p>
+              <p className={pEle1} >
+                <strong className="text-base font-bold ">Stack : </strong>
+                <i className="font-serif text-yellow-crayola">HTML &nbsp; - &nbsp; CSS &nbsp; - &nbsp; JavaScript &nbsp; - &nbsp; PHP</i>
+              </p>
               <ul className={pEle1} >
                 <li className={liEle2}>Built a responsive multi-page website with a focus on clean UI and maintainable code.</li>
                 <li className={liEle2}>Integrated PHP backend to support user authentication, session creation, and logout functionality. </li>
                 <li className={liEle2}>Stored user data such as weight, height, age, and workout details in a structured format.</li>
                 <li className={liEle2}>Emphasized maintainability and code organization to support future enhancements and scalability. </li>
-                <li className={liEle2}>Independently designed and implemented both the front-end and back-end.</li>
               </ul>
             </li>
             <li className={liEle1} >
-              <h4 className={h4Ele1} >Quizo • Desktop Quiz Application</h4>
+              <h4 className={h4Ele1} ><i className="font-serif tracking-wider">Quizo</i> &nbsp; • &nbsp; Desktop Quiz Application</h4>
               <p className={pEle1} >A fun and interactive Windows Forms-based quiz game built with C# for desktop users. </p>
-              <p className={pEle1} >Stack: <i>C#. </i>Windows Forms (Visual Studio 2022) </p>
+              <p className={pEle1} >
+                <strong className="text-base font-bold ">Stack : </strong>
+                <i className="font-serif text-yellow-crayola">C#</i> - Windows Forms (Visual Studio 2022)</p>
               <ul className={pEle1} >
                 <li className={liEle2}>Developed a single-player quiz system with category and level progression, requiring users to complete 3 categories, each containing 3 levels of 5 questions. </li>
                 <li className={liEle2}>Implemented score tracking, timers, and dynamic feedback to guide users through each step of the quiz. </li>
@@ -134,9 +138,12 @@ const Resume = () => {
               </ul>
             </li>
             <li className={liEle1} >
-              <h4 className={h4Ele1} >Ma7ali • Full-Stack POS System for Small Businesses </h4>
+              <h4 className={h4Ele1} ><i className="font-serif tracking-wider">Ma7ali</i> &nbsp; • &nbsp; Full-Stack POS System for Small Businesses </h4>
               <p className={pEle1} >A comprehensive POS progressive web application (PWA)  for managing inventory, sales, customer debts, and business analytics. </p>
-              <p className={pEle1} >Stack: <i>HTML, CSS, JavaScript, Firebase </i></p>
+              <p className={pEle1} >
+                <strong className="text-base font-bold ">Stack : </strong>
+                <i className="font-serif text-yellow-crayola">HTML &nbsp; - &nbsp; CSS &nbsp; - &nbsp; JavaScript &nbsp; - &nbsp; Firebase</i>
+              </p>
               <ul className={pEle1} >
                 <li className={liEle2}>Designed and developed a full-stack POS system tailored for small business workflows. </li>
                 <li className={liEle2}>Implemented multi-currency toggling (LBP ↔ USD), advanced filtering, and PDF report generation. </li>
@@ -150,9 +157,12 @@ const Resume = () => {
               </ul>
             </li>
             <li className={liEle1} >
-              <h4 className={h4Ele1} >My Portfolio • Interactive Developer Showcase Website </h4>
+              <h4 className={h4Ele1} ><i className="font-serif tracking-wider">My Portfolio</i> &nbsp; • &nbsp; Interactive Developer Showcase Website </h4>
               <p className={pEle1} >A personal website built to present skills, projects, and career roadmap for full-stack and application development roles. </p>
-              <p className={pEle1} >Stack: <i>HTML, CSS, JavaScript, Tailwind CSS, React </i></p>
+              <p className={pEle1} >
+                <strong className="text-base font-bold">Stack : </strong>
+                <i className="font-serif text-yellow-crayola">HTML &nbsp; - &nbsp; CSS &nbsp; - &nbsp; JavaScript &nbsp; - &nbsp; Tailwind CSS &nbsp; - &nbsp; React</i>
+              </p>
               <ul className={pEle1} >
                 <li className={liEle2}>Designed and developed a fully responsive interface with dedicated sections for About, Projects, Resume, Contact, and Learning Journey. </li>
                 <li className={liEle2}>Integrated downloadable resume, project categorization (Applications, Websites, Others), and visual career roadmaps with timelines. </li>
@@ -185,16 +195,16 @@ const Resume = () => {
           <ol className=' text-[14px] sm:text-[15px] ml-[45px] sm:ml-[65px] '>
             <li className={liEle1} >
               <h4 className={h4Ele1} >Bachelor of Science in Computer Science</h4>
-              <p className={pEle1} >Lebanese International University – ALKhyara, West Beqaa, Lebanon</p>
-              <p className={pEle1} >Graduation: 2025</p>
+              <p className={pEle1} ><i className="font-serif tracking-wider">Lebanese International University &nbsp; • &nbsp; ALKhyara - West Beqaa - Lebanon</i></p>
               <p className={pEle1} >GPA: 3.7</p>
               <span className={spanEle1}>2022 — 2025</span>
             </li>
             <li className={liEle1}>
               <h4 className={h4Ele1} >Honors</h4>
               <ul className={pEle1} >
-                <li className={liEle2}>Dean’s List (Spring 2023)</li>
-                <li className={liEle2}>President’s Honor List (Spring 2024)</li>
+                <li className={liEle2}><i className="font-serif tracking-wider">Dean’s List</i> • <span className={spanEle1}>Spring 2023</span></li>
+                <li className={liEle2}><i className="font-serif tracking-wider">President’s Honor List</i> • <span className={spanEle1}>Spring 2024</span></li>
+                <li className={liEle2}><i className="font-serif tracking-wider">7th SAS Students Research Day</i> • <span className={spanEle1}>Spring 2025</span></li>
               </ul>
             </li>
           </ol>
@@ -221,11 +231,11 @@ const Resume = () => {
           <ol className=' text-[14px] sm:text-[15px] ml-[45px] sm:ml-[65px] '>
             <li className={liEle1} >
               <ul className={pEle1} >
-                <li className={liEle2}>Dean's Honor List Certificate • <span className={spanEle1}>Spring 2023</span></li>
-                <li className={liEle2}>President’s Honor List Certificate • <span className={spanEle1}>Spring 2024</span></li>
-                <li className={liEle2}>SAS Participation Certificate • <span className={spanEle1}>Spring 2025</span></li>
-                <li className={liEle2}>Cisco Certifications • <span className={spanEle1}>Spring 2024</span></li>
-                <li className={liEle2}>BSc in Computer Science Certificate • <span className={spanEle1}>Spring 2025</span></li>
+                <li className={liEle2}><i className="font-serif tracking-wider">Dean's Honor List Certificate</i> • <span className={spanEle1}>Spring 2023</span></li>
+                <li className={liEle2}><i className="font-serif tracking-wider">President’s Honor List Certificate</i> • <span className={spanEle1}>Spring 2024</span></li>
+                <li className={liEle2}><i className="font-serif tracking-wider">SAS Participation Certificate</i> • <span className={spanEle1}>Spring 2025</span></li>
+                <li className={liEle2}><i className="font-serif tracking-wider">Cisco Certifications</i> • <span className={spanEle1}>Spring 2024</span></li>
+                <li className={liEle2}><i className="font-serif tracking-wider">BSc in Computer Science Certificate</i> • <span className={spanEle1}>Spring 2025</span></li>
               </ul>
             </li>
           </ol>
@@ -254,7 +264,7 @@ const Resume = () => {
               <ul className={pEle1} >
                 <li className={liEle2}>Arabic (Native)</li>
                 <li className={liEle2}>English (Fluent) </li>
-                <li className={liEle2}>Spanish (Based Proficiency) </li>
+                <li className={liEle2}>Spanish (Basic Proficiency) </li>
               </ul>
             </li>
           </ol>

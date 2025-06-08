@@ -47,26 +47,29 @@ const Projects = () => {
 
   const categories = [
     { label: "All", value: "all" },
-    { label: "Applications", value: "applications" },
-    { label: "Websites", value: "websites" },
-    { label: "Others", value: "others" },
+    { label: "Applications", value: "application" },
+    { label: "Websites", value: "website" },
+    { label: "Others", value: "Desktop Applicaton" },
   ];
 
   const projectData = [
     {
-      title: "Nagaraki App",
-      type: "applications",
-      img: "src/assets/nagarikapp.png"
+      title: "Fitnessoo",
+      type: "website",
+      img: "src/assets/Fitnessoo.png",
+      link: "https://fitnessoo.infinityfreeapp.com/index.php"
     },
     {
-      title: "Nagaraki Appppp",
-      type: "websites",
-      img: "src/assets/nagarikapp.png"
+      title: "Ma7ali",
+      type: "application",
+      img: "src/assets/Ma7ali.png",
+      link: "https://paperless-a64a0.web.app/"
     },
     {
-      title: "Nagaraki not",
-      type: "others",
-      img: "src/assets/nagarikapp.png"
+      title: "Quizo",
+      type: "Desktop Application",
+      img: "src/assets/Quizo.png",
+      link: "http://localhost:5173/src/assets/Quizo.png"
     },
 
   ];
@@ -144,7 +147,7 @@ const Projects = () => {
                   key={index}
                   className={`block ${isVisible ? "animate-scaleUp" : "hidden"}`}
                 >
-                  <a href="#" className="block w-full group">
+                  <a href={project.link} className="block w-full group" target="_blank">
                     <figure className={figureEle1}>
                       <div className={divEle3}>
                         <EyeOutlineIcon />

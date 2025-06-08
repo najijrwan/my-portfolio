@@ -34,12 +34,12 @@ const Hero = () => {
                     <h1 className="text-base text-[17px] sm:text-[26px] font-[600] mb-[10px] tracking-tight 
                     sm:mb-[15px] 
                     xl:whitespace-nowrap xl:text-center xl:tracking-wider xl:text-2xl" title="Naji Al-Jrwan">
-                        Naji Al - Jarawan
+                        <i className="tracking-wider">Naji Al - Jarwan</i>
                     </h1>
                     <p className="text-base bg-onyx text-[12px] font-[300]! w-max py-[3px] px-[12px] rounded-[8px] 
                     sm:py-[5px] sm:px-[18px] 
                     xl:m-auto">
-                        Full Stack Developer
+                        Front-End Developer
                     </p>
                 </div>
                 <button
@@ -105,9 +105,7 @@ const Hero = () => {
                         </div>
                         <div className="contact-info xl:max-w-fit">
                             <p className={ele3}>LOCATION</p>
-                            <a href="tel:+96170504841" className="block truncate text-base text-[14px] font-[300]  xl:text-[13px] xl:font-[300]">
-                                Lebanon - West Beqaa
-                            </a>
+                            <p className="block truncate text-base text-[13px] font-[300]  xl:text-[14px] xl:font-[300]">Lebanon - Ghazzah</p>
                         </div>
                     </li>
                 </ul>
