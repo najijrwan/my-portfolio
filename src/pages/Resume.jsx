@@ -300,7 +300,16 @@ const Resume = () => {
             </li>
           </ol>
         </section>
-        <button></button>
+        <button className="
+          relative w-full bg-gradient-onyx text-yellow-crayola flex-center gap-2.5 py-[13px] px-5 rounded-[14px] text-[16px] shadow-3 z-10 custom-transition-1
+          hover:bg-gradient-yellow
+          sm:text-[16px] sm:py-4 sm:px-5 md:w-max md:ml-auto 
+          before:content-[''] before:absolute before:inset-0.25 before:bg-gradient-jet before:rounded-[inherit] before:-z-10 before:custom-transition-1 before:hover:bg-gradient-yellow">
+          <ion-icon name="document-text-outline" role="img" class="md hydrated text-[16px] sm:text-[18px]" aria-label="document text outline">
+            <div class="icon-inner"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon s-ion-icon" viewBox="0 0 512 512"><title>Document Text</title><path d="M416 221.25V416a48 48 0 01-48 48H144a48 48 0 01-48-48V96a48 48 0 0148-48h98.75a32 32 0 0122.62 9.37l141.26 141.26a32 32 0 019.37 22.62z" stroke-linejoin="round" class="ionicon-fill-none ionicon-stroke-width"></path><path d="M256 56v120a32 32 0 0032 32h120M176 288h160M176 368h160" stroke-linecap="round" stroke-linejoin="round" class="ionicon-fill-none ionicon-stroke-width"></path></svg></div>
+          </ion-icon>
+          <span className="block ">Download CV</span>
+        </button>
       </div>
     </article>
   );
