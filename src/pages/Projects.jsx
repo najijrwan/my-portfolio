@@ -49,7 +49,7 @@ const Projects = () => {
     { label: "All", value: "all" },
     { label: "Applications", value: "application" },
     { label: "Websites", value: "website" },
-    { label: "Others", value: "Desktop Applicaton" },
+    { label: "Desktop Applications", value: "Desktop Application" },
   ];
 
   const projectData = [
