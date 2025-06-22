@@ -231,7 +231,20 @@ const Resume = () => {
           <ol className=' text-[14px] sm:text-[15px] ml-[45px] sm:ml-[65px] '>
             <li className={liEle1} >
               <ul className={pEle1} >
-                <li className={liEle2}><i className="font-serif tracking-wider">Dean's Honor List Certificate</i> • <span className={spanEle1}>Spring 2023</span></li>
+                <li className={liEle2}>
+                  <i className="font-serif tracking-wider">Dean's Honor List Certificate</i> • <span className={spanEle1}>Spring 2023</span>
+                  <button
+                    onClick={() => window.open('/deans-list.pdf', '_blank')}
+                    className="
+                      relative w-full bg-gradient-onyx text-yellow-crayola flex-center gap-2.5 py-[5px] px-5 rounded-[14px] text-[10px] shadow-3 z-20 custom-transition-1
+                      sm:text-[11px] sm:py-[5px] sm:px-5 md:w-max md:ml-auto 
+                      before:content-[''] before:absolute before:inset-0.25 before:bg-gradient-jet before:rounded-[inherit] before:-z-10 before:custom-transition-1 
+                      hover:bg-gradient-yellow focus:bg-gradient-yellow focus:outline-amber-200 hover:before:bg-gradient-yellow-2 
+                      focus:before:bg-gradient-yellow-2"
+                  >
+                    <span className="block ">View</span>
+                  </button>
+                </li>
                 <li className={liEle2}><i className="font-serif tracking-wider">President’s Honor List Certificate</i> • <span className={spanEle1}>Spring 2024</span></li>
                 <li className={liEle2}><i className="font-serif tracking-wider">SAS Participation Certificate</i> • <span className={spanEle1}>Spring 2025</span></li>
                 <li className={liEle2}><i className="font-serif tracking-wider">Cisco Certifications</i> • <span className={spanEle1}>Spring 2024</span></li>
