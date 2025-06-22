@@ -102,23 +102,23 @@ const About = () => {
         overscroll-x-contain snap-both scroll-px-6 
         sm:gap-[50px] sm:my-0 sm:mx-[-30px] sm:p-[45px] sm:scroll-px-[45px]">
             <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
-              <img src="public/images/java.png" alt="java image" className="block" /></li>
+              <img src="/images/java.png" alt="java image" className="block" /></li>
             <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
-              <img src="public/images/html.png" alt="react image" className="block" /></li>
+              <img src="/images/html.png" alt="react image" className="block" /></li>
             <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
-              <img src="public/images/css.png" alt="react image" className="block" /></li>
+              <img src="/images/css.png" alt="react image" className="block" /></li>
             <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
-              <img src="public/images/javascript.png" alt="javascript image" className="block" /></li>
+              <img src="/images/javascript.png" alt="javascript image" className="block" /></li>
             <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
-              <img src="public/images/php.png" alt="php image" className="block" /></li>
+              <img src="/images/php.png" alt="php image" className="block" /></li>
             <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
-              <img src="public/images/csharp.png" alt="c sharp image" className="block" /></li>
+              <img src="/images/csharp.png" alt="c sharp image" className="block" /></li>
             <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
-              <img src="public/images/python.png" alt="python image" className="block" /></li>
+              <img src="/images/python.png" alt="python image" className="block" /></li>
             <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
-              <img src="public/images/tailwind-css.png" alt="tailwind image" className="block" /></li>
+              <img src="/images/tailwind-css.png" alt="tailwind image" className="block" /></li>
             <li className="min-w-[50%] snap-start bg-white/10 rounded-4xl clients-item">
-              <img src="public/images/react.png" alt="react image" className="block" /></li>
+              <img src="/images/react.png" alt="react image" className="block" /></li>
           </ul>
         </div>
       </div>
