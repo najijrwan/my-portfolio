@@ -25,8 +25,8 @@ const Hero = () => {
         ${isExpanded ? 'max-h-[405px] sm:max-h-[584px]' : 'max-h-[112px]'}`}>
             <div className="relative flex-start-row gap-[15px] sm:gap-[25px] xl:flex-col">
                 <figure className="bg-gradient-onyx-2 rounded-[20px] relative sm:rounded-[30px]">
-                    <a href="http://localhost:5173/src/assets/Yo.JPG" target="_blank" rel="noopener noreferrer">
-                        <img src="src/assets/Yo.JPG" alt="Yo" className="block size-20 sm:size-[120px] xl:size-[150px] rounded-[20px] border border-jet object-cover object-top" />
+                    <a href="http://localhost:5173//images/Yo.JPG" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/Yo.JPG" alt="Yo" className="block size-20 sm:size-[120px] xl:size-[150px] rounded-[20px] border border-jet object-cover object-top" />
                     </a>
                     <span className="size-3 rounded-full bg-[#39ff14] animate-pulse absolute bottom-0 right-0"></span>
                 </figure>
@@ -113,17 +113,17 @@ const Hero = () => {
                 <ul className="flex justify-start items-center gap-4 pb-[4px] pl-[7px] xl:justify-center">
                     <li>
                         <a href="https://www.linkedin.com/in/naji-jarwan/" target="_blank" className="social-link">
-                            <img src="src/assets/linkedin-brands.svg" alt="Linkedin" className="size-4 hover:invert-50" />
+                            <img src="/images/linkedin-brands.svg" alt="Linkedin" className="size-4 hover:invert-50" />
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/najijrwan" target="_blank" className="social-link text-light-gray">
-                            <img src="src/assets/github-brands.svg" alt="gitHub" className="size-4 hover:invert-50" />
+                            <img src="/images/github-brands.svg" alt="gitHub" className="size-4 hover:invert-50" />
                         </a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com/najijrwan" target="_blank" className="social-link text-light-gray">
-                            <img src="src/assets/instagram-brands.svg" alt="Instagram" className="size-4 hover:invert-50" />
+                            <img src="/images/instagram-brands.svg" alt="Instagram" className="size-4 hover:invert-50" />
                         </a>
                     </li>
                 </ul>

@@ -56,19 +56,19 @@ const Projects = () => {
     {
       title: "Fitnessoo",
       type: "website",
-      img: "src/assets/Fitnessoo.png",
+      img: "/images/Fitnessoo.png",
       link: "https://fitnessoo.infinityfreeapp.com/index.php"
     },
     {
       title: "Ma7ali",
       type: "application",
-      img: "src/assets/Ma7ali.png",
+      img: "/images/Ma7ali.png",
       link: "https://paperless-a64a0.web.app/"
     },
     {
       title: "Quizo",
       type: "Desktop Application",
-      img: "src/assets/Quizo.png",
+      img: "/images/Quizo.png",
       link: "https://github.com/najijrwan/Quizo"
     },
 

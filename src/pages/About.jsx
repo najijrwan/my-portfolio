@@ -53,7 +53,7 @@ const About = () => {
             <a href="/projects?category=applications">
               <li className={ele1}>
                 <div className="mb-[10px] sm:mb-0 sm:mt-[5px]">
-                  <img src="src/assets/icon-app.svg" alt="mobile app icon" className="block size-10 m-auto" />
+                  <img src="/images/icon-app.svg" alt="mobile app icon" className="block size-10 m-auto" />
                 </div>
                 <div className="text-center sm:text-left">
                   <h4 className={ele2}>Mobile Apps</h4>
@@ -64,7 +64,7 @@ const About = () => {
             <a href="/projects?category=websites">
               <li className={ele1}>
                 <div className="mb-2.5">
-                  <img src="src/assets/icon-dev.svg" alt="web development icon" className="block size-10 m-auto" />
+                  <img src="/images/icon-dev.svg" alt="web development icon" className="block size-10 m-auto" />
                 </div>
                 <div className="text-center sm:text-left">
                   <h4 className={ele2}>Web Development</h4>
@@ -74,7 +74,7 @@ const About = () => {
             </a>
             <li className={ele1}>
               <div className="mb-2.5">
-                <img src="src/assets/icon-backend.svg" alt="backend development icon" className="block size-10 m-auto" />
+                <img src="/images/icon-backend.svg" alt="backend development icon" className="block size-10 m-auto" />
               </div>
               <div className="text-center sm:text-left">
                 <h4 className={ele2}>Back-End Development</h4>
@@ -83,7 +83,7 @@ const About = () => {
             </li>
             <li className={ele1}>
               <div className="mb-2.5">
-                <img src="src/assets/icon-research.svg" alt="backend development icon" className="block size-10 m-auto" />
+                <img src="/images/icon-research.svg" alt="backend development icon" className="block size-10 m-auto" />
               </div>
               <div className="text-center sm:text-left">
                 <h4 className={ele2}>Research & Reports</h4>

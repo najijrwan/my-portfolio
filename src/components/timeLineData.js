@@ -1,32 +1,32 @@
 // Journey Items
 const timelineSegments = {
   segment1: [
-    { name: "Java", imgSrc: "src/assets/java.png", color: "#D43609", date: "Mar 2023", bounceAnim: "animate-bounce" },
-    { name: "HTML", imgSrc: "src/assets/html.png", color: "#F66B4E", date: "Mar 2024", bounceAnim: "animate-bounce" },
-    { name: "CSS", imgSrc: "src/assets/css.png", color: "#45A8F2", date: "Apr 2024", bounceAnim: "animate-bounce" },
+    { name: "Java", imgSrc: "/images/java.png", color: "#D43609", date: "Mar 2023", bounceAnim: "animate-bounce" },
+    { name: "HTML", imgSrc: "/images/html.png", color: "#F66B4E", date: "Mar 2024", bounceAnim: "animate-bounce" },
+    { name: "CSS", imgSrc: "/images/css.png", color: "#45A8F2", date: "Apr 2024", bounceAnim: "animate-bounce" },
   ],
   segment2: [
-    { name: "JavaScript", imgSrc: "src/assets/javascript.png", color: "#F7DF1E", date: "May 2024", bounceAnim: "animate-bounce" },
-    { name: "PHP", imgSrc: "src/assets/php.png", color: "#777BB4", date: "Oct 2024", bounceAnim: "animate-bounce" },
-    { name: "C#", imgSrc: "src/assets/csharp.png", color: "#8A2BE2", date: "Oct 2024", bounceAnim: "animate-bounce" },
+    { name: "JavaScript", imgSrc: "/images/javascript.png", color: "#F7DF1E", date: "May 2024", bounceAnim: "animate-bounce" },
+    { name: "PHP", imgSrc: "/images/php.png", color: "#777BB4", date: "Oct 2024", bounceAnim: "animate-bounce" },
+    { name: "C#", imgSrc: "/images/csharp.png", color: "#8A2BE2", date: "Oct 2024", bounceAnim: "animate-bounce" },
   ],
   segment3: [
-    { name: "Python", imgSrc: "src/assets/python.png", color: "#3776AB", date: "Mar 2025", bounceAnim: "animate-bounce" },
-    { name: "Tailwind", imgSrc: "src/assets/tailwind-css.png", color: "#06B6D4", date: "May 2025", bounceAnim: "animate-bounce" },
-    { name: "React", imgSrc: "src/assets/react.png", color: "#61DAFB", date: "May 2025", bounceAnim: "animate-bounce" },
+    { name: "Python", imgSrc: "/images/python.png", color: "#3776AB", date: "Mar 2025", bounceAnim: "animate-bounce" },
+    { name: "Tailwind", imgSrc: "/images/tailwind-css.png", color: "#06B6D4", date: "May 2025", bounceAnim: "animate-bounce" },
+    { name: "React", imgSrc: "/images/react.png", color: "#61DAFB", date: "May 2025", bounceAnim: "animate-bounce" },
   ],
   segment4: [
-    { name: "Next JS", imgSrc: "src/assets/nextjavascript.png", color: "#FFFFFF", date: "Next", bounceAnim: "animate-bounce" },
-    { name: "TypeScript", imgSrc: "src/assets/typescript.png", color: "#3178C6", date: "Next", bounceAnim: "animate-bounce" },
-    { name: "Node JS", imgSrc: "src/assets/nodejavascript.png", color: "#98FB98", date: "Next", bounceAnim: "animate-bounce" },
+    { name: "Next JS", imgSrc: "/images/nextjavascript.png", color: "#FFFFFF", date: "Next", bounceAnim: "animate-bounce" },
+    { name: "TypeScript", imgSrc: "/images/typescript.png", color: "#3178C6", date: "Next", bounceAnim: "animate-bounce" },
+    { name: "Node JS", imgSrc: "/images/nodejavascript.png", color: "#98FB98", date: "Next", bounceAnim: "animate-bounce" },
   ],
   segment5: [
-    { name: "React Native", imgSrc: "src/assets/expo.png", color: "var(--color-react-native)", date: "Next", bounceAnim: "animate-bounce" },
-    { name: "Dart", imgSrc: "src/assets/dart.png", color: "#00B4AB", date: "Next", bounceAnim: "animate-bounce" },
-    { name: "Flutter", imgSrc: "src/assets/flutter.png", color: "#02569B", date: "Next", bounceAnim: "animate-bounce" },
+    { name: "React Native", imgSrc: "/images/expo.png", color: "var(--color-react-native)", date: "Next", bounceAnim: "animate-bounce" },
+    { name: "Dart", imgSrc: "/images/dart.png", color: "#00B4AB", date: "Next", bounceAnim: "animate-bounce" },
+    { name: "Flutter", imgSrc: "/images/flutter.png", color: "#02569B", date: "Next", bounceAnim: "animate-bounce" },
   ],
   segment6: [
-    { name: "Swift", imgSrc: "src/assets/swift.png", color: "#FA7343", date: "Next", bounceAnim: "animate-bounce" },
+    { name: "Swift", imgSrc: "/images/swift.png", color: "#FA7343", date: "Next", bounceAnim: "animate-bounce" },
   ],
 };
 
