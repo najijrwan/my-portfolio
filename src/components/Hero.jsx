@@ -34,7 +34,7 @@ const Hero = () => {
                     <h1 className="text-base text-[17px] sm:text-[26px] font-[600] mb-[10px] tracking-tight 
                     sm:mb-[15px] 
                     xl:whitespace-nowrap xl:text-center xl:tracking-wider xl:text-2xl" title="Naji Al-Jrwan">
-                        <i className="tracking-wider">Naji AlJarwan</i>
+                        <i className="tracking-wider">Naji Al - Jarwan</i>
                     </h1>
                     <p className="text-base bg-onyx text-[12px] font-[300]! w-max py-[3px] px-[12px] rounded-[8px] 
                     sm:py-[5px] sm:px-[18px] 
