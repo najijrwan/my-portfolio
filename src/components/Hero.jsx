@@ -39,7 +39,7 @@ const Hero = () => {
                     <p className="text-base bg-onyx text-[12px] font-[300]! w-max py-[3px] px-[12px] rounded-[8px] 
                     sm:py-[5px] sm:px-[18px] 
                     xl:m-auto">
-                        Front-End Developer
+                        Software Developer
                     </p>
                 </div>
                 <button

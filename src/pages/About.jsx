@@ -2,7 +2,7 @@
 import Navbar from "../components/Navbar";
 
 export const ele1 =
-  `relative p-[20px] rounded-[14px] shadow-2 z-10 bg-gradient-onyx
+  `relative h-full p-[20px] rounded-[14px] shadow-2 z-10 bg-gradient-onyx
   before:content-[""] before:block before:absolute before:rounded-[inherit] before:inset-[1px] before:-z-[1] before:bg-gradient-jet 
   sm:flex-start-start sm:gap-[25px] sm:p-[30px]`;
 
@@ -35,7 +35,7 @@ const About = () => {
         <h2 className={h2Ele}>About Me</h2>
         <section className="sm:mb-[40px]">
           <p>
-            I'm a detail-oriented and growth-focused software engineer who takes pride in writing clean, maintainable code and building thoughtful, user-centered applications.
+            I'm a detail-oriented and growth-focused <span className="font-bold">software developer</span> who takes pride in writing clean, maintainable code and building thoughtful, user-centered applications.
             I’m constantly refining my work to improve structure, performance, and experience, with a strong belief in best practices and continuous learning.
           </p>
           <p>
@@ -49,9 +49,9 @@ const About = () => {
           What I'm Doing
         </h3>
         <section className="mb-9">
-          <ul className="grid grid-cols-1 gap-5 lg:grid-cols-2 lg:gap-y-[20px] lg:gap-x-[25px]">
-            <a href="/projects?category=applications">
-              <li className={ele1}>
+          <ul className="grid grid-cols-1 grid-rows-2 2xl:grid-rows-1 gap-5 lg:grid-cols-2 lg:gap-y-[20px] lg:gap-x-[25px]">
+            {/* <a href="/projects?category=applications" className="relative">
+              <li className={`${ele1} opacity-35`}>
                 <div className="mb-[10px] sm:mb-0 sm:mt-[5px]">
                   <img src="/images/icon-app.svg" alt="mobile app icon" className="block size-10 m-auto" />
                 </div>
@@ -60,14 +60,14 @@ const About = () => {
                   <p className={ele3}>Professional & modern development of applications for Android and ios.</p>
                 </div>
               </li>
-            </a>
+            </a> */}
             <a href="/projects?category=websites">
               <li className={ele1}>
                 <div className="mb-2.5">
                   <img src="/images/icon-dev.svg" alt="web development icon" className="block size-10 m-auto" />
                 </div>
                 <div className="text-center sm:text-left">
-                  <h4 className={ele2}>Web Development</h4>
+                  <h4 className={ele2}>Front-End Development</h4>
                   <p className={ele3}>High-quality development of sites at the professional level.</p>
                 </div>
               </li>
@@ -81,7 +81,7 @@ const About = () => {
                 <p className={ele3}>High-performance backend services designed for scalability and seamless user experience.</p>
               </div>
             </li>
-            <li className={ele1}>
+            {/* <li className={ele1}>
               <div className="mb-2.5">
                 <img src="/images/icon-research.svg" alt="backend development icon" className="block size-10 m-auto" />
               </div>
@@ -89,7 +89,7 @@ const About = () => {
                 <h4 className={ele2}>Research & Reports</h4>
                 <p className={ele3}>Expert in conducting thorough investigations and delivering clear, structured reports on findings and methodologies.</p>
               </div>
-            </li>
+            </li> */}
           </ul>
         </section>
         <h3 className={h3Ele}>
