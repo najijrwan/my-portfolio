@@ -25,8 +25,8 @@ const Hero = () => {
         ${isExpanded ? 'max-h-[405px] sm:max-h-[584px]' : 'max-h-[112px]'}`}>
             <div className="relative flex-start-row gap-[15px] sm:gap-[25px] xl:flex-col">
                 <figure className="bg-gradient-onyx-2 rounded-[20px] relative sm:rounded-[30px]">
-                    <a href="http://localhost:5173//images/Yo.JPG" target="_blank" rel="noopener noreferrer">
-                        <img src="/images/Yo.JPG" alt="Yo" className="block size-20 sm:size-[120px] xl:size-[150px] rounded-[20px] border border-jet object-cover object-top" />
+                    <a href="http:////images/me.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="public/images/me.jpg" alt="me" className="block size-20 sm:size-[120px] xl:size-[150px] rounded-[20px] border border-jet object-cover object-top" />
                     </a>
                     <span className="size-3 rounded-full bg-[#39ff14] animate-pulse absolute bottom-0 right-0"></span>
                 </figure>
