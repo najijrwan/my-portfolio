@@ -14,7 +14,7 @@ import {
   timeLineDataForADVAtLG1,
 } from "./timeLineData";
 
-import TimelineItem from "../components/TimeLineItem";
+import TimelineItem from "./TimeLineItem";
 
 export const section = `
   relative w-full flex justify-center sm:hidden lg:hidden`;

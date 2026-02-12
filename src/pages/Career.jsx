@@ -1,96 +1,164 @@
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import { Briefcase, Code2, Rocket } from 'lucide-react';
-import Navbar from '../components/Navbar.jsx';
-import { h2Ele } from './About.jsx';
+//Career.jsx
+import Navbar from "../components/Navbar.jsx";
+import { useState, useEffect } from "react";
+import { h2Ele, h3Ele, spanEle1, spanEle2 } from './index.jsx';
+import { projectSections, ProjectButton, ProjectSection } from "../components/ProjectExplanation.jsx";
+import { renderTimelineGroup } from "../components/TimelineGroups.jsx";
 
-export default function Career() {
+export const explanationPara = `
+  text-light-gray-70 relative pl-3
+  before:absolute before:content-[''] before:-left-[19px] before:top-[6px] before:bg-transparent before:size-[13px] before:rounded-full before:border before:border-highlight 
+  after:shadow-[0px_0px_5px] after:shadow-highlight before:shadow-[0px_0px_5px] before:shadow-highlight
+  after:absolute after:content-[''] after:bg-highlight after:left-[-16px] after:top-[9px] after:size-[7px] after:rounded-full`;
+
+const Career = () => {
+  const [expandedSections, setExpandedSections] = useState({});
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const sectionIds = ['Fitnessoo', 'Fitnessoo-Continued', 'Quizo', 'Ma7ali', 'Portfolio'];
+
+  const toggleExpanded = (id) => {
+    setExpandedSections((prev) => ({
+      ...prev,
+      [id]: !prev[id],
+    }));
+  };
+
+  const toggleExpandedList = () => {
+    const newState = !isExpanded;
+    setIsExpanded(newState);
+
+    const updatedSections = {};
+    sectionIds.forEach(id => {
+      updatedSections[id] = newState;
+    });
+    setExpandedSections(updatedSections);
+  };
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(min-width: 1024px)');
+
+    const handleResize = () => {
+      const isLarge = mediaQuery.matches;
+      setIsExpanded(isLarge);
+
+      const allExpanded = {};
+      sectionIds.forEach(id => {
+        allExpanded[id] = isLarge;
+      });
+      setExpandedSections(allExpanded);
+    };
+
+    handleResize(); // Run once on mount
+    mediaQuery.addEventListener('change', handleResize);
+
+    return () => mediaQuery.removeEventListener('change', handleResize);
+  }, []); // ❗️No need to include `sectionIds` if it’s defined in the same component
+
+
   return (
-    <article>
+    <article className="">
       <Navbar />
-      <div className="p-5 sm:p-8">
+      <div className="p-[20px] sm:p-[30px]">
         <h2 className={h2Ele}>Journey</h2>
+        <div className="flex-center-col gap-[170px] w-full mt-35 mb-25">
+          {renderTimelineGroup("Main")}
+        </div>
 
-        <VerticalTimeline animate={false} lineColor="#ffdb70" className='before:w-px! before:animate-progress'>
-          {/* Software Engineer */}
-          <VerticalTimelineElement
-            contentStyle={{
-              background: '#1e1e1e',
-              color: '#fff',
-              boxShadow: 'var(--shadow-3)',
-              border: '1px solid hsl(45, 100%, 72%)',
-            }}
-            contentArrowStyle={{ borderRight: '7px solid #1e1e1e' }}
-            date="2022 - Present"
-            iconStyle={{
-              background: 'linear-gradient(to right, #ffdb70, #facc15)',
-              color: '#000',
-              boxShadow: '0 0 10px #ffdb70',
-              animation: 'pulse 1.5s infinite ease-in-out',
-            }}
-            icon={<Briefcase />}
-          >
-            <h3 className="text-xl font-bold tracking-wide text-yellow-400">Software Engineer</h3>
-            <h4 className="text-md font-semibold text-gray-300">TechCorp</h4>
-            <p className="mt-2 text-sm text-gray-300">
-              Built scalable apps using React, Firebase, and Node.js. Led UI redesign with Tailwind.
-            </p>
-          </VerticalTimelineElement>
+        <div className="animate-fade-3 opacity-0 h-0 overflow-hidden mb-15">
+          <h3 className={h3Ele}>
+            <span className={spanEle1}></span>
+            <span className={spanEle2}></span>
+            Journey Explanation
+          </h3>
+          <div className="flex flex-col gap-3 mb-7">
+            <div className="md:w-[70%] lg:w-[50%]">
+              <ProjectButton onClick={toggleExpandedList} isExpanded={isExpanded} label={isExpanded ? 'Read Less' : 'Read More'} />
+            </div>
 
-          {/* Frontend Developer */}
-          <VerticalTimelineElement
-            contentStyle={{
-              background: '#1e1e1e',
-              color: '#fff',
-              boxShadow: 'var(--shadow-2)',
-              border: '1px solid hsl(45, 100%, 72%)',
-            }}
-            contentArrowStyle={{ borderRight: '7px solid #1e1e1e' }}
-            date="2020 - 2022"
-            iconStyle={{
-              background: 'linear-gradient(to right, #ffdb70, #facc15)',
-              color: '#000',
-              boxShadow: '0 0 10px #ffdb70',
-              animation: 'pulse 1.5s infinite ease-in-out',
-            }}
-            icon={<Code2 />}
-          >
-            <h3 className="text-xl font-bold tracking-wide text-yellow-400">Frontend Developer</h3>
-            <h4 className="text-md font-semibold text-gray-300">DevSolutions</h4>
-            <p className="mt-2 text-sm text-gray-300">
-              Developed modern UIs with React and Tailwind, collaborated in agile teams, improved performance by 30%.
-            </p>
-          </VerticalTimelineElement>
+            <ul className={`
+            ${isExpanded ? 'block' : 'hidden'}
+            relative mt-1! custom-transition-2 before:absolute before:content-[''] before:h-full before:w-px before:-z-10 before:bg-jet before:top-1.5 before:left-[7px] 
+            `}>
+              <li className="text-highlight ml-5 mb-2">
+                <p className={explanationPara}>
+                  My learning journey—from <i>Java</i> to <i>Python</i> and beyond—began as part of my Bachelor's degree in Computer Science.
+                  I was first introduced to programming through <i>Java</i>, which I studied across three core
+                  courses: <i>Introduction to Programming</i>, <i>Intermediate Programming with Objects</i>,
+                  and <i>Data Structures</i>, all based on the textbook <i>Introduction to Java Programming (9th Edition) by Y. Daniel Liang</i>.
+                </p>
+              </li>
+              <li className="text-highlight ml-5 mb-2">
+                <p className={explanationPara}>
+                  I later explored web development fundamentals—<i>HTML, CSS, JavaScript</i>, and <i>PHP</i>—through two specialized courses:
+                  <i>Web Programming</i> and <i>Web Programming Advanced</i>. I also gained exposure to Windows-based GUI development in a course
+                  called <i>Visual Programming</i>, and later transitioned to learning <i>Python</i> through a <i>Machine Learning</i> course.
+                </p>
+              </li>
+              <li className="text-highlight ml-5 mb-2">
+                <p className={explanationPara}>
+                  Near the end of my degree, I began independently exploring new technologies, focusing on modern tools
+                  like <i>Tailwind CSS</i> and <i>React</i> by studying open-source projects and official documentation.
+                  My goal is to continually expand my skills and build practical, full-stack websites and applications.
+                </p>
+              </li>
+              <li className="text-highlight ml-5 mb-2">
+                <p className={explanationPara}>
+                  Each date shown under a language or tool represents when I first started learning it. The colored circles indicate the corresponding
+                  projects I developed afterwards.
+                </p>
+              </li>
+              <li className="text-highlight ml-5 mb-2">
+                <p className={explanationPara}>
+                  Below is a breakdown of the major projects I completed during my learning journey. <br />
+                  Each of these projects has contributed to my growth as a developer, helping me to refine my skills and expand my knowledge.
+                  I am always eager to learn new technologies and take on new challenges, and I look forward to continuing my journey in
+                  web and application development.
+                </p>
+              </li>
+            </ul>
+          </div>
 
-          {/* Intern */}
-          <VerticalTimelineElement
-            contentStyle={{
-              background: '#1e1e1e',
-              color: '#fff',
-              boxShadow: 'var(--shadow-1)',
-              border: '1px solid hsl(45, 100%, 72%)',
-            }}
-            contentArrowStyle={{ borderRight: '7px solid #1e1e1e' }}
-            date="2019 - 2020"
-            iconStyle={{
-              background: 'linear-gradient(to right, #ffdb70, #facc15)',
-              color: '#000',
-              boxShadow: '0 0 10px #ffdb70',
-              animation: 'pulse 1.5s infinite ease-in-out',
-            }}
-            icon={<Rocket />}
-          >
-            <h3 className="text-xl font-bold tracking-wide text-yellow-400">Intern Developer</h3>
-            <h4 className="text-md font-semibold text-gray-300">CodeSpark</h4>
-            <p className="mt-2 text-sm text-gray-300">
-              Contributed to frontend tasks, built mini-projects in JavaScript, and learned Git and collaboration.
-            </p>
-          </VerticalTimelineElement>
-        </VerticalTimeline>
+          <div className="md:grid md:grid-cols-2 lg:grid-cols-2 gap-4 items-start">
+            {projectSections.map((section) => (
+              <ProjectSection
+                key={section.id}
+                point={section.point}
+                title={section.title}
+                techColors={section.techColors}
+                isExpanded={!!expandedSections[section.id]} // ✅ scoped to this section
+                onToggle={() => toggleExpanded(section.id)} // ✅ toggles only this one
+              >
+                {section.content}
+              </ProjectSection>
+            ))}
+          </div>
+        </div>
+        <div className="animate-fade-3 opacity-0 h-0  overflow-hidden mb-25">
+          <h3 className={h3Ele}>
+            <span className={spanEle1}></span>
+            <span className={spanEle2}></span>
+            Full Stack Developer Roadmap
+          </h3>
+
+          <div className="flex-center-col gap-[170px] w-full mt-35">
+            {renderTimelineGroup("Full Stack Developer")}
+          </div>
+        </div>
+        <div className="animate-fade-3 opacity-0 h-0 overflow-hidden mb-25">
+          <h3 className={h3Ele}>
+            <span className={spanEle1}></span>
+            <span className={spanEle2}></span>
+            Apps Development Roadmap
+          </h3>
+
+          <div className="flex-center-col gap-[170px] w-full mt-35">
+            {renderTimelineGroup("Application Development")}
+          </div>
+        </div>
       </div>
     </article>
   );
-}
+};
+
+export default Career;

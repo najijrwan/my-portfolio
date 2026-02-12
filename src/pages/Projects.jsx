@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react"
 import Navbar from "../components/Navbar";
-import { h2Ele } from './About.jsx';
+import { h2Ele } from './index.jsx';
 
 const EyeOutlineIcon = ({ className = "w-4 h-4 text-highlight stroke-[50]" }) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" stroke="currentColor" className={className}>

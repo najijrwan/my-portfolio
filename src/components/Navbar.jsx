@@ -15,7 +15,7 @@ export default function BottomNav() {
         lg:shadow-none lg:text-[15px]`}>
       <ul className="flex-start-col flex-wrap py-0 px-[10px] text-base gap-[5px] xs:gap-[6vw] sm:gap-[35px] md:gap-[55px] lg:p-[20px]">
         <li>
-          <NavLink to="/about" className={getNavLinkClass}>
+          <NavLink to="/" className={getNavLinkClass}>
             About
           </NavLink>
         </li>

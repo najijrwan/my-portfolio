@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import { h2Ele } from './About.jsx';
+import { h2Ele } from './index.jsx';
 // Contact.jsx
 export const inputEle1 =
   `text-base text-[14px] font-[400] py-[13px] px-[20px] border border-jet rounded-[14px] outline-0 sm:py-[15px] sm:px-[20px] sm:text-[15px]`;
@@ -13,7 +13,7 @@ const Contact = () => {
         mb-[30px] relative h-[250px] w-full rounded-[16px] border border-jet overflow-hidden 
         sm:h-[380px] sm:rounded-[18px]">
           <figure className="h-full">
-            <iframe className="w-full h-full border-hidden grayscale-100 invert-100"src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6641.003183453779!2d35.831684!3d33.67007400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slb!4v1748365053044!5m2!1sen!2slb" width="600" height="450" loading="lazy"></iframe>
+            <iframe className="w-full h-full border-hidden grayscale-100 invert-100" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6641.003183453779!2d35.831684!3d33.67007400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slb!4v1748365053044!5m2!1sen!2slb" width="600" height="450" loading="lazy"></iframe>
           </figure>
         </section>
         <section className="mb-[10px]">

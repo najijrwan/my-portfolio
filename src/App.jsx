@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import Hero from './components/Hero';
-import About from "./pages/About";
+import About from "./pages";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
-import Career1 from "./pages/Career1";
+import Career1 from "./pages/Career";
 
 function App() {
   return (
