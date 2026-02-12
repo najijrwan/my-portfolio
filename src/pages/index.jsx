@@ -49,7 +49,7 @@ const About = () => {
           What I'm Doing
         </h3>
         <section className="mb-9">
-          <ul className="grid grid-cols-1 grid-rows-2 2xl:grid-rows-1 gap-5 lg:grid-cols-2 lg:gap-y-[20px] lg:gap-x-[25px]">
+          <ul className="grid grid-cols-1 gap-5 lg:grid-cols-2 lg:gap-y-[20px] lg:gap-x-[25px]">
             <a href="/projects?category=applications" className="relative">
               <li className={ele1}>
                 <div className="mb-[10px] sm:mb-0 sm:mt-[5px]">
