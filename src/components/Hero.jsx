@@ -30,7 +30,6 @@ const Hero = () => {
                             src="/images/me.jpeg"
                             className="block size-20 sm:size-[120px] xl:size-[150px] rounded-[20px] sm:rounded-[30px] border border-jet object-cover object-top"
                         />
-                        {/* <img src="/images/me.jpg" alt="me" className="block size-20 sm:size-[120px] xl:size-[150px] rounded-[20px] border border-jet object-cover object-top" /> */}
                     </a>
                     <span className="size-3 rounded-full bg-[#39ff14] animate-pulse absolute bottom-0 right-0"></span>
                 </figure>

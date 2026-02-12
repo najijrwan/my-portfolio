@@ -32,7 +32,7 @@ const About = () => {
     <article>
       <Navbar />
       <div className="p-[20px] sm:p-[30px]">
-        <h2 className={h2Ele}>About Me</h2>
+        <h2 className={h2Ele}>About</h2>
         <section className="sm:mb-[40px]">
           <p>
             I'm a detail-oriented and growth-focused <span className="font-bold">software developer (Fron-End Focus)</span> who takes pride in writing clean, maintainable code and building thoughtful, user-centered applications.
