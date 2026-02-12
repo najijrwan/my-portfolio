@@ -47,27 +47,27 @@ const Projects = () => {
 
   const categories = [
     { label: "All", value: "all" },
-    { label: "Applications", value: "application" },
-    { label: "Websites", value: "website" },
-    { label: "Desktop Applications", value: "Desktop Application" },
+    { label: "Applications", value: "applications" },
+    { label: "Websites", value: "websites" },
+    { label: "Desktop Applications", value: "Desktop Applications" },
   ];
 
   const projectData = [
     {
       title: "Fitnessoo",
-      type: "website",
+      type: "websites",
       img: "/images/Fitnessoo.png",
       link: "https://fitnessoo.infinityfreeapp.com/index.php"
     },
     {
       title: "Ma7ali",
-      type: "application",
+      type: "applications",
       img: "/images/Ma7ali.png",
       link: "https://paperless-a64a0.web.app/"
     },
     {
       title: "Quizo",
-      type: "Desktop Application",
+      type: "Desktop Applications",
       img: "/images/Quizo.png",
       link: "https://github.com/najijrwan/Quizo"
     },
