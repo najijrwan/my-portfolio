@@ -35,7 +35,7 @@ const About = () => {
         <h2 className={h2Ele}>About Me</h2>
         <section className="sm:mb-[40px]">
           <p>
-            I'm a detail-oriented and growth-focused <span className="font-bold">software developer</span> who takes pride in writing clean, maintainable code and building thoughtful, user-centered applications.
+            I'm a detail-oriented and growth-focused <span className="font-bold">software developer (Fron-End Focus)</span> who takes pride in writing clean, maintainable code and building thoughtful, user-centered applications.
             I’m constantly refining my work to improve structure, performance, and experience, with a strong belief in best practices and continuous learning.
           </p>
           <p>
@@ -50,8 +50,8 @@ const About = () => {
         </h3>
         <section className="mb-9">
           <ul className="grid grid-cols-1 grid-rows-2 2xl:grid-rows-1 gap-5 lg:grid-cols-2 lg:gap-y-[20px] lg:gap-x-[25px]">
-            {/* <a href="/projects?category=applications" className="relative">
-              <li className={`${ele1} opacity-35`}>
+            <a href="/projects?category=applications" className="relative">
+              <li className={ele1}>
                 <div className="mb-[10px] sm:mb-0 sm:mt-[5px]">
                   <img src="/images/icon-app.svg" alt="mobile app icon" className="block size-10 m-auto" />
                 </div>
@@ -60,27 +60,27 @@ const About = () => {
                   <p className={ele3}>Professional & modern development of applications for Android and ios.</p>
                 </div>
               </li>
-            </a> */}
+            </a>
             <a href="/projects?category=websites">
               <li className={ele1}>
                 <div className="mb-2.5">
                   <img src="/images/icon-dev.svg" alt="web development icon" className="block size-10 m-auto" />
                 </div>
                 <div className="text-center sm:text-left">
-                  <h4 className={ele2}>Front-End Development</h4>
-                  <p className={ele3}>High-quality development of sites at the professional level.</p>
+                  <h4 className={ele2}>Web Development</h4>
+                  <p className={ele3}>High-quality websites at the professional level</p>
                 </div>
               </li>
             </a>
-            <li className={ele1}>
+            {/* <li className={ele1}>
               <div className="mb-2.5">
                 <img src="/images/icon-backend.svg" alt="backend development icon" className="block size-10 m-auto" />
               </div>
               <div className="text-center sm:text-left">
                 <h4 className={ele2}>Back-End Development</h4>
-                <p className={ele3}>High-performance backend services designed for scalability and seamless user experience.</p>
+                <p className={ele3}>High-performance backend services designed for scalability and seamless user experience</p>
               </div>
-            </li>
+            </li> */}
             {/* <li className={ele1}>
               <div className="mb-2.5">
                 <img src="/images/icon-research.svg" alt="backend development icon" className="block size-10 m-auto" />

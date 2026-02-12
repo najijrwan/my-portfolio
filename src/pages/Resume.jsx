@@ -17,7 +17,7 @@ export const liEle1 =
 export const liEle2 =
   `relative pl-[1em] before:content-[''] before:absolute before:left-0 before:top-[9px] before:size-[5px] before:bg-[#ffd700] before:rounded-full `;
 export const h4Ele1 =
-  `text-[15px]/5 sm:-text-[14px] mb-[7px] font-bold`;
+  `text-[15px]/5 sm:-text-[14px] mb-[7px] font-medium`;
 export const pEle1 =
   `text-light-gray text-[15px]/6 font-[300] xl:max-w-[700px] mb-2`;
 const spanEle1 =
@@ -114,7 +114,7 @@ const Resume = () => {
               <h4 className={h4Ele1} ><i className="font-serif tracking-wider">Fitnessoo</i> &nbsp; • &nbsp; Simple fitness tracking website</h4>
               <p className={pEle1} >A basic fitness-focused website that tracks user metrics and personal data with clean structure and design. </p>
               <p className={pEle1} >
-                <strong className="text-base font-bold ">Stack : </strong>
+                <strong className="text-base">Stack: </strong>
                 <i className="font-serif text-yellow-crayola">HTML &nbsp; - &nbsp; CSS &nbsp; - &nbsp; JavaScript &nbsp; - &nbsp; PHP</i>
               </p>
               <ul className={pEle1} >
@@ -128,7 +128,7 @@ const Resume = () => {
               <h4 className={h4Ele1} ><i className="font-serif tracking-wider">Quizo</i> &nbsp; • &nbsp; Desktop Quiz Application</h4>
               <p className={pEle1} >A fun and interactive Windows Forms-based quiz game built with C# for desktop users. </p>
               <p className={pEle1} >
-                <strong className="text-base font-bold ">Stack : </strong>
+                <strong className="text-base">Stack: </strong>
                 <i className="font-serif text-yellow-crayola">C#</i> - Windows Forms (Visual Studio 2022)</p>
               <ul className={pEle1} >
                 <li className={liEle2}>Developed a single-player quiz system with category and level progression, requiring users to complete 3 categories, each containing 3 levels of 5 questions. </li>
@@ -141,7 +141,7 @@ const Resume = () => {
               <h4 className={h4Ele1} ><i className="font-serif tracking-wider">Ma7ali</i> &nbsp; • &nbsp; Full-Stack POS System for Small Businesses </h4>
               <p className={pEle1} >A comprehensive POS progressive web application (PWA)  for managing inventory, sales, customer debts, and business analytics. </p>
               <p className={pEle1} >
-                <strong className="text-base font-bold ">Stack : </strong>
+                <strong className="text-base">Stack: </strong>
                 <i className="font-serif text-yellow-crayola">HTML &nbsp; - &nbsp; CSS &nbsp; - &nbsp; JavaScript &nbsp; - &nbsp; Firebase</i>
               </p>
               <ul className={pEle1} >
@@ -157,6 +157,22 @@ const Resume = () => {
               </ul>
             </li>
             <li className={liEle1} >
+              <h4 className={h4Ele1} ><i className="font-serif tracking-wider">3legant</i> &nbsp; • &nbsp; Modular E-Commerce Frontend Architecture </h4>
+              <p className={pEle1} >A scalable, component-driven e-commerce frontend built with a focus on clean architecture and responsive UI systems.</p>
+              <p className={pEle1} >
+                <strong className="text-base">Stack: </strong>
+                <i className="font-serif text-yellow-crayola">CSS &nbsp; - &nbsp; JavaScript &nbsp; - &nbsp; Tailwind CSS &nbsp; - &nbsp; React + Vite</i>
+              </p>
+              <ul className={pEle1} >
+                <li className={liEle2}>Architected a modular frontend structure separating pages, UI components, hooks, state, and data layers for maintainability and extensibility.</li>
+                <li className={liEle2}>Implemented dynamic product grid systems (4x2, 3x3, horizontal layouts) with state-driven layout switching.</li>
+                <li className={liEle2}>Built reusable UI components including product cards, layout selectors, dropdown controls, and progressive “View More” rendering.</li>
+                <li className={liEle2}>Developed custom responsive breakpoint hooks to optimize layouts across desktop abd mobile devices.</li>
+                <li className={liEle2}>Configured Vite with path aliases and SVG integration for scalable asset management.</li>
+                <li className={liEle2}>Designed the codebase to support future backend integration and full e-commerce functionality.</li>
+              </ul>
+            </li>
+            {/* <li className={liEle1} >
               <h4 className={h4Ele1} ><i className="font-serif tracking-wider">My Portfolio</i> &nbsp; • &nbsp; Interactive Developer Showcase Website </h4>
               <p className={pEle1} >A personal website built to present skills, projects, and career roadmap for full-stack and application development roles. </p>
               <p className={pEle1} >
@@ -170,7 +186,7 @@ const Resume = () => {
                 <li className={liEle2}>Built independently as a personal branding tool to support job hunting and showcase growth mindset and self-learning path. </li>
                 <li className={liEle2}>Independently designed and implemented both the front-end and back-end.</li>
               </ul>
-            </li>
+            </li> */}
           </ol>
         </section>
         <section className=' mb-[30px] ' >
