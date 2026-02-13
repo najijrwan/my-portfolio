@@ -20,3 +20,5 @@ const NameAndTitle = () => (
         </div>
     </>
 )
+
+export default NameAndTitle;

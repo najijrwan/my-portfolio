@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
-import Hero from './components/Hero';
+import Hero from '@layout/hero/Hero';
 import About from "./pages";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";

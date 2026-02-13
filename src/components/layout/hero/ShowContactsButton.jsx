@@ -1,15 +1,17 @@
-const ShowContactsButton = ({ onClick }) => (
+const ShowContactsButton = ({ onClick, isExpanded }) => (
     <button
         onClick={onClick}
         className="
-        absolute -top-[15px] -right-[15px] rounded-tr-[15px] rounded-bl-[15px] text-[13px] text-highlight p-[10px] z-10 
-        bg-gradient-onyx shadow-2 custom-transtion-1 cursor-pointer 
-        before:content-[''] before:absolute before:inset-px before:rounded-[inherit] before:bg-gradient-jet 
+        absolute -right-[15px] sm:right-[-30px] -top-[15px] sm:top-[-30px] z-10
+        p-[10px] sm:px-[15px] sm:py-[10px]
+        xl:hidden
+        text-[13px] text-highlight
+        bg-gradient-onyx shadow-2 rounded-tr-[15px] rounded-bl-[15px]
+        custom-transtion-1 cursor-pointer 
+        before:content-[''] before:absolute before:inset-px before:bg-gradient-jet before:rounded-[inherit]
         before:custom-transition-1 before:-z-10
-        hover:bg-gradient-yellow focus:bg-gradient-yellow focus:outline-amber-200 hover:before:bg-gradient-yellow-2 
-        focus:before:bg-gradient-yellow-2
-        sm:top-[-30px] sm:right-[-30px] sm:py-[10px] sm:px-[15px] 
-        xl:hidden"
+        hover:bg-gradient-yellow hover:before:bg-gradient-yellow-2 
+        focus:bg-gradient-yellow focus:outline-amber-200 focus:before:bg-gradient-yellow-2"
     >
         <span className="hidden sm:block sm:text-[12px] tracking-wider">Show Contacts</span>
         <svg
@@ -22,8 +24,10 @@ const ShowContactsButton = ({ onClick }) => (
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className={`lucide lucide-chevron-down block transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''} 
-                        sm:hidden`}
+            className={`
+                lucide lucide-chevron-down
+                block sm:hidden 
+                transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''} `}
         >
             <path d="m6 9 6 6 6-6" />
         </svg>

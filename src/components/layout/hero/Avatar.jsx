@@ -14,7 +14,11 @@ const Avatar = () => (
         </a>
         <span
             className="
-            size-3 bg-[#39ff14] rounded-full animate-pulse absolute bottom-0 right-0">
+            absolute bottom-0 right-0
+            size-3
+            bg-[#39ff14] rounded-full
+            animate-pulse"
+        >
         </span>
     </figure>
 )
