@@ -1,5 +1,3 @@
-
-
 const Avatar = () => (
     <figure className="bg-gradient-onyx-2 rounded-[20px] relative sm:rounded-[30px]">
         <a
