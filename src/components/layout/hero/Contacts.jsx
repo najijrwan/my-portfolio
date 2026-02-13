@@ -1,18 +1,9 @@
 import { CONTACTS } from '@data';
 
 const CONTACTS_ITEMS = [
-    {
-        label: 'EMAIL',
-        value: CONTACTS.email,
-    },
-    {
-        label: 'PHONE',
-        value: CONTACTS.phone,
-    },
-    {
-        label: 'LOCATON',
-        value: CONTACTS.location,
-    },
+    { label: 'EMAIL', value: CONTACTS.email, href: `mailto:${CONTACTS.email}`, },
+    { label: 'PHONE', value: CONTACTS.phone, href: `tel:${CONTACTS.phone}`, },
+    { label: 'LOCATON', value: CONTACTS.location, href: '/contact', },
 ]
 
 const Contacts = () => (
@@ -24,7 +15,8 @@ const Contacts = () => (
         {CONTACTS_ITEMS.map((contact, i) => (
             <li
                 key={i}
-                className='min-w-full flex items-center gap-4'>
+                className='min-w-full flex items-center gap-4'
+            >
                 <div
                     className='
                     relative z-[10]
@@ -57,7 +49,7 @@ const Contacts = () => (
                         {contact.label}
                     </p>
                     <a
-                        href="mailto:najijrwanyt@gmail.com"
+                        href={contact.href}
                         className="
                         block 
                         text-[13px] xl:text-[14px] text-base font-[300] xl:font-[300] truncate"
