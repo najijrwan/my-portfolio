@@ -1,7 +1,7 @@
 import { CONTACTS } from '@data';
 
 const CONTACTS_ITEMS = [
-    { label: 'EMAIL', value: CONTACTS.email, href: `mailto:${CONTACTS.email}`, },
+    { label: 'EMAIL', value: CONTACTS.email, href: `mailto:${CONTACTS.email}`, icon: 'public/icons/mail.svg'},
     { label: 'PHONE', value: CONTACTS.phone, href: `tel:${CONTACTS.phone}`, },
     { label: 'LOCATON', value: CONTACTS.location, href: '/contact', },
 ]

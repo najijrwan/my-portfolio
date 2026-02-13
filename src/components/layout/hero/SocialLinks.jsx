@@ -7,7 +7,9 @@ const SOCIAL_LINKS_ITEMS = [
 ];
 
 const SocialLinks = () => (
-    <div className="pb-[4px] pl-[7px] flex items-center justify-start xl:justify-center gap-4">
+    <div className="
+        pb-[4px] pl-[7px]
+        flex items-center justify-start xl:justify-center gap-4">
         {SOCIAL_LINKS_ITEMS.map((item, i) => (
             <a
                 key={i}
