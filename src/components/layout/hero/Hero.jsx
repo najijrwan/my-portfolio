@@ -1,7 +1,5 @@
 import { useState } from 'react';
-import Avatar from './Avatar';
-import NameAndTitle from './NameAndTitle';
-import ShowContactsButton from "./ShowContactsButton";
+import { Avatar, NameAndTitle, ShowContactsButton } from './HeroHeader';
 import Contacts from './Contacts';
 import SocialLinks from './SocialLinks';
 
