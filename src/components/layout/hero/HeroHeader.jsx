@@ -81,3 +81,13 @@ export const ShowContactsButton = ({ onClick, isExpanded }) => (
         </svg>
     </button>
 )
+
+const HeroHeader = ({ onClick, isExpanded }) => (
+    <>
+        <Avatar />
+        <NameAndTitle />
+        <ShowContactsButton onClick={onClick} isExpanded={isExpanded} />
+    </>
+)
+
+export default HeroHeader;
