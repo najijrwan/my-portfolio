@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+import { Navbar } from "@layout";
 import { h2Ele } from './index.jsx';
 // Contact.jsx
 export const inputEle1 =

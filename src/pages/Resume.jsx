@@ -1,5 +1,5 @@
 // Resume.jsx
-import Navbar from "../components/Navbar";
+import { Navbar } from "@layout";
 import { h2Ele } from './index.jsx';
 export const divEle1 =
   `flex items-center gap-[15px] mb-[25px]`;

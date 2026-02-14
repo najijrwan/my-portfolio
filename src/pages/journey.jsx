@@ -1,5 +1,5 @@
 //Career.jsx
-import Navbar from "../components/Navbar.jsx";
+import { Navbar } from "@layout";
 import { useState, useEffect } from "react";
 import { h2Ele, h3Ele, spanEle1, spanEle2 } from './index.jsx';
 import { projectSections, ProjectButton, ProjectSection } from "../components/ProjectExplanation.jsx";
@@ -11,7 +11,7 @@ export const explanationPara = `
   after:shadow-[0px_0px_5px] after:shadow-highlight before:shadow-[0px_0px_5px] before:shadow-highlight
   after:absolute after:content-[''] after:bg-highlight after:left-[-16px] after:top-[9px] after:size-[7px] after:rounded-full`;
 
-const Career = () => {
+const Journey = () => {
   const [expandedSections, setExpandedSections] = useState({});
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -161,4 +161,4 @@ const Career = () => {
   );
 };
 
-export default Career;
+export default Journey;

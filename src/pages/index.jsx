@@ -1,5 +1,5 @@
 // About.jsx
-import Navbar from "../components/Navbar";
+import { Navbar } from "@layout";
 
 export const ele1 =
   `relative h-full p-[20px] rounded-[14px] shadow-2 z-10 bg-gradient-onyx

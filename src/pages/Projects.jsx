@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react"
-import Navbar from "../components/Navbar";
+import { Navbar } from "@layout";
 import { h2Ele } from './index.jsx';
 
 const EyeOutlineIcon = ({ className = "w-4 h-4 text-highlight stroke-[50]" }) => (

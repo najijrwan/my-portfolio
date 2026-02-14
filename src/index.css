@@ -284,14 +284,6 @@ body::-webkit-scrollbar-button {
 }
 
 @layer components {
-  .navbar-link {
-    @apply text-light-gray py-[20px] custom-transition-1 hover:text-base/50;
-  }
-
-  .navbar-link.active {
-    @apply text-highlight;
-  }
-
   article {
     @apply relative bg-eerie-2 rounded-[20px] border border-solid shadow-1 z-10 border-jet animate-fade sm:w-[520px] sm:mx-auto md:w-[700px] lg:w-[950px] lg:shadow-5 xl:min-h-full xl:w-[900px]!;
   }
