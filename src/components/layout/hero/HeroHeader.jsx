@@ -1,5 +1,5 @@
 export const Avatar = () => (
-    <figure className="bg-gradient-onyx-2 rounded-[20px] relative sm:rounded-[30px]">
+    <figure className="relative bg-gradient-onyx-2 rounded-[20px] sm:rounded-[30px]">
         <a
             href="https://my-portfolio-najijarwan.vercel.app//images/me.jpg"
             target="_blank"
@@ -14,8 +14,8 @@ export const Avatar = () => (
         </a>
         <span
             className="
-            absolute bottom-0 right-0
-            size-3
+            absolute bottom-0.25 right-0.25 sm:bottom-0.5 sm:right-0.5
+            size-3 sm:size-4
             bg-[#39ff14] rounded-full
             animate-pulse"
         >
