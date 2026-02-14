@@ -1,30 +1,34 @@
 import { SOCIAL_LINKS } from "@data";
 
 const SOCIAL_LINKS_ITEMS = [
-    { link: SOCIAL_LINKS.linkedin, icon: '/images/linkedin-brands.svg', alt: 'LinkedIn' },
-    { link: SOCIAL_LINKS.github, icon: '/images/github-brands.svg', alt: 'GitHub' },
-    { link: SOCIAL_LINKS.instagram, icon: '/images/instagram-brands.svg', alt: 'Instagram' },
+    { link: SOCIAL_LINKS.linkedin, Icon: 'logo-linkedin', alt: 'LinkedIn' },
+    { link: SOCIAL_LINKS.github, Icon: 'logo-github', alt: 'GitHub', },
+    { link: SOCIAL_LINKS.instagram, Icon: 'logo-instagram', alt: 'Instagram' },
 ];
 
 const SocialLinks = () => (
     <div className="
         pb-[4px] pl-[7px]
         flex items-center justify-start xl:justify-center gap-4">
-        {SOCIAL_LINKS_ITEMS.map((item, i) => (
+        {SOCIAL_LINKS_ITEMS.map(({ link, Icon, alt }, i) => (
             <a
                 key={i}
-                href={item.link}
+                href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-link"
+                className="flex items-center justify-center"
             >
-                <img
-                    src={item.icon}
-                    alt={item.alt}
-                    className="size-4 hover:invert-50"
-                />
+                <ion-icon
+                    name={Icon}
+                    aria-label={alt}
+                    className={`
+                        text-light-gray hover:invert-50
+                        ${Icon === 'logo-github' ? 'size-4.5' : 'size-4'}`}
+                >
+                </ion-icon>
             </a>
         ))}
+
     </div>
 );
 
