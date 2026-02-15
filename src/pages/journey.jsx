@@ -1,7 +1,7 @@
 //Career.jsx
 import { Navbar } from "@layout";
 import { useState, useEffect } from "react";
-import { h2Ele, h3Ele, spanEle1, spanEle2 } from './index.jsx';
+import { h2Ele, h3Ele, spanEle1, spanEle2 } from './indexTemp.jsx';
 import { projectSections, ProjectButton, ProjectSection } from "../components/ProjectExplanation.jsx";
 import { renderTimelineGroup } from "../components/TimelineGroups.jsx";
 
