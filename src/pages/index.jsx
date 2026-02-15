@@ -1,5 +1,4 @@
 // About.jsx
-import { Navbar } from "@layout";
 
 export const ele1 =
   `relative h-full p-[20px] rounded-[14px] shadow-2 z-10 bg-gradient-onyx
@@ -30,7 +29,6 @@ export const spanEle2 =
 const About = () => {
   return (
     <article>
-      <Navbar />
       <div className="p-[20px] sm:p-[30px]">
         <h2 className={h2Ele}>About</h2>
         <section className="sm:mb-[40px]">
