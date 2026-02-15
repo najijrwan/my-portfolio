@@ -1,9 +1,9 @@
 import { CONTACTS } from '@data';
 
 const CONTACTS_ITEMS = [
-    { label: 'EMAIL', value: CONTACTS.email, href: `mailto:${CONTACTS.email}`, icon: 'public/icons/mail.svg'},
-    { label: 'PHONE', value: CONTACTS.phone, href: `tel:${CONTACTS.phone}`, },
-    { label: 'LOCATON', value: CONTACTS.location, href: '/contact', },
+    { label: 'EMAIL', value: CONTACTS.email, href: `mailto:${CONTACTS.email}`, icon: 'mail-outline'},
+    { label: 'PHONE', value: CONTACTS.phone, href: `tel:${CONTACTS.phone}`, icon: 'call-outline' },
+    { label: 'LOCATON', value: CONTACTS.location, href: '/contact', icon: 'location-outline'},
 ]
 
 const Contacts = () => (
@@ -22,26 +22,13 @@ const Contacts = () => (
                         relative z-[10]
                         size-[30px] sm:size-[48px]
                         flex-center
-                        text-[16px] sm:text-[18px] text-highlight
                         bg-gradient-onyx rounded-[8px] sm:rounded-[12px] shadow-1
                         before:content-[""] before:absolute before:block before:inset-px before:bg-eerie-1
                         before:rounded-[inherit] before:-z-10'
                 >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        className="lucide lucide-mail-icon lucide-mail"
-                    >
-                        <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
-                        <rect x="2" y="4" width="20" height="16" rx="2" />
-                    </svg>
+                    <ion-icon
+                        name={contact.icon}
+                        className='size-4 sm:size-4.5 text-highlight [--ionicon-stroke-width:2.5rem]'></ion-icon>
                 </div>
 
                 <div className="contact-info xl:max-w-fit">
