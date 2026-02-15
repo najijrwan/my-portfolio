@@ -26,8 +26,8 @@ const Navbar = () => (
     >
         <ul
             className="
-            px-[10px] py-0 lg:p-[20px]
-            flex-start-col flex-wrap gap-[5px] xs:gap-[6vw] sm:gap-[35px] md:gap-[55px]"
+                px-[10px] py-0 lg:p-[20px]
+                flex-start-col flex-wrap gap-[5px] xs:gap-[6vw] sm:gap-[35px] md:gap-[55px]"
         >
             {NAV_LINKS.map((link) => (
                 <li key={link.path}>

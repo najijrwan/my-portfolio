@@ -1,10 +1,6 @@
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
-import Layout from "@layout/Layout";
-import About from "./pages";
-import Projects from "./pages/Projects";
-import Resume from "./pages/Resume";
-import Contact from "./pages/Contact";
-import Journey from "./pages/journey";
+import { Layout } from "@layout";
+import { About, Resume, Projects, Contact, Journey } from '@pages';
 
 function App() {
   return (

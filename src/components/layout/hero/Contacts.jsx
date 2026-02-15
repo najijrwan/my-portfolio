@@ -9,8 +9,8 @@ const CONTACTS_ITEMS = [
 const Contacts = () => (
     <ul
         className="
-        grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1! gap-4 sm:gap-[20px]
-        md:gap-y-[30px] md:gap-x-[15px]"
+            grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1! gap-4 sm:gap-[20px]
+            md:gap-y-[30px] md:gap-x-[15px]"
     >
         {CONTACTS_ITEMS.map((contact, i) => (
             <li
@@ -19,13 +19,13 @@ const Contacts = () => (
             >
                 <div
                     className='
-                    relative z-[10]
-                    size-[30px] sm:size-[48px]
-                    flex-center
-                    text-[16px] sm:text-[18px] text-highlight
-                    bg-gradient-onyx rounded-[8px] sm:rounded-[12px] shadow-1
-                    before:content-[""] before:absolute before:block before:inset-px before:bg-eerie-1 before:rounded-[inherit]
-                    before:-z-10'
+                        relative z-[10]
+                        size-[30px] sm:size-[48px]
+                        flex-center
+                        text-[16px] sm:text-[18px] text-highlight
+                        bg-gradient-onyx rounded-[8px] sm:rounded-[12px] shadow-1
+                        before:content-[""] before:absolute before:block before:inset-px before:bg-eerie-1
+                        before:rounded-[inherit] before:-z-10'
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -51,8 +51,8 @@ const Contacts = () => (
                     <a
                         href={contact.href}
                         className="
-                        block 
-                        text-[13px] xl:text-[14px] text-base font-[300] xl:font-[300] truncate"
+                            block 
+                            text-[13px] xl:text-[14px] text-base font-[300] xl:font-[300] truncate"
                     >
                         {contact.value}
                     </a>
