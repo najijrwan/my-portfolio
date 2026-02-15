@@ -1,5 +1,5 @@
 import { Navbar } from "@layout";
-import { h2Ele } from './index.jsx';
+import { h2Ele } from './indexTemp.jsx';
 // Contact.jsx
 export const inputEle1 =
   `text-base text-[14px] font-[400] py-[13px] px-[20px] border border-jet rounded-[14px] outline-0 sm:py-[15px] sm:px-[20px] sm:text-[15px]`;
