@@ -21,7 +21,7 @@ const Hero = () => {
             ${isExpanded ? 'max-h-[405px] sm:max-h-[584px]' : 'max-h-[112px]'}`}
         >
             <div className="relative flex-start-row gap-[15px] sm:gap-[25px] xl:flex-col">
-                <HeroHeader />
+                <HeroHeader onClick={onClick} isExpanded={isExpanded} />
             </div>
 
             <div className={`custom-transition-2 xl:opacity-100 xl:visible ${isExpanded ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
