@@ -20,6 +20,7 @@ export default defineConfig({
       '@components': path.resolve(__dirname, './src/components'),
         '@layout': path.resolve(__dirname, './src/components/layout'),
         '@sections': path.resolve(__dirname, './src/components/sections'),
+          '@about': path.resolve(__dirname, './src/components/sections/about'),
         '@ui': path.resolve(__dirname, './src/components/ui'),
 
       '@data': path.resolve(__dirname, './src/data'),
