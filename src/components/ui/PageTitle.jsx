@@ -1,5 +1,5 @@
 const PageTitle = ({ title }) => (
-    <h2
+    <header
         className='
             relative
             pb-[7px] sm:pb-[15px] md:pb-[20px] mb-[30px] md:mb-[30px] 
@@ -9,7 +9,7 @@ const PageTitle = ({ title }) => (
             after:bg-gradient-yellow-3 after:rounded-[3px]'
     >
         {title}
-    </h2>
+    </header>
 )
 
 export default PageTitle;
