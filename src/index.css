@@ -277,13 +277,6 @@ body::-webkit-scrollbar-button {
 }
 
 @layer components {
-  section {
-    @apply ;
-  }
-
-  section p {
-    @apply  text-[15px]/6 ;
-  }
 
   .has-scrollbar::-webkit-scrollbar {
     width: 1px;
