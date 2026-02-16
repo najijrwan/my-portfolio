@@ -1,2 +1,3 @@
-export { default as PageTitle } from './PageTitle';
+export { default as PageTitle } from './primitives/PageTitle';
+
 export { default as IconBox } from './IconBox';
