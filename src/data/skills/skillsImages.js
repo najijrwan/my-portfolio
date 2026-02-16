@@ -1,4 +1,4 @@
-export const SKILLS = [
+export const SKILLS_IMAGES = [
     '/images/java.png',
     '/images/html.png',
     '/images/css.png',
