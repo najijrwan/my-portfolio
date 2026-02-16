@@ -6,7 +6,6 @@ export const inputEle1 =
 const Contact = () => {
   return (
     <article>
-      <Navbar />
       <div className="p-[20px] sm:p-[30px] ">
         <h2 className={h2Ele} >Contact</h2>
         <section className="

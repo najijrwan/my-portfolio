@@ -58,7 +58,6 @@ const Journey = () => {
 
   return (
     <article className="">
-      <Navbar />
       <div className="p-[20px] sm:p-[30px]">
         <h2 className={h2Ele}>Journey</h2>
         <div className="flex-center-col gap-[170px] w-full mt-35 mb-25">
