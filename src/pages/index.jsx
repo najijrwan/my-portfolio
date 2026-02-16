@@ -1,5 +1,5 @@
 import { PageTitle } from '@ui';
-import { AboutMe, SectionTitle, Roles, Skills } from '@about';
+import { AboutMe, Roles, Skills } from '@about';
 
 const About = () => (
     <>
@@ -7,11 +7,7 @@ const About = () => (
 
         <AboutMe />
 
-        <SectionTitle title="What I'm doing" />
-
         <Roles />
-
-        <SectionTitle title="Skills" />
 
         <Skills />
     </>

@@ -1,10 +1,13 @@
+import SectionContainer from './SectionContainer';
+
+// consider moving roles to data
 const roles = [
-    // {
-    //     href: '/projects?category=applications',
-    //     icon: '/images/icon-app.svg',
-    //     label: 'Mobile Apps',
-    //     details: 'Professional & modern development of applications for Android and ios',
-    // },
+    {
+        href: '/projects?category=applications',
+        icon: '/images/icon-app.svg',
+        label: 'Mobile Apps',
+        details: 'Professional & modern development of applications for Android and ios',
+    },
     {
         href: '/projects?category=websites',
         icon: '/images/icon-dev.svg',
@@ -14,7 +17,7 @@ const roles = [
 ]
 
 const Roles = () => (
-    <section className="mb-9">
+    <SectionContainer title="What I'm doing">
         <div
             className="
                 grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-y-[20px] lg:gap-x-[25px]"
@@ -23,14 +26,15 @@ const Roles = () => (
                 <a
                     key={i}
                     href={role.href}
-                    className='
+                    className={`
                         relative z-10
                         h-full p-[20px] sm:p-[30px]
                         sm:flex-start-start sm:gap-[25px]
                         bg-gradient-onyx rounded-[14px] shadow-2
                         before:content-[""] before:absolute before:inset-[1px] before:-z-[1]
                         before:block
-                        before:bg-gradient-jet before:rounded-[inherit]'
+                        before:bg-gradient-jet before:rounded-[inherit]
+                        ${role.label === 'Mobile Apps' ? 'opacity-35' : ''}`}
                 >
                     <div className="mb-2.5">
                         <img
@@ -52,7 +56,7 @@ const Roles = () => (
                 </a>
             ))}
         </div>
-    </section>
+    </SectionContainer>
 )
 
 export default Roles;

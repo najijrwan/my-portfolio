@@ -1,8 +1,22 @@
-const SectionTitle = ({ title }) => (
-    <h3
+const SectionContainer = ({ title, children, className = '' }) => (
+    <section
+        className={`
+        mb-15 sm:mb-20
+        flex flex-col gap-7.5 sm:gap-10
+        ${className}`}
+    >
+        <SectionTitle title={title} />
+        {children}
+    </section>
+)
+
+export default SectionContainer;
+
+export const SectionTitle = ({ title }) => (
+    <header
         className='
             relative
-            mb-[20px] ml-8
+            ml-8
             text-base text-[24px] font-[600]
             flex-start-row
             before:content-[""] before:absolute before:left-[-23px] before:bottom-[49.5%]
@@ -26,7 +40,5 @@ const SectionTitle = ({ title }) => (
         </span>
 
         {title}
-    </h3>
+    </header>
 )
-
-export default SectionTitle;
