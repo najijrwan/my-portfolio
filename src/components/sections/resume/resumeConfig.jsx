@@ -123,6 +123,14 @@ const LANGUAGES = [
   },
 ]
 
+const INTERESTS = [
+  "Strength Training",
+  "Football",
+  "Competitive & Casual Gaming",
+  "Learning New Technologies",
+  "Building and Refining Personal Projects",
+];
+
 export const resumeSections = [
   {
     heading: "professional summary",
@@ -234,9 +242,10 @@ export const resumeSections = [
   },
   {
     heading: "INTERESTS",
-    content: [
-      <p>Front-End Developer and aspiring Full-Stack Engineer...</p>,
-      <p>Committed to writing clean, maintainable code...</p>,
-    ],
+    content: INTERESTS.map((interest) => (
+      <>
+        {interest}
+      </>
+    ))
   },
 ];
