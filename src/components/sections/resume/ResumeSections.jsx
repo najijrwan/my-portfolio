@@ -18,7 +18,7 @@ const SectionContent = ({ content = [] }) => (
                 key={i}
                 className='
                     relative
-                    mb-4 sm:mb-4.5
+                    mb-4.5 sm:mb-5
                     text-light-gray text-[15px] font-[300]
                     before:content-[""] before:absolute before:left-[-30px] sm:before:left-[-41px] 
                     before:top-[-20px] sm:before:-top-[30px]
