@@ -1,3 +1,5 @@
+import { VariousActionsButton } from '@ui';
+
 const SKILLS = [
   {
     label: 'Languages & Scripting',
@@ -75,6 +77,37 @@ const PROJECTS = [
   },
 ]
 
+const EDUCATIONS = [
+  {
+    degree: 'Bachelor of Science in Computer Science',
+    uni: 'Lebanese International University',
+    uniLocation: 'Lebanon, West Beqaa, Alkhyara',
+    gpa: '3.66',
+    date: '2022 - 2025',
+  },
+]
+
+const HONORS = [
+  {
+    title: "Dean's List",
+    issuer: "LIU",
+    date: "June 2023",
+    src: "/cv.pdf",
+  },
+  {
+    title: "Presedints List",
+    issuer: "LIU",
+    date: "June 2024",
+    src: "/cv.pdf",
+  },
+  {
+    title: "7th SAS Students Research Day",
+    issuer: "LIU",
+    date: "May 2025",
+    src: "/cv.pdf",
+  }
+]
+
 export const resumeSections = [
   {
     heading: "professional summary",
@@ -96,8 +129,7 @@ export const resumeSections = [
     heading: "technical skills",
     content: SKILLS.map((item) => (
       <>
-
-        <header className="mb-1.5 text-white">{item.label}</header>
+        <header className="mb-2 text-white">{item.label}</header>
         <ul key={item.label}>
           {item.skills.map((skill) => (
             <li
@@ -120,7 +152,7 @@ export const resumeSections = [
     heading: "PROJECTS",
     content: PROJECTS.map((item) => (
       <>
-        <header className="mb-1.5 text-white">
+        <header className="mb-2 text-white">
           <h1><i>{item.title}</i> &nbsp; • &nbsp; {item.subTitle}</h1>
           <h2>stack: <i>{item.stack}</i></h2>
         </header>
@@ -144,17 +176,37 @@ export const resumeSections = [
   },
   {
     heading: "Education",
-    content: [
-      <p>Front-End Developer and aspiring Full-Stack Engineer...</p>,
-      <p>Committed to writing clean, maintainable code...</p>,
-    ],
+    content: EDUCATIONS.map((edu) => (
+      <>
+        <header className="mb-2 text-white">
+          {edu.degree}
+        </header>
+        <p className="text-light-gray italic">
+          <span className="text-vegas-gold"> - </span>{edu.uni} &nbsp; • &nbsp; {edu.uniLocation}
+        </p>
+        <p><span className="text-vegas-gold"> - </span>GPA: {edu.gpa}</p>
+        <p><span className="text-vegas-gold"> - </span>{edu.date}</p>
+      </>
+    )),
   },
   {
-    heading: "Certificates",
-    content: [
-      <p>Front-End Developer and aspiring Full-Stack Engineer...</p>,
-      <p>Committed to writing clean, maintainable code...</p>,
-    ],
+    heading: "Honors & Certificates",
+    content: HONORS.map((honor) => (
+      <>
+        <header className="text-white">
+          {honor.title}
+        </header>
+
+        <div className='flex gap-1 items-center'>
+          <button className='flex items-start'>
+            <ion-icon
+              name='document-text-outline'
+              className='size-4.5 text-yellow-crayola hover:text-yellow-crayola/50'
+            />
+          </button>
+          <p className='text-light-gray'>{honor.issuer} &nbsp; • &nbsp; {honor.date}</p>
+        </div></>
+    )),
   },
   {
     heading: "Languages",
