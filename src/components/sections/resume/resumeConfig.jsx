@@ -108,6 +108,21 @@ const HONORS = [
   }
 ]
 
+const LANGUAGES = [
+  {
+    lan: "Arabic",
+    prof: "Native",
+  },
+  {
+    lan: "English",
+    prof: "Fluent",
+  },
+  {
+    lan: "Spanish",
+    prof: "Basic",
+  },
+]
+
 export const resumeSections = [
   {
     heading: "professional summary",
@@ -210,10 +225,12 @@ export const resumeSections = [
   },
   {
     heading: "Languages",
-    content: [
-      <p>Front-End Developer and aspiring Full-Stack Engineer...</p>,
-      <p>Committed to writing clean, maintainable code...</p>,
-    ],
+    content: (LANGUAGES.map((lan) => (
+      <>
+        <p>{lan.lan}<span> ({lan.prof})</span></p>
+      </>
+    ))
+    )
   },
   {
     heading: "INTERESTS",
