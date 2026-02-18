@@ -1,0 +1,57 @@
+export const PROJECTS = [
+    {
+        title: 'Fitnessoo',
+        subTitle: 'simple fitness tracking website',
+        stack: 'HTML - CSS - Javascript - PHP',
+        // description: 'A basic fitness-focused website that tracks user metrics and personal data with clean structure and design.',
+        details: [
+            'Built a responsive multi-page website with a focus on clean UI and maintainable code',
+            'Integrated PHP backend to support user authentication, session creation, and logout functionality',
+            'Stored user data such as weight, height, age, and workout details in a structured format',
+            'Emphasized maintainability and code organization to support future enhancements and scalability',
+        ],
+    },
+    {
+        title: 'Quizo',
+        subTitle: 'Desktop Quiz Application',
+        stack: 'C#',
+        // description: 'A fun and interactive Windows Forms-based quiz game built with C# for desktop users.',
+        details: [
+            'Developed a single-player quiz system with category and level progression, requiring users to complete 3 categories, each containing 3 levels of 5 questions',
+            'Implemented score tracking, timers, and dynamic feedback to guide users through each step of the quiz',
+            'Enforced a linear question flow where users must complete each question, level, and category sequentially',
+            'Designed an intuitive UI with explanations and system feedback to enhance user understanding and engagement',
+        ],
+    },
+    {
+        title: 'Ma7ali',
+        subTitle: 'Full-Stack POS SPA PWA for Small Businesses',
+        stack: 'HTML - CSS - Javascript - Firebase',
+        // description: 'A comprehensive POS progressive web application (PWA)  for managing inventory, sales, customer debts, and business analytics.',
+        details: [
+            'Designed and developed a full-stack POS system tailored for small business workflows',
+            'Implemented multi-currency toggling (LBP ↔ USD), advanced filtering, and PDF report generation',
+            'Integrated Firebase Authentication with email, Google, and phone login options',
+            'Structured Firestore database to manage products, carts, sales (with profit and revenue), customers, and user settings',
+            'Built dynamic dashboards with sales trends, category analysis, top/least sold products, and inventory summaries (e.g., low/out-of-stock)',
+            'Enabled export of filtered product lists, customer debts, cart details, and daily sales data with interactive charts',
+            'Created responsive layouts for tablet and small devices with built-in notifications (e.g., low stock, tasks)',
+            'Solely responsible for architecture, UI/UX design, and full feature implementation with scalability in mind',
+            'The whole system is designed for growth and scalability with considerations of future features and enhancements',
+        ],
+    },
+    {
+        title: '3legant',
+        subTitle: 'Modular E-Commerce Frontend Architecture',
+        stack: 'CSS - Javascript - Tailwind CSS - React + Vite',
+        // description: 'A scalable, component-driven e-commerce frontend built with a focus on clean architecture and responsive UI systems.',
+        details: [
+            'Architected a modular frontend structure separating pages, UI components, hooks, state, and data layers for maintainability and extensibility',
+            'Implemented dynamic product grid systems (4x2, 3x3, horizontal layouts) with state-driven layout switching',
+            'Built reusable UI components including product cards, layout selectors, dropdown controls, and progressive “View More” rendering',
+            'Developed custom responsive breakpoint hooks to optimize layouts across desktop abd mobile devices',
+            'Configured Vite with path aliases and SVG integration for scalable asset management',
+            'Designed the codebase to support future backend integration and full e-commerce functionality',
+        ],
+    },
+]
