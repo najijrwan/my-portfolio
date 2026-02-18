@@ -2,8 +2,9 @@
 export { CONTACTS } from './personal/contacts'
 export { SOCIAL_LINKS } from './personal/socialLinks'
 
-// skills
-export { SKILLS_IMAGES } from './skills/skillsImages'
+// projects
+export { CATEGORIES } from './projects/categories'
+export { projectsMeta } from './projects/projectsMeta'
 
 // resume
 export { SUMMARY } from './resume/summary'
@@ -13,3 +14,6 @@ export { EDUCATIONS } from './resume/educations'
 export { HONORS } from './resume/honors'
 export { LANGUAGES } from './resume/languages'
 export { INTERESTS } from './resume/interests'
+
+// skills
+export { SKILLS_IMAGES } from './skills/skillsImages'
