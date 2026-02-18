@@ -1,21 +1,9 @@
-import { SKILLS, PROJECTS, EDUCATIONS, HONORS, LANGUAGES, INTERESTS, } from '@data'
+import { SUMMARY, SKILLS, PROJECTS, EDUCATIONS, HONORS, LANGUAGES, INTERESTS, } from '@data'
 
 export const resumeSections = [
   {
     heading: "professional summary",
-    content: [
-      <p>
-        Front-End Developer and aspiring Full-Stack Engineer, passionate about building responsive web
-        and mobile applications. Experienced in designing and developing solo projects from scratch using
-        modern technologies like React, Tailwind, and Firebase.
-      </p>,
-      <p>
-        Committed to writing clean, maintainable
-        code and following best practices to ensure scalability and long-term growth. Strong
-        problem-solving mindset, self-motivated and fast learner actively transitioning into full-stack and
-        application development roles.
-      </p>
-    ],
+    content: SUMMARY
   },
   {
     heading: "technical skills",

@@ -6,6 +6,7 @@ export { SOCIAL_LINKS } from './personal/socialLinks'
 export { SKILLS_IMAGES } from './skills/skillsImages'
 
 // resume
+export { SUMMARY } from './resume/summary'
 export { SKILLS } from './resume/skills'
 export { PROJECTS } from './resume/projects'
 export { EDUCATIONS } from './resume/educations'
