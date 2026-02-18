@@ -65,8 +65,7 @@ export const ShowContactsButton = ({ onClick, isExpanded }) => (
         <ion-icon
             name="chevron-down-outline"
             className={`
-                sm:hidden visible!
-                transform transition-transform duration-300
+                sm:hidden visible! transform transition-transform duration-300
                 ${isExpanded ? 'rotate-180' : 'rotate-0'}`}
         />
 
