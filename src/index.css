@@ -140,7 +140,8 @@ body::-webkit-scrollbar-button {
     }
   }
 
-    --animate-fade-2: fade2 0.5s ease forwards;
+  --animate-fade-2: fade2 0.5s ease forwards;
+
   @keyframes fade2 {
     0% {
       opacity: 0;
@@ -152,6 +153,7 @@ body::-webkit-scrollbar-button {
   }
 
   --animate-fade-3: fade3 0.5s ease 2.5s forwards;
+
   @keyframes fade3 {
     0% {
       opacity: 0;
@@ -169,6 +171,7 @@ body::-webkit-scrollbar-button {
   }
 
   --animate-width: width 2s ease 0.1s forwards;
+
   @keyframes width {
     0% {
       width: 0;
@@ -180,6 +183,7 @@ body::-webkit-scrollbar-button {
   }
 
   --animate-width2: width2 3s ease 0.1s forwards;
+
   @keyframes width2 {
     0% {
       width: 0;
@@ -191,6 +195,7 @@ body::-webkit-scrollbar-button {
   }
 
   --animate-bounce: bounce 0.5s ease forwards;
+
   @keyframes bounce {
     0% {
       transform: translateY(0);
@@ -278,6 +283,10 @@ body::-webkit-scrollbar-button {
 
 @layer components {
 
+  .contact-input {
+    @apply px-[20px] sm:px-[20px] py-[13px] sm:py-[15px] text-base text-[14px] sm:text-[15px] font-[400] border border-jet rounded-[14px] outline-0;
+  }
+
   .has-scrollbar::-webkit-scrollbar {
     width: 1px;
     height: 5px;
@@ -317,12 +326,6 @@ body::-webkit-scrollbar-button {
   @media (min-width: 1024px) {
     .clients-item {
       min-width: calc(25% - 38px) !important;
-    }
-
-    @theme {
-      --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
-      --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
-      --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
     }
   }
 
