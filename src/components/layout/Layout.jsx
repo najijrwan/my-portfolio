@@ -1,6 +1,6 @@
-import { Outlet } from "react-router-dom";
 import { Hero } from "@layout/hero";
 import { Navbar } from "@layout";
+import { Outlet } from "react-router-dom";
 
 const Layout = () => (
     <div
@@ -13,7 +13,7 @@ const Layout = () => (
         <div
             className="
                 lg:relative
-                sm:max-w-[520px] md:max-w-[700px] lg:max-w-[950px] xl:max-w-[900px] sm:mx-auto
+                sm:max-w-[520px] md:max-w-[700px] lg:max-w-[950px] xl:min-w-[900px] xl:max-w-[900px] sm:mx-auto
                 bg-eerie-2 border border-solid border-jet shadow-1 lg:shadow-5 rounded-[20px]
                 animate-fade"
         >
