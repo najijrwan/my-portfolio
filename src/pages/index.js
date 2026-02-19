@@ -1,5 +1,5 @@
 export { default as About } from './index.jsx'
-export { default as Resume } from './resume.jsx'
+export { default as Resume } from './resume'
 export { default as Projects } from './projects'
 export { default as Contact } from './contact'
 export { default as Journey } from './journey'
