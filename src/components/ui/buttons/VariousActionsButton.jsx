@@ -1,7 +1,7 @@
-const VariousActionsButton = ({ variant, label, iconName, children, ...props }) => {
+const VariousActionsButton = ({ variant, className, iconName, label, children, ...props }) => {
     const VARIANTS = {
-        sm: 'px-3 py-1.5',
-        md: 'px-5 sm:px-5 py-[13px] sm:py-4 md:ml-auto'
+        v1: 'px-4 sm:px-5 py-4 md:ml-auto',
+        v2: 'px-3 py-1.5',
     }
     return (
         <button
@@ -17,7 +17,8 @@ const VariousActionsButton = ({ variant, label, iconName, children, ...props }) 
                 before:bg-gradient-jet before:rounded-[inherit]
                 before:custom-transition-1
                 hover:before:bg-gradient-yellow-2  focus:before:bg-gradient-yellow-2
-                ${VARIANTS[variant]}`}
+                ${VARIANTS[variant]}
+                ${className}`}
         >
             {iconName && <ion-icon name={iconName} />}
             

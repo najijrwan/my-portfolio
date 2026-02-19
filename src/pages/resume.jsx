@@ -9,7 +9,7 @@ const Resume = () => (
 
         <VariousActionsButton
             onClick={() => window.open('/Naji_Aljarwan_resume.pdf', '_blank')}
-            variant='md'
+            variant='v1'
             iconName='document-text-outline'
             label='Download CV'
         />
