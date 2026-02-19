@@ -5,24 +5,49 @@ const ContactForm = () => (
         <h3 className="text-base text-[18px] sm:text-[24px] mb-[20px] font-bold">Contact Form</h3>
 
         <form action="">
-            <div className="
-                grid grid-cols-1 gap-[25px] mb-[25px] 
-                sm:grid-cols-2 sm:gap-[30px] sm:mb-7.5 md:grid-cols-2" >
-                <input type="text" name="fullname"
+            <div
+                className="
+                    mb-[25px] sm:mb-7.5
+                    grid grid-cols-1 sm:grid-cols-2 gap-[25px] sm:gap-[30px]"
+            >
+
+                <input 
+                    type="text"
+                    name="fullname"
+                    required=""
+                    data-form-input=""
+                    placeholder="Full name"
                     className="contact-input"
-                    placeholder="Full name" required="" data-form-input=""></input>
-                <input type="email" name="email"
+                />
+                <input
+                    type="email"
+                    name="email"
+                    required=""
+                    data-form-input=""
+                    placeholder="Email address"
                     className="contact-input"
-                    placeholder="Email address" required="" data-form-input=""></input>
+                />
             </div>
 
-            <input type="text" name="subject"
+            <input 
+                type="text"
+                name="subject"
+                required=""
+                data-form-input=""
+                placeholder="Subject"
                 className="contact-input mb-[30px]"
-                placeholder="Subject" required="" data-form-input=""></input>
+            />
 
-            <textarea name="message"
-                className="contact-input min-h-[100px] h-[120px] max-h-[200px] resize-y mb-[25px] sm:mb-7.5"
-                placeholder="Your Message" required="" data-form-input=""></textarea>
+            <textarea
+                name="message"
+                required=""
+                data-form-input=""
+                placeholder="Your Message"
+                className="
+                    contact-input
+                    mb-[25px] sm:mb-7.5
+                    min-h-[100px] h-[120px] max-h-[200px] resize-y"
+            />
 
             <VariousActionsButton
                 disabled
