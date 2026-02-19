@@ -39,7 +39,6 @@ const ProjectCard = ({ project }) => (
                 before:bg-transparent 
                 group-hover:before:bg-[#00000080] before:custom-transition-1"
         >
-            {/* try to combine the classes */}
             <span
                 className="
                     absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-10
