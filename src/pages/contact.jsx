@@ -1,11 +1,13 @@
 import { PageTitle } from '@ui';
-import { LocationMap } from '@contact';
+import { LocationMap, ContactForm } from '@contact';
 
 const Contact = () => (
     <>
         <PageTitle title="Contact" />
-        
+
         <LocationMap />
+
+        <ContactForm />
     </>
 )
 
