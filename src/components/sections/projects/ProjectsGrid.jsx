@@ -40,18 +40,19 @@ const ProjectCard = ({ project }) => (
                 group-hover:before:bg-[#00000080] before:custom-transition-1"
         >
             {/* try to combine the classes */}
-            <div
+            <span
                 className="
                     absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-10
                     p-[14px]
+                    flex-center
                     bg-jet rounded-[12px] opacity-0
                     custom-transition-1 scale-[0.8] group-hover:scale-[1.3] group-hover:opacity-100"
             >
                 <ion-icon
                     name="eye-outline"
-                    className="size-4 text-yellow-crayole stroke-[50]"
+                    className="size-4 text-yellow-crayola [--ionicon-stroke-width:50px]"
                 />
-            </div>
+            </span>
 
             <img
                 src={project.img}
