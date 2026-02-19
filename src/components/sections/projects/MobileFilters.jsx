@@ -47,6 +47,7 @@ const DropdownBtn = ({ dropdownOpen, setDropdownOpen, selectedCategory, }) => (
 
 export const DropdownList = ({ setDropdownOpen, dropdownOpen, setSelectedCategory, }) => (
     <ul
+        role="listbox"
         className={`
             absolute top-full z-20
             w-full p-[6px] mt-2
@@ -57,6 +58,7 @@ export const DropdownList = ({ setDropdownOpen, dropdownOpen, setSelectedCategor
         {CATEGORIES.map(({ label, value }) => (
             <li key={value}>
                 <button
+                    role="option"
                     className="
                         bg-eerie-2
                         w-full px-2.5 py-2

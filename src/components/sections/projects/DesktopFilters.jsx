@@ -1,10 +1,13 @@
 import { CATEGORIES } from "@data";
 
 const DesktopFilters = ({ selectedCategory, setSelectedCategory }) => (
-    <ul className="hidden md:flex gap-2 mb-7.5">
+    <ul
+        role="listbox"
+        className="hidden md:flex gap-2 mb-7.5">
         {CATEGORIES.map(({ label, value }) => (
             <li key={value}>
                 <button
+                    role="option"
                     className={`
                         px-4 py-2 rounded-full custom-transition-1
                         ${selectedCategory === value
