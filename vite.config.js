@@ -24,6 +24,7 @@ export default defineConfig({
           '@resume': path.resolve(__dirname, './src/components/sections/resume'),
           '@projects': path.resolve(__dirname, './src/components/sections/projects'),
           '@contact': path.resolve(__dirname, './src/components/sections/contact'),
+          '@journey': path.resolve(__dirname, './src/components/sections/journey'),
         '@ui': path.resolve(__dirname, './src/components/ui'),
 
       '@data': path.resolve(__dirname, './src/data'),
