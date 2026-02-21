@@ -1,6 +1,6 @@
 import { timelineArrows } from '@data';
-import { ArrowTail, } from './ArrowTail';
-import { ArrowHead, } from './ArrowHead';
+import ArrowTail from './ArrowTail';
+import ArrowHead from './ArrowHead';
 import { ArrowBodySkills, ArrowBodyProjects } from './ArrowBody';
 
 const Timeline = () => (

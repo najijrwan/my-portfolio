@@ -1,4 +1,4 @@
-export const ArrowTail = ({ month, year, }) => (
+const ArrowTail = ({ month, year, }) => (
     <div
         className="
                     w-13 h-5
@@ -13,3 +13,5 @@ export const ArrowTail = ({ month, year, }) => (
         <span>{year}</span>
     </div>
 );
+
+export default ArrowTail;

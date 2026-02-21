@@ -1,4 +1,4 @@
-export const ArrowHead = ({ month, year, }) => (
+const ArrowHead = ({ month, year, }) => (
     <div
         className="flex items-center"
     >
@@ -24,3 +24,5 @@ export const ArrowHead = ({ month, year, }) => (
         />
     </div>
 )
+
+export default ArrowHead;
