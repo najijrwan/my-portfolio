@@ -1,3 +1,6 @@
+// journey
+export { timelineArrows } from './journey/timelineArrows'
+
 // personal
 export { CONTACTS } from './personal/contacts'
 export { SOCIAL_LINKS } from './personal/socialLinks'
