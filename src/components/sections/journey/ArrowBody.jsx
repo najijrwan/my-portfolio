@@ -1,3 +1,5 @@
+import { SkillLollipop } from "@ui"
+
 export const ArrowBodySkills = ({ skills, }) => {
     // Split skills into even and odd groups
     const evenSkills = skills.filter((_, i) => i % 2 === 0);
@@ -8,12 +10,11 @@ export const ArrowBodySkills = ({ skills, }) => {
             {/* Top row: even skills */}
             <div className="px-2.5 flex gap-2.5">
                 {evenSkills.map((skill, i) => (
-                    <div key={i} className="flex-center flex-col">
-                        <div className="bg-[#2b2b2cbf] border border-jet p-1 rounded-2xl">
-                            <img src={skill.src} alt={skill.lan} className="size-8" />
-                        </div>
-                        <div className="w-px h-5 bg-jet"></div>
-                    </div>
+                    <SkillLollipop
+                        key={i}
+                        src={skill.src}
+                        lan={skill.lan}
+                    />
                 ))}
             </div>
 
@@ -23,12 +24,12 @@ export const ArrowBodySkills = ({ skills, }) => {
             {/* Bottom row: odd skills */}
             <div className="w-fit pl-[36px] pr-2.5 flex gap-2.5">
                 {oddSkills.map((skill, i) => (
-                    <div key={i} className="flex-center flex-col-reverse">
-                        <div className="bg-[#2b2b2cbf] border border-jet p-1 rounded-2xl">
-                            <img src={skill.src} alt={skill.lan} className="size-8" />
-                        </div>
-                        <div className="w-px h-5 bg-jet"></div>
-                    </div>
+                    <SkillLollipop
+                        key={i}
+                        src={skill.src}
+                        lan={skill.lan}
+                        reversed
+                    />
                 ))}
             </div>
         </div>
@@ -93,7 +94,7 @@ export const ArrowBodyProjects = ({ projects }) => {
                     </>
                 )}
             </div>
-            
+
             <div className="w-5 h-px bg-jet"></div>
         </div>
     );
