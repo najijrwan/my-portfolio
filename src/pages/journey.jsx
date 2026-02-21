@@ -1,12 +1,12 @@
 import { PageTitle } from '@ui'
-import { Temp } from '@journey'
+import { Timeline } from '@journey'
 
 const Journey = () => {
     return (
         <>
             <PageTitle title="Journey" />
 
-            <Temp />
+            <Timeline />
         </>
     )
 }
