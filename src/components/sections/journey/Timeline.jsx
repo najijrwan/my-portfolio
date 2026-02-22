@@ -1,4 +1,4 @@
-import { VariousActionsButton } from '@ui'
+import { useScrollFade } from "@hooks";
 import { timelineArrows } from '@data';
 import ArrowTail from './ArrowTail';
 import ArrowHead from './ArrowHead';
@@ -14,54 +14,52 @@ const COLORS = [
     { bg: "bg-orange-300", border: "border-orange-300" },
 ];
 
-const Timeline = () => (
-    <section className="relative flex flex-col">
-        {/* <div className='ml-auto flex gap-2'>
-            <VariousActionsButton
-                variant='v2'
-                iconName='chevron-back-outline'
-            />
-            <VariousActionsButton
-                variant='v2'
-                iconName='chevron-forward-outline'
-            />
-        </div> */}
+const Timeline = () => {
+    const { scrollRef, showLeftFade, showRightFade } = useScrollFade();
 
-        {/* <div
-            className="
-                absolute top-0 left-0 z-20
-                h-full w-20
-                bg-gradient-to-r from-[hsl(240,2%,12%)] to-transparent
-                pointer-events-none
-                "
-        /> */}
+    return (
+        <section className="relative flex flex-col">
+            {showLeftFade && (
+                <div
+                    className="
+                        absolute top-0 left-0 z-20
+                        w-12 h-full
+                        bg-gradient-to-r from-[hsl(240,2%,12%)] to-transparent
+                        pointer-events-none
+                    "
+                />
+            )}
 
-        <section className="pb-5 flex overflow-x-scroll has-scrollbar lg:flex-wrap">
-            {timelineArrows.map((arrow, i) => {
-                const color = COLORS[i % COLORS.length];
+            <section ref={scrollRef} className="pb-5 flex overflow-x-auto has-scrollbar lg:flex-wrap">
+                {timelineArrows.map((arrow, i) => {
+                    const color = COLORS[i % COLORS.length];
 
-                return (
-                    <section key={i} className="flex items-center lg:py-5">
-                        <ArrowTail color={color} month={arrow.startDateMonth} year={arrow.startDateYear} />
+                    return (
+                        <section key={i} className="flex items-center lg:py-5">
+                            <ArrowTail color={color} month={arrow.startDateMonth} year={arrow.startDateYear} />
 
-                        {arrow.skills?.length > 0 && <ArrowBodySkills skills={arrow.skills} />}
-                        {arrow.projects?.length > 0 && <ArrowBodyProjects projects={arrow.projects} />}
+                            {arrow.skills?.length > 0 && <ArrowBodySkills skills={arrow.skills} />}
+                            {arrow.projects?.length > 0 && <ArrowBodyProjects projects={arrow.projects} />}
 
-                        <ArrowHead color={color} month={arrow.endDateMonth} year={arrow.endDateYear} />
-                    </section>
-                );
-            })}
+                            <ArrowHead color={color} month={arrow.endDateMonth} year={arrow.endDateYear} />
+                        </section>
+                    );
+                })}
+            </section>
+
+            {showRightFade && (
+                <div
+                    className="
+                        absolute top-0 right-0 z-20
+                        w-12 h-full
+                        bg-gradient-to-l from-[hsl(240,2%,12%)] to-transparent
+                        pointer-events-none
+                    "
+                />
+            )}
         </section>
+    );
+};
 
-        {/* <div
-            className="
-                absolute top-0 right-0 z-20
-                w-20 h-full
-                bg-gradient-to-l from-[hsl(240,2%,12%)] to-transparent
-                pointer-events-none"
-        /> */}
-    </section>
-
-);
 
 export default Timeline;
