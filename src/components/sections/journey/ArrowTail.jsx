@@ -2,7 +2,7 @@ const ArrowTail = ({ month, year, color }) => {
   return (
     <div
       className={`
-        w-13 h-5
+        w-15 h-5
         flex-center flex-col gap-px
         text-[10px]/2 text-black tracking-wider
         border-t-[10px] ${color.border}
