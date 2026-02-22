@@ -8,7 +8,7 @@ export const ArrowBodySkills = ({ skills, }) => {
     return (
         <div className="min-h-[145px] box-content">
             {/* Top row: even skills */}
-            <div className="px-2.5 flex gap-2.5">
+            <div className="flex gap-2.5">
                 {evenSkills.map((skill, i) => (
                     <SkillLollipop
                         key={i}
@@ -22,7 +22,7 @@ export const ArrowBodySkills = ({ skills, }) => {
             <div className="h-px bg-jet"></div>
 
             {/* Bottom row: odd skills */}
-            <div className="w-fit pl-[36px] pr-2.5 flex gap-2.5">
+            <div className="w-fit pl-[36px] flex gap-2.5">
                 {oddSkills.map((skill, i) => (
                     <SkillLollipop
                         key={i}
