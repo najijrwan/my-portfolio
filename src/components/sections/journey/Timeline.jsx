@@ -15,7 +15,7 @@ const COLORS = [
 ];
 
 const Timeline = () => (
-    <section className="flex justify-center flex-wrap">
+    <section className="pb-5 flex overflow-x-scroll has-scrollbar">
         {timelineArrows.map((arrow, i) => {
             const color = COLORS[i % COLORS.length];
 
