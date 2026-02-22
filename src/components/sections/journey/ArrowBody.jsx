@@ -6,7 +6,7 @@ export const ArrowBodySkills = ({ skills, }) => {
     const oddSkills = skills.filter((_, i) => i % 2 !== 0);
 
     return (
-        <div className="min-h-[153px] box-content">
+        <div className="min-h-[145px] box-content">
             {/* Top row: even skills */}
             <div className="px-2.5 flex gap-2.5">
                 {evenSkills.map((skill, i) => (
