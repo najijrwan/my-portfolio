@@ -28,6 +28,10 @@ export const timelineArrows = [
         startDateYear: '2024',
         skills: [
             {
+                lan: 'Java',
+                src: 'images/java.png',
+            },
+            {
                 lan: 'HTML',
                 src: 'images/html.png',
             },
@@ -44,8 +48,8 @@ export const timelineArrows = [
                 lan: 'PHP',
             },
         ],
-        projects: ['fitensso',],
-        endDateMonth: 'Jun',
+        projects: ['fitnesso',],
+        endDateMonth: 'May',
         endDateYear: '2024',
     },
     {
@@ -65,7 +69,7 @@ export const timelineArrows = [
                 lan: 'C#',
             },
         ],
-        projects: ['fitensso', 'Quizo'],
+        projects: ['fitnesso', 'Quizo'],
         endDateMonth: 'Jan',
         endDateYear: '2025',
     },
