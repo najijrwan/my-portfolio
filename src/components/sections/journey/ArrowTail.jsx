@@ -4,7 +4,7 @@ const ArrowTail = ({ month, year, color }) => {
       className={`
         w-15 h-5
         flex-center flex-col gap-px
-        text-[10px]/2 text-black tracking-wider
+        text-[10px]/2 text-black tracking-wider font-bold
         border-t-[10px] ${color.border}
         border-b-[10px] ${color.border}
         border-l-[12px] border-l-transparent

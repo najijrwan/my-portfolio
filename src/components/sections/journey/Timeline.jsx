@@ -4,14 +4,13 @@ import ArrowHead from './ArrowHead';
 import { ArrowBodySkills, ArrowBodyProjects } from './ArrowBody';
 
 const COLORS = [
-  { bg: "bg-blue-400", border: "border-blue-400" },
-  { bg: "bg-green-400", border: "border-green-400" },
-  { bg: "bg-red-400", border: "border-red-400" },
-  { bg: "bg-cyan-400", border: "border-cyan-400" },
-  { bg: "bg-purple-400", border: "border-purple-400" },
-  { bg: "bg-pink-400", border: "border-pink-400" },
-  { bg: "bg-lime-400", border: "border-lime-400" },
-  { bg: "bg-orange-400", border: "border-orange-400" },
+  { bg: "bg-blue-300", border: "border-blue-300" },
+  { bg: "bg-green-300", border: "border-green-300" },
+  { bg: "bg-red-300", border: "border-red-300" },
+  { bg: "bg-cyan-300", border: "border-cyan-300" },
+  { bg: "bg-purple-300", border: "border-purple-300" },
+  { bg: "bg-lime-300", border: "border-lime-300" },
+  { bg: "bg-orange-300", border: "border-orange-300" },
 ];
 
 const Timeline = () => (

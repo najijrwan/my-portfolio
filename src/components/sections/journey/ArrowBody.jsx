@@ -46,7 +46,7 @@ export const ArrowBodyProjects = ({ projects }) => {
         <div className="flex items-center">
             <div className="w-5 h-px bg-jet"></div>
 
-            <div className="relative min-w-[90px] min-h-[45px] px-2 py-[14.5px] border border-jet rounded-lg">
+            <div className="relative min-w-[90px] min-h-[45px] px-2 py-[17.5px] border border-jet rounded-lg">
                 {projects.length === 1 ? (
                     // Single project → simple inline block
                     <div

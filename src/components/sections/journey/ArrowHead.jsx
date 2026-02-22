@@ -5,7 +5,7 @@ const ArrowHead = ({ month, year, color }) => {
                 className={`
           w-12 h-5
           flex-center flex-col
-          text-[10px]/2.5 text-black tracking-wider
+          text-[10px]/2.5 text-black tracking-wider font-bold
           ${color.bg}
         `}
             >
