@@ -27,13 +27,10 @@ const Roles = () => (
                     key={i}
                     href={role.href}
                     className={`
-                        relative z-10
                         h-full p-[20px] sm:p-[30px]
                         sm:flex-start-start sm:gap-[25px]
-                        bg-gradient-onyx rounded-[14px] shadow-2
-                        before:content-[""] before:absolute before:inset-[1px] before:-z-[1]
-                        before:block
-                        before:bg-gradient-jet before:rounded-[inherit]
+                        rounded-2xl
+                        forward-box
                         ${role.label === 'Mobile Apps' ? 'opacity-35' : ''}`}
                 >
                     <div className="mb-2.5">

@@ -287,6 +287,10 @@ body::-webkit-scrollbar-button {
     @apply px-[20px] sm:px-[20px] py-[13px] sm:py-[15px] text-base text-[14px] sm:text-[15px] font-[400] border border-jet rounded-[14px] outline-0;
   }
 
+  .forward-box {
+    @apply relative z-10 bg-gradient-onyx shadow-2 before:content-[''] before:absolute before:inset-[1px] before:-z-[1] before:bg-gradient-jet before:rounded-[inherit];
+  }
+
   .has-scrollbar::-webkit-scrollbar {
     width: 1px;
     height: 5px;
