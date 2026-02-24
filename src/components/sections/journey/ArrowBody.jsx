@@ -77,19 +77,6 @@ export const ArrowBodyProject = ({ project }) => (
     </div>
 );
 
-export const ProjectButton = ({ projectName }) => (
-    <button
-        className="
-            min-w-[70px] px-2 py-1
-            text-[10px] text-white text-center tracking-wider
-            border border-jet bg-eerie-2 rounded-lg
-            cursor-pointer
-            forward-box"
-    >
-        {projectName}
-    </button>
-)
-
 export const ProjectTooltip = ({ project }) => {
     const tooltipRef = useRef(null);
     const position = useSmartTooltipPosition(tooltipRef);
