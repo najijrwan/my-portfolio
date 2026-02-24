@@ -1,9 +1,11 @@
 export const PROJECTS = [
     {
-        title: 'Fitnessoo',
+        title: 'fitnesso',
+        type: 'University Project',
         subTitle: 'simple fitness tracking website',
         stack: 'HTML - CSS - Javascript - PHP',
-        // description: 'A basic fitness-focused website that tracks user metrics and personal data with clean structure and design.',
+        duration: 'Spring 2024 & Fall 2024',
+        description: 'A basic fitness-focused website that tracks user metrics and personal data with clean structure and design.',
         details: [
             'Built a responsive multi-page website with a focus on clean UI and maintainable code',
             'Integrated PHP backend to support user authentication, session creation, and logout functionality',
@@ -12,10 +14,12 @@ export const PROJECTS = [
         ],
     },
     {
-        title: 'Quizo',
+        title: 'quizo',
+        type: 'University Project',
         subTitle: 'Desktop Quiz Application',
         stack: 'C#',
-        // description: 'A fun and interactive Windows Forms-based quiz game built with C# for desktop users.',
+        duration: 'Fall 2024',
+        description: 'A fun and interactive Windows Forms-based quiz game built with C# for desktop users.',
         details: [
             'Developed a single-player quiz system with category and level progression, requiring users to complete 3 categories, each containing 3 levels of 5 questions',
             'Implemented score tracking, timers, and dynamic feedback to guide users through each step of the quiz',
@@ -24,10 +28,12 @@ export const PROJECTS = [
         ],
     },
     {
-        title: 'Ma7ali',
+        title: 'ma7ali',
+        type: 'Personal Project',
         subTitle: 'Full-Stack POS SPA PWA for Small Businesses',
         stack: 'HTML - CSS - Javascript - Firebase',
-        // description: 'A comprehensive POS progressive web application (PWA)  for managing inventory, sales, customer debts, and business analytics.',
+        duration: 'Mar 15 - May 15',
+        description: 'A comprehensive POS progressive web application (PWA)  for managing inventory, sales, customer debts, and business analytics.',
         details: [
             'Designed and developed a full-stack POS system tailored for small business workflows',
             'Implemented multi-currency toggling (LBP ↔ USD), advanced filtering, and PDF report generation',
@@ -41,10 +47,28 @@ export const PROJECTS = [
         ],
     },
     {
+        title: 'portfolio',
+        type: 'Personal Project',
+        subTitle: 'Modern Responsive Portfolio Showcase',
+        stack: 'HTML - CSS - Javascript - Tailwind CSS - React + Vite',
+        duration: 'May 18 - Jun 22',
+        description: 'A scalable, component-driven & fully responsive website built to showcase my skills, journey and personal info',
+    },
+    {
+        title: 'hekto',
+        type: 'Personal Project',
+        subTitle: 'Front-end e-commerce landing page',
+        stack: 'HTML CSS - Javascript - Tailwind CSS - React + Vite',
+        duration: 'Dec 13 - Dec 28',
+        description: 'A simple e-commerce landing page built from a figma design',
+    },
+    {
         title: '3legant',
+        type: 'Personal Project',
         subTitle: 'Modular E-Commerce Frontend Architecture',
-        stack: 'CSS - Javascript - Tailwind CSS - React + Vite',
-        // description: 'A scalable, component-driven e-commerce frontend built with a focus on clean architecture and responsive UI systems.',
+        stack: 'HTML - CSS - Javascript - Tailwind CSS - React + Vite',
+        duration: 'Dec 29 - Present',
+        description: 'A scalable, component-driven e-commerce frontend built with a focus on clean architecture and responsive UI systems.',
         details: [
             'Architected a modular frontend structure separating pages, UI components, hooks, state, and data layers for maintainability and extensibility',
             'Implemented dynamic product grid systems (4x2, 3x3, horizontal layouts) with state-driven layout switching',
