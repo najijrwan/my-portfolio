@@ -1,3 +1,5 @@
+import { PROJECTS } from '@data'
+
 export const timelineArrows = [
     {
         startDateMonth: 'Feb',
@@ -50,7 +52,7 @@ export const timelineArrows = [
         ],
         projects: [
             {
-                name: 'fitnesso',
+                ref: 'fitnesso',
                 info: `
                     In my second year of college (Mar 2024), I took my first Web Programming course. 
                     It introduced core web technologies such as HTML, CSS, and JavaScript.
@@ -58,8 +60,6 @@ export const timelineArrows = [
                     a fitness-themed website. It marked the beginning of my practical experience 
                     with front-end development. Because it was my first web project, I faced the challenge of finding a suitable desing and content for a fitness wesbite. At first I had no clue how to start developing it, and I spent hours trying to figure what first HTML file I should create and trying to write the first line of code.
                     Once I started writing, all ideas started to flow one after the other.`,
-                stack: ['HTML', 'CSS', 'JavaScript', 'PHP',],
-                duration: 'May 18 - June 2',
             },
         ],
         endDateMonth: 'Jun',
@@ -84,16 +84,12 @@ export const timelineArrows = [
         ],
         projects: [
             {
-                name: 'fitnesso',
+                ref: 'fitnesso',
                 info: 'Advanced back end integration with PHP and AJAX',
-                stack: ['HTML', 'CSS', 'JavaScript', 'PHP',],
-                duration: '4 Weeks',
             },
             {
-                name: 'quizo',
+                ref: 'quizo',
                 info: 'Simple windows application with basic database integration for creating and saving accounts',
-                stack: ['C#'],
-                duration: '1 Week',
             },
         ],
         endDateMonth: 'Jan',
@@ -118,22 +114,12 @@ export const timelineArrows = [
         ],
         projects: [
             {
-                name: 'ma7ali',
+                ref: 'ma7ali',
                 info: 'Full-stack PWA & SPA with Firebase as the back-end',
-                stack: ['HTML', 'CSS', 'JavaScript'],
-                duration: 'Mar 15 - May 15',
             },
             {
-                name: 'portfolio',
+                ref: 'portfolio',
                 info: 'version 1 pre-refactor',
-                stack: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind'],
-                duration: 'May 18 - June 22',
-            },
-            {
-                name: 'portfolio0000',
-                info: 'version 1 pre-refactor',
-                stack: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind'],
-                duration: 'May 18 - June 22',
             },
         ],
         endDateMonth: 'Jun',
@@ -144,28 +130,16 @@ export const timelineArrows = [
         startDateYear: '2025',
         projects: [
             {
-                name: 'Hetko',
+                ref: 'hekto',
                 info: 'Front-end landing page from a Figma design',
-                stack: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind'],
-                duration: 'Dec 13 - Dec 28',
             },
             {
-                name: '3legant',
+                ref: '3legant',
                 info: 'Front-end & back-end ready web designed pixel-perfect from Figma (unfinished)',
-                stack: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind'],
-                duration: 'Dec 29 - Feb 15',
             },
             {
-                name: 'portfolio',
-                info: 'version 2 pre-refactor',
-                stack: ['HTML', 'CSS', 'JavaScript', 'React', 'TailwindCSS'],
-                duration: 'May 11 - present',
-            },
-            {
-                name: 'portfolio00',
-                info: 'version 2 pre-refactor',
-                stack: ['HTML', 'CSS', 'JavaScript', 'React', 'TailwindCSS'],
-                duration: 'May 11 - present',
+                ref: 'portfolio',
+                info: 'version 1 pre-refactor',
             },
         ],
         endDateMonth: 'Feb',
