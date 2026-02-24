@@ -92,7 +92,7 @@ export const ProjectTooltip = ({ project }) => {
                 text-sm lg:text-md text-start
                 bg-[#2b2b2c] border border-light-gray-70 shadow-4 rounded-xl
                 transition-opacity duration-500 ease-out
-                ${position === "left" ? "right-full" : "left-full"}
+                ${position === "left" ? "right-full mr-1" : "left-full ml-1"}
             `}
         >
             <header
