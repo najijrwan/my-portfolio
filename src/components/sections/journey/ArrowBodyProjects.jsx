@@ -60,14 +60,13 @@ export const ProjectTooltip = ({ project }) => {
         <div
             ref={tooltipRef}
             className={`
-                invisible group-hover:visible
                 absolute top-0 z-30
                 px-2 pt-6 pb-2
-                flex flex-col gap-2 justify-start
+                hidden group-hover:flex flex-col gap-2 justify-start
                 text-sm lg:text-md text-start
                 bg-[#2b2b2c] border border-jet shadow-4 rounded-xl
                 transition-opacity duration-500 ease-out
-                ${position === "left" ? "right-full mr-1" : "left-full ml-1"}
+                ${position === "left" ? "right-full" : "left-full"}
             `}
         >
             <header
