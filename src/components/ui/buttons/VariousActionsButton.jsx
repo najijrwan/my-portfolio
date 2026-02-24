@@ -1,7 +1,7 @@
 const VariousActionsButton = ({ variant, className, iconName, label, children, ...props }) => {
     const VARIANTS = {
-        v1: 'px-4 sm:px-5 py-4 md:ml-auto',
-        v2: 'px-3 py-1.5',
+        v1: 'px-4 sm:px-5 py-4 md:ml-auto text-[15px] sm:text-[17px] rounded-[14px]',
+        v2: 'px-2 py-1 text-[10px] sm:text-[12px] rounded-lg',
     }
     return (
         <button
@@ -11,7 +11,7 @@ const VariousActionsButton = ({ variant, className, iconName, label, children, .
                 w-max
                 flex-center gap-2.5
                 bg-gradient-onyx
-                text-yellow-crayola text-[15px] sm:text-[17px] rounded-[14px] shadow-3
+                text-yellow-crayola shadow-3
                 hover:bg-gradient-yellow focus:bg-gradient-yellow focus:outline-amber-200 custom-transition-1
                 before:content-[''] before:absolute before:inset-px before:-z-10
                 before:bg-gradient-jet before:rounded-[inherit]
