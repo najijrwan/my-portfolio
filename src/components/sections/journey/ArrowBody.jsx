@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { useSmartTooltipPosition } from "@hooks";
-import { SkillLollipop } from "@ui"
+import { SkillLollipop, VariousActionsButton } from "@ui"
 
 export const ArrowBodySkills = ({ skills, }) => {
     // Split skills into even and odd groups
@@ -39,57 +39,53 @@ export const ArrowBodySkills = ({ skills, }) => {
 };
 
 export const ArrowBodyProjects = ({ projects }) => {
-    const baseStyle = `
-        min-w-[70px] px-2 py-1
-        text-[10px] text-white text-center tracking-wider
-        border border-jet bg-eerie-2 rounded-lg
-        cursor-pointer
-        forward-box
-        `;
     return (
         <div className="flex items-center">
             <div className="w-5 h-px bg-jet"></div>
 
-
             {projects.length === 1 ? (
-                // Single project → simple inline block
-                <div className="flex-center flex-col gap-2">
-                    <div key={projects[0].name} className="relative group inline-flex">
-                        <button className={baseStyle}>
-                            {projects[0].name}
-                        </button>
-                        <ProjectTooltip project={projects[0]} />
-                    </div>
-                </div>
+                <ArrowBodyProject project={projects[0]} />
             ) : (
-
                 <div
                     className="
                         relative
                         px-3
-
+                        flex flex-col items-center gap-2
                         before:content-[''] before:absolute before:left-1/2 before:top-1/2 before:-translate-1/2
                         before:w-full before:h-[calc(100%-18px)]
-                        before:rounded-lg before:border before:border-jet"
+                        before:rounded-lg before:border before:border-jet
+                    "
                 >
-                    <div className="flex flex-col items-center gap-2">
-                        {projects.map((project) => (
-                            <div key={project.name} className="relative group inline-flex">
-                                <button className={baseStyle}>
-                                    {project.name}
-                                </button>
-                                <ProjectTooltip project={project} />
-                            </div>
-                        ))}
-                    </div>
+                    {projects.map((project) => (
+                        <ArrowBodyProject key={project.name} project={project} />
+                    ))}
                 </div>
             )}
-
 
             <div className="w-5 h-px bg-jet"></div>
         </div>
     );
 };
+
+export const ArrowBodyProject = ({ project }) => (
+    <div className="relative group inline-flex">
+        <ProjectButton projectName={project.name} />
+        <ProjectTooltip project={project} />
+    </div>
+);
+
+export const ProjectButton = ({ projectName }) => (
+    <button
+        className="
+            min-w-[70px] px-2 py-1
+            text-[10px] text-white text-center tracking-wider
+            border border-jet bg-eerie-2 rounded-lg
+            cursor-pointer
+            forward-box"
+    >
+        {projectName}
+    </button>
+)
 
 export const ProjectTooltip = ({ project }) => {
     const tooltipRef = useRef(null);
