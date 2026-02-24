@@ -69,7 +69,10 @@ export const ArrowBodyProjects = ({ projects }) => {
 
 export const ArrowBodyProject = ({ project }) => (
     <div className="relative group inline-flex">
-        <ProjectButton projectName={project.name} />
+        <VariousActionsButton
+            variant='v2'
+            label={project.name}
+        />
         <ProjectTooltip project={project} />
     </div>
 );
