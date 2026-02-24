@@ -1,4 +1,5 @@
-import { useState, useRef, useEffect } from "react";
+import { useRef } from "react";
+import { useSmartTooltipPosition } from "@hooks";
 import { SkillLollipop } from "@ui"
 
 export const ArrowBodySkills = ({ skills, }) => {
@@ -91,33 +92,12 @@ export const ArrowBodyProjects = ({ projects }) => {
 };
 
 export const ProjectTooltip = ({ project }) => {
-    const [position, setPosition] = useState("right"); // 'left' | 'right'
-    const ref = useRef(null);
-
-    useEffect(() => {
-        const el = ref.current?.parentElement;
-        if (!el) return;
-
-        const handleHover = () => {
-            const rect = el.getBoundingClientRect();
-            const viewportWidth = window.innerWidth;
-            setPosition(rect.left > viewportWidth / 2 ? "left" : "right");
-        };
-
-        el.addEventListener("mouseenter", handleHover);
-        window.addEventListener("resize", handleHover);
-        window.addEventListener("scroll", handleHover);
-
-        return () => {
-            el.removeEventListener("mouseenter", handleHover);
-            window.removeEventListener("resize", handleHover);
-            window.removeEventListener("scroll", handleHover);
-        };
-    }, []);
+    const tooltipRef = useRef(null);
+    const position = useSmartTooltipPosition(tooltipRef);
 
     return (
         <div
-            ref={ref}
+            ref={tooltipRef}
             className={`
                 invisible group-hover:visible
                 absolute top-0 z-30
