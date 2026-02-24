@@ -3,6 +3,7 @@ import { useSmartTooltipPosition } from "@hooks";
 import { VariousActionsButton } from '@ui'
 
 const ArrowBodyProjects = ({ projects }) => {
+    console.log(projects);
     return (
         <div className="flex items-center">
             <div className="w-5 h-px bg-jet"></div>
@@ -21,7 +22,7 @@ const ArrowBodyProjects = ({ projects }) => {
                     "
                 >
                     {projects.map((project) => (
-                        <ArrowBodyProject key={project.name} project={project} />
+                        <ArrowBodyProject key={project.ref} project={project} />
                     ))}
                 </div>
             )}
@@ -37,7 +38,7 @@ export const ArrowBodyProject = ({ project }) => (
     <div className="relative group inline-flex">
         <VariousActionsButton
             variant='v2'
-            label={project.name}
+            label={project.title}
         />
         <ProjectTooltip project={project} />
     </div>
@@ -69,17 +70,16 @@ export const ProjectTooltip = ({ project }) => {
                     bg-white border border-light-gray rounded-lg
                 '
             >
-                {project.name}
+                {project.ref}
             </header>
+
             <p className="min-w-[400px] text-light-gray">{project.info}</p>
+
             <div className="flex gap-2 p-2 bg-jet rounded-lg">
                 <h1 className="text-white">Stack:</h1>
-                <ul className="flex gap-1">
-                    {project.stack.map((tech) => (
-                        <li key={tech} className="text-light-gray italic">{tech}</li>
-                    ))}
-                </ul>
+                <p className="text-light-gray italic">{project.stack}</p>
             </div>
+
             <p className="p-2 bg-jet rounded-lg">
                 <span className="text-white">Duration: </span>
                 <span className="text-light-gray">{project.duration}</span>

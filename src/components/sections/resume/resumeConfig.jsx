@@ -39,7 +39,7 @@ export const resumeSections = [
           <h2>stack: <i>{item.stack}</i></h2>
         </header>
         <ul key={item.title}>
-          {item.details.map((skill) => (
+          {item.details?.map((skill) => (
             <li
               key={skill}
               className="
