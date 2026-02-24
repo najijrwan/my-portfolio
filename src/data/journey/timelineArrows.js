@@ -55,11 +55,17 @@ export const timelineArrows = [
                 ref: 'fitnesso',
                 label: 'fitnesso (front-end)',
                 info: `
-                    In my second year of college (Mar 2024), I took my first Web Programming course. 
-                    It introduced core web technologies such as HTML, CSS, and JavaScript.
+                    In my second year of college (Spring 2024), I took my first Web Programming course. 
+                    It introduced core web technologies such as HTML, CSS, JavaScript and basic PHP.
                     For the mid-semester project, I developed my first website: Fitnessoo, 
-                    a fitness-themed website. It marked the beginning of my practical experience 
-                    with front-end development. Because it was my first web project, I faced the challenge of finding a suitable desing and content for a fitness wesbite. At first I had no clue how to start developing it, and I spent hours trying to figure what first HTML file I should create and trying to write the first line of code.
+                    a fitness-themed front-end with basic back-end integration website. It marked the 
+                    beginning of my practical experience 
+                    with front-end development.`,
+                chall: `
+                    Because it was my first web project, I faced the challenge of finding a suitable 
+                    desing and content for a fitness wesbite. At first I had no clue how to start 
+                    developing it, and I spent hours trying to figure what first HTML file I should 
+                    create and trying to write the first line of code.
                     Once I started writing, all ideas started to flow one after the other.`,
             },
         ],
