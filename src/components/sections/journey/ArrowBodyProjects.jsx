@@ -70,7 +70,7 @@ export const ProjectTooltip = ({ project }) => {
                     bg-white border border-light-gray rounded-lg
                 '
             >
-                {project.ref}
+                {project.label || project.title}
             </header>
 
             <p className="min-w-[400px] text-light-gray">{project.info}</p>
