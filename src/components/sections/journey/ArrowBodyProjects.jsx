@@ -49,16 +49,23 @@ export const ProjectTooltip = ({ project }) => {
     const tooltipRef = useRef(null);
     const position = useSmartTooltipPosition(tooltipRef);
 
+    const FIELDS = [
+        { label: "Info", content: project.info },
+        { label: "Challenges", content: project.chall },
+        { label: "Stack", content: project.stack },
+        { label: "Duration", content: project.duration },
+    ];
+
     return (
         <div
             ref={tooltipRef}
             className={`
                 invisible group-hover:visible
                 absolute top-0 z-30
-                max-w-[500px] px-2 pt-4 pb-2
+                px-2 pt-6 pb-2
                 flex flex-col gap-2 justify-start
                 text-sm lg:text-md text-start
-                bg-[#2b2b2c] border border-light-gray-70 shadow-4 rounded-xl
+                bg-[#2b2b2c] border border-jet shadow-4 rounded-xl
                 transition-opacity duration-500 ease-out
                 ${position === "left" ? "right-full mr-1" : "left-full ml-1"}
             `}
@@ -66,25 +73,42 @@ export const ProjectTooltip = ({ project }) => {
             <header
                 className='
                     absolute top-0 left-1/2 -translate-1/2
-                    min-w-[70px] px-2 py-0.5
-                    text-[10px] text-black text-center tracking-wider uppercase
-                    bg-white border border-light-gray rounded-lg
+                    min-w-[70px] px-2 py-1.5
+                    text-[10px] text-white text-center tracking-wider uppercase
+                    bg-jet rounded-lg
                 '
             >
                 {project.label || project.title}
             </header>
 
-            <p className="min-w-[400px] text-light-gray">{project.info}</p>
-
-            <div className="flex gap-2 p-2 bg-jet rounded-lg">
-                <h1 className="text-white">Stack:</h1>
-                <p className="text-light-gray italic">{project.stack}</p>
-            </div>
-
-            <p className="p-2 bg-jet rounded-lg">
-                <span className="text-white">Duration: </span>
-                <span className="text-light-gray">{project.duration}</span>
-            </p>
+            {FIELDS.map(({ label, content }, i) => (
+                <div
+                    key={i}
+                    className="
+                        min-w-[500px] p-2
+                        flex flex-col gap-2
+                        text-light-gray-70
+                        bg-jet rounded-lg
+                        "
+                >
+                    <header className="flex items-center gap-2 text-white">
+                        {/* <span className="size-1.25 bg-white rounded-full" /> */}
+                        <span>{label}</span>
+                    </header>
+                    <p
+                        className="
+                            relative
+                            pl-2
+                            before:content-['']
+                            before:absolute before:left-0 before:bottom-0
+                            before:w-0.75 before:h-full
+                            before:bg-light-gray-70
+                        "
+                    >
+                        {content}
+                    </p>
+                </div>
+            ))}
         </div>
     );
 };
