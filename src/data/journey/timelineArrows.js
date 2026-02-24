@@ -53,6 +53,7 @@ export const timelineArrows = [
         projects: [
             {
                 ref: 'fitnesso',
+                label: 'fitnesso (front-end)',
                 info: `
                     In my second year of college (Mar 2024), I took my first Web Programming course. 
                     It introduced core web technologies such as HTML, CSS, and JavaScript.
@@ -85,6 +86,7 @@ export const timelineArrows = [
         projects: [
             {
                 ref: 'fitnesso',
+                label: 'fitnesso (full-stack)',
                 info: 'Advanced back end integration with PHP and AJAX',
             },
             {
