@@ -1,1 +1,5 @@
 export { default as Timeline } from './Timeline'
+export { default as ArrowTail } from './ArrowTail'
+export { default as ArrowBodySkills } from './ArrowBodySkills'
+export { default as ArrowBodyProjects } from './ArrowBodyProjects'
+export { default as ArrowHead } from './ArrowHead'

@@ -1,8 +1,6 @@
 import { useScrollFade } from "@hooks";
 import { timelineArrows } from '@data';
-import ArrowTail from './ArrowTail';
-import ArrowHead from './ArrowHead';
-import { ArrowBodySkills, ArrowBodyProjects } from './ArrowBody';
+import { ArrowTail, ArrowBodySkills, ArrowBodyProjects, ArrowHead } from './index';
 
 const COLORS = [
     { bg: "bg-blue-300", border: "border-blue-300" },
