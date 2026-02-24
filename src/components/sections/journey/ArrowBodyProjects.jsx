@@ -39,6 +39,7 @@ export const ArrowBodyProject = ({ project }) => (
         <VariousActionsButton
             variant='v2'
             label={project.title}
+            className='uppercase'
         />
         <ProjectTooltip project={project} />
     </div>
