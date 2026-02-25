@@ -1,5 +1,6 @@
-import { PageTitle } from '@ui'
-import { Timeline } from '@journey'
+import { PageTitle, } from '@ui'
+import { Timeline } from '@journey/timeline'
+import { TimelineProjectsDetails } from '@journey/timeline-projects-details'
 
 const Journey = () => {
     return (
@@ -7,6 +8,8 @@ const Journey = () => {
             <PageTitle title="Journey" />
 
             <Timeline />
+
+            <TimelineProjectsDetails />
         </>
     )
 }
