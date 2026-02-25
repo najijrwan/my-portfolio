@@ -298,6 +298,7 @@ export const timelineArrows = [
             },
             {
                 ref: 'portfolio',
+                label: 'portfolio (refactor)',
                 info: 'version 1 pre-refactor',
             },
         ],
