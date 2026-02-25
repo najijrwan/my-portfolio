@@ -50,10 +50,10 @@ export const ProjectTooltip = ({ project }) => {
     const position = useSmartTooltipPosition(tooltipRef);
 
     const FIELDS = [
-        { label: "Info", content: project.info },
-        { label: "Challenges", content: project.chall },
         { label: "Stack", content: project.stack },
         { label: "Duration", content: project.duration },
+        { label: "Info", content: project.info },
+        { label: "Challenges", content: project.chall },
     ];
 
     return (
