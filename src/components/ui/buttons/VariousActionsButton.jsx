@@ -8,7 +8,6 @@ const VariousActionsButton = ({ variant, className, iconName, label, children, .
             {...props}
             className={`
                 relative z-20
-                w-max
                 flex-center gap-2.5
                 bg-gradient-onyx
                 text-yellow-crayola shadow-3
