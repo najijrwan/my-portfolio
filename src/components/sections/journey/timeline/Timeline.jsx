@@ -1,6 +1,7 @@
-import { useScrollFade } from "@hooks";
-import { timelineArrows, PROJECTS } from '@data';
-import { ArrowTail, ArrowBodySkills, ArrowBodyProjects, ArrowHead } from './index';
+import { useScrollFade } from "@hooks"
+import { timelineArrows } from '@data'
+import { resolveArrowProjects } from '@utils'
+import { ArrowTail, ArrowBodySkills, ArrowBodyProjects, ArrowHead } from './index'
 
 const COLORS = [
     { bg: "bg-blue-300", border: "border-blue-300" },
@@ -11,10 +12,6 @@ const COLORS = [
     { bg: "bg-lime-300", border: "border-lime-300" },
     { bg: "bg-orange-300", border: "border-orange-300" },
 ];
-
-const PROJECTS_MAP = PROJECTS.reduce((acc, project) => {
-    acc[project.title] = project; return acc;
-}, {});
 
 const Timeline = () => {
     const { scrollRef, showLeftFade, showRightFade } = useScrollFade();
@@ -36,13 +33,7 @@ const Timeline = () => {
                 {timelineArrows.map((arrow, i) => {
                     const color = COLORS[i % COLORS.length];
 
-                    const resolvedProjects = arrow.projects?.map(p => {
-                        const base = PROJECTS_MAP[p.ref]; if (!base) {
-                            console.warn(`No project found for ref: ${p.ref}`); return p;
-                        }
-                        return { ...base, ...p };
-                    });
-
+                    const resolvedProjects = resolveArrowProjects(arrow);
 
                     return (
                         <section key={i} className="flex items-center lg:py-5">
