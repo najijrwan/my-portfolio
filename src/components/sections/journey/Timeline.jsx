@@ -20,7 +20,7 @@ const Timeline = () => {
     const { scrollRef, showLeftFade, showRightFade } = useScrollFade();
 
     return (
-        <section className="relative flex flex-col">
+        <section className="relative mb-18 sm:mb-23 flex flex-col">
             {showLeftFade && (
                 <div
                     className="
