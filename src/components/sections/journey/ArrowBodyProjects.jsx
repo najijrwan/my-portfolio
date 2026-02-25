@@ -35,11 +35,11 @@ const ArrowBodyProjects = ({ projects }) => {
 export default ArrowBodyProjects;
 
 export const ArrowBodyProject = ({ project }) => (
-    <div className="relative group inline-flex">
+    <div className="relative group w-full inline-flex">
         <VariousActionsButton
             variant='v2'
-            label={project.title}
-            className='uppercase'
+            label={project.label || project.title}
+            className='w-full uppercase'
         />
         <ProjectTooltip project={project} />
     </div>
