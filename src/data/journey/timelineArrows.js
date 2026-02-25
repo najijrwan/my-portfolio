@@ -52,6 +52,7 @@ export const timelineArrows = [
             {
                 ref: 'fitnesso',
                 label: 'fitnesso (front-end)',
+                duration: 'spring 2024',
                 info: `
                     In my second year of college (Spring 2024), I took my first Web Programming course. 
                     It introduced core web technologies such as HTML, CSS, JavaScript and basic PHP.
@@ -93,6 +94,7 @@ export const timelineArrows = [
             {
                 ref: 'fitnesso',
                 label: 'fitnesso (full-stack)',
+                duration: 'Fall 2024',
                 info: `
                     In my third year (Fall 2024), I enrolled in the Web Programming Advnaced 
                     course, which emphasized back-end technologies. We explored PHP, MySQL and 
