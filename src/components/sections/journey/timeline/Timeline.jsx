@@ -54,8 +54,7 @@ const Timeline = () => {
                             <ArrowHead color={color} month={arrow.endDateMonth} year={arrow.endDateYear} />
                         </section>
                     );
-                })
-                }
+                })}
             </section>
 
             {showRightFade && (
