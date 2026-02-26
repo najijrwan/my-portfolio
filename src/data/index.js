@@ -1,9 +1,9 @@
-// journey
-export { timelineArrows } from './journey/timelineArrows'
-
 // personal
 export { CONTACTS } from './personal/contacts'
 export { SOCIAL_LINKS } from './personal/socialLinks'
+
+// skills
+export { SKILLS_IMAGES } from './skills/skillsImages'
 
 // projects
 export { CATEGORIES } from './projects/categories'
@@ -18,5 +18,5 @@ export { HONORS } from './resume/honors'
 export { LANGUAGES } from './resume/languages'
 export { INTERESTS } from './resume/interests'
 
-// skills
-export { SKILLS_IMAGES } from './skills/skillsImages'
+// journey
+export { timelineArrows } from './journey/timelineArrows'
