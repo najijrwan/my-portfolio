@@ -1,6 +1,5 @@
 import { mergedProjects, splitEvenOdd } from "@utils"
 import { SectionContainer } from '@about'
-import Pillar from './Pillar'
 
 const TimelineProjectsDetails = () => {
     const [evenProjects, oddProjects] = splitEvenOdd(mergedProjects);
@@ -20,3 +19,14 @@ const TimelineProjectsDetails = () => {
 }
 
 export default TimelineProjectsDetails;
+
+
+import ProjectDetails from './ProjectDetails'
+
+export const Pillar = ({ projects }) => (
+    <div className="flex flex-col gap-6">
+        {projects.map((project) => (
+            <ProjectDetails key={project.id} project={project} />
+        ))}
+    </div>
+)
