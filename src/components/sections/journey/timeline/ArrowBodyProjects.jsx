@@ -27,7 +27,7 @@ const ArrowBodyProjects = ({ projects }) => {
                             key={project.id}
                             variant='v2'
                             label={project.label || project.name}
-                            className='w-full inline-flex uppercase'
+                            className='min-w-max w-full inline-flex uppercase'
                         />
                     ))}
                 </div>
