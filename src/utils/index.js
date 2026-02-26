@@ -1,2 +1,1 @@
-export { resolveArrowProjects } from './projectsMerge';
-export { mergeTimelineProjects } from './projectsMerge';
+export { mergedProjects } from './projectsMerge';
