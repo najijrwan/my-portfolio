@@ -1,6 +1,6 @@
 export const PROJECTS = [
     {
-        title: 'fitnesso',
+        name: 'fitnesso',
         type: 'University Project',
         subTitle: 'simple fitness tracking website',
         stack: 'HTML - CSS - Javascript - PHP',
@@ -14,7 +14,7 @@ export const PROJECTS = [
         ],
     },
     {
-        title: 'quizo',
+        name: 'quizo',
         type: 'University Project',
         subTitle: 'Desktop Quiz Application',
         stack: 'C#',
@@ -28,7 +28,7 @@ export const PROJECTS = [
         ],
     },
     {
-        title: 'ma7ali',
+        name: 'ma7ali',
         type: 'Personal Project',
         subTitle: 'Full-Stack POS SPA PWA for Small Businesses',
         stack: 'HTML - CSS - Javascript - Firebase',
@@ -47,7 +47,7 @@ export const PROJECTS = [
         ],
     },
     {
-        title: 'portfolio',
+        name: 'portfolio',
         type: 'Personal Project',
         subTitle: 'Modern Responsive Portfolio Showcase',
         stack: 'HTML - CSS - Javascript - Tailwind CSS - React + Vite',
@@ -55,7 +55,7 @@ export const PROJECTS = [
         description: 'A scalable, component-driven & fully responsive website built to showcase my skills, journey and personal info',
     },
     {
-        title: 'hekto',
+        namme: 'hekto',
         type: 'Personal Project',
         subTitle: 'Front-end e-commerce landing page',
         stack: 'HTML CSS - Javascript - Tailwind CSS - React + Vite',
@@ -63,7 +63,7 @@ export const PROJECTS = [
         description: 'A simple e-commerce landing page built from a figma design',
     },
     {
-        title: '3legant',
+        name: '3legant',
         type: 'Personal Project',
         subTitle: 'Modular E-Commerce Frontend Architecture',
         stack: 'HTML - CSS - Javascript - Tailwind CSS - React + Vite',
