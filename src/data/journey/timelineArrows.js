@@ -50,6 +50,7 @@ export const timelineArrows = [
         ],
         projects: [
             {
+                id: 'fitnesso-front',
                 ref: 'fitnesso',
                 label: 'fitnesso (front-end)',
                 duration: 'spring 2024',
@@ -92,6 +93,7 @@ export const timelineArrows = [
         ],
         projects: [
             {
+                id: 'fitnesso-full',
                 ref: 'fitnesso',
                 label: 'fitnesso (full-stack)',
                 duration: 'Fall 2024',
@@ -116,6 +118,7 @@ export const timelineArrows = [
                 `,
             },
             {
+                id: 'quizo',
                 ref: 'quizo',
                 info: `
                     Third year (Fall 2024). Took Visual Programming course that introduced us to
@@ -162,6 +165,7 @@ export const timelineArrows = [
         ],
         projects: [
             {
+                id: 'ma7ali',
                 ref: 'ma7ali',
                 info: `
                     In my final year (Spring 2025 – graduation semester), I was tasked with building 
@@ -211,6 +215,7 @@ export const timelineArrows = [
                 `,
             },
             {
+                id: 'portfolio',
                 ref: 'portfolio',
                 info: `
                     Immediately after completing Ma7ali, I felt the need to push myself 
@@ -256,6 +261,7 @@ export const timelineArrows = [
         startDateYear: '2025',
         projects: [
             {
+                id: 'hekto',
                 ref: 'hekto',
                 info: `
                     After graduation and taking a long break, I decided to return to building 
@@ -295,10 +301,12 @@ export const timelineArrows = [
                 `,
             },
             {
+                id: '3legant',
                 ref: '3legant',
                 info: 'Front-end & back-end ready web designed pixel-perfect from Figma (unfinished)',
             },
             {
+                id: 'portfolio-refactor',
                 ref: 'portfolio',
                 label: 'portfolio (refactor)',
                 info: 'version 1 pre-refactor',
