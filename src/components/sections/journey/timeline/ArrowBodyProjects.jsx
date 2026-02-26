@@ -22,9 +22,9 @@ const ArrowBodyProjects = ({ projects }) => {
                         before:rounded-lg before:border before:border-jet
                     "
                 >
-                    {projects.map((project, i) => (
+                    {projects.map((project) => (
                         <VariousActionsButton
-                            key={i}
+                            key={project.id}
                             variant='v2'
                             label={project.label || project.name}
                             className='w-full inline-flex uppercase'
