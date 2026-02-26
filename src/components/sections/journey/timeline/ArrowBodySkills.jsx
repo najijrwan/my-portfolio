@@ -1,9 +1,8 @@
+import { splitEvenOdd } from '@utils'
 import { SkillLollipop } from "@ui"
 
-const ArrowBodySkills = ({ skills, }) => {
-    // Split skills into even and odd groups
-    const evenSkills = skills.filter((_, i) => i % 2 === 0);
-    const oddSkills = skills.filter((_, i) => i % 2 !== 0);
+const ArrowBodySkills = ({ skills }) => {
+    const [evenSkills, oddSkills] = splitEvenOdd(skills);
 
     return (
         <div className="min-h-[145px] box-content">
