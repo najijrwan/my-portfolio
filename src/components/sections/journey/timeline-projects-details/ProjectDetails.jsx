@@ -8,7 +8,7 @@ const ProjectDetails = ({ project }) => {
     ];
 
     return (
-        <div
+        <section
             className={`
                 relative
                 w-full px-2 pt-6 pb-2
@@ -26,21 +26,20 @@ const ProjectDetails = ({ project }) => {
                     bg-jet rounded-lg
                 '
             >
-                {project.label || project.title}
+                {project.label || project.name}
             </header>
 
             {FIELDS.map(({ label, content }, i) => (
                 <div
                     key={i}
                     className="
-                        min-w-[500px] p-2
+                        p-2
                         flex flex-col gap-2
                         text-light-gray-70
                         bg-jet rounded-lg
                         "
                 >
                     <header className="flex items-center gap-2 text-white">
-                        {/* <span className="size-1.25 bg-white rounded-full" /> */}
                         <span>{label}</span>
                     </header>
                     <p
@@ -57,7 +56,7 @@ const ProjectDetails = ({ project }) => {
                     </p>
                 </div>
             ))}
-        </div>
+        </section>
     );
 };
 
