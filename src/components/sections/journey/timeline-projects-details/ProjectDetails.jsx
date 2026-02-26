@@ -17,7 +17,7 @@ const ProjectDetails = ({ project }) => {
 
             <ProjectFields project={project} isExtended={isExtended} />
 
-            <ExtendFieldsBtn onClick={handleClick} />
+            <ExtendFieldsBtn onClick={handleClick} isExtended={isExtended} />
         </section>
     );
 };
@@ -80,7 +80,7 @@ const ProjectFields = ({ project, isExtended }) => {
     )
 }
 
-const ExtendFieldsBtn = ({ onClick }) => (
+const ExtendFieldsBtn = ({ onClick, isExtended }) => (
     <button
         onClick={onClick}
         className="
@@ -90,6 +90,12 @@ const ExtendFieldsBtn = ({ onClick }) => (
             hover:opacity-50
             transition-opacity duration-150 ease-in-out"
     >
-        <ion-icon src="icons/chevrons-down.svg" className="size-4" />
+        <ion-icon
+            src="icons/chevrons-down.svg"
+            className={`
+                size-4 visible! transform transition-transform duration-150 ease-in-out
+                ${isExtended ? 'rotate-180' : 'rotate-0'}
+            `}
+        />
     </button>
 )
