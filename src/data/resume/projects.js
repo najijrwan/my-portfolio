@@ -55,7 +55,7 @@ export const PROJECTS = [
         description: 'A scalable, component-driven & fully responsive website built to showcase my skills, journey and personal info',
     },
     {
-        namme: 'hekto',
+        name: 'hekto',
         type: 'Personal Project',
         subTitle: 'Front-end e-commerce landing page',
         stack: 'HTML CSS - Javascript - Tailwind CSS - React + Vite',
