@@ -1,8 +1,11 @@
 import { mergedProjects, splitEvenOdd } from "@utils"
+import { useBreakpoint } from "@hooks";
 import { SectionContainer } from '@about'
 
 const TimelineProjectsDetails = () => {
     const [evenProjects, oddProjects] = splitEvenOdd(mergedProjects);
+
+    const isViewportLarge = useBreakpoint(1024);
 
     return (
         <SectionContainer title="Projects Details">
@@ -11,8 +14,16 @@ const TimelineProjectsDetails = () => {
                 pt-4 overflow-x-auto
                 grid grid-cols-1 lg:grid-cols-2 gap-3"
             >
-                <Pillar projects={evenProjects} />
-                <Pillar projects={oddProjects} />
+                {
+                    isViewportLarge ? (
+                        <>
+                            <Pillar projects={evenProjects} />
+                            <Pillar projects={oddProjects} />
+                        </>
+                    ) : (
+                        <Pillar projects={mergedProjects} />
+                    )
+                }
             </div>
         </SectionContainer>
     )
