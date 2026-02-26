@@ -1,14 +1,19 @@
-import { mergedProjects } from "@utils"
+import { mergedProjects, splitEvenOdd } from "@utils"
 import { SectionContainer } from '@about'
-import ProjectDetails from './ProjectDetails'
+import Pillar from './Pillar'
 
 const TimelineProjectsDetails = () => {
+    const [evenProjects, oddProjects] = splitEvenOdd(mergedProjects);
+
     return (
         <SectionContainer title="Projects Details">
-            <div className="pt-3 flex flex-wrap gap-6 overflow-x-auto has-scrollbar">
-                {mergedProjects.map((project) => (
-                    <ProjectDetails key={project.id} project={project} />
-                ))}
+            <div
+                className="
+                pt-4 overflow-x-auto
+                grid grid-cols-1 lg:grid-cols-2 gap-3"
+            >
+                <Pillar projects={evenProjects} />
+                <Pillar projects={oddProjects} />
             </div>
         </SectionContainer>
     )
