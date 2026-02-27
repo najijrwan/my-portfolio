@@ -55,8 +55,12 @@ const ProjectFields = ({ project, isExtended }) => {
         },
         {
             label: "Challenges",
-            content: project.chall
+            content: project.chall,
         },
+        {
+            label: "Outcome",
+            content: project.outcome,
+        }
     ];
 
     return (
