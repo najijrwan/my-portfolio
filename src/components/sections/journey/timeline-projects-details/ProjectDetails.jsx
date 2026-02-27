@@ -39,11 +39,29 @@ const ProjectDetailsHeader = ({ label }) => (
 
 const ProjectFields = ({ project, isExtended }) => {
     const FIELDS = [
-        { label: "Stack", content: project.stack },
-        { label: "Duration", content: project.duration },
-        { label: "Info", content: project.info },
-        { label: "Challenges", content: project.chall },
+        {
+            label: "Stack",
+            content: (
+                <p>{project.stack.join(" - ")}</p>
+            )
+        },
+        {
+            label: "Duration",
+            content: (
+                <p>{project.duration}</p>
+            )
+        },
+        {
+            label: "Info",
+            content: project.info.map((para, i) => (<p key={i}>{para}</p>))
+        },
+        {
+            label: "Challenges",
+            content: project.chall.map((para, i) => (<p key={i}>{para}</p>))
+        },
     ];
+
+    console.log("FIELDS: ", FIELDS);
 
     return (
         <div
@@ -64,16 +82,17 @@ const ProjectFields = ({ project, isExtended }) => {
                         text-light-gray-70
                         bg-jet rounded-lg
                         custom-transition-2
-                        ${!isExtended && (label === "Info" || label === "Challenges") ? 'opacity-0' : 'opactiy-100'}
+                        ${!isExtended && (label === "Info" || label === "Challenges") ? 'opacity-0' : 'opacity-100'}
                         `}
                 >
                     <header className="flex items-center gap-2 text-white">
                         <span>{label}</span>
                     </header>
-                    <p
+                    <div
                         className="
                             relative
                             pl-2
+                            flex flex-col gap-2
                             before:content-['']
                             before:absolute before:left-0 before:bottom-0
                             before:w-0.75 before:h-full
@@ -81,7 +100,7 @@ const ProjectFields = ({ project, isExtended }) => {
                         "
                     >
                         {content}
-                    </p>
+                    </div>
                 </div>
             ))}
         </div>
