@@ -54,23 +54,22 @@ export const timelineArrows = [
                 ref: 'fitnesso',
                 label: 'fitnesso (front-end)',
                 duration: 'Spring 2024',
-                info: [
-                    `In my second year of college (Spring 2024), I took my first Web Programming course. 
-                    It introduced core web technologies such as HTML, CSS, JavaScript and basic PHP.`,
-
-                    `For the mid-semester project, I developed my first website: Fitnessoo, 
-                    a fitness-themed front-end with basic back-end integration website.`,
-
-                    `It marked the beginning of my practical experience with front-end development.`,
-                ],
-                chall: [
-                    `Because it was my first web project, I faced the challenge of finding a suitable 
-                    desing and content for a fitness wesbite.`,
-                    `At first I had no clue how to start 
-                    developing it, and I spent hours trying to figure what first HTML file I should 
-                    create and trying to write the first line of code.
-                    Once I started writing, all ideas started to flow one after the other.`,
-                ],
+                info: `
+                    During my second year (Spring 2024), I took my first Web Programming course, 
+                    learning HTML, CSS, JavaScript, and PHP. For the mid-semester project, I built 
+                    Fitnesso, a simple fitness tracking website with a clean interface — my first 
+                    real experience with front-end development.
+                `,
+                chall: `
+                    Starting was the hardest part. I had no idea how to begin or structure the 
+                    project, and I spent hours staring at a blank page before writing my first line 
+                    of HTML. Finding a fitting design and consistent layout also took time and trial.
+                `,
+                outcome: `
+                    Once I started coding, everything clicked. I built a responsive multi-page site
+                    that taught me the basics of structure, design, and maintainable code — and 
+                    sparked my lasting interest in front-end development.
+                `,
             },
         ],
         endDateMonth: 'Jun',
@@ -99,56 +98,40 @@ export const timelineArrows = [
                 ref: 'fitnesso',
                 label: 'fitnesso (full-stack)',
                 duration: 'Fall 2024',
-                info: [
-                    `In my third year (Fall 2024), I enrolled in the Web Programming Advnaced 
-                    course, which emphasized back-end technologies. We explored PHP, MySQL and 
-                    AJAX to build database-driven applications.`,
-
-                    `For my project, I continued developing Fitnessoo, integrating features like 
-                    user data storage, form handling, and dynamic content. This helped me 
-                    understand the full-stack development lifecycle more.`,
-                ],
-                chall: [
-                    `The most difficult part of this project was learning how to integrate a 
-                    back‑end into a website that wasn’t originally designed for it. The code 
-                    lacked scalability and structure, so I had to refactor it to be cleaner and 
-                    more modular before adding server‑side functionality.`,
-
-                    `I also struggled with 
-                    designing a proper database schema, handling user authentication, and connecting 
-                    the front‑end to PHP and SQL queries.Debugging errors and deployment issues 
-                    consumed a lot of time, but each challenge taught me valuable lessons about 
-                    maintainability, scalability, and the importance of planning for back‑end 
-                    integration from the start.`,
-                ],
+                info: `
+                    In my third year (Fall 2024), I enrolled in the Advanced Web Programming course, where 
+                    we explored PHP, MySQL, and AJAX to build database-driven applications. I 
+                    decided to expand Fitnesso into a full-stack project with user data storage 
+                    and dynamic features.
+                `,
+                chall: `
+                    Integrating a back-end into an existing front-end was complex. The original code was not
+                    scalable, so I had to refactor it to support authentication, sessions, and database 
+                    interactions. Designing a clean schema and handling deployment issues took longer than 
+                    expected.
+                `,
+                outcome: `
+                    I successfully turned Fitnesso into a functioning full-stack web app. The process taught 
+                    me how to plan architecture, structure code for growth, and approach debugging methodically 
+                    — my first taste of real engineering thinking.
+                `,
             },
             {
                 id: 'quizo',
                 ref: 'quizo',
-                info: [
-                    `Third year(Fall 2024).Took Visual Programming course that introduced us to
-                    concepts of windows applications using C# and Visual Studio Code 2022. At the near
-                    end of the semester, we were required to create a windows applicaton project from 
-                    a list of topics, and I chose a quiz game where I had to define the rules and 
-                    everything.`,
-                ],
-                chall: [
-                    `The most difficult part of this project was learning C# from scratch while 
-                    building a fully functional quiz system.I had to overcome the steep learning 
-                    curve of a new language and its object‑oriented design principles.What helped me 
-                    coding with C# was practicing and solving a lot of Java problems from textbooks 
-                    and online sources which enhanced my thinking skills.`,
-
-                    `Structuring uestions into categories and levels, enforcing progression rules, and 
-                    tracking user state(time, score, and progress) required careful logic and 
-                    debugging.`,
-
-                    `I also struggled with organizing the data model for questions and 
-                    ensuring the UI provided clear feedback to users at every step.These 
-                    challenges taught me how to think more systematically about program flow 
-                    and reinforced the importance of clean architecture when working with new
-                    technologies.`,
-                ],
+                info: `
+                    In the same semester, I took a Visual Programming course using C# and Microsoft Visual Studio. 
+                    For the final project, I built Quizo, a Windows quiz game featuring multiple categories and levels.
+                `,
+                chall: `
+                    Learning C# from scratch while developing a functional application was difficult. I struggled with 
+                    class design, logic flow, and tracking user state (score, progress, timer). Structuring questions and 
+                    enforcing game progression required careful debugging.
+                `,
+                outcome: `
+                    I finished Quizo with a clear grasp of event-driven programming and object-oriented design. It 
+                    strengthened my logic and helped me appreciate how desktop software differs from web development.
+                `,
             },
         ],
         endDateMonth: 'Jan',
@@ -175,109 +158,42 @@ export const timelineArrows = [
             {
                 id: 'ma7ali',
                 ref: 'ma7ali',
-                info: [
-                    `In my final year(Spring 2025 – graduation semester), I was tasked with building 
-                    my senior project for the Information System Development course.Unlike earlier 
-                    projects, this wasn’t just about coding a system — it required me to engineer 
-                    and document the entire process, from design diagrams and use‑cases to ERDs and 
-                    full implementation.`,
-
-                    `For this project, I wanted to go beyond building something for the sake of 
-                    development.I aimed to solve a real‑world problem that I had observed countless 
-                    times: small shopkeepers manually recording sales, customer debts, and inventory 
-                    on paper.This process was inefficient, error‑prone, and limited their ability 
-                    to grow, and some might think that there's an existing solution to this: POS, 
-                    that's true, but a lot of the time those shopkeeprs can't(or they don't want) 
-                    to buy that system.`,
-
-                    `Even before I knew much about software, I often wondered why there wasn’t 
-                    a simple, accessible tool to help them manage their business more effectively 
-                    and for free.That observation became the foundation of my project.`,
-
-                    `What started as a basic 
-                    system to store shop data evolved into a more comprehensive platform with 
-                    features like dashboards, analytics, and inventory management. The goal was 
-                    not only to help shopkeepers organize their records but also to empower them 
-                    with insights that could drive growth and sustainability.`,
-
-                    `This project taught 
-                    me the importance of building software with purpose — addressing real needs and 
-                    creating tools that make everyday work more convenient and impactful.`,
-                ],
-                chall: [
-                    `One of the biggest challenges in this project was designing a system that could 
-                    scale with the needs of shopkeepers.Since many of them rely on simple manual 
-                    processes, I had to strike a balance between building a robust architecture and 
-                    keeping the system lightweight and accessible.`,
-
-                    `Another hurdle was ensuring the system was user‑friendly for non‑technical users. 
-                    I had to think carefully about interface design, workflows, and error handling so 
-                    that shopkeepers could adopt the tool without training.This required me to 
-                    prioritize clarity and simplicity in both the front‑end and back‑end.`,
-
-                    `Documentation was also a major challenge.Unlike previous projects, this one 
-                    demanded complete engineering deliverables — from ERDs and use‑cases to design 
-                    diagrams and technical reports.`,
-
-                    `Managing this level of rigor while continuing to 
-                    develop the system taught me how to integrate documentation into the development 
-                    process rather than treating it as an afterthought.`,
-
-                    `Finally, I faced the challenge of shifting my mindset from building a 
-                    “student project” to creating a solution with real‑world impact.This meant 
-                    thinking beyond basic CRUD operations and adding features like dashboards,
-                    analytics, and inventory management that could genuinely help shopkeepers grow 
-                    their businesses.`,
-
-                    `Balancing ambition with practicality was difficult, but it pushed me to think 
-                    strategically about scalability, maintainability, and long‑term value.`,
-                ],
+                info: `
+                    In my final year, I built Ma7ali, a full-stack PWA designed to help small 
+                    shopkeepers manage sales, inventory, and customer debts. It was my senior capstone 
+                    project — the first time I engineered both the system and its full documentation, 
+                    from ERDs to deployment.
+                `,
+                chall: `
+                    Designing a system that balanced scalability and simplicity was tough. I had to make 
+                    it intuitive for non-technical users while keeping it robust. Creating all design 
+                    deliverables — diagrams, reports, and documentation — alongside coding pushed my time 
+                    management to the limit.
+                `,
+                outcome: `
+                    Ma7ali became my most complete project. It taught me how to design with purpose, write 
+                    scalable code, and integrate documentation as part of development. More importantly, 
+                    it turned abstract coursework into a real, useful solution for a common problem.
+                `,
             },
             {
                 id: 'portfolio',
                 ref: 'portfolio',
-                info: [
-                    `Immediately after completing Ma7ali, I felt the need to push myself
-f                    urther.I began exploring modern web technologies, frameworks, and development 
-                    practices to sharpen my skills and prepare for life beyond graduation.That’s 
-                    when I discovered React and Tailwind CSS — tools that opened up a whole new way 
-                    of thinking about front‑end development.`,
-
-                    `Within a week, I had grasped the fundamentals of both and started experimenting
-                    with small projects to practice.But I wanted something more meaningful than 
-                    just exercises.`,
-
-                    `Since I was approaching graduation, I decided to channel this learning into 
-                    building my own portfolio — a project that would not only showcase my technical 
-                    abilities but also reflect my journey, growth, and identity as a developer.`,
-
-                    `This portfolio became more than a practice ground; it was my first step toward 
-                    professional presentation.It challenged me to think about design systems,
-                    scalability, and how to communicate my work effectively to others.`,
-
-                    `In many ways, it marked the transition from being a student who builds projects 
-                    for courses to a developer who builds projects for real‑world impact.`,
-                ],
-                chall: [
-                    `The biggest challenge I encountered while building my portfolio and earlier projects 
-                    was designing 
-                    the UI / UX.I had no prior experience in design, so creating a professional and 
-                    visually appealing layout was both difficult and time‑consuming.`,
-
-                    `I didn’t initially know what a portfolio should contain, which led me to spend a lot 
-                    of time researching best practices and exploring dozens of open‑source examples 
-                    before settling on a design that matched my preferences.`,
-
-                    `Learning Tailwind CSS added another layer of complexity.While its utility‑first 
-                    approach was powerful, it was challenging to set up, understand its syntax,
-                    and use it to its full potential.Customizing styles, managing directories,
-                    and applying best practices for maintainability required significant effort 
-                    and experimentation.`,
-
-                    `Balancing the technical learning curve with the need to 
-                    produce a polished, professional portfolio pushed me to grow both as a developer
-                    and as a designer.`,
-                ],
+                info: `
+                    After completing Ma7ali, I wanted to push my skills further. I learned React and 
+                    Tailwind CSS and decided to build my personal portfolio — not just as a website, but 
+                    as a reflection of my journey and design sensibility.
+                `,
+                chall: `
+                    With no prior UI/UX background, designing something that looked clean and professional 
+                    was tough. Learning Tailwind’s utility-first syntax, organizing components, and 
+                    managing consistent design took countless iterations.
+                `,
+                outcome: `
+                    The portfolio became my creative milestone — a polished, responsive website that 
+                    showcased both my technical and design growth. It marked my transition from student 
+                    projects to building real, personal products.    
+                `,
             },
         ],
         endDateMonth: 'Jun',
@@ -290,67 +206,56 @@ f                    urther.I began exploring modern web technologies, framework
             {
                 id: 'hekto',
                 ref: 'hekto',
-                info: [
-                    `After graduation and taking a long break, I decided to return to building 
-                    projects because I find it both fun and the best way to enhance my skills
-                    while practicing new technologies.`,
-
-                    `As part of my roadmap, I committed to 
-                    building 2–3 projects after learning each new tech stack.`,
-
-                    `Through research, I realized that an e‑commerce website would be one of 
-                    the most effective ways to strengthen my skills, since it touches on 
-                    complex features like product listings, shopping carts, and user flows.`,
-
-                    `Knowing that design had been my biggest challenge in previous projects,
-                    I turned to Figma templates to convert into websites.This saved me time 
-                    on design ideation but introduced new challenges in translating 
-                    professional mockups into clean, maintainable code.`,
-
-                    `The project became 
-                    both a technical exercise and a design learning experience, pushing me 
-                    to bridge the gap between visual concepts and functional implementation.`,
-                ],
-                chall: [
-                    `Using Figma for the first time was a major challenge. Although it required 
-                    no setup, learning how to navigate its tools, layers, and design conventions 
-                    was initially overwhelming.`,
-
-                    `Over time, I became more comfortable, but this 
-                    introduced another recurring difficulty: structuring and organizing my 
-                    project folders for readability, accessibility, and long‑term maintainability. 
-                    I realized that before diving into coding, I needed to plan the architecture 
-                    carefully to avoid future obstacles.This taught me the importance of treating 
-                    every project as if it were going to be scaled or refactored later.`,
-
-                    `Beyond 
-                    technical hurdles, I also had to adapt to working with professional design
-                    files — ensuring pixel‑perfect implementation, handling responsive layouts,
-                    and maintaining consistency across components.`,
-
-                    `Moreover, the Figma design I chose was not what I expected.It was missing core 
-                    website functionalities such as proper flow, event prototypes, and interactive
-                    elements.This forced me to rethink my approach: instead of building the entire
-                    site, I decided to focus on implementing the landing page and then search for a 
-                    more complete design to continue practicing.`,
-
-                    `These challenges pushed me to think more like a full‑stack developer — balancing 
-                    design fidelity with clean engineering practices, planning for scalability, and 
-                    learning to adapt when resources or tools fall short of expectations.`,
-                ],
+                info: `
+                    After graduation, I returned to building projects for practice and growth. 
+                    I started with Hekto, a front-end e-commerce landing page built from a Figma 
+                    template using React and Tailwind.
+                `,
+                chall: `
+                    Using Figma professionally for the first time was tricky — understanding layers, 
+                    spacing, and responsive grids took adjustment. Translating static design into clean, 
+                    maintainable code while keeping layouts pixel-perfect required patience.
+                `,
+                outcome: `
+                    Hekto taught me the importance of planning architecture before coding and following 
+                    design conventions closely. It strengthened my workflow and made me more confident 
+                    in building production-ready UIs.
+                `,
             },
             {
                 id: '3legant',
                 ref: '3legant',
-                info: ['Front-end & back-end ready web designed pixel-perfect from Figma (unfinished)'],
-                chall: [''],
+                info: `
+                    Continuing my practice with Figma and modular React design, I began 3legant, a scalable 
+                    e-commerce frontend with reusable UI components and multiple layout systems.
+                `,
+                chall: `
+                    The design was more complex than expected, requiring careful handling of layout grids 
+                    and component composition. Ensuring responsiveness and code modularity became key 
+                    learning points.
+                `,
+                outcome: `
+                    Although unfinished, 3legant represents a step toward full production-grade architecture — 
+                    clean, scalable, and ready for back-end integration.
+                `,
             },
             {
                 id: 'portfolio-refactor',
                 ref: 'portfolio',
                 label: 'portfolio (refactor)',
-                info: ['version 1 pre-refactor'],
-                chall: [''],
+                info: `
+                    After completing Hekto and 3legant, I revisited my portfolio to refactor and restructure it 
+                    with everything I had learned — better architecture, cleaner organization, and improved 
+                    performance.
+                `,
+                chall: `
+                    Breaking apart old components, cleaning state management, and optimizing file structures took 
+                    time and planning.
+                `,
+                outcome: `
+                    The refactored portfolio became a true reflection of my progress — still the same personal 
+                    project, but rebuilt with professional discipline and refined technical insight.
+                `,
             },
         ],
         endDateMonth: 'Feb',
