@@ -3,7 +3,7 @@ export const PROJECTS = [
         name: 'fitnesso',
         type: 'University Project',
         subTitle: 'simple fitness tracking website',
-        stack: 'HTML - CSS - Javascript - PHP',
+        stack: ['HTML', 'CSS', 'Javascript', 'PHP', ],
         duration: 'Spring 2024 & Fall 2024',
         description: 'A basic fitness-focused website that tracks user metrics and personal data with clean structure and design.',
         details: [
@@ -17,7 +17,7 @@ export const PROJECTS = [
         name: 'quizo',
         type: 'University Project',
         subTitle: 'Desktop Quiz Application',
-        stack: 'C#',
+        stack: ['C#', ],
         duration: 'Fall 2024',
         description: 'A fun and interactive Windows Forms-based quiz game built with C# for desktop users.',
         details: [
@@ -31,7 +31,7 @@ export const PROJECTS = [
         name: 'ma7ali',
         type: 'Personal Project',
         subTitle: 'Full-Stack POS SPA PWA for Small Businesses',
-        stack: 'HTML - CSS - Javascript - Firebase',
+        stack: ['HTML', 'CSS', 'Javascript', 'Firebase', ],
         duration: 'Mar 15 - May 15',
         description: 'A comprehensive POS progressive web application (PWA)  for managing inventory, sales, customer debts, and business analytics.',
         details: [
@@ -50,7 +50,7 @@ export const PROJECTS = [
         name: 'portfolio',
         type: 'Personal Project',
         subTitle: 'Modern Responsive Portfolio Showcase',
-        stack: 'HTML - CSS - Javascript - Tailwind CSS - React + Vite',
+        stack: ['HTML', 'CSS', 'Javascript', 'Tailwind CSS', 'React', ], 
         duration: 'May 18 - Jun 22',
         description: 'A scalable, component-driven & fully responsive website built to showcase my skills, journey and personal info',
     },
@@ -58,7 +58,7 @@ export const PROJECTS = [
         name: 'hekto',
         type: 'Personal Project',
         subTitle: 'Front-end e-commerce landing page',
-        stack: 'HTML CSS - Javascript - Tailwind CSS - React + Vite',
+        stack: ['HTML', 'CSS', 'Javascript', 'Tailwind CSS', 'React', ],
         duration: 'Dec 13 - Dec 28',
         description: 'A simple e-commerce landing page built from a figma design',
     },
@@ -66,7 +66,7 @@ export const PROJECTS = [
         name: '3legant',
         type: 'Personal Project',
         subTitle: 'Modular E-Commerce Frontend Architecture',
-        stack: 'HTML - CSS - Javascript - Tailwind CSS - React + Vite',
+        stack: ['HTML', 'CSS', 'Javascript', 'Tailwind CSS', 'React', ],
         duration: 'Dec 29 - Present',
         description: 'A scalable, component-driven e-commerce frontend built with a focus on clean architecture and responsive UI systems.',
         details: [
