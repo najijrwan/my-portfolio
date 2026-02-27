@@ -120,7 +120,7 @@ export const timelineArrows = [
                 id: 'quizo',
                 ref: 'quizo',
                 info: `
-                    In the same semester, I took a Visual Programming course using C# and Microsoft Visual Studio. 
+                    Thirs year (Fall 2024), I took a Visual Programming course using C# and Microsoft Visual Studio. 
                     For the final project, I built Quizo, a Windows quiz game featuring multiple categories and levels.
                 `,
                 chall: `
@@ -243,6 +243,7 @@ export const timelineArrows = [
                 id: 'portfolio-refactor',
                 ref: 'portfolio',
                 label: 'portfolio (refactor)',
+                duration: `Feb 11 - Present`,
                 info: `
                     After completing Hekto and 3legant, I revisited my portfolio to refactor and restructure it 
                     with everything I had learned — better architecture, cleaner organization, and improved 
