@@ -42,26 +42,22 @@ const ProjectFields = ({ project, isExtended }) => {
         {
             label: "Stack",
             content: (
-                <p>{project.stack.join(" - ")}</p>
+                <>{project.stack.join(" - ")}</>
             )
         },
         {
             label: "Duration",
-            content: (
-                <p>{project.duration}</p>
-            )
+            content: project.duration,
         },
         {
             label: "Info",
-            content: project.info.map((para, i) => (<p key={i}>{para}</p>))
+            content: project.info,
         },
         {
             label: "Challenges",
-            content: project.chall.map((para, i) => (<p key={i}>{para}</p>))
+            content: project.chall
         },
     ];
-
-    console.log("FIELDS: ", FIELDS);
 
     return (
         <div
@@ -88,7 +84,7 @@ const ProjectFields = ({ project, isExtended }) => {
                     <header className="flex items-center gap-2 text-white">
                         <span>{label}</span>
                     </header>
-                    <div
+                    <p
                         className="
                             relative
                             pl-2
@@ -100,7 +96,7 @@ const ProjectFields = ({ project, isExtended }) => {
                         "
                     >
                         {content}
-                    </div>
+                    </p>
                 </div>
             ))}
         </div>
