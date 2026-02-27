@@ -281,7 +281,7 @@ body::-webkit-scrollbar-button {
   top: calc(100% + 6px);
 }
 
-@layer components {  
+@layer components {
   .contact-input {
     @apply px-[20px] sm:px-[20px] py-[13px] sm:py-[15px] text-base text-[14px] sm:text-[15px] font-[400] border border-jet rounded-[14px] outline-0;
   }

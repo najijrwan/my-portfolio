@@ -7,10 +7,9 @@ const ProjectDetails = ({ project }) => {
         <section
             className={`
                 relative
-                h-fit
                 flex flex-col gap-4
                 bg-[#2b2b2c] border border-jet rounded-xl
-                transition-opacity duration-500 ease-out
+                animate-height
             `}
         >
             <ProjectDetailsHeader label={project.label ?? project.ref} />
@@ -47,7 +46,15 @@ const ProjectFields = ({ project, isExtended }) => {
     ];
 
     return (
-        <div className='w-full px-2 pt-8 flex flex-col gap-2 text-sm lg:text-md text-start'>
+        <div
+            className={`
+                w-full px-2 pt-8
+                flex flex-col gap-2
+                text-sm lg:text-md text-start
+                custom-transition-2 overflow-hidden
+                ${isExtended ? 'max-h-[2000px]' : 'max-h-[168px]'}
+            `}
+        >
             {FIELDS.map(({ label, content }, i) => (
                 <div
                     key={i}
@@ -56,7 +63,8 @@ const ProjectFields = ({ project, isExtended }) => {
                         flex flex-col gap-2
                         text-light-gray-70
                         bg-jet rounded-lg
-                        ${!isExtended && (label === "Info" || label === "Challenges") ? 'hidden' : ''}
+                        custom-transition-2
+                        ${!isExtended && (label === "Info" || label === "Challenges") ? 'opacity-0' : 'opactiy-100'}
                         `}
                 >
                     <header className="flex items-center gap-2 text-white">
