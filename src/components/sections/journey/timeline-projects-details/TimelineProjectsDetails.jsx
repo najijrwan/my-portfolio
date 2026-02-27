@@ -32,9 +32,9 @@ const TimelineProjectsDetails = () => {
 export default TimelineProjectsDetails;
 
 
-import ProjectDetails from './ProjectDetails'
+import ProjectDetails from './project-details/ProjectDetails'
 
-export const Pillar = ({ projects }) => (
+const Pillar = ({ projects }) => (
     <div className="flex flex-col gap-6">
         {projects.map((project) => (
             <ProjectDetails key={project.id} project={project} />
