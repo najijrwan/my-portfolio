@@ -1,27 +1,10 @@
 const ProjectFields = ({ project, isExtended }) => {
     const FIELDS = [
-        {
-            label: "Stack",
-            content: (
-                <>{project.stack.join(" - ")}</>
-            )
-        },
-        {
-            label: "Duration",
-            content: project.duration,
-        },
-        {
-            label: "Info",
-            content: project.info,
-        },
-        {
-            label: "Challenges",
-            content: project.chall,
-        },
-        {
-            label: "Outcome",
-            content: project.outcome,
-        }
+        { label: "Stack", content: (<>{project.stack.join(" - ")}</>) },
+        { label: "Duration", content: project.duration, },
+        { label: "Info", content: project.info, },
+        { label: "Challenges", content: project.chall, },
+        { label: "Outcome", content: project.outcome, }
     ];
 
     return (
