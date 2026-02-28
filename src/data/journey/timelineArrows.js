@@ -120,7 +120,7 @@ export const timelineArrows = [
                 id: 'quizo',
                 ref: 'quizo',
                 info: `
-                    Thirs year (Fall 2024), I took a Visual Programming course using C# and Microsoft Visual Studio. 
+                    Third year (Fall 2024), I took a Visual Programming course using C# and Microsoft Visual Studio. 
                     For the final project, I built Quizo, a Windows quiz game featuring multiple categories and levels.
                 `,
                 chall: `
