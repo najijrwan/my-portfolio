@@ -11,7 +11,7 @@ const TimelineProjectsDetails = () => {
         <SectionContainer title="Projects Details">
             <div
                 className="
-                pt-4 overflow-x-auto
+                pt-4
                 grid grid-cols-1 lg:grid-cols-2 gap-3"
             >
                 {
