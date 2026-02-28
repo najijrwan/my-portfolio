@@ -96,7 +96,7 @@ export const timelineArrows = [
             {
                 id: 'fitnesso-full',
                 ref: 'fitnesso',
-                label: 'fitnesso (full-stack)',
+                label: 'fitnesso (back-end)',
                 duration: 'Fall 2024',
                 info: `
                     In my third year (Fall 2024), I enrolled in the Advanced Web Programming course, where 
