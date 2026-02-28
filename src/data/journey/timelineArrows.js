@@ -159,7 +159,7 @@ export const timelineArrows = [
                 id: 'ma7ali',
                 ref: 'ma7ali',
                 info: `
-                    In my final year, I built Ma7ali, a full-stack PWA designed to help small 
+                    In my final year (Spring 2025 - Graduation Semester), I built Ma7ali, a full-stack PWA designed to help small 
                     shopkeepers manage sales, inventory, and customer debts. It was my senior capstone 
                     project — the first time I engineered both the system and its full documentation, 
                     from ERDs to deployment.
