@@ -17,7 +17,15 @@ const Timeline = () => {
     const { scrollRef, showLeftFade, showRightFade } = useScrollFade();
 
     return (
-        <section className="relative mb-18 sm:mb-23 flex flex-col">
+        <section
+            ref={scrollRef}
+            className="
+                relative
+                pb-5 mb-18 sm:mb-23 overflow-x-auto
+                flex lg:flex-wrap
+                has-scrollbar
+            "
+        >
             {showLeftFade && (
                 <div
                     className="
@@ -29,28 +37,26 @@ const Timeline = () => {
                 />
             )}
 
-            <section ref={scrollRef} className="pb-5 flex overflow-x-auto has-scrollbar lg:flex-wrap">
-                {timelineArrows.map((arrow, i) => {
-                    const color = COLORS[i % COLORS.length];
+            {timelineArrows.map((arrow, i) => {
+                const color = COLORS[i % COLORS.length];
 
-                    const arrowProjectIds = arrow.projects?.map(p => p.id) || [];
-                    
-                    const arrowProjects = mergedProjects.filter(p =>
-                        arrowProjectIds.includes(p.id)
-                    );
+                const arrowProjectIds = arrow.projects?.map(p => p.id) || [];
 
-                    return (
-                        <section key={i} className="flex items-center lg:py-5">
-                            <ArrowTail color={color} month={arrow.startDateMonth} year={arrow.startDateYear} />
+                const arrowProjects = mergedProjects.filter(p =>
+                    arrowProjectIds.includes(p.id)
+                );
 
-                            {arrow.skills?.length > 0 && <ArrowBodySkills skills={arrow.skills} />}
-                            {arrow.projects?.length > 0 && <ArrowBodyProjects projects={arrowProjects} />}
+                return (
+                    <section key={i} className="flex items-center lg:py-5">
+                        <ArrowTail color={color} month={arrow.startDateMonth} year={arrow.startDateYear} />
 
-                            <ArrowHead color={color} month={arrow.endDateMonth} year={arrow.endDateYear} />
-                        </section>
-                    );
-                })}
-            </section>
+                        {arrow.skills?.length > 0 && <ArrowBodySkills skills={arrow.skills} />}
+                        {arrow.projects?.length > 0 && <ArrowBodyProjects projects={arrowProjects} />}
+
+                        <ArrowHead color={color} month={arrow.endDateMonth} year={arrow.endDateYear} />
+                    </section>
+                );
+            })}
 
             {showRightFade && (
                 <div
