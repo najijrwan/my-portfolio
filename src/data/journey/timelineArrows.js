@@ -94,7 +94,7 @@ export const timelineArrows = [
         ],
         projects: [
             {
-                id: 'fitnesso-full',
+                id: 'fitnesso-back',
                 ref: 'fitnesso',
                 label: 'fitnesso (back-end)',
                 duration: 'Fall 2024',
