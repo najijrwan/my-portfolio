@@ -215,6 +215,22 @@ body::-webkit-scrollbar-button {
       scale: 1;
     }
   }
+
+  --animate-highlight-pulse: pulse-ring 1.4s ease-out;
+  @keyframes pulse-ring {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 211, 67, 0.8);
+      /* yellow-crayola */
+    }
+
+    70% {
+      box-shadow: 0 0 0 12px rgba(255, 211, 67, 0);
+    }
+
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 211, 67, 0);
+    }
+  }
 }
 
 @utility bg-gradient-onyx {
