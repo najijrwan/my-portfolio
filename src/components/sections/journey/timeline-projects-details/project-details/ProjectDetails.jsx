@@ -6,6 +6,7 @@ const ProjectDetails = ({ project }) => {
 
     return (
         <section
+            id={project.id}
             className={`
                 relative
                 flex flex-col gap-4
