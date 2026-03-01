@@ -11,8 +11,7 @@ const ArrowBodySkills = ({ skills }) => {
                 {evenSkills.map((skill, i) => (
                     <SkillLollipop
                         key={i}
-                        src={skill.src}
-                        lan={skill.lan}
+                        skill={skill}
                     />
                 ))}
             </div>
@@ -25,8 +24,7 @@ const ArrowBodySkills = ({ skills }) => {
                 {oddSkills.map((skill, i) => (
                     <SkillLollipop
                         key={i}
-                        src={skill.src}
-                        lan={skill.lan}
+                        skill={skill}
                         reversed
                     />
                 ))}
