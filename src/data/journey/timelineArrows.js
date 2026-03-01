@@ -4,8 +4,10 @@ export const timelineArrows = [
         startDateYear: '2023',
         skills: [
             {
-                src: 'images/java.png',
                 lan: 'Java',
+                label: 'Java 1',
+                course: 'Introduction to Programming',
+                src: 'images/java.png',
             },
         ],
         endDateMonth: 'Jun',
@@ -18,6 +20,8 @@ export const timelineArrows = [
             {
                 src: 'images/java.png',
                 lan: 'Java',
+                label: 'Java 2',
+                course: 'Intermediate Programming with Objects',
             },
         ],
         endDateMonth: 'Jan',
@@ -30,22 +34,31 @@ export const timelineArrows = [
             {
                 lan: 'Java',
                 src: 'images/java.png',
+                label: 'Java 1',
+                course: 'Data Structures and Algorithms'
             },
             {
                 lan: 'HTML',
                 src: 'images/html.png',
+                course: 'Web Programming',
             },
             {
                 lan: 'CSS',
                 src: 'images/css.png',
+                label: 'CSS Basics',
+                course: 'Web Programming',
             },
             {
                 lan: 'JavaScript',
                 src: 'images/javascript.png',
+                label: 'JavaScript Basics',
+                course: 'Web Programming',
             },
             {
                 src: 'images/php.png',
                 lan: 'PHP',
+                label: "PHP Basics",
+                course: 'Web Programming',
             },
         ],
         projects: [
@@ -82,14 +95,19 @@ export const timelineArrows = [
             {
                 src: 'images/javascript.png',
                 lan: 'JavaScript',
+                label: 'JavaScript Advanced',
+                course: 'Web Programming Advanced',
             },
             {
                 src: 'images/php.png',
                 lan: 'PHP',
+                label: 'PHP Advanced',
+                course: 'Web Programming Advanced',
             },
             {
                 src: 'images/csharp.png',
                 lan: 'C#',
+                course: 'Visual Programming',
             },
         ],
         projects: [
@@ -144,6 +162,7 @@ export const timelineArrows = [
             {
                 src: 'images/python.png',
                 lan: 'Python',
+                course: 'Machine Learning',
             },
             {
                 src: 'images/react.png',
