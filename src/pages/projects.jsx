@@ -1,25 +1,14 @@
-import { useLocation, useNavigate } from "react-router-dom"
-import { useEffect, useState } from "react"
 import { PageTitle } from '@ui'
 import { DesktopFilters, MobileFilters, ProjectsGrid } from '@projects'
+import { useProjectsFilters } from '@hooks/useProjectsFilters'
 
 const Projects = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
-
-  const queryParams = new URLSearchParams(location.search);
-  const urlCategory = queryParams.get("category") || "all";
-
-  const [selectedCategory, setSelectedCategory] = useState(urlCategory);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  useEffect(() => {
-    const params = new URLSearchParams(location.search);
-    if (selectedCategory !== params.get("category")) {
-      params.set("category", selectedCategory);
-      navigate({ search: params.toString() }, { replace: true });
-    }
-  }, [selectedCategory, location.search, navigate]);
+  const {
+    selectedCategory,
+    setSelectedCategory,
+    dropdownOpen,
+    setDropdownOpen
+  } = useProjectsFilters();
 
   return (
     <>
@@ -43,4 +32,3 @@ const Projects = () => {
 }
 
 export default Projects;
-
