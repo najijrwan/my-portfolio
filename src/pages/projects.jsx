@@ -1,6 +1,6 @@
 import { PageTitle } from '@ui'
 import { DesktopFilters, MobileFilters, ProjectsGrid } from '@projects'
-import { useProjectsFilters } from '@hooks/useProjectsFilters'
+import { useProjectsFilters } from '@hooks'
 
 const Projects = () => {
   const {
