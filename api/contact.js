@@ -10,18 +10,15 @@ export default async function handler(req, res) {
   try {
     const { fullname, email, subject, message } = req.body;
 
-    // Basic validation
     if (!fullname || !email || !subject || !message) {
       return res.status(400).json({ error: 'All fields are required' });
     }
 
-    // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       return res.status(400).json({ error: 'Please enter a valid email' });
     }
 
-    // Send email ONLY to you (the portfolio owner)
     await resend.emails.send({
       from: 'Portfolio Contact <onboarding@resend.dev>',
       to: 'najijrwanyt@gmail.com',
@@ -59,7 +56,6 @@ export default async function handler(req, res) {
       `,
     });
 
-    // Return success to the website (no email to sender)
     return res.status(200).json({ 
       success: true, 
       message: 'Message sent successfully!' 
