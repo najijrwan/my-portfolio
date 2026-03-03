@@ -6,7 +6,7 @@ const ProjectsGrid = ({ selectedCategory }) => (
             .filter(project => project.id !== "portfolio")
             .sort((a, b) => a.rank - b.rank)
             .map((project) => {
-                const isVisible = selectedCategory === "all" || project.category === selectedCategory;
+                const isVisible = selectedCategory === "all" || project.category.toLowerCase() === selectedCategory;
 
                 return (
                     <li
@@ -74,7 +74,7 @@ const ProjectCard = ({ project }) => (
         </div>
 
         <div className="ml-2.5 flex gap-2 text-[15px] font-[300]">
-            <span className="text-white">{project.name}</span>
+            <span className="text-white capitalize">{project.name}</span>
             <span className="text-light-gray-70">•</span>
             <span className="text-light-gray-70">{project.category}</span>
         </div>
