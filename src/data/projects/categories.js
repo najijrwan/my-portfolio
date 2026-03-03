@@ -7,7 +7,7 @@
 
 export const CATEGORIES = [
     { id: "all", label: "All Projects", value: "all" },
-    { id: "frontend", label: "Front-End", value: "frontend" },
-    { id: "fullstack", label: "Full-Stack", value: "fullstack" },
+    { id: "front-end", label: "Front-End", value: "front-end" },
+    { id: "full-stack", label: "Full-Stack", value: "full-stack" },
 ];
 
