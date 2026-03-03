@@ -14,7 +14,7 @@ const ProjectDetails = ({ project }) => {
                 animate-height
             `}
         >
-            <ProjectDetailsHeader label={project.label ?? project.ref} />
+            <ProjectDetailsHeader label={project.label ?? project.ref} link={project.liveLink ?? project.gitLink} />
 
             <ProjectFields project={project} isExtended={isExtended} />
 
@@ -26,16 +26,22 @@ const ProjectDetails = ({ project }) => {
 export default ProjectDetails;
 
 
-const ProjectDetailsHeader = ({ label }) => (
+const ProjectDetailsHeader = ({ link, label }) => (
     <header
         className='
             absolute top-0 left-1/2 -translate-1/2
             min-w-max px-2 py-1.5
-            text-[10px] sm:text-[12px] text-white text-center tracking-wider uppercase
+            text-[10px] sm:text-[12px] text-yellow-crayola text-center tracking-wider uppercase
             bg-jet rounded-lg
         '
     >
-        {label}
+        {link ? (
+            <a href={link} target='_blank' rel="noopener noreferrer">{label}</a>
+        ) : (
+            <button onClick={() => console.log('link: undefined - subtle Easter egg 🤓🫢')}>
+                {label}
+            </button>
+        )}
     </header>
 )
 
