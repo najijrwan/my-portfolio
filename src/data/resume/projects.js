@@ -9,7 +9,7 @@ export const PROJECTS = [
         img: '/images/fitnesso.png',
         stack: ['HTML', 'CSS', 'Javascript', 'PHP', ],
         duration: 'Spring 2024 & Fall 2024',
-        liveLink: 'https://fitnessoo.infinityfreeapp.com/index.php',
+        liveLink: 'https://fitnesso.ct.ws/',
         gitLink: 'https://github.com/najialjarwan/Fitnesso',
         description: 'A basic fitness-focused website that tracks user metrics and personal data with clean structure and design.',
         details: [
