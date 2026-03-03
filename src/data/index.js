@@ -7,7 +7,6 @@ export { SKILLS_IMAGES } from './skills/skillsImages'
 
 // projects
 export { CATEGORIES } from './projects/categories'
-export { projectsMeta } from './projects/projectsMeta'
 
 // resume
 export { SUMMARY } from './resume/summary'
