@@ -4,8 +4,8 @@ import { useProjectsFilters } from '@hooks'
 
 const Projects = () => {
   const {
-    selectedCategory,
-    setSelectedCategory,
+    selectedRole,
+    setSelectedRole,
     dropdownOpen,
     setDropdownOpen
   } = useProjectsFilters();
@@ -15,18 +15,18 @@ const Projects = () => {
       <PageTitle title="Projects" />
 
       <DesktopFilters
-        selectedCategory={selectedCategory}
-        setSelectedCategory={setSelectedCategory}
+        selectedRole={selectedRole}
+        setSelectedRole={setSelectedRole}
       />
 
       <MobileFilters
         dropdownOpen={dropdownOpen}
         setDropdownOpen={setDropdownOpen}
-        selectedCategory={selectedCategory}
-        setSelectedCategory={setSelectedCategory}
+        selectedRole={selectedRole}
+        setSelectedRole={setSelectedRole}
       />
 
-      <ProjectsGrid selectedCategory={selectedCategory} />
+      <ProjectsGrid selectedRole={selectedRole} />
     </>
   );
 }

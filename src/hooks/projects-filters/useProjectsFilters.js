@@ -4,14 +4,14 @@ import { useCategorySync } from "./useCategorySync"
 
 export const useProjectsFilters = () => {
   const urlCategory = useUrlCategory();
-  const [selectedCategory, setSelectedCategory] = useState(urlCategory);
+  const [selectedRole, setSelectedRole] = useState(urlCategory);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  useCategorySync(selectedCategory);
+  useCategorySync(selectedRole);
 
   return {
-    selectedCategory,
-    setSelectedCategory,
+    selectedRole,
+    setSelectedRole,
     dropdownOpen,
     setDropdownOpen
   };

@@ -1,6 +1,6 @@
 import { CATEGORIES } from "@data";
 
-const DesktopFilters = ({ selectedCategory, setSelectedCategory }) => (
+const DesktopFilters = ({ selectedRole, setSelectedRole }) => (
     <ul
         role="listbox"
         className="hidden md:flex gap-2 mb-7.5">
@@ -8,10 +8,10 @@ const DesktopFilters = ({ selectedCategory, setSelectedCategory }) => (
             <li key={cat.id}>
                 <button
                     role="option"
-                    onClick={() => setSelectedCategory(cat.value)}
+                    onClick={() => setSelectedRole(cat.value)}
                     className={`
                         px-4 py-2 rounded-full custom-transition-1
-                        ${selectedCategory === cat.value
+                        ${selectedRole === cat.value
                             ? "bg-yellow-crayola text-black"
                             : "bg-eerie-2 text-light-gray hover:text-light-gray-70"
                         }

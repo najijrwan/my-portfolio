@@ -3,28 +3,28 @@ import { CATEGORIES } from "@data";
 const MobileFilters = ({
     dropdownOpen,
     setDropdownOpen,
-    selectedCategory,
-    setSelectedCategory,
+    selectedRole,
+    setSelectedRole,
 }) => (
 
     <div className="relative mb-[25px] md:hidden">
         <DropdownBtn
             dropdownOpen={dropdownOpen}
             setDropdownOpen={setDropdownOpen}
-            selectedCategory={selectedCategory}
+            selectedRole={selectedRole}
         />
 
         <DropdownList
             dropdownOpen={dropdownOpen}
             setDropdownOpen={setDropdownOpen}
-            setSelectedCategory={setSelectedCategory}
+            setSelectedRole={setSelectedRole}
         />
     </div>
 )
 
 export default MobileFilters;
 
-const DropdownBtn = ({ dropdownOpen, setDropdownOpen, selectedCategory, }) => (
+const DropdownBtn = ({ dropdownOpen, setDropdownOpen, selectedRole, }) => (
     <button
         onClick={() => setDropdownOpen(prev => !prev)}
         className="
@@ -33,7 +33,7 @@ const DropdownBtn = ({ dropdownOpen, setDropdownOpen, selectedCategory, }) => (
             text-light-gray text-[14px] font-[300]
             bg-eerie-2 border border-solid border-jet rounded-[14px]"
     >
-        <span>{CATEGORIES.find(c => c.value === selectedCategory)?.label || "All"}</span>
+        <span>{CATEGORIES.find(c => c.value === selectedRole)?.label || "All"}</span>
 
         <ion-icon
             name="chevron-down"
@@ -45,7 +45,7 @@ const DropdownBtn = ({ dropdownOpen, setDropdownOpen, selectedCategory, }) => (
     </button>
 )
 
-export const DropdownList = ({ setDropdownOpen, dropdownOpen, setSelectedCategory, }) => (
+export const DropdownList = ({ setDropdownOpen, dropdownOpen, setSelectedRole, }) => (
     <ul
         role="listbox"
         className={`
@@ -65,7 +65,7 @@ export const DropdownList = ({ setDropdownOpen, dropdownOpen, setSelectedCategor
                         text-[15px] text-left text-light-gray font-[300] rounded-[8px]
                         hover:bg-jet"
                     onClick={() => {
-                        setSelectedCategory(cat.value);
+                        setSelectedRole(cat.value);
                         setDropdownOpen(false);
                     }}
                 >
