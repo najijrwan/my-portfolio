@@ -33,7 +33,7 @@ const DropdownBtn = ({ dropdownOpen, setDropdownOpen, selectedCategory, }) => (
             text-light-gray text-[14px] font-[300]
             bg-eerie-2 border border-solid border-jet rounded-[14px]"
     >
-        <span>{CATEGORIES.find(c => c.value === selectedCategory)?.label ?? "All"}</span>
+        <span>{CATEGORIES.find(c => c.value === selectedCategory)?.label || "All"}</span>
 
         <ion-icon
             name="chevron-down"
@@ -55,8 +55,8 @@ export const DropdownList = ({ setDropdownOpen, dropdownOpen, setSelectedCategor
             dropdown-transition
             ${dropdownOpen ? "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none"}`}
     >
-        {CATEGORIES.map(({ label, value }) => (
-            <li key={value}>
+        {CATEGORIES.map((cat) => (
+            <li key={cat.id}>
                 <button
                     role="option"
                     className="
@@ -65,11 +65,11 @@ export const DropdownList = ({ setDropdownOpen, dropdownOpen, setSelectedCategor
                         text-[15px] text-left text-light-gray font-[300] rounded-[8px]
                         hover:bg-jet"
                     onClick={() => {
-                        setSelectedCategory(value);
+                        setSelectedCategory(cat.value);
                         setDropdownOpen(false);
                     }}
                 >
-                    {label}
+                    {cat.label}
                 </button>
             </li>
         ))}
