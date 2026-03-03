@@ -1,23 +1,21 @@
-import { projectsMeta } from '@data'
+import { PROJECTS } from '@data'
 
 const ProjectsGrid = ({ selectedCategory }) => (
-    <ul
-        className="
-            mb-2.5
-            grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7.5"
-    >
-        {projectsMeta.map((project, index) => {
-            const isVisible = selectedCategory === "all" || project.type === selectedCategory;
+    <ul className="mb-2.5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7.5">
+        {PROJECTS
+            .filter(project => project.id !== "portfolio")
+            .map((project) => {
+                const isVisible = selectedCategory === "all" || project.category === selectedCategory;
 
-            return (
-                <li
-                    key={index}
-                    className={`block ${isVisible ? "animate-scaleUp" : "hidden"}`}
-                >
-                    <ProjectCard project={project} />
-                </li>
-            );
-        })}
+                return (
+                    <li
+                        key={project.id}
+                        className={`block ${isVisible ? "animate-scaleUp" : "hidden"}`}
+                    >
+                        <ProjectCard project={project} />
+                    </li>
+                );
+            })}
     </ul>
 )
 
@@ -25,7 +23,7 @@ export default ProjectsGrid;
 
 const ProjectCard = ({ project }) => (
     <a
-        href={project.link}
+        href={project.liveLink || project.gitLink}
         className="block w-full group"
         target="_blank"
     >
@@ -62,11 +60,11 @@ const ProjectCard = ({ project }) => (
         </div>
 
         <h3 className="ml-[10px] text-base text-[15px]/4 font-[400]">
-            {project.title}
+            {project.name}
         </h3>
 
         <p className="ml-2.5 text-light-gray-70 text-[15px] capitalize font-[300]">
-            {project.type}
+            {project.category}
         </p>
     </a>
 )
