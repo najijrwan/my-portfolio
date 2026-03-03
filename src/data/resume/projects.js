@@ -42,7 +42,7 @@ export const PROJECTS = [
         id: 'ma7ali',
         name: 'ma7ali',
         subTitle: 'Full-Stack POS SPA PWA for Small Businesses',
-        type: 'Personal Project',
+        type: 'University Project',
         category: "PWA",
         img: "/images/ma7ali.png",
         stack: ['HTML', 'CSS', 'Javascript', 'Firebase', ],
