@@ -6,7 +6,7 @@ const ProjectsGrid = ({ selectedCategory }) => (
             .filter(project => project.id !== "portfolio")
             .sort((a, b) => a.rank - b.rank)
             .map((project) => {
-                const isVisible = selectedCategory === "all" || project.category.toLowerCase() === selectedCategory;
+                const isVisible = selectedCategory === "all" || project.role.toLowerCase() === selectedCategory;
 
                 return (
                     <li
