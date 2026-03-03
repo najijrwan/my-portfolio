@@ -55,13 +55,13 @@ const ProjectCard = ({ project }) => (
             {project.rank <= 3 && (
                 <span
                     className='
-                        absolute -top-1/2 -left-20
+                        absolute -top-1/2 -left-18
                         size-30
-                        text-black font-bold
-                        bg-amber-500 rounded-full
+                        text-black
+                        bg-yellow-crayola rounded-full
                     '
                 >
-                    <span className='absolute bottom-4 right-4'>#{project.rank}</span>
+                    <span className='absolute bottom-5 right-5'>#{project.rank}</span>
                 </span>
             )}
 
