@@ -4,7 +4,7 @@ const ProjectsGrid = ({ selectedCategory }) => (
     <ul className="mb-2.5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7.5">
         {PROJECTS
             .filter(project => project.id !== "portfolio")
-            .sort((a, b) => a.rank - b.rank) 
+            .sort((a, b) => a.rank - b.rank)
             .map((project) => {
                 const isVisible = selectedCategory === "all" || project.category === selectedCategory;
 
@@ -51,6 +51,19 @@ const ProjectCard = ({ project }) => (
                     className="size-4 text-yellow-crayola [--ionicon-stroke-width:50px]"
                 />
             </span>
+
+            {project.rank <= 3 && (
+                <span
+                    className='
+                        absolute -top-1/2 -left-20
+                        size-30
+                        text-black font-bold
+                        bg-amber-500 rounded-full
+                    '
+                >
+                    <span className='absolute bottom-4 right-4'>#{project.rank}</span>
+                </span>
+            )}
 
             <img
                 src={project.img}
