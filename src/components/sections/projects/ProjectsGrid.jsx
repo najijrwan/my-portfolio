@@ -79,7 +79,7 @@ const ProjectCard = ({ project }) => (
             <span className="text-light-gray-70">{project.category}</span>
         </div>
 
-        <p className="ml-2.5 text-yellow-crayola text-[15px] capitalize font-[300]">
+        <p className="ml-2.5 text-yellow-crayola text-[15px] font-[300]">
             {project.type}
         </p>
     </a>
