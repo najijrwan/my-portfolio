@@ -80,12 +80,14 @@ const ProjectCard = ({ project }) => (
             />
         </div>
 
-        <p className="ml-2.5 text-white text-[15px">
-            <span className='capitalize'>{project.name}</span>
-            <span> • </span>
-            <span>{project.platform}</span>
-        </p>
+        <div className='flex lg:flex-col text-[17px] lg:text-[15px]'>
+            <p className="ml-2.5 text-white capitalize">
+                {project.name}
+            </p>
 
-        <p className="ml-2.5 text-light-gray-70 text-[15px] font-[300]">{project.type}</p>
+            <p className="ml-2.5 text-light-gray-70 font-[300]">
+                {project.platform}
+            </p>
+        </div>
     </a>
 )
