@@ -11,7 +11,7 @@ const ProjectsGrid = ({ selectedRole }) => (
                 return (
                     <li
                         key={project.id}
-                        className={`block ${isVisible ? "animate-scaleUp" : "hidden"}`}
+                        className={`block w-full group cursor-pointer ${isVisible ? "animate-scaleUp" : "hidden"}`}
                     >
                         <ProjectCard project={project} />
                     </li>
@@ -23,11 +23,7 @@ const ProjectsGrid = ({ selectedRole }) => (
 export default ProjectsGrid;
 
 const ProjectCard = ({ project }) => (
-    <a
-        href={project.liveLink || project.gitLink}
-        className="block w-full group"
-        target="_blank"
-    >
+    <>
         <div
             className="
                 relative
@@ -38,19 +34,17 @@ const ProjectCard = ({ project }) => (
                 before:bg-transparent 
                 group-hover:before:bg-[#00000080] before:custom-transition-1"
         >
-            <span
+            <div
                 className="
                     absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-10
-                    p-[14px]
-                    flex-center
-                    bg-jet rounded-[12px] opacity-0
-                    custom-transition-1 scale-[0.8] group-hover:scale-[1.3] group-hover:opacity-100"
+                    flex gap-5"
             >
-                <ion-icon
-                    name="eye-outline"
-                    className="size-4 text-yellow-crayola [--ionicon-stroke-width:50px]"
-                />
-            </span>
+                {project.liveLink && (
+                    <ProjectCardLink link={project.liveLink} iconName="eye-outline" />
+                )}
+
+                <ProjectCardLink link={project.gitLink} iconName="logo-github" />
+            </div>
 
             {project.rank <= 3 && (
                 <>
@@ -89,5 +83,22 @@ const ProjectCard = ({ project }) => (
                 {project.platform}
             </p>
         </div>
+    </>
+)
+
+const ProjectCardLink = ({ link, iconName }) => (
+    <a
+        href={link}
+        target='_blank'
+        className="
+            p-[14px]
+            flex-center
+            bg-jet rounded-[12px] opacity-0
+            custom-transition-1 scale-[0.8] group-hover:scale-[1.3] group-hover:opacity-100"
+    >
+        <ion-icon
+            name={iconName}
+            className="size-4 text-yellow-crayola [--ionicon-stroke-width:50px]"
+        />
     </a>
 )
