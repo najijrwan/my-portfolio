@@ -59,12 +59,14 @@ const ProjectCard = ({ project }) => (
             />
         </div>
 
-        <h3 className="ml-[10px] text-base text-[15px]/4 font-[400]">
-            {project.name}
-        </h3>
+        <div className="ml-2.5 flex gap-2 text-[15px] font-[300]">
+            <span className="text-white">{project.name}</span>
+            <span className="text-light-gray-70">•</span>
+            <span className="text-light-gray-70">{project.category}</span>
+        </div>
 
-        <p className="ml-2.5 text-light-gray-70 text-[15px] capitalize font-[300]">
-            {project.category}
+        <p className="ml-2.5 text-yellow-crayola text-[15px] capitalize font-[300]">
+            {project.type}
         </p>
     </a>
 )
