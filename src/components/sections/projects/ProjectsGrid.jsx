@@ -53,16 +53,23 @@ const ProjectCard = ({ project }) => (
             </span>
 
             {project.rank <= 3 && (
-                <span
-                    className='
-                        absolute -top-1/2 -left-18
-                        size-30
-                        text-black
-                        bg-yellow-crayola rounded-full
-                    '
-                >
-                    <span className='absolute bottom-5 right-5'>#{project.rank}</span>
-                </span>
+                <>
+                    <span
+                        className='
+                            absolute -top-1/2 -left-18
+                            size-30
+                            text-black
+                            bg-yellow-crayola rounded-full
+                        '
+                    />
+                    <span
+                        className='
+                            absolute left-0 top-0 min-w-7 text-center rounded-full
+                        '
+                    >
+                        #{project.rank}
+                    </span>
+                </>
             )}
 
             <img
