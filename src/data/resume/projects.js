@@ -17,7 +17,7 @@ export const PROJECTS = [
             'Stored user data such as weight, height, age, and workout details in a structured format',
             'Emphasized maintainability and code organization to support future enhancements and scalability',
         ],
-        rank: 4,
+        rank: 3,
     },
     {
         id: 'quizo',
@@ -36,7 +36,7 @@ export const PROJECTS = [
             'Enforced a linear question flow where users must complete each question, level, and category sequentially',
             'Designed an intuitive UI with explanations and system feedback to enhance user understanding and engagement',
         ],
-        rank: 5,
+        rank: 4,
     },
     {
         id: 'ma7ali',
@@ -72,7 +72,6 @@ export const PROJECTS = [
         stack: ['HTML', 'CSS', 'Javascript', 'Tailwind CSS', 'React', ], 
         duration: 'May 18 - Jun 22',
         description: 'A scalable, component-driven & fully responsive website built to showcase my skills, journey and personal info',
-        rank: 2,
     },
     {
         id: 'hekto',
@@ -85,7 +84,7 @@ export const PROJECTS = [
         stack: ['HTML', 'CSS', 'Javascript', 'Tailwind CSS', 'React', ],
         duration: 'Dec 13 - Dec 28',
         description: 'A simple e-commerce landing page built from a figma design',
-        rank: 6,
+        rank: 5,
     },
     {
         id: '3legant',
@@ -106,6 +105,6 @@ export const PROJECTS = [
             'Configured Vite with path aliases and SVG integration for scalable asset management',
             'Designed the codebase to support future backend integration and full e-commerce functionality',
         ],
-        rank: 3,
+        rank: 2,
     },
 ]
