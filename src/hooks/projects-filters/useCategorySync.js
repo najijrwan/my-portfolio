@@ -7,8 +7,8 @@ export const useCategorySync = (selectedRole) => {
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
-    if (selectedRole !== params.get("category")) {
-      params.set("category", selectedRole);
+    if (selectedRole !== params.get("role")) {
+      params.set("role", selectedRole);
       navigate({ search: params.toString() }, { replace: true });
     }
   }, [selectedRole, location.search, navigate]);
