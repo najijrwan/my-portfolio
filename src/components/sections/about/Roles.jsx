@@ -3,13 +3,13 @@ import SectionContainer from './SectionContainer';
 // consider moving roles to data
 const roles = [
     {
-        href: '/projects?category=applications',
+        href: '/projects?category=application',
         icon: '/images/icon-app.svg',
         label: 'Mobile Apps',
         details: 'Professional & modern development of applications for Android and ios',
     },
     {
-        href: '/projects?category=websites',
+        href: '/projects?category=website',
         icon: '/images/icon-dev.svg',
         label: 'Web Development',
         details: 'High-quality websites at the professional level',
