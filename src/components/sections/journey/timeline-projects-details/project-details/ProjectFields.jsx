@@ -2,6 +2,7 @@ const ProjectFields = ({ project, isExtended }) => {
     const FIELDS = [
         { label: "Stack", content: (<>{project.stack.join(" - ")}</>) },
         { label: "Duration", content: project.duration, },
+        { label: "Type", content: project.type, },
         { label: "Info", content: project.info, },
         { label: "Challenges", content: project.chall, },
         { label: "Outcome", content: project.outcome, }
