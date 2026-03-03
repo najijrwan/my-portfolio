@@ -4,6 +4,7 @@ const ProjectsGrid = ({ selectedCategory }) => (
     <ul className="mb-2.5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7.5">
         {PROJECTS
             .filter(project => project.id !== "portfolio")
+            .sort((a, b) => a.rank - b.rank) 
             .map((project) => {
                 const isVisible = selectedCategory === "all" || project.category === selectedCategory;
 
