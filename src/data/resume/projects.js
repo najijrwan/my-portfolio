@@ -24,7 +24,7 @@ export const PROJECTS = [
         name: 'quizo',
         subTitle: 'Desktop Quiz Application',
         type: 'university project',
-        category: "windows application",
+        category: "windows app",
         img: "/images/quizo.png",
         stack: ['C#', ],
         duration: 'Fall 2024',
