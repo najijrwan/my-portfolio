@@ -56,7 +56,7 @@ const ProjectCard = ({ project }) => (
                 <>
                     <span
                         className='
-                            absolute -top-1/2 -left-18
+                            absolute left-0 top-0 -translate-[65%]
                             size-30
                             text-black
                             bg-yellow-crayola rounded-full
