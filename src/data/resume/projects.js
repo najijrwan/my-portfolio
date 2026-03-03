@@ -49,8 +49,7 @@ export const PROJECTS = [
         platform: 'PWA',
         img: "/images/ma7ali.png",
         stack: ['HTML', 'CSS', 'Javascript', 'Firebase', ],
-        duration: 'Mar 15 - May 15',
-        liveLink: 'https://paperless-a64a0.web.app/',
+        duration: 'Mar 15 - May 15',        
         gitLink: 'https://github.com/najialjarwan/Ma7ali',
         description: 'A comprehensive POS progressive web application (PWA)  for managing inventory, sales, customer debts, and business analytics.',
         details: [
