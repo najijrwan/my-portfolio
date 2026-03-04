@@ -1,13 +1,4 @@
 export const SUMMARY = [
-    `
-    Front-End Developer and aspiring Full-Stack Engineer, passionate about building responsive web
-    and mobile applications. Experienced in designing and developing solo projects from scratch using
-    modern technologies like React, Tailwind, and Firebase.
-    `,
-    `
-    Committed to writing clean, maintainable
-    code and following best practices to ensure scalability and long-term growth. Strong
-    problem-solving mindset, self-motivated and fast learner actively transitioning into full-stack and
-    application development roles.
-    `,
+    `Front-End Developer with a strong foundation in Computer Science, passionate about building responsive web and mobile applications. Experienced in designing and developing solo projects from scratch using modern technologies including React, Tailwind, and Firebase.`,
+    `Dedicated to writing clean, maintainable code and following industry best practices to ensure scalability and long-term growth. A self-motivated, fast learner with a strong problem-solving mindset, actively expanding expertise toward full-stack and application development roles.`,
 ]

@@ -9,7 +9,7 @@ export const SKILLS = [
   },
   {
     label: 'Tools & Platforms',
-    skills: ['Firebase', 'Git', 'Visual Studio Code', 'DevTools',],
+    skills: ['Firebase', 'Git', 'VS Code', 'DevTools',],
   },
   {
     label: 'Additional Skills',
