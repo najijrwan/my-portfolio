@@ -40,7 +40,7 @@ export const resumeSections = [
       <>
         <header className="mb-2 text-white">
           <h1><i className='uppercase'>{item.name}</i> &nbsp; • &nbsp; {item.subTitle}</h1>
-          <h2>stack: <i>{item.stack}</i></h2>
+          <h2>stack: <i>{item.stack.join(" - ")}</i></h2>
         </header>
         <ul key={item.title}>
           {item.details?.map((skill) => (
