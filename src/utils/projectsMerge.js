@@ -6,14 +6,22 @@ export const mergedProjects = timelineArrows
       const base = PROJECTS.find(pr => pr.name === p.ref);
       if (!base) return null;
 
-      return {
-        ...base, ...p,
+      const merged = {
+        ...base,
+        ...p,
         id: p.id,
         startDateMonth: arrow.startDateMonth,
         startDateYear: arrow.startDateYear,
         endDateMonth: arrow.endDateMonth,
         endDateYear: arrow.endDateYear,
         skills: arrow.skills,
+      };
+
+      return {
+        ...merged,
+        finalLabel: merged.role
+          ? `${merged.name} (${merged.role})`
+          : merged.label || merged.name
       };
     })
   )
