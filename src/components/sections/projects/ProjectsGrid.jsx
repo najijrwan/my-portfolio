@@ -12,7 +12,7 @@ const ProjectsGrid = ({ selectedRole }) => (
                 return (
                     <li
                         key={project.id}
-                        className={`block w-full group cursor-pointer ${isVisible ? "animate-scaleUp" : "hidden"}`}
+                        className={`block w-full ${isVisible ? "animate-scaleUp" : "hidden"}`}
                     >
                         <ProjectCard project={project} />
                     </li>
