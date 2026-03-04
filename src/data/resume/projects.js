@@ -12,7 +12,7 @@ export const PROJECTS = [
         gitLink: 'https://github.com/najialjarwan/Fitnesso',
         description: 'A fitness-focused web application that enables users to track health metrics and personal data through a clean, intuitive interface.',
         details: [
-            'Developed a responsive multi-page website with emphasis on clean UI architecture and maintainable code structure',
+            'Developed a fully responsive multi-page website with emphasis on clean UI architecture and maintainable code structure',
             'Implemented PHP backend with secure user authentication, session management, and logout functionality',
             'Designed structured database for storing user metrics including weight, height, age, and more',
             'Architected codebase for scalability, enabling seamless future feature integration and enhancements',
@@ -35,6 +35,7 @@ export const PROJECTS = [
             'Implemented real-time score tracking, countdown timers, and dynamic feedback mechanisms',
             'Designed linear question flow ensuring sequential completion of questions, levels, and categories',
             'Created intuitive UI with contextual explanations and system feedback to enhance user comprehension and engagement',
+            'Built entirely from concept to completion as the sole developer, handling UI design, game logic, and progression systems'
         ],
         rank: 4,
     },
@@ -53,12 +54,12 @@ export const PROJECTS = [
             'Architected and developed a full-stack POS system tailored specifically for small business operations',
             'Implemented multi-currency toggling (LBP ↔ USD), advanced filtering, and automated PDF report generation',
             'Integrated Firebase Authentication with multiple providers: email, Google, and phone login options',
-            'Designed Firestore database schema optimized for managing products, carts, sales (with profit/revenue), customers, and user settings',
-            'Built dynamic dashboards with sales trends, category analysis, top/least sold products, and inventory alerts (low/out-of-stock)',
+            'Designed Firestore database noSQL schema optimized for managing products, carts, sales (with profit & revenue), customers, and user settings',
+            'Built dynamic dashboards with sales trends, category analysis, top & least sold products, and inventory alerts (low & out-of-stock)',
             'Enabled data export functionality for filtered product lists, customer debts, cart details, and daily sales with interactive charts',
-            'Created responsive layouts optimized for tablets and mobile devices with built-in notification system',
-            'Solely responsible for end-to-end architecture, UI/UX design, and full feature implementation with scalability in mind',
+            'Created mobile-first layout optimized for smartphones and small tablets with touch-friendly interfaces',
             'Engineered the entire system with future growth in mind, enabling seamless integration of upcoming features',
+            'Solely responsible for the complete project lifecycle: from initial concept and 54-page technical documentation to end-to-end architecture, UI/UX design, and full feature implementation with scalability as a core principle',
         ],
         rank: 1,
     },
@@ -87,6 +88,7 @@ export const PROJECTS = [
             'Implemented responsive layouts ensuring consistent experience across all screen sizes',
             'Built reusable UI components following DRY principles for maintainable codebase',
             'Optimized asset loading and rendering for improved performance metrics',
+            'Independently translated Figma design to fully functional React application with responsive implementation'
         ],
         rank: 5,
     },
@@ -100,7 +102,7 @@ export const PROJECTS = [
         gitLink: 'https://github.com/najialjarwan/3legant',
         stack: ['HTML', 'CSS', 'Javascript', 'Tailwind CSS', 'React',],
         duration: 'Dec 29 - Present',
-        description: 'A scalable, component-driven e-commerce frontend demonstrating advanced React patterns and clean architecture principles.',
+        description: 'A scalable, component-driven e-commerce frontend built from an open-source Figma design, demonstrating advanced React patterns and clean architecture principles.',
         details: [
             'Architected a modular frontend structure separating concerns: pages, UI components, hooks, state, and data layers',
             'Implemented dynamic product grid systems (4x2, 3x3, horizontal) with state-driven layout switching',
@@ -108,6 +110,7 @@ export const PROJECTS = [
             'Developed custom responsive breakpoint hooks for optimized cross-device layouts',
             'Configured Vite with path aliases and SVG integration for scalable asset management',
             'Designed codebase architecture to seamlessly accommodate future backend integration and full e-commerce functionality',
+            'Solely implemented the frontend architecture, translating design specifications into scalable, production-ready code'
         ],
         rank: 2,
     },
