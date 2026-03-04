@@ -6,11 +6,8 @@ const ProjectCard = ({ project }) => (
             className="
                 relative
                 w-full h-50 sm:h-auto mb-[15px] overflow-hidden
-                rounded-[16px] sm:rounded-[16px] 
-                before:content-[''] before:absolute before:top-0 before:left-0 before:z-10
-                before:w-full before:h-full
-                before:bg-transparent 
-                group-hover:before:bg-[#00000080] before:custom-transition-1"
+                rounded-[16px] sm:rounded-[16px]
+            "
         >
 
             {project.rank <= 3 && (
