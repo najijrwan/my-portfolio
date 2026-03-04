@@ -3,7 +3,7 @@ const ArrowHead = ({ month, year, color }) => {
         <div className="flex items-center">
             <div
                 className={`
-                    w-12 h-6
+                    w-9 h-6
                     flex-center flex-col
                     text-[10px]/2.5 text-black tracking-wider font-bold
                     ${color.bg}
