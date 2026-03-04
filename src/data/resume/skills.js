@@ -1,18 +1,20 @@
 export const SKILLS = [
   {
-    label: 'Languages & Scripting',
-    skills: ['HTML', 'CSS', 'Javascript', 'PHP', 'C#', 'Python', 'Java',],
+    category: 'Core Technologies',
+    type: 'proficiency',
+    proficient: ['JavaScript (ES6+)', 'React', 'Tailwind CSS', 'HTML5/CSS3'],
+    experienced: ['PHP', 'Python', 'Java'],
+    familiar: ['C#'],
   },
   {
-    label: 'Frameworks & Libraries',
-    skills: ['React', 'Tailwind CSS'],
+    category: 'Key Strengths',
+    type: 'list',
+    items: [
+      'PDF Report Generation',
+      'Multi-Currency Systems',
+      'Technical Documentation',
+      'Solo Project Ownership',
+      'Efficiency-Driven',
+    ],
   },
-  {
-    label: 'Tools & Platforms',
-    skills: ['Firebase', 'Git', 'VS Code', 'DevTools',],
-  },
-  {
-    label: 'Additional Skills',
-    skills: ['Responsive Design', 'Technical Documentation', 'Windows Productivity & Automation'],
-  }
 ]
