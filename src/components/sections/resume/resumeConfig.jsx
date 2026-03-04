@@ -94,7 +94,7 @@ export const resumeSections = [
         <div className='flex gap-1 items-center'>
           <button className='flex items-start'>
             <ion-icon
-              name='document-text-outline'
+              name='reader-outline'
               className='size-4.5 text-yellow-crayola hover:text-yellow-crayola/50'
             />
           </button>
