@@ -1,6 +1,6 @@
 export const timelineArrows = [
     {
-        startDateMonth: 'Feb',
+        startDateMonth: 'Feb', //combine
         startDateYear: '2023',
         skills: [
             {
@@ -65,7 +65,7 @@ export const timelineArrows = [
             {
                 id: 'fitnesso-front',
                 ref: 'fitnesso',
-                label: 'fitnesso (front-end)',
+                role: 'front-end',
                 duration: 'Spring 2024',
                 info: `
                     During my second year (Spring 2024), I took my first Web Programming course, 
@@ -114,7 +114,7 @@ export const timelineArrows = [
             {
                 id: 'fitnesso-back',
                 ref: 'fitnesso',
-                label: 'fitnesso (back-end)',
+                role: 'back-end',
                 duration: 'Fall 2024',
                 info: `
                     In my third year (Fall 2024), I enrolled in the Advanced Web Programming course, where 
