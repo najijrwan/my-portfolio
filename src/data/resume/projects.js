@@ -108,7 +108,6 @@ export const PROJECTS = [
             'Implemented dynamic product grid systems (4x2, 3x3, horizontal) with state-driven layout switching',
             'Built reusable component library including product cards, layout selectors, dropdown controls, and progressive rendering patterns',
             'Developed custom responsive breakpoint hooks for optimized cross-device layouts',
-            'Configured Vite with path aliases and SVG integration for scalable asset management',
             'Designed codebase architecture to seamlessly accommodate future backend integration and full e-commerce functionality',
             'Solely implemented the frontend architecture, translating design specifications into scalable, production-ready code'
         ],
