@@ -3,7 +3,11 @@ import { SUMMARY, SKILLS, PROJECTS, EDUCATIONS, HONORS, LANGUAGES, INTERESTS, } 
 export const resumeSections = [
   {
     heading: "professional summary",
-    content: SUMMARY
+    content: [
+      SUMMARY.map((para, i) => (
+        <p key={i} className='mb-2'>{para}</p>
+      ))
+    ],
   },
   {
     heading: "technical skills",
