@@ -12,17 +12,6 @@ const ProjectCard = ({ project }) => (
                 before:bg-transparent 
                 group-hover:before:bg-[#00000080] before:custom-transition-1"
         >
-            <div
-                className="
-                    absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-10
-                    flex gap-5"
-            >
-                {project.liveLink && (
-                    <ProjectCardLink link={project.liveLink} iconName="eye-outline" />
-                )}
-
-                <ProjectCardLink link={project.gitLink} iconName="logo-github" />
-            </div>
 
             {project.rank <= 3 && (
                 <>
@@ -52,15 +41,23 @@ const ProjectCard = ({ project }) => (
             />
         </div>
 
-        <div className='flex lg:flex-col text-[17px] lg:text-[15px]'>
-            <p className="ml-2.5 text-white capitalize">
+        <div className='ml-2.5 flex items-center gap-2'>
+            <p className="text-white capitalize text-[17px] lg:text-[15px]">
                 {project.name}
             </p>
 
-            <p className="ml-2.5 text-light-gray-70 font-[300]">
-                {project.platform}
-            </p>
+            <span className='text-white'>|</span>
+
+            <ProjectCardLink link={project.gitLink} iconName="logo-github" />
+
+            {project.liveLink && (
+                <ProjectCardLink link={project.liveLink} iconName="eye-outline" />
+            )}
         </div>
+
+        <p className="ml-2.5 text-light-gray-70 font-[300]">
+            {project.platform}
+        </p>
     </>
 )
 
