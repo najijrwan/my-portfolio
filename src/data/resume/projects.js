@@ -70,7 +70,6 @@ export const PROJECTS = [
         name: 'portfolio',
         subTitle: 'Modern Responsive Portfolio Showcase',
         type: 'personal project',
-        role: 'front-end',
         platform: 'website',
         stack: ['HTML', 'CSS', 'Javascript', 'Tailwind CSS', 'React', ], 
         duration: 'May 18 - Jun 22',
