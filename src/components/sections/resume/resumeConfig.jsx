@@ -39,7 +39,7 @@ export const resumeSections = [
     content: PROJECTS.map((item) => (
       <>
         <header className="mb-2 text-white">
-          <h1><i>{item.title}</i> &nbsp; • &nbsp; {item.subTitle}</h1>
+          <h1><i>{item.name}</i> &nbsp; • &nbsp; {item.subTitle}</h1>
           <h2>stack: <i>{item.stack}</i></h2>
         </header>
         <ul key={item.title}>
