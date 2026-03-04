@@ -68,7 +68,7 @@ export const PROJECTS = [
         subTitle: 'Modern Responsive Portfolio Showcase',
         type: 'personal project',
         platform: 'website',
-        stack: ['HTML', 'CSS', 'Javascript', 'Tailwind CSS', 'React',],
+        stack: ['HTML', 'CSS', 'Javascript', 'Tailwind', 'React',],
         duration: 'May 18 - Jun 22',
         description: 'A scalable, component-driven portfolio website showcasing my skills, journey, and projects through a thoughtfully designed, fully responsive interface.',
     },
@@ -80,7 +80,7 @@ export const PROJECTS = [
         platform: 'website',
         img: "/images/hekto.png",
         gitLink: 'https://github.com/najialjarwan/Hekto',
-        stack: ['HTML', 'CSS', 'Javascript', 'Tailwind CSS', 'React',],
+        stack: ['HTML', 'CSS', 'Javascript', 'Tailwind', 'React',],
         duration: 'Dec 13 - Dec 28',
         description: 'A pixel-perfect e-commerce landing page meticulously crafted from a Figma design, demonstrating strong attention to detail and design fidelity.',
         details: [
@@ -100,7 +100,7 @@ export const PROJECTS = [
         platform: 'website',
         img: "/images/3legant.png",
         gitLink: 'https://github.com/najialjarwan/3legant',
-        stack: ['HTML', 'CSS', 'Javascript', 'Tailwind CSS', 'React',],
+        stack: ['HTML', 'CSS', 'Javascript', 'Tailwind', 'React',],
         duration: 'Dec 29 - Present',
         description: 'A scalable, component-driven e-commerce frontend built from an open-source Figma design, demonstrating advanced React patterns and clean architecture principles.',
         details: [
