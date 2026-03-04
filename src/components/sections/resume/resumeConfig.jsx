@@ -79,7 +79,7 @@ export const resumeSections = [
           <span className="text-vegas-gold"> - </span>{edu.uni} &nbsp; • &nbsp; {edu.uniLocation}
         </p>
         <p><span className="text-vegas-gold"> - </span>GPA: {edu.gpa}</p>
-        <p><span className="text-vegas-gold"> - </span>{edu.date}</p>
+        <p><span className="text-vegas-gold"> - </span>{edu.duration}</p>
       </>
     )),
   },
