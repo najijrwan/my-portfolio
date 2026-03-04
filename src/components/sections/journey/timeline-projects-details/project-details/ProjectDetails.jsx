@@ -14,7 +14,7 @@ const ProjectDetails = ({ project }) => {
                 animate-height
             `}
         >
-            <ProjectDetailsHeader label={project.label ?? project.name} link={project.liveLink ?? project.gitLink} />
+            <ProjectDetailsHeader link={project.liveLink ?? project.gitLink} label={project.finalLabel} />
 
             <ProjectFields project={project} isExtended={isExtended} />
 
