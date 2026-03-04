@@ -1,7 +1,8 @@
 export const INTERESTS = [
-  "Strength Training",
-  "Football",
+  "Strength Training & Fitness",
+  "Football (Soccer) - Player & Enthusiast",
   "Competitive & Casual Gaming",
-  "Learning New Technologies",
-  "Building and Refining Personal Projects",
-];
+  "Continuous Learning in Tech",
+  "Building & Refining Personal Projects",
+  "Open Source Contribution",
+]
