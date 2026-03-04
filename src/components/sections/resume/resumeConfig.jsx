@@ -92,7 +92,9 @@ export const resumeSections = [
         </header>
 
         <div className='flex gap-1 items-center'>
-          <button className='flex items-start'>
+          <button
+            onClick={() => window.open(honor.src, '_blank')}
+            className='flex items-start'>
             <ion-icon
               name='reader-outline'
               className='size-4.5 text-yellow-crayola hover:text-yellow-crayola/50'
