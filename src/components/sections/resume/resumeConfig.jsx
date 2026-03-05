@@ -111,7 +111,7 @@ export const resumeSections = [
     )),
   },
   {
-    heading: "PROJECTS",
+    heading: "projects",
     content: PROJECTS
       .filter((item) => item.rank <= 3 && item.name !== "portfolio")
       .sort((a, b) => a.rank - b.rank)
@@ -145,7 +145,7 @@ export const resumeSections = [
       )),
   },
   {
-    heading: "Education",
+    heading: "education",
     content: EDUCATIONS.map((edu) => (
       <>
         <header className="mb-2 text-white">
@@ -163,7 +163,7 @@ export const resumeSections = [
     )),
   },
   {
-    heading: "Honors & Certificates",
+    heading: "honors & certificates",
     content: HONORS.map((honor) => (
       <>
         <header className="mb-2 flex items-center gap-2 text-white">
@@ -187,7 +187,7 @@ export const resumeSections = [
     )),
   },
   {
-    heading: "Languages",
+    heading: "languages",
     content: (LANGUAGES.map((lan) => (
       <>
         {lan.lan}<span> ({lan.prof})</span>
@@ -196,7 +196,7 @@ export const resumeSections = [
     )
   },
   {
-    heading: "INTERESTS",
+    heading: "interests",
     content: INTERESTS.map((interest) => (
       <>
         {interest}
