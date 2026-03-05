@@ -3,11 +3,7 @@ import { SUMMARY, SKILLS, PROJECTS, EDUCATIONS, HONORS, LANGUAGES, INTERESTS, } 
 export const resumeSections = [
   {
     heading: "professional summary",
-    content: [
-      SUMMARY.map((para, i) => (
-        <p key={i} className='mb-2'>{para}</p>
-      ))
-    ],
+    content: SUMMARY
   },
   {
     heading: "technical skills",
@@ -155,11 +151,14 @@ export const resumeSections = [
         <header className="mb-2 text-white">
           {edu.degree}
         </header>
-        <p className="text-light-gray italic">
-          <span className="text-vegas-gold"> - </span>{edu.uni} &nbsp; • &nbsp; {edu.uniLocation}
-        </p>
-        <p><span className="text-vegas-gold"> - </span>GPA: {edu.gpa}</p>
-        <p><span className="text-vegas-gold"> - </span>{edu.duration}</p>
+
+        <div className='ml-2.5'>
+          <p className="text-light-gray italic">
+            <span className="text-vegas-gold"> - </span>{edu.uni} &nbsp; • &nbsp; {edu.uniLocation}
+          </p>
+          <p><span className="text-vegas-gold"> - </span>GPA: {edu.gpa}</p>
+          <p><span className="text-vegas-gold"> - </span>{edu.duration}</p>
+        </div>
       </>
     )),
   },
@@ -167,11 +166,8 @@ export const resumeSections = [
     heading: "Honors & Certificates",
     content: HONORS.map((honor) => (
       <>
-        <header className="mb-2 text-white">
-          {honor.title}
-        </header>
-
-        <div className='flex gap-1 items-center'>
+        <header className="mb-2 flex items-center gap-2 text-white">
+          <h1 className='capitalize'>{honor.title}</h1>
           <button
             onClick={() => window.open(honor.src, '_blank')}
             className='flex items-start'>
@@ -180,8 +176,14 @@ export const resumeSections = [
               className='size-4.5 text-yellow-crayola hover:text-yellow-crayola/50'
             />
           </button>
-          <p className='text-light-gray'>{honor.issuer} &nbsp; • &nbsp; {honor.date}</p>
-        </div></>
+        </header>
+
+        <div className='ml-2.5'>
+          <p className='text-light-gray'><span className="text-vegas-gold"> - </span>{honor.description}</p>
+          <p className='capitalize'><span className="text-vegas-gold"> - </span>{honor.issuer}</p>
+          <p><span className="text-vegas-gold"> - </span>{honor.date}</p>
+        </div>
+      </>
     )),
   },
   {
