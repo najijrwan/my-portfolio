@@ -153,7 +153,7 @@ export const resumeSections = [
         </header>
 
         <div className='ml-2.5'>
-          <p className="text-light-gray italic">
+          <p className="text-light-gray italic capitalize">
             <span className="text-vegas-gold"> - </span>{edu.uni} &nbsp; • &nbsp; {edu.uniLocation}
           </p>
           <p><span className="text-vegas-gold"> - </span>GPA: {edu.gpa}</p>
@@ -180,7 +180,7 @@ export const resumeSections = [
 
         <div className='ml-2.5'>
           <p className='text-light-gray'><span className="text-vegas-gold"> - </span>{honor.description}</p>
-          <p className='capitalize'><span className="text-vegas-gold"> - </span>{honor.issuer}</p>
+          <p className='capitalize italic'><span className="text-vegas-gold"> - </span>{honor.issuer}</p>
           <p><span className="text-vegas-gold"> - </span>{honor.date}</p>
         </div>
       </>
