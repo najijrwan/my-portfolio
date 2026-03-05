@@ -3,14 +3,14 @@ export const HONORS = [
     title: "dean's list",
     issuer: "lebanese international university",
     date: "spring 2023",
-    src: "/Naji_Aljarwan_Deans_List.pdf",
+    src: "/Naji_Aljarwan_Dean's_List.pdf",
     description: "Awarded for outstanding academic achievement in the School of Arts and Sciences",
   },
   {
     title: "presedint's list",
     issuer: "lebanese international university",
     date: "spring 2024",
-    src: "/Naji_Aljarwan_Presidents_List.pdf",
+    src: "/Naji_Aljarwan_President's_List.pdf",
     description: "Recognized for exceptional academic performance with a perfect semester GPA",
   },
   {
