@@ -1,7 +1,7 @@
 export const PROJECTS = [
     {
         name: 'fitnesso',
-        subTitle: 'simple fitness tracking website',
+        subTitle: 'simple fitness tracking Full-Stack website',
         type: 'university project',
         role: 'full-stack',
         platform: 'website',
@@ -94,7 +94,7 @@ export const PROJECTS = [
     },
     {
         name: '3legant',
-        subTitle: 'Modular E-Commerce Frontend Architecture',
+        subTitle: 'Modular E-Commerce Front-End Architecture',
         type: 'personal project',
         role: 'front-end',
         platform: 'website',
