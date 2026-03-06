@@ -1,4 +1,4 @@
-import { PageTitle } from "@ui";
+import { PageTitle, JumpToTopButton } from "@ui";
 import { ResumeNote, ResumeSections } from '@resume';
 
 const Resume = () => (
@@ -8,6 +8,8 @@ const Resume = () => (
         <ResumeNote />
 
         <ResumeSections />
+
+        <JumpToTopButton />
     </>
 )
 
