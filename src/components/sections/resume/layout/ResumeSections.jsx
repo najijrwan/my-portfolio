@@ -1,4 +1,4 @@
-import { resumeSections, SectionRenderer } from './'
+import { resumeSections, SectionRenderer, SectionHeading, SectionContent } from '../'
 
 const ResumeSections = () =>
     resumeSections.map(({ heading, type, data }) => {
