@@ -1,5 +1,4 @@
-import { resumeSections } from '../config/resume.config'
-import SectionRenderer from '../SectionRenderer'
+import { resumeSections, SectionRenderer } from './'
 
 const ResumeSections = () =>
     resumeSections.map(({ heading, type, data }) => {
