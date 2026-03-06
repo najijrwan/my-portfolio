@@ -1,4 +1,5 @@
 export { default as VariousActionsButton } from './buttons/VariousActionsButton'
+export { default as JumpToTopButton } from './buttons/JumpToTopButton'
 
 export { default as PageTitle } from './primitives/PageTitle'
 
