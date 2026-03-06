@@ -64,7 +64,7 @@ body::-webkit-scrollbar-button {
   --color-background2: #414145;
   --color-highlight: #ffdb70;
   --color-yellow-crayola: #ffdb70;
-  --color-base: #FFFFFF;
+  --color-main: #FFFFFF;
   --color-eerie-1: hsl(240, 2%, 13%);
   --color-eerie-2: hsl(240, 2%, 12%);
   --color-jet: hsl(0, 0%, 22%);
