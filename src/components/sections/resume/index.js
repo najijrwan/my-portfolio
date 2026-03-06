@@ -1,1 +1,1 @@
-export { default as ResumeSections } from './ResumeSections';
+export { default as ResumeSections } from './layout/ResumeSections';
