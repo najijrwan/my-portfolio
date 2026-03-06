@@ -1,6 +1,6 @@
 import { SUMMARY, SKILLS, PROJECTS, EDUCATIONS, HONORS, LANGUAGES, INTERESTS } from "@data";
 
-export const resumeSections = [
+const resumeSections = [
     {
         type: "summary",
         heading: "professional summary",
@@ -39,3 +39,5 @@ export const resumeSections = [
         data: INTERESTS,
     },
 ];
+
+export default resumeSections;
