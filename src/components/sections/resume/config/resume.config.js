@@ -1,5 +1,5 @@
 import { SUMMARY, SKILLS, PROJECTS, EDUCATIONS, HONORS, LANGUAGES, INTERESTS } from "@data";
-console.log(EDUCATIONS);
+
 const resumeSections = [
     {
         type: "summary",
