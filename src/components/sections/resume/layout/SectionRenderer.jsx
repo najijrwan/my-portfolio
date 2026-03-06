@@ -1,4 +1,4 @@
-import { Skills, Projects, Educations, Honors, Languages, } from './'
+import { Skills, Projects, Educations, Honors, Languages, } from '..'
 
 const SectionRenderer = (type, data) => {
     switch (type) {
