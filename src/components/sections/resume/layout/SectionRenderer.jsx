@@ -1,4 +1,4 @@
-import { Skills, Projects, Educations, Honors, Languages, } from '..'
+import { Skills, Projects, Educations, Honors, Languages, } from '../'
 
 const SectionRenderer = (type, data) => {
     switch (type) {
@@ -16,9 +16,9 @@ const SectionRenderer = (type, data) => {
                 <Projects key={item.name} item={item} />
             ));
 
-        case "education":
+        case "educations":
             return data.map((edu) => (
-                <Education key={edu.degree} edu={edu} />
+                <Educations key={edu.degree} edu={edu} />
             ));
 
         case "honors":
