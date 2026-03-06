@@ -1,5 +1,5 @@
 import { IconBox } from '@ui'
-import { resumeSections } from './resumeConfig'
+import { resumeSections } from './config/resume.config'
 import SectionRenderer from './SectionRenderer'
 
 const SectionHeading = ({ heading }) => (
