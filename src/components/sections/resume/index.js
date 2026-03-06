@@ -1,5 +1,6 @@
 export { default as resumeSections } from './config/resume.config'
 
+export { default as ResumeNote } from './layout/ResumeNote'
 export { default as ResumeSections } from './layout/ResumeSections'
 export { default as SectionHeading } from './layout/SectionHeading'
 export { default as SectionContent } from './layout/SectionContent'
