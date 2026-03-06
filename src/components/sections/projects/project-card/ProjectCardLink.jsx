@@ -6,7 +6,12 @@ const ProjectCardLink = ({ link, iconName }) => (
     >
         <ion-icon
             name={iconName}
-            className="size-5 text-yellow-crayola [--ionicon-stroke-width:50px]"
+            className="
+                size-5
+                text-yellow-crayola hover:text-yellow-crayola/50
+                [--ionicon-stroke-width:50px]
+                custom-transition-1
+            "
         />
     </a>
 )
