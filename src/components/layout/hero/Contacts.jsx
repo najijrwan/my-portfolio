@@ -28,7 +28,7 @@ const Contacts = () => (
                         href={contact.href}
                         className="
                             block 
-                            text-[13px] xl:text-[14px] text-base font-[300] xl:font-[300] truncate"
+                            text-[13px] xl:text-[14px] text-main font-[300] xl:font-[300] truncate"
                     >
                         {contact.value}
                     </a>

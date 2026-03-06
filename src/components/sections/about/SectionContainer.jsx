@@ -17,7 +17,7 @@ export const SectionTitle = ({ title }) => (
         className='
             relative
             ml-8
-            text-base text-[24px] font-[600]
+            text-main text-[24px] font-[600]
             flex-start-row
             before:content-[""] before:absolute before:left-[-23px] before:bottom-[49.5%]
             before:w-[15px] before:h-px

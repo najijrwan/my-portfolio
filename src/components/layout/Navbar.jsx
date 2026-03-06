@@ -9,7 +9,7 @@ const NAV_LINKS = [
 ];
 
 const getNavLinkClass = ({ isActive }) =>
-    `custom-transition-1 hover:text-base/50 
+    `custom-transition-1 hover:text-main/50 
     ${isActive ? "text-highlight" : "text-light-gray"}`;
 
 const Navbar = () => (

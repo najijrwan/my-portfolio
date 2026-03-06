@@ -42,7 +42,7 @@ const Roles = () => (
                     </div>
 
                     <div className="text-center sm:text-left">
-                        <h4 className="font-bold text-base text-[18px] mb-2">
+                        <h4 className="font-bold text-main text-[18px] mb-2">
                             {role.label}
                         </h4>
 
