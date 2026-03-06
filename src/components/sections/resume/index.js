@@ -1,1 +1,6 @@
-export { default as ResumeSections } from './layout/ResumeSections';
+export { default as ResumeSections } from './layout/ResumeSections'
+export { default as Skills } from './sections/Skills'
+export { default as Projects } from './sections/Projects'
+export { default as Educations } from './sections/Educations'
+export { default as Honors } from './sections/Honors'
+export { default as Languages } from './sections/Languages'

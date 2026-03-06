@@ -1,8 +1,4 @@
-import Skills from "./Skills";
-import Projects from "./Projects";
-import Education from "./Education";
-import Honors from "./Honors";
-import Languages from "./Languages";
+import { Skills, Projects, Educations, Honors, Languages, } from './'
 
 const SectionRenderer = (type, data) => {
     switch (type) {
