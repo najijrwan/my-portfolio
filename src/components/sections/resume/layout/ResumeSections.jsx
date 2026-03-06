@@ -1,6 +1,6 @@
 import { IconBox } from '@ui'
-import { resumeSections } from './config/resume.config'
-import SectionRenderer from './SectionRenderer'
+import { resumeSections } from '../config/resume.config'
+import SectionRenderer from '../SectionRenderer'
 
 const SectionHeading = ({ heading }) => (
     <header className="mb-5 sm:mb-6 flex items-center gap-[15px]">
