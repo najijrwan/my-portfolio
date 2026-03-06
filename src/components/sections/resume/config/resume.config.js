@@ -1,5 +1,5 @@
 import { SUMMARY, SKILLS, PROJECTS, EDUCATIONS, HONORS, LANGUAGES, INTERESTS } from "@data";
-
+console.log(EDUCATIONS);
 const resumeSections = [
     {
         type: "summary",
@@ -19,8 +19,8 @@ const resumeSections = [
             .sort((a, b) => a.rank - b.rank),
     },
     {
-        type: "education",
-        heading: "education",
+        type: "educations",
+        heading: "educations",
         data: EDUCATIONS,
     },
     {
