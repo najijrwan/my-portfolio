@@ -12,8 +12,8 @@ const SectionRenderer = (type, data) => {
             ));
 
         case "projects":
-            return data.map((item) => (
-                <Projects key={item.name} item={item} />
+            return data.map((project) => (
+                <Projects key={project.name} project={project} />
             ));
 
         case "educations":
