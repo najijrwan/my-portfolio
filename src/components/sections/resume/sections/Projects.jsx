@@ -1,11 +1,13 @@
+import { StackIcons } from '@ui'
+
 const ProjectsSection = ({ item }) => (
   <>
-    <header className="mb-2 text-white">
-      <h1>
+    <header className="mb-4 text-white">
+      <h1 className='mb-1.5'>
         <i className="uppercase">{item.name}</i> &nbsp; • &nbsp; {item.subTitle}
       </h1>
-      <h2>
-        stack: <i>{item.stack.join(" - ")}</i>
+      <h2 className='flex items-center gap-2'>
+        <span>stack:</span> <StackIcons stack={item.stack} />
       </h2>
     </header>
     <ul>
