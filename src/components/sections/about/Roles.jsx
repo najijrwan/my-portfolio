@@ -40,10 +40,10 @@ const Roles = () => (
                     `}
                 >
                     <div className="mb-2.5">
-                        <img
+                        <ion-icon
                             src={role.icon}
                             alt={role.label}
-                            className='block size-10 m-auto'
+                            className='block size-12 m-auto'
                         />
                     </div>
 
