@@ -4,8 +4,8 @@ const ProjectFields = ({ project, isExtended }) => {
 
     const FIELDS = [
         { label: "Stack", content: <StackIcons stack={project.stack} /> },
-        { label: "Duration", content: project.duration, },
-        { label: "Type", content: project.type, },
+        { label: "Duration", content: <p className="capitalize">{project.duration}</p>, },
+        { label: "Type", content: <p className="capitalize">{project.type}</p>, },
         { label: "Info", content: project.info, },
         { label: "Challenges", content: project.chall, },
         { label: "Outcome", content: project.outcome, }
