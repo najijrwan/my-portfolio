@@ -9,7 +9,7 @@ const roles = [
     //     details: 'Professional & modern development of applications for Android and ios',
     // },
     {
-        href: '/projects?category=website',
+        href: '/projects?role=front-end',
         icon: '/images/icon-dev.svg',
         label: 'Web Development',
         details: 'High-quality websites at the professional level',
