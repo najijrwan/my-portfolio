@@ -31,7 +31,7 @@ const Roles = () => (
                         sm:flex-start-start sm:gap-[25px]
                         rounded-2xl
                         forward-box
-                        ${role.label === 'Mobile Apps' ? 'opacity-35' : ''}`}
+                    `}
                 >
                     <div className="mb-2.5">
                         <img
