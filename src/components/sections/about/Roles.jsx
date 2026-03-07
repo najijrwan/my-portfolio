@@ -14,6 +14,12 @@ const roles = [
         label: 'front-end development',
         details: 'Responsive, component-driven interfaces with React, Tailwind, and modern JavaScript',
     },
+    {
+        href: '/projects?role=full-stack',
+        icon: '/images/full-stack.svg',
+        label: 'full-stack development',
+        details: 'Complete applications with frontend, backend (PHP/Firebase), and database integration',
+    },
 ]
 
 const Roles = () => (
