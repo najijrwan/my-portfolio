@@ -1,8 +1,8 @@
 import { iconMap } from '@utils'
 
-const StackIcons = ({ stack }) => {
+const StackIcons = ({ stack, className = '' }) => {
     return (
-        <ul className="inline-flex items-center gap-4">
+        <ul className={`inline-flex items-center gap-4 ${className}`}>
             {stack.map((tech) => {
                 const Icon = iconMap[tech];
                 return Icon ? (
