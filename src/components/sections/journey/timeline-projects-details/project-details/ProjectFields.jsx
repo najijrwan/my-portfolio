@@ -1,6 +1,9 @@
+import { StackIcons } from "@ui";
+
 const ProjectFields = ({ project, isExtended }) => {
+
     const FIELDS = [
-        { label: "Stack", content: (<>{project.stack.join(" - ")}</>) },
+        { label: "Stack", content: <StackIcons stack={project.stack} /> },
         { label: "Duration", content: project.duration, },
         { label: "Type", content: project.type, },
         { label: "Info", content: project.info, },
@@ -33,7 +36,7 @@ const ProjectFields = ({ project, isExtended }) => {
                     <header className="flex items-center gap-2 text-white">
                         <span>{label}</span>
                     </header>
-                    <p
+                    <div
                         className="
                             relative
                             pl-2
@@ -45,7 +48,7 @@ const ProjectFields = ({ project, isExtended }) => {
                         "
                     >
                         {content}
-                    </p>
+                    </div>
                 </div>
             ))}
         </div>
