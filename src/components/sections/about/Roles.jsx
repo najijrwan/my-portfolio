@@ -1,26 +1,5 @@
 import SectionContainer from './SectionContainer';
-
-// consider moving roles to data
-const roles = [
-    // {
-    //     href: '/projects?category=application',
-    //     icon: '/images/icon-app.svg',
-    //     label: 'mobile apps',
-    //     details: 'Professional & modern development of applications for Android and ios',
-    // },
-    {
-        href: '/projects?role=front-end',
-        icon: '/images/icon-dev.svg',
-        label: 'front-end development',
-        details: 'Responsive, component-driven interfaces with React, Tailwind, and modern JavaScript',
-    },
-    {
-        href: '/projects?role=full-stack',
-        icon: '/images/full-stack.svg',
-        label: 'full-stack development',
-        details: 'Complete applications with frontend, backend (PHP/Firebase), and database integration',
-    },
-]
+import { ROLES } from '@data';
 
 const Roles = () => (
     <SectionContainer title="What I'm doing">
@@ -28,7 +7,7 @@ const Roles = () => (
             className="
                 grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-y-[20px] lg:gap-x-[25px]"
         >
-            {roles.map((role, i) => (
+            {ROLES.map((role, i) => (
                 <a
                     key={i}
                     href={role.href}
