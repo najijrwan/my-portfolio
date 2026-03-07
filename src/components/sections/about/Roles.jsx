@@ -11,8 +11,8 @@ const roles = [
     {
         href: '/projects?role=front-end',
         icon: '/images/icon-dev.svg',
-        label: 'Web Development',
-        details: 'High-quality websites at the professional level',
+        label: 'front-end development',
+        details: 'Responsive, component-driven interfaces with React, Tailwind, and modern JavaScript',
     },
 ]
 
