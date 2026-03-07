@@ -2,13 +2,12 @@ import { StackIcons } from '@ui'
 
 const ProjectsSection = ({ item }) => (
   <>
-    <header className="mb-4 text-white">
-      <h1 className='mb-1.5'>
+    <header className="mb-2.5 justify-center text-white">
+      <h1>
         <i className="uppercase">{item.name}</i> &nbsp; • &nbsp; {item.subTitle}
       </h1>
-      <h2 className='flex items-center gap-2'>
-        <span>stack:</span> <StackIcons stack={item.stack} />
-      </h2>
+      <h2 className='capitalize'>{item.duration}</h2>
+      <StackIcons stack={item.stack} className='my-1.25' />
     </header>
     <ul>
       {item.details?.map((skill) => (
