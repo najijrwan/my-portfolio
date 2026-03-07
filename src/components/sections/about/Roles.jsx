@@ -27,7 +27,7 @@ const Roles = () => (
                     </div>
 
                     <div className="text-center sm:text-left">
-                        <h4 className="font-bold text-main text-[18px] mb-2 capitalize">
+                        <h4 className="text-main text-[18px] mb-2 capitalize">
                             {role.label}
                         </h4>
 
