@@ -4,11 +4,16 @@ const ProjectsSection = ({ project }) => (
   <>
     <header className="mb-2.5 justify-center text-white">
       <h1>
-        <i className="uppercase">{project.name}</i> &nbsp; • &nbsp; {project.subTitle}
+        <i className="uppercase">{project.name}</i>
+        <span> &nbsp; • &nbsp; </span>
+        <span>{project.subTitle.charAt(0).toUpperCase() + project.subTitle.slice(1)}</span>
       </h1>
+
       <h2 className='capitalize'>{project.duration}</h2>
+
       <StackIcons stack={project.stack} className='my-1.25' />
     </header>
+    
     <ul>
       {project.details?.map((detail) => (
         <li
