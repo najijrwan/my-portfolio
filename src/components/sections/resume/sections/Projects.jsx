@@ -1,18 +1,18 @@
 import { StackIcons } from '@ui'
 
-const ProjectsSection = ({ item }) => (
+const ProjectsSection = ({ project }) => (
   <>
     <header className="mb-2.5 justify-center text-white">
       <h1>
-        <i className="uppercase">{item.name}</i> &nbsp; • &nbsp; {item.subTitle}
+        <i className="uppercase">{project.name}</i> &nbsp; • &nbsp; {project.subTitle}
       </h1>
-      <h2 className='capitalize'>{item.duration}</h2>
-      <StackIcons stack={item.stack} className='my-1.25' />
+      <h2 className='capitalize'>{project.duration}</h2>
+      <StackIcons stack={project.stack} className='my-1.25' />
     </header>
     <ul>
-      {item.details?.map((skill) => (
+      {project.details?.map((detail) => (
         <li
-          key={skill}
+          key={detail}
           className="
                 relative
                 pl-[1em] ml-5
@@ -21,7 +21,7 @@ const ProjectsSection = ({ item }) => (
                 before:bg-[#ffd700] before:rounded-full
               "
         >
-          {skill}
+          {detail}
         </li>
       ))}
     </ul>
