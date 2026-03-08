@@ -22,13 +22,3 @@ export const extendTimelineArrows = (timelineArrows, baseData) => {
     }),
   }));
 };
-
-// data/merged.js
-import { TECHS, PROJECTS, timelineArrows } from '@data'
-
-const baseData = {
-  skills: TECHS,
-  projects: PROJECTS,
-};
-
-export const extendedTimelineArrows = extendTimelineArrows(timelineArrows, baseData);
