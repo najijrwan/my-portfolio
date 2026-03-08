@@ -1,7 +1,7 @@
 export const extendTimelineArrows = (timelineArrows, baseData) => {
   return timelineArrows.map(timeline => ({
     ...timeline,
-    
+
     skills: (timeline.skills || []).map(skillExtension => {
       const baseSkill = baseData.skills.find(s => s.tech === skillExtension.ref);
       return {
@@ -12,12 +12,17 @@ export const extendTimelineArrows = (timelineArrows, baseData) => {
     // Merge projects
     projects: (timeline.projects || []).map(projectExtension => {
       const baseProject = baseData.projects.find(p => p.name === projectExtension.ref);
-      return {
+
+      const combinedProject = {
         ...baseProject,
         ...projectExtension,
-        finalLabel: projectExtension.role
-          ? `${baseProject?.name || projectExtension.ref} (${projectExtension.role})`
-          : projectExtension.label || baseProject?.name,
+      }
+
+      return {
+        ...combinedProject,
+        finalLabel: combinedProject.role
+          ? `${combinedProject.name} (${combinedProject.role})`
+          : combinedProject.label || combinedProject.name
       };
     }),
   }));
