@@ -59,7 +59,7 @@ const ExtendFieldsBtn = ({ onClick, isExtended }) => (
             transition-opacity duration-150 ease-in-out"
     >
         <ion-icon
-            src="icons/chevrons-down.svg"
+            src="external-icons/chevrons-down.svg"
             className={`
                 size-4 visible! transform transition-transform duration-150 ease-in-out
                 ${isExtended ? 'rotate-180' : 'rotate-0'}
