@@ -9,7 +9,7 @@ export const Avatar = () => (
                 src="/images/me.jpeg"
                 className="
                     block size-20 sm:size-[120px] xl:size-[150px]
-                    border border-jet rounded-[20px] sm:rounded-[30px] object-cover object-top"
+                    border-4 border-jet rounded-[20px] sm:rounded-[30px] object-cover object-top"
             />
         </a>
         <span
