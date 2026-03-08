@@ -7,7 +7,7 @@ export const ROLES = [
     // },
     {
         href: '/projects?role=front-end',
-        icon: 'external-icons/icon-dev.svg',
+        icon: 'external-icons/front-end.svg',
         label: 'front-end development',
         details: 'Responsive, component-driven interfaces with React, Tailwind, and modern JavaScript',
     },
