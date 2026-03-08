@@ -16,7 +16,7 @@ const ResumeNote = () => (
         </div>
 
         <VariousActionsButton
-            onClick={() => window.open('/Naji_Aljarwan_resume.pdf', '_blank')}
+            onClick={() => window.open('/pdfs/Naji_Aljarwan_resume.pdf', '_blank')}
             variant='v1'
             iconName='document-text-outline'
             label='Download CV'
