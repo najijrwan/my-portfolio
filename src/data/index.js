@@ -20,3 +20,4 @@ export { INTERESTS } from './resume/interests'
 
 // journey
 export { timelineArrows } from './journey/timelineArrows'
+export { extendedTimelineArrows } from './journey/extendedTimelineArrows'
