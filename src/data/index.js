@@ -3,7 +3,7 @@ export { CONTACTS } from './personal/contacts'
 export { SOCIAL_LINKS } from './personal/socialLinks'
 
 // skills
-export { SKILLS_IMAGES } from './about/skillsImages'
+export { SKILLS_IMAGE } from './about/skillsImage'
 export { ROLES } from './about/roles'
 
 // projects
