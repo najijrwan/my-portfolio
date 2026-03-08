@@ -17,11 +17,11 @@ const SkillLollipop = ({ skill, reversed = false, }) => (
                 custom-transition-1
             `}
         >
-            <p className="min-w-max">{skill.label || skill.lan}</p>
+            <p className="min-w-max">{skill.label || skill.tech}</p>
             <p className="min-w-max">{skill.course || ''}</p>
         </div>
         <div className="forward-box p-1 rounded-2xl">
-            <img src={skill.src} alt={skill.lan} className="size-11" />
+            <img src={skill.src} alt={skill.tech} className="size-11" />
         </div>
         <div className="w-px h-5 bg-jet"></div>
     </div>
