@@ -9,6 +9,10 @@ const socialLinksItems = [
         link: SOCIAL_LINKS.github,
         Icon: <ion-icon name="logo-github" className="size-5.5" aria-label="github" />
     },
+    {
+        link: SOCIAL_LINKS.leetcode,
+        Icon: <ion-icon src="/images/leetcode.svg" className="size-5" aria-label="leetcode" />
+    },
 ];
 
 const SocialLinks = () => (
