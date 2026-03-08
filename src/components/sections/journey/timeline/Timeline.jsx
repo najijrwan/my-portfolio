@@ -1,5 +1,5 @@
 import { useScrollFade } from "@hooks"
-import { extendedTimelineArrows } from '@utils'
+import { extendedTimelineArrows } from '@data'
 import { ArrowTail, ArrowBodySkills, ArrowBodyProjects, ArrowHead } from './index'
 
 const COLORS = [

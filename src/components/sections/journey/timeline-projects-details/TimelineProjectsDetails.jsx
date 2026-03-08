@@ -1,4 +1,5 @@
-import { extendedTimelineArrows, splitEvenOdd } from "@utils"
+import { splitEvenOdd } from "@utils"
+import { extendedTimelineArrows } from '@data'
 import { useBreakpoint } from "@hooks";
 import { SectionContainer } from '@about'
 
