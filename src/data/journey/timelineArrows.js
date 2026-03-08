@@ -7,7 +7,7 @@ export const timelineArrows = [
                 lan: 'Java',
                 label: 'Java 1',
                 course: 'Introduction to Programming',
-                src: 'images/java.png',
+                src: 'images/skills-image/java.png',
             },
         ],
         endDateMonth: 'Jun',
@@ -18,7 +18,7 @@ export const timelineArrows = [
         startDateYear: '2023',
         skills: [
             {
-                src: 'images/java.png',
+                src: 'images/skills-image/java.png',
                 lan: 'Java',
                 label: 'Java 2',
                 course: 'Intermediate Programming with Objects',
@@ -33,29 +33,29 @@ export const timelineArrows = [
         skills: [
             {
                 lan: 'Java',
-                src: 'images/java.png',
+                src: 'images/skills-image/java.png',
                 label: 'Java 1',
                 course: 'Data Structures and Algorithms'
             },
             {
                 lan: 'HTML',
-                src: 'images/html.png',
+                src: 'images/skills-image/html.png',
                 course: 'Web Programming',
             },
             {
                 lan: 'CSS',
-                src: 'images/css.png',
+                src: 'images/skills-image/css.png',
                 label: 'CSS Basics',
                 course: 'Web Programming',
             },
             {
                 lan: 'JavaScript',
-                src: 'images/javascript.png',
+                src: 'images/skills-image/javascript.png',
                 label: 'JavaScript Basics',
                 course: 'Web Programming',
             },
             {
-                src: 'images/php.png',
+                src: 'images/skills-image/php.png',
                 lan: 'PHP',
                 label: "PHP Basics",
                 course: 'Web Programming',
@@ -93,19 +93,19 @@ export const timelineArrows = [
         startDateYear: '2024',
         skills: [
             {
-                src: 'images/javascript.png',
+                src: 'images/skills-image/javascript.png',
                 lan: 'JavaScript',
                 label: 'JavaScript Advanced',
                 course: 'Web Programming Advanced',
             },
             {
-                src: 'images/php.png',
+                src: 'images/skills-image/php.png',
                 lan: 'PHP',
                 label: 'PHP Advanced',
                 course: 'Web Programming Advanced',
             },
             {
-                src: 'images/csharp.png',
+                src: 'images/skills-image/csharp.png',
                 lan: 'C#',
                 course: 'Visual Programming',
             },
@@ -160,16 +160,16 @@ export const timelineArrows = [
         startDateYear: '2025',
         skills: [
             {
-                src: 'images/python.png',
+                src: 'images/skills-image/python.png',
                 lan: 'Python',
                 course: 'Machine Learning',
             },
             {
-                src: 'images/react.png',
+                src: 'images/skills-image/react.png',
                 lan: 'React',
             },
             {
-                src: 'images/tailwind-css.png',
+                src: 'images/skills-image/tailwind-css.png',
                 lan: 'Tailwind',
             },
         ],
