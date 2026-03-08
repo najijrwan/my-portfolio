@@ -1,9 +1,11 @@
-import { mergedProjects, splitEvenOdd } from "@utils"
+import { extendedTimelineArrows, splitEvenOdd } from "@utils"
 import { useBreakpoint } from "@hooks";
 import { SectionContainer } from '@about'
 
 const TimelineProjectsDetails = () => {
-    const [evenProjects, oddProjects] = splitEvenOdd(mergedProjects);
+    const allProjects = extendedTimelineArrows.flatMap(timeline => timeline.projects || []);
+
+    const [evenProjects, oddProjects] = splitEvenOdd(allProjects);
 
     const isViewportLarge = useBreakpoint(1024);
 
@@ -21,7 +23,7 @@ const TimelineProjectsDetails = () => {
                             <Pillar projects={oddProjects} />
                         </>
                     ) : (
-                        <Pillar projects={mergedProjects} />
+                        <Pillar projects={allProjects} />
                     )
                 }
             </div>

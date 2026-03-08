@@ -1,6 +1,5 @@
 import { useScrollFade } from "@hooks"
-import { timelineArrows } from '@data'
-import { mergedProjects } from '@utils'
+import { extendedTimelineArrows } from '@utils'
 import { ArrowTail, ArrowBodySkills, ArrowBodyProjects, ArrowHead } from './index'
 
 const COLORS = [
@@ -37,21 +36,15 @@ const Timeline = () => {
                 />
             )}
 
-            {timelineArrows.map((arrow, i) => {
+            {extendedTimelineArrows.map((arrow, i) => {
                 const color = COLORS[i % COLORS.length];
-
-                const arrowProjectIds = arrow.projects?.map(p => p.id) || [];
-
-                const arrowProjects = mergedProjects.filter(p =>
-                    arrowProjectIds.includes(p.id)
-                );
 
                 return (
                     <section key={i} className="flex items-center lg:py-5">
                         <ArrowTail color={color} month={arrow.startDateMonth} year={arrow.startDateYear} />
 
                         {arrow.skills?.length > 0 && <ArrowBodySkills skills={arrow.skills} />}
-                        {arrow.projects?.length > 0 && <ArrowBodyProjects projects={arrowProjects} />}
+                        {arrow.projects?.length > 0 && <ArrowBodyProjects projects={arrow.projects}  />}
 
                         <ArrowHead color={color} month={arrow.endDateMonth} year={arrow.endDateYear} />
                     </section>
