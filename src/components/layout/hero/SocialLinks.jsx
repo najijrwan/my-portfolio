@@ -11,7 +11,7 @@ const socialLinksItems = [
     },
     {
         link: SOCIAL_LINKS.leetcode,
-        Icon: <ion-icon src="/images/leetcode.svg" className="size-5" aria-label="leetcode" />
+        Icon: <ion-icon src="external-icons/leetcode.svg" className="size-5" aria-label="leetcode" />
     },
 ];
 
