@@ -1,4 +1,4 @@
-export const TECHS = [
+export const SKILLS = [
     {
         tech: 'java',
         name: 'Java',

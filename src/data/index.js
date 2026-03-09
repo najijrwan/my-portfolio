@@ -3,7 +3,7 @@ export { CONTACTS } from './personal/contacts'
 export { SOCIAL_LINKS } from './personal/socialLinks'
 
 // skills
-export { TECHS } from './about/techs'
+export { SKILLS } from './about/skills'
 export { ROLES } from './about/roles'
 
 // projects
