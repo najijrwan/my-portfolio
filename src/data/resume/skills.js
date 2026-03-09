@@ -7,6 +7,15 @@ export const SKILLS = [
     familiar: ['C#'],
   },
   {
+    category: 'Tools',
+    type: 'list',
+    items: [
+      'firebase',
+      'vercel',
+      'github',
+    ],
+  },
+  {
     category: 'Key Strengths',
     type: 'list',
     items: [
