@@ -26,7 +26,7 @@ const Skills = () => (
                         className=""
                     />
 
-                    <TechTooltip tech={tech.tech} />
+                    <TechTooltip tech={tech.label} />
                 </li>
             ))}
         </ul>
