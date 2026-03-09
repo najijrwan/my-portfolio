@@ -4,6 +4,7 @@ import { IconBox } from '@ui';
 const CONTACTS_ITEMS = [
     { label: 'EMAIL', value: CONTACTS.email, href: `mailto:${CONTACTS.email}`, iconName: 'mail-outline' },
     { label: 'PHONE', value: CONTACTS.phone, href: `tel:${CONTACTS.phone}`, iconName: 'call-outline' },
+    { label: 'TELEGRAM', value: `t.me/+96170504841`, href: CONTACTS.telegram, iconSrc: 'external-icons/telegram.svg' },
     { label: 'LOCATION', value: CONTACTS.location, href: '/contact', iconName: 'location-outline' },
 ]
 
@@ -18,7 +19,7 @@ const Contacts = () => (
                 key={i}
                 className='min-w-full flex items-center gap-4'
             >
-                <IconBox iconName={contact.iconName}/>
+                <IconBox iconName={contact.iconName} iconSrc={contact.iconSrc}/>
 
                 <div className="contact-info xl:max-w-fit">
                     <p className="text-light-gray-70 text-[11px] lg:text-[12px] mb-0.5 tracking-widest">
