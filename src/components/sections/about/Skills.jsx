@@ -22,11 +22,11 @@ const Skills = () => (
                 >
                     <img
                         src={tech.src}
-                        alt={tech.tech}
+                        alt={tech.name}
                         className=""
                     />
 
-                    <TechTooltip tech={tech.label} />
+                    <TechTooltip tech={tech.name} />
                 </li>
             ))}
         </ul>
