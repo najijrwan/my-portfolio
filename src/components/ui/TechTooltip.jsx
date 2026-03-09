@@ -6,7 +6,7 @@ const TechTooltip = ({ tech }) => (
             align-text-top
             opacity-0
             bg-jet text-yellow-crayola rounded-lg
-            group-hover:opacity-100 custom-transition-1
+            group-hover:opacity-100 custom-transition-1 cursor-default
         '
     >
         {tech}
