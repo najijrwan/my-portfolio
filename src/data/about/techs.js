@@ -64,4 +64,16 @@ export const TECHS = [
         label: 'VercelLight',
         src: 'images/skills-image/vercel.png'
     },
+    {
+        tech: 'mysql',
+        name: 'MySQL',
+        label: 'MySQL',
+        src: 'images/skills-image/mysql.png'
+    },
+        {
+        tech: 'infinityfree',
+        name: 'InfinityFree',
+        label: 'InfinityFree',
+        src: 'images/skills-image/infinityfree.png'
+    },
 ]
