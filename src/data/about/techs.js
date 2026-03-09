@@ -16,7 +16,8 @@ export const TECHS = [
     },
     {
         tech: 'javascript',
-        name: 'JavaScript',
+        name: 'JavaScript (ES6+)',
+        label: 'JavaScript',
         src: 'images/skills-image/javascript.png',
     },
     {
