@@ -1,61 +1,65 @@
 export const TECHS = [
     {
         tech: 'java',
-        label: 'Java',
+        name: 'Java',
         src: 'images/skills-image/java.png',
     },
     {
         tech: 'html',
-        label: 'HTML5',
+        name: 'HTML5',
         src: 'images/skills-image/html.png',
     },
     {
         tech: 'css',
-        label: 'CSS3',
+        name: 'CSS3',
         src: 'images/skills-image/css.png',
     },
     {
         tech: 'javascript',
-        label: 'JavaScript',
+        name: 'JavaScript',
         src: 'images/skills-image/javascript.png',
     },
     {
         tech: 'php',
-        label: 'PHP',
+        name: 'PHP',
         src: 'images/skills-image/php.png',
     },
     {
         tech: 'csharp',
+        name: 'C#',
         label: 'CSharp',
         src: 'images/skills-image/csharp.png',
     },
     {
         tech: 'python',
-        label: 'Python',
+        name: 'Python',
         src: 'images/skills-image/python.png',
     },
     {
         tech: 'tailwindcss',
+        name: 'Tailwind CSS',
         label: 'TailwindCSS',
         src: 'images/skills-image/tailwind-css.png',
     },
     {
         tech: 'react',
-        label: 'React',
+        name: 'React',
         src: 'images/skills-image/react.png',
     },
     {
-        tech: 'github',
+        tech: 'git',
+        name: 'Git',
         label: 'Github',
         src: 'images/skills-image/github.png'
     },
     {
         tech: 'firebase',
-        label: 'Firebase',
+        name: 'Firebase',
         src: 'images/skills-image/firebase.png'
     },
     {
         tech: 'vercel',
+        name: 'Vercel',
         label: 'VercelLight',
         src: 'images/skills-image/vercel.png'
     },
