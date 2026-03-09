@@ -1,3 +1,7 @@
+import {TECHS } from '../';
+
+const t = (techKey) => TECHS.find(t => t.tech === techKey);
+
 export const PROJECTS = [
     {
         name: 'fitnesso',
@@ -6,7 +10,7 @@ export const PROJECTS = [
         role: 'full-stack',
         platform: 'website',
         img: 'images/projects-image/fitnesso.png',
-        stack: ['HTML5', 'CSS3', 'JavaScript', 'PHP'],
+        stack: [t('html'), t('css'), t('javascript'), t('php')],
         duration: 'spring 2024 & fall 2024',
         liveLink: 'https://fitnesso.ct.ws/',
         gitLink: 'https://github.com/najialjarwan/Fitnesso',
@@ -26,7 +30,7 @@ export const PROJECTS = [
         role: "full-stack",
         platform: 'desktop app',
         img: "images/projects-image/quizo.png",
-        stack: ['CSharp'],
+        stack: [t('csharp')],
         duration: 'fall 2024',
         gitLink: 'https://github.com/najijrwan/Quizo',
         description: 'An interactive Windows Forms-based quiz game built with C#, featuring progressive difficulty and comprehensive feedback systems.',
@@ -46,7 +50,7 @@ export const PROJECTS = [
         role: "full-stack",
         platform: 'PWA',
         img: "images/projects-image/ma7ali.png",
-        stack: ['HTML5', 'CSS3', 'JavaScript', 'Firebase'],
+        stack: [t('html'), t('css'), t('javascript'), t('firebase')],
         duration: 'mar 15 - may 15',
         gitLink: 'https://github.com/najialjarwan/Ma7ali',
         description: 'A comprehensive Point of Sale progressive web application designed for small business workflows, featuring inventory management, sales tracking, and business analytics.',
@@ -68,7 +72,7 @@ export const PROJECTS = [
         subTitle: 'modern responsive portfolio showcase',
         type: 'personal project',
         platform: 'website',
-        stack: ['HTML5', 'CSS3', 'JavaScript', 'TailwindCSS', 'React'],
+        stack: [t('html'), t('css'), t('javascript'), t('tailwindcss'), t('react')],
         duration: 'may 18 - jun 22',
         description: 'A scalable, component-driven portfolio website showcasing my skills, journey, and projects through a thoughtfully designed, fully responsive interface.',
     },
@@ -80,7 +84,7 @@ export const PROJECTS = [
         platform: 'website',
         img: "images/projects-image/hekto.png",
         gitLink: 'https://github.com/najialjarwan/Hekto',
-        stack: ['HTML5', 'CSS3', 'JavaScript', 'TailwindCSS', 'React'],
+        stack: [t('html'), t('css'), t('javascript'), t('tailwindcss'), t('react')],
         duration: 'dec 13 - dec 28',
         description: 'A pixel-perfect e-commerce landing page meticulously crafted from a Figma design, demonstrating strong attention to detail and design fidelity.',
         details: [
@@ -100,7 +104,7 @@ export const PROJECTS = [
         platform: 'website',
         img: "images/projects-image/3legant.png",
         gitLink: 'https://github.com/najialjarwan/3legant',
-        stack: ['HTML5', 'CSS3', 'JavaScript', 'TailwindCSS', 'React',],
+        stack: [t('html'), t('css'), t('javascript'), t('tailwindcss'), t('react')],
         duration: 'dec 29 - present',
         description: 'A scalable, component-driven e-commerce frontend built from an open-source Figma design, demonstrating advanced React patterns and clean architecture principles.',
         details: [
