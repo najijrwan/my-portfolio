@@ -1,5 +1,6 @@
 import SectionContainer from './SectionContainer';
 import { TECHS } from '@data';
+import { TechTooltip } from '@ui';
 
 const Skills = () => (
     <SectionContainer title='Skills'>
@@ -12,13 +13,20 @@ const Skills = () => (
             {TECHS.map((tech) => (
                 <li
                     key={tech.tech}
-                    className='min-w-[50%] bg-white/10 snap-start rounded-4xl clients-item'
+                    className='
+                        relative group
+                        min-w-[50%]
+                        bg-white/10 snap-start rounded-4xl
+                        clients-item
+                    '
                 >
                     <img
                         src={tech.src}
                         alt={tech.tech}
                         className=""
                     />
+
+                    <TechTooltip tech={tech.tech} />
                 </li>
             ))}
         </ul>
