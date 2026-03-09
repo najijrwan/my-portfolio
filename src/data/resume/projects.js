@@ -10,7 +10,7 @@ export const PROJECTS = [
         role: 'full-stack',
         platform: 'website',
         img: 'images/projects-image/fitnesso.png',
-        stack: [t('html'), t('css'), t('javascript'), t('php')],
+        stack: [t('html'), t('css'), t('javascript'), t('php'), t('mysql'), t('infinityfree')],
         duration: 'spring 2024 & fall 2024',
         liveLink: 'https://fitnesso.ct.ws/',
         gitLink: 'https://github.com/najialjarwan/Fitnesso',
