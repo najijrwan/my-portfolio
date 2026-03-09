@@ -2,9 +2,9 @@ import { CONTACTS } from '@data';
 import { IconBox } from '@ui';
 
 const CONTACTS_ITEMS = [
-    { label: 'EMAIL', value: CONTACTS.email, href: `mailto:${CONTACTS.email}`, icon: 'mail-outline' },
-    { label: 'PHONE', value: CONTACTS.phone, href: `tel:${CONTACTS.phone}`, icon: 'call-outline' },
-    { label: 'LOCATION', value: CONTACTS.location, href: '/contact', icon: 'location-outline' },
+    { label: 'EMAIL', value: CONTACTS.email, href: `mailto:${CONTACTS.email}`, iconName: 'mail-outline' },
+    { label: 'PHONE', value: CONTACTS.phone, href: `tel:${CONTACTS.phone}`, iconName: 'call-outline' },
+    { label: 'LOCATION', value: CONTACTS.location, href: '/contact', iconName: 'location-outline' },
 ]
 
 const Contacts = () => (
@@ -18,7 +18,7 @@ const Contacts = () => (
                 key={i}
                 className='min-w-full flex items-center gap-4'
             >
-                <IconBox iconName={contact.icon} />
+                <IconBox iconName={contact.iconName}/>
 
                 <div className="contact-info xl:max-w-fit">
                     <p className="text-light-gray-70 text-[11px] lg:text-[12px] mb-0.5 tracking-widest">
