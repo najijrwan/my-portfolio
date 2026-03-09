@@ -35,4 +35,16 @@ export const TECHS = [
         tech: 'react',
         src: 'images/skills-image/react.png',
     },
+    {
+        tech: 'github',
+        src: 'images/skills-image/github.png'
+    },
+    {
+        tech: 'firebase',
+        src: 'images/skills-image/firebase.png'
+    },
+    {
+        tech: 'vercel',
+        src: 'images/skills-image/vercel.png'
+    },
 ]
