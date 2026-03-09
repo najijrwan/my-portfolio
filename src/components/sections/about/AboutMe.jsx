@@ -13,7 +13,6 @@ const AboutMe = () => (
             with a strong belief in best practices and continuous learning.
         </p>
         <p>
-            My portfolio reflects how I think—intentional, precise, and always evolving.
             I approach development with a balance of discipline and creativity, aiming to
             create solutions that are not only functional, but polished and purposeful.
         </p>
