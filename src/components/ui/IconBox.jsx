@@ -1,4 +1,4 @@
-const IconBox = ({ iconName }) => (
+const IconBox = ({ iconName = '', iconSrc = '' }) => (
     <div
         className="
             relative z-10
@@ -10,6 +10,7 @@ const IconBox = ({ iconName }) => (
     >
         <ion-icon
             name={iconName}
+            src={iconSrc}
             className='text-highlight size-4 sm:size-4.5 [--ionicon-stroke-width:40px]'
         >
         </ion-icon>
