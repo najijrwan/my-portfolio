@@ -27,7 +27,11 @@ const SocialLinks = () => (
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center text-light-gray"
+                className="
+                    flex items-center justify-center
+                    text-light-gray hover:text-light-gray-70
+                    custom-transition-1
+                "
             >
                 {Icon}
             </a>
