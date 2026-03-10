@@ -88,7 +88,6 @@ export const SKILLS = [
             {
                 tool: 'infinityfree',
                 name: 'InfinityFree',
-                label: 'InfinityFree',
                 src: 'images/skills-image/infinityfree.png'
             },
         ],
