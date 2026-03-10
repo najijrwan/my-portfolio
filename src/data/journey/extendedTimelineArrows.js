@@ -1,8 +1,8 @@
-import { TECHS, PROJECTS, timelineArrows } from '../'
+import { TECHS_BY_TECH, PROJECTS, timelineArrows } from '../'
 import { extendTimelineArrows } from '@utils'
 
 const baseData = {
-  skills: TECHS,
+  skills: TECHS_BY_TECH,
   projects: PROJECTS,
 };
 
