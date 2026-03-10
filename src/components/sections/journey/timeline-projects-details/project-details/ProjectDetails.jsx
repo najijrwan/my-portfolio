@@ -14,7 +14,7 @@ const ProjectDetails = ({ project }) => {
                 animate-height
             `}
         >
-            <ProjectDetailsHeader link={project.liveLink ?? project.gitLink} label={project.finalLabel} />
+            <ProjectDetailsHeader link={project.gitLink} label={project.finalLabel} />
 
             <ProjectFields project={project} isExtended={isExtended} />
 
@@ -35,16 +35,7 @@ const ProjectDetailsHeader = ({ link, label }) => (
             bg-jet rounded-lg
         '
     >
-        {link ? (
-            <a href={link} target='_blank' rel="noopener noreferrer">{label}</a>
-        ) : (
-            <button
-                onClick={() => console.log('link: undefined - subtle Easter egg')}
-                className='uppercase'
-            >
-                {label}
-            </button>
-        )}
+        <a href={link} target='_blank' rel="noopener noreferrer">{label}</a>
     </header>
 )
 
