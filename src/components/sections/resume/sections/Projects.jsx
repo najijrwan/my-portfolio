@@ -2,18 +2,19 @@ import { StackIcons } from '@ui'
 
 const ProjectsSection = ({ project }) => (
   <>
-    <header className="mb-2.5 justify-center text-white">
-      <h1>
-        <i className="uppercase">{project.name}</i>
-        <span> &nbsp; • &nbsp; </span>
-        <span>{project.title.charAt(0).toUpperCase() + project.title.slice(1)}</span>
+    <header className="mb-2.5 flex flex-col gap-0.5 justify-center text-white">
+      <h1 className='capitalize italic'>
+        <span className='mr-2'>{project.name}</span>
+        <span className='not-italic text-sm'>({project.role})</span>
       </h1>
 
-      <h2 className='capitalize'>{project.duration}</h2>
+      <h2 className='text-sm'>{project.title}</h2>
+
+      <h3 className='text-sm capitalize'>{project.duration}</h3>
 
       <StackIcons stack={project.stack} className='my-1.25' />
     </header>
-    
+
     <ul>
       {project.details?.map((detail) => (
         <li
