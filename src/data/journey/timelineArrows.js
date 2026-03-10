@@ -1,3 +1,5 @@
+import { TECHS_BY_TECH } from "../"
+
 export const timelineArrows = [
     {
         startDateMonth: 'Feb', //combine
@@ -60,6 +62,11 @@ export const timelineArrows = [
                 ref: 'fitnesso',
                 role: 'front-end',
                 duration: 'Spring 2024',
+                stack: [
+                    TECHS_BY_TECH.html,
+                    TECHS_BY_TECH.css,
+                    TECHS_BY_TECH.javascript,
+                ],
                 info: `
                     During my second year (Spring 2024), I took my first Web Programming course, 
                     learning HTML, CSS, JavaScript, and PHP. For the mid-semester project, I built 
@@ -106,6 +113,11 @@ export const timelineArrows = [
                 ref: 'fitnesso',
                 role: 'back-end',
                 duration: 'Fall 2024',
+                stack: [
+                    TECHS_BY_TECH.php,
+                    TECHS_BY_TECH.mysql,
+                    TECHS_BY_TECH.infinityfree,
+                ],
                 info: `
                     In my third year (Fall 2024), I enrolled in the Advanced Web Programming course, where 
                     we explored PHP, MySQL, and AJAX to build database-driven applications. I 
