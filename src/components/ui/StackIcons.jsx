@@ -15,15 +15,15 @@ const StackIcons = ({ stack, className = '' }) => {
                             relative group
                             px-3 py-1
                             flex items-center
-                            bg-jet/30 rounded-md
+                            bg-jet rounded-md shadow-1
                         "
                     >
-                        <Icon size={20} />
+                        <Icon size={24} />
 
                         <TechTooltip tech={skill.name} />
                     </li>
                 ) : (
-                    <li key={skill.name} className="text-xs bg-jet/30 px-2 py-1.5 rounded-md">
+                    <li key={skill.name} className="text-xs bg-jet px-2 py-2 rounded-md shadow-1">
                         {skill.name}
                     </li>
                 );
