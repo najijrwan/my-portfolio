@@ -3,7 +3,7 @@ import { TECHS_BY_TECH } from '../';
 export const PROJECTS = [
     {
         name: 'fitnesso',
-        title: 'simple fitness tracking full-stack website',
+        title: 'simple fitness tracking website',
         type: 'university project',
         role: 'full-stack',
         platform: 'website',
@@ -50,7 +50,7 @@ export const PROJECTS = [
     },
     {
         name: 'ma7ali',
-        title: 'full-stack POS PWA for small businesses',
+        title: 'POS PWA for small businesses',
         type: 'university project',
         role: "full-stack",
         platform: 'PWA',
@@ -65,7 +65,6 @@ export const PROJECTS = [
         gitLink: 'https://github.com/najialjarwan/Ma7ali',
         description: 'A comprehensive Point of Sale progressive web application designed for small business workflows, featuring inventory management, sales tracking, and business analytics.',
         details: [
-            'Architected and developed a full-stack POS system tailored specifically for small business operations',
             'Implemented multi-currency toggling (LBP ↔ USD), advanced filtering, and automated PDF report generation',
             'Integrated Firebase Authentication with multiple providers: email, Google, and phone login options',
             'Designed Firestore database noSQL schema optimized for managing products, carts, sales (with profit & revenue), customers, and user settings',
@@ -94,7 +93,7 @@ export const PROJECTS = [
     },
     {
         name: 'hekto',
-        title: 'front-end e-commerce landing page',
+        title: 'e-commerce landing page',
         type: 'personal project',
         role: 'front-end',
         platform: 'website',
@@ -120,7 +119,7 @@ export const PROJECTS = [
     },
     {
         name: '3legant',
-        title: 'modular e-commerce front-end architecture',
+        title: 'modular e-commerce architecture',
         type: 'personal project',
         role: 'front-end',
         platform: 'website',
