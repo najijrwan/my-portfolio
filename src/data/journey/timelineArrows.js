@@ -7,8 +7,8 @@ export const timelineArrows = [
         skills: [
             {
                 ref: 'java',
-                label: 'java 1',
-                course: 'Introduction to Programming',
+                label: 'Java 1',
+                source: 'Introduction to Programming (Uni course)',
             },
         ],
         endDateMonth: 'Jun',
@@ -20,8 +20,8 @@ export const timelineArrows = [
         skills: [
             {
                 ref: 'java',
-                label: 'java 2',
-                course: 'Intermediate Programming with Objects',
+                label: 'Java 2',
+                source: 'Intermediate Programming with Objects (Uni course)',
             },
         ],
         endDateMonth: 'Jan',
@@ -33,27 +33,28 @@ export const timelineArrows = [
         skills: [
             {
                 ref: 'java',
-                label: 'java 1',
-                course: 'Data Structures and Algorithms'
+                label: 'Java 3',
+                source: 'Data Structures and Algorithms (Uni course)'
             },
             {
                 ref: 'html',
-                course: 'Web Programming',
+                label: 'HTML Basics',
+                source: 'Web Programming (Uni course)',
             },
             {
                 ref: 'css',
                 label: 'CSS Basics',
-                course: 'Web Programming',
+                source: 'Web Programming (Uni course)',
             },
             {
                 ref: 'javascript',
                 label: 'JavaScript Basics',
-                course: 'Web Programming',
+                source: 'Web Programming (Uni course)',
             },
             {
                 ref: 'php',
                 label: "PHP Basics",
-                course: 'Web Programming',
+                srouce: 'Web Programming (Uni course)',
             },
         ],
         projects: [
@@ -95,16 +96,16 @@ export const timelineArrows = [
             {
                 ref: 'javascript',
                 label: 'JavaScript Advanced',
-                course: 'Web Programming Advanced',
+                source: 'Web Programming Advanced (Uni course)',
             },
             {
                 ref: 'php',
                 label: 'PHP Advanced',
-                course: 'Web Programming Advanced',
+                source: 'Web Programming Advanced (Uni course)',
             },
             {
                 ref: 'csharp',
-                course: 'Visual Programming',
+                source: 'Visual Programming (Uni course)',
             },
         ],
         projects: [
@@ -163,13 +164,15 @@ export const timelineArrows = [
         skills: [
             {
                 ref: 'python',
-                course: 'Machine Learning',
+                source: 'Machine Learning (Uni course)',
             },
             {
                 ref: 'react',
+                source: 'open sources'
             },
             {
                 ref: 'tailwindcss',
+                source: 'open sources'
             },
         ],
         projects: [
