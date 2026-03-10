@@ -3,7 +3,7 @@ export const extendTimelineArrows = (timelineArrows, baseData) => {
     ...timeline,
 
     skills: (timeline.skills || []).map(skillExtension => {
-      const baseSkill = baseData.skills.find(s => s.tech === skillExtension.ref);
+      const baseSkill = baseData.skills[skillExtension.ref];
       return {
         ...baseSkill,
         ...skillExtension,
