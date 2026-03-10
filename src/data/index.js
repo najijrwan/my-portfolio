@@ -4,6 +4,7 @@ export { SOCIAL_LINKS } from './personal/socialLinks'
 
 // skills
 export { SKILLS } from './about/skills'
+export { TECHS_BY_TECH } from './about/skills'
 export { ROLES } from './about/roles'
 
 // projects
@@ -11,7 +12,7 @@ export { CATEGORIES } from './projects/projectRoles'
 
 // resume
 export { SUMMARY } from './resume/summary'
-export { SKILLS } from './resume/skills'
+// export { SKILLS } from './resume/skills'
 export { PROJECTS } from './resume/projects'
 export { EDUCATIONS } from './resume/educations'
 export { HONORS } from './resume/honors'
