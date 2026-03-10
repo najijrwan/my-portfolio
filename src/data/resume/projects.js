@@ -88,6 +88,7 @@ export const PROJECTS = [
             TECHS_BY_TECH.tailwindcss,
             TECHS_BY_TECH.react,
         ],
+        gitLink: 'https://github.com/najialjarwan/my-portfolio',
         duration: 'may 18 - jun 22',
         description: 'A scalable, component-driven portfolio website showcasing my skills, journey, and projects through a thoughtfully designed, fully responsive interface.',
     },
