@@ -18,7 +18,7 @@ const ProjectFields = ({ project, isExtended }) => {
                 flex flex-col gap-2
                 text-sm lg:text-md text-start
                 custom-transition-2 overflow-hidden
-                ${isExtended ? 'max-h-[2000px]' : 'max-h-[168px]'}
+                ${isExtended ? 'max-h-[2000px]' : 'max-h-[180px]'}
             `}
         >
             {FIELDS.map(({ label, content }, i) => (
