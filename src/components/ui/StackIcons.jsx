@@ -23,7 +23,7 @@ const StackIcons = ({ stack, className = '' }) => {
                         <TechTooltip tech={skill.name} />
                     </li>
                 ) : (
-                    <li key={skill.name} className="text-xs bg-jet/30 px-2 py-1 rounded-md">
+                    <li key={skill.name} className="text-xs bg-jet/30 px-2 py-1.5 rounded-md">
                         {skill.name}
                     </li>
                 );
