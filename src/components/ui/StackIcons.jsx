@@ -4,7 +4,6 @@ import { TechTooltip } from './';
 const StackIcons = ({ stack, className = '' }) => {
     return (
         <ul className={`inline-flex flex-wrap items-center gap-2 ${className}`}>
-            {console.log(stack)}
             {stack.map((skill) => {
                 const Icon = iconMap[skill.name];
 
