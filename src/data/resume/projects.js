@@ -3,7 +3,7 @@ import { TECHS_BY_TECH } from '../';
 export const PROJECTS = [
     {
         name: 'fitnesso',
-        subTitle: 'simple fitness tracking full-stack website',
+        title: 'simple fitness tracking full-stack website',
         type: 'university project',
         role: 'full-stack',
         platform: 'website',
@@ -30,7 +30,7 @@ export const PROJECTS = [
     },
     {
         name: 'quizo',
-        subTitle: 'desktop quiz application',
+        title: 'desktop quiz application',
         type: 'university project',
         role: "full-stack",
         platform: 'desktop app',
@@ -50,7 +50,7 @@ export const PROJECTS = [
     },
     {
         name: 'ma7ali',
-        subTitle: 'full-stack POS PWA for small businesses',
+        title: 'full-stack POS PWA for small businesses',
         type: 'university project',
         role: "full-stack",
         platform: 'PWA',
@@ -79,7 +79,7 @@ export const PROJECTS = [
     },
     {
         name: 'portfolio',
-        subTitle: 'modern responsive portfolio showcase',
+        title: 'modern responsive portfolio showcase',
         type: 'personal project',
         platform: 'website',
         stack: [
@@ -94,7 +94,7 @@ export const PROJECTS = [
     },
     {
         name: 'hekto',
-        subTitle: 'front-end e-commerce landing page',
+        title: 'front-end e-commerce landing page',
         type: 'personal project',
         role: 'front-end',
         platform: 'website',
@@ -120,7 +120,7 @@ export const PROJECTS = [
     },
     {
         name: '3legant',
-        subTitle: 'modular e-commerce front-end architecture',
+        title: 'modular e-commerce front-end architecture',
         type: 'personal project',
         role: 'front-end',
         platform: 'website',
