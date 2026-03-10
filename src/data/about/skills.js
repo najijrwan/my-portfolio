@@ -1,79 +1,116 @@
 export const SKILLS = [
     {
-        tech: 'java',
-        name: 'Java',
-        src: 'images/skills-image/java.png',
+        category: 'technologies',
+        type: 'proficiency',
+        proficient: [
+            {
+                tech: 'html',
+                name: 'HTML5',
+                src: 'images/skills-image/html.png',
+            },
+            {
+                tech: 'css',
+                name: 'CSS3',
+                src: 'images/skills-image/css.png',
+            },
+            {
+                tech: 'javascript',
+                name: 'JavaScript (ES6+)',
+                label: 'JavaScript',
+                src: 'images/skills-image/javascript.png',
+            },
+            {
+                tech: 'tailwindcss',
+                name: 'Tailwind CSS',
+                label: 'TailwindCSS',
+                src: 'images/skills-image/tailwind-css.png',
+            },
+            {
+                tech: 'react',
+                name: 'React',
+                src: 'images/skills-image/react.png',
+            },
+        ],
+        experienced: [
+            {
+                tech: 'java',
+                name: 'Java',
+                src: 'images/skills-image/java.png',
+            },
+            {
+                tech: 'php',
+                name: 'PHP',
+                src: 'images/skills-image/php.png',
+            },
+            {
+                tech: 'mysql',
+                name: 'MySQL',
+                label: 'MySQL',
+                src: 'images/skills-image/mysql.png'
+            },
+        ],
+        familiar: [
+            {
+                tech: 'csharp',
+                name: 'C#',
+                label: 'CSharp',
+                src: 'images/skills-image/csharp.png',
+            },
+            {
+                tech: 'python',
+                name: 'Python',
+                src: 'images/skills-image/python.png',
+            },
+        ]
     },
     {
-        tech: 'html',
-        name: 'HTML5',
-        src: 'images/skills-image/html.png',
+        category: 'tools',
+        type: 'list',
+        tools: [
+            {
+                tool: 'git',
+                name: 'Git',
+                label: 'Github',
+                src: 'images/skills-image/github.png'
+            },
+            {
+                tool: 'firebase',
+                name: 'Firebase',
+                src: 'images/skills-image/firebase.png'
+            },
+            {
+                tool: 'vercel',
+                name: 'Vercel',
+                label: 'VercelLight',
+                src: 'images/skills-image/vercel.png'
+            },
+
+            {
+                tool: 'infinityfree',
+                name: 'InfinityFree',
+                label: 'InfinityFree',
+                src: 'images/skills-image/infinityfree.png'
+            },
+        ],
     },
     {
-        tech: 'css',
-        name: 'CSS3',
-        src: 'images/skills-image/css.png',
-    },
-    {
-        tech: 'javascript',
-        name: 'JavaScript (ES6+)',
-        label: 'JavaScript',
-        src: 'images/skills-image/javascript.png',
-    },
-    {
-        tech: 'php',
-        name: 'PHP',
-        src: 'images/skills-image/php.png',
-    },
-    {
-        tech: 'csharp',
-        name: 'C#',
-        label: 'CSharp',
-        src: 'images/skills-image/csharp.png',
-    },
-    {
-        tech: 'python',
-        name: 'Python',
-        src: 'images/skills-image/python.png',
-    },
-    {
-        tech: 'tailwindcss',
-        name: 'Tailwind CSS',
-        label: 'TailwindCSS',
-        src: 'images/skills-image/tailwind-css.png',
-    },
-    {
-        tech: 'react',
-        name: 'React',
-        src: 'images/skills-image/react.png',
-    },
-    {
-        tech: 'git',
-        name: 'Git',
-        label: 'Github',
-        src: 'images/skills-image/github.png'
-    },
-    {
-        tech: 'firebase',
-        name: 'Firebase',
-        src: 'images/skills-image/firebase.png'
-    },
-    {
-        tech: 'vercel',
-        name: 'Vercel',
-        label: 'VercelLight',
-        src: 'images/skills-image/vercel.png'
-    },
-    {
-        tech: 'mysql',
-        name: 'MySQL',
-        label: 'MySQL',
-        src: 'images/skills-image/mysql.png'
-    },
-        {
-        tech: 'infinityfree',
-        name: 'InfinityFree',
-        label: 'InfinityFree',
-        src: 'images/skills-image/infinityfree.png'
+        category: 'key strengths',
+        type: 'list',
+        items: [
+            'PDF Report Generation',
+            'Multi-Currency Systems',
+            'Technical Documentation',
+            'Solo Project Ownership',
+            'Efficiency-Driven',
+        ],
     },
 ]
+
+export const TECHS_BY_TECH = Object.fromEntries(
+    SKILLS.flatMap(category => [
+        ...(category.proficient || []),
+        ...(category.experienced || []),
+        ...(category.familiar || []),
+        ...(category.tools || [])
+    ]).map(tech => [tech.tech ?? tech.tool, tech])  // Returns { html: { tech: 'html', name: 'HTML5', ... } }
+);
