@@ -22,7 +22,7 @@ const ArrowBodyProjects = ({ projects }) => {
                     onClick={() => handleButtonClick(projects[0].id)}
                     variant='v2'
                     label={projects[0].finalLabel}
-                    className='w-full inline-flex uppercase'
+                    className='min-w-max inline-flex capitalize'
                 />
             ) : (
                 <div
@@ -41,7 +41,7 @@ const ArrowBodyProjects = ({ projects }) => {
                             onClick={() => handleButtonClick(project.id)}
                             variant='v2'
                             label={project.finalLabel}
-                            className='min-w-max w-full inline-flex uppercase'
+                            className='min-w-max w-full inline-flex capitalize'
                         />
                     ))}
                 </div>
