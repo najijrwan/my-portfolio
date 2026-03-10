@@ -6,7 +6,7 @@ const ProjectsSection = ({ project }) => (
       <h1>
         <i className="uppercase">{project.name}</i>
         <span> &nbsp; • &nbsp; </span>
-        <span>{project.subTitle.charAt(0).toUpperCase() + project.subTitle.slice(1)}</span>
+        <span>{project.title.charAt(0).toUpperCase() + project.title.slice(1)}</span>
       </h1>
 
       <h2 className='capitalize'>{project.duration}</h2>
