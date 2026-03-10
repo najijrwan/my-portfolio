@@ -1,5 +1,5 @@
 import SectionContainer from './SectionContainer';
-import { TECHS } from '@data';
+import { TECHS_BY_TECH } from '@data';
 import { TechTooltip } from '@ui';
 
 const Skills = () => (
@@ -11,9 +11,9 @@ const Skills = () => (
                 flex-start-start gap-[15px] sm:gap-[50px]
                 has-scrollbar scroll-smooth overscroll-x-contain snap-both scroll-px-6 sm:scroll-px-[45px]"
         >
-            {TECHS.map((tech) => (
+            {Object.values(TECHS_BY_TECH).map((tech) => (
                 <li
-                    key={tech.tech}
+                    key={tech.tech ?? tech.tool}
                     className='
                         relative group
                         min-w-[50%]
