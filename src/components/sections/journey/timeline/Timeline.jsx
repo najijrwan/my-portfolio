@@ -16,19 +16,11 @@ const Timeline = () => {
     const { scrollRef, showLeftFade, showRightFade } = useScrollFade();
 
     return (
-        <section
-            ref={scrollRef}
-            className="
-                relative
-                pb-5 mb-18 sm:mb-23 overflow-x-auto
-                flex lg:flex-wrap
-                has-scrollbar
-            "
-        >
+        <section className="relative">
             {showLeftFade && (
                 <div
                     className="
-                        absolute top-0 left-0 z-20
+                        absolute top-0 left-0 z-50
                         w-12 h-full
                         bg-gradient-to-r from-[hsl(240,2%,12%)] to-transparent
                         pointer-events-none
@@ -36,25 +28,35 @@ const Timeline = () => {
                 />
             )}
 
-            {extendedTimelineArrows.map((arrow, i) => {
-                const color = COLORS[i % COLORS.length];
+            <div
+                ref={scrollRef}
+                className="
+                    relative
+                    pb-5 mb-18 sm:mb-23 overflow-x-auto
+                    flex lg:flex-wrap
+                    has-scrollbar
+                "
+            >
+                {extendedTimelineArrows.map((arrow, i) => {
+                    const color = COLORS[i % COLORS.length];
 
-                return (
-                    <section key={i} className="flex items-center lg:py-5">
-                        <ArrowTail color={color} month={arrow.startDateMonth} year={arrow.startDateYear} />
+                    return (
+                        <section key={i} className="flex items-center lg:py-5">
+                            <ArrowTail color={color} month={arrow.startDateMonth} year={arrow.startDateYear} />
 
-                        {arrow.skills?.length > 0 && <ArrowBodySkills skills={arrow.skills} />}
-                        {arrow.projects?.length > 0 && <ArrowBodyProjects projects={arrow.projects}  />}
+                            {arrow.skills?.length > 0 && <ArrowBodySkills skills={arrow.skills} />}
+                            {arrow.projects?.length > 0 && <ArrowBodyProjects projects={arrow.projects} />}
 
-                        <ArrowHead color={color} month={arrow.endDateMonth} year={arrow.endDateYear} />
-                    </section>
-                );
-            })}
+                            <ArrowHead color={color} month={arrow.endDateMonth} year={arrow.endDateYear} />
+                        </section>
+                    );
+                })}
+            </div>
 
             {showRightFade && (
                 <div
                     className="
-                        absolute top-0 right-0 z-20
+                        absolute top-0 right-0 z-50
                         w-12 h-full
                         bg-gradient-to-l from-[hsl(240,2%,12%)] to-transparent
                         pointer-events-none
