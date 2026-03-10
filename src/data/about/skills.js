@@ -16,13 +16,13 @@ export const SKILLS = [
             {
                 tech: 'javascript',
                 name: 'JavaScript (ES6+)',
-                label: 'JavaScript',
+                devIcon: 'JavaScript',
                 src: 'images/skills-image/javascript.png',
             },
             {
                 tech: 'tailwindcss',
                 name: 'Tailwind CSS',
-                label: 'TailwindCSS',
+                devIcon: 'TailwindCSS',
                 src: 'images/skills-image/tailwind-css.png',
             },
             {
@@ -45,7 +45,7 @@ export const SKILLS = [
             {
                 tech: 'mysql',
                 name: 'MySQL',
-                label: 'MySQL',
+                devIcon: 'MySQL',
                 src: 'images/skills-image/mysql.png'
             },
         ],
@@ -53,7 +53,7 @@ export const SKILLS = [
             {
                 tech: 'csharp',
                 name: 'C#',
-                label: 'CSharp',
+                devIcon: 'CSharp',
                 src: 'images/skills-image/csharp.png',
             },
             {
@@ -70,7 +70,7 @@ export const SKILLS = [
             {
                 tool: 'git',
                 name: 'Git',
-                label: 'Github',
+                devIcon: 'Github',
                 src: 'images/skills-image/github.png'
             },
             {
@@ -81,7 +81,7 @@ export const SKILLS = [
             {
                 tool: 'vercel',
                 name: 'Vercel',
-                label: 'VercelLight',
+                devIcon: 'VercelLight',
                 src: 'images/skills-image/vercel.png'
             },
 
