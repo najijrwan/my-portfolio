@@ -31,7 +31,7 @@ const ProjectDetailsHeader = ({ link, label }) => (
         className='
             absolute top-0 left-1/2 -translate-1/2
             min-w-max px-2 py-1.5
-            text-[10px] sm:text-[12px] text-yellow-crayola text-center tracking-wider uppercase
+            text-[10px] sm:text-[12px] text-yellow-crayola text-center tracking-wider capitalize
             bg-jet rounded-lg
         '
     >
