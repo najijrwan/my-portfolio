@@ -2,15 +2,15 @@ import { StackIcons } from '@ui'
 
 const ProjectsSection = ({ project }) => (
   <>
-    <header className="mb-2.5 flex flex-col gap-0.5 justify-center text-white">
-      <h1 className='capitalize italic'>
-        <span className='mr-2'>{project.name}</span>
-        <span className='not-italic text-sm'>({project.role})</span>
+    <header className="mb-2.5 flex flex-col gap-0.5 justify-center text-white capitalize">
+      <h1 className=''>
+        <span className='mr-2 text-highlight italic'>{project.name}</span>
+        <span className='text-sm text-highlight'>({project.role})</span>
       </h1>
 
-      <h2 className='text-sm'>{project.title}</h2>
+      <h2 className='text-sm md:inline'>{project.title}</h2>
 
-      <h3 className='text-sm capitalize'>{project.duration}</h3>
+      <h3 className='text-sm'>{project.duration}</h3>
 
       <StackIcons stack={project.stack} className='my-1.25' />
     </header>
