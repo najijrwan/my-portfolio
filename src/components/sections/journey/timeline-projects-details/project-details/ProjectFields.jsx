@@ -33,20 +33,11 @@ const ProjectFields = ({ project, isExtended }) => {
                         ${!isExtended && (label === "Info" || label === "Challenges") ? 'opacity-0' : 'opacity-100'}
                         `}
                 >
-                    <header className="flex items-center gap-2 text-white">
+                    <header className="flex items-center gap-2 text-white uppercase">
                         <span>{label}</span>
                     </header>
-                    <div
-                        className="
-                            relative
-                            pl-2
-                            flex flex-col gap-2
-                            before:content-['']
-                            before:absolute before:left-0 before:bottom-0
-                            before:w-0.75 before:h-full
-                            before:bg-light-gray-70
-                        "
-                    >
+
+                    <div className="relative flex flex-col gap-2">
                         {content}
                     </div>
                 </div>
