@@ -1,6 +1,4 @@
-import {TECHS } from '../';
-
-const t = (techKey) => TECHS.find(t => t.tech === techKey);
+import { TECHS_BY_TECH } from '../';
 
 export const PROJECTS = [
     {
@@ -10,7 +8,14 @@ export const PROJECTS = [
         role: 'full-stack',
         platform: 'website',
         img: 'images/projects-image/fitnesso.png',
-        stack: [t('html'), t('css'), t('javascript'), t('php'), t('mysql'), t('infinityfree')],
+        stack: [
+            TECHS_BY_TECH.html,
+            TECHS_BY_TECH.css,
+            TECHS_BY_TECH.javascript,
+            TECHS_BY_TECH.php,
+            TECHS_BY_TECH.mysql,
+            TECHS_BY_TECH.infinityfree,
+        ],
         duration: 'spring 2024 & fall 2024',
         liveLink: 'https://fitnesso.ct.ws/',
         gitLink: 'https://github.com/najialjarwan/Fitnesso',
@@ -30,7 +35,7 @@ export const PROJECTS = [
         role: "full-stack",
         platform: 'desktop app',
         img: "images/projects-image/quizo.png",
-        stack: [t('csharp')],
+        stack: [TECHS_BY_TECH.csharp,],
         duration: 'fall 2024',
         gitLink: 'https://github.com/najijrwan/Quizo',
         description: 'An interactive Windows Forms-based quiz game built with C#, featuring progressive difficulty and comprehensive feedback systems.',
@@ -50,7 +55,12 @@ export const PROJECTS = [
         role: "full-stack",
         platform: 'PWA',
         img: "images/projects-image/ma7ali.png",
-        stack: [t('html'), t('css'), t('javascript'), t('firebase')],
+        stack: [
+            TECHS_BY_TECH.html,
+            TECHS_BY_TECH.css,
+            TECHS_BY_TECH.javascript,
+            TECHS_BY_TECH.firebase,
+        ],
         duration: 'mar 15 - may 15',
         gitLink: 'https://github.com/najialjarwan/Ma7ali',
         description: 'A comprehensive Point of Sale progressive web application designed for small business workflows, featuring inventory management, sales tracking, and business analytics.',
@@ -72,7 +82,13 @@ export const PROJECTS = [
         subTitle: 'modern responsive portfolio showcase',
         type: 'personal project',
         platform: 'website',
-        stack: [t('html'), t('css'), t('javascript'), t('tailwindcss'), t('react')],
+        stack: [
+            TECHS_BY_TECH.html,
+            TECHS_BY_TECH.css,
+            TECHS_BY_TECH.javascript,
+            TECHS_BY_TECH.tailwindcss,
+            TECHS_BY_TECH.react,
+        ],
         duration: 'may 18 - jun 22',
         description: 'A scalable, component-driven portfolio website showcasing my skills, journey, and projects through a thoughtfully designed, fully responsive interface.',
     },
@@ -84,7 +100,13 @@ export const PROJECTS = [
         platform: 'website',
         img: "images/projects-image/hekto.png",
         gitLink: 'https://github.com/najialjarwan/Hekto',
-        stack: [t('html'), t('css'), t('javascript'), t('tailwindcss'), t('react')],
+        stack: [
+            TECHS_BY_TECH.html,
+            TECHS_BY_TECH.css,
+            TECHS_BY_TECH.javascript,
+            TECHS_BY_TECH.tailwindcss,
+            TECHS_BY_TECH.react,
+        ],
         duration: 'dec 13 - dec 28',
         description: 'A pixel-perfect e-commerce landing page meticulously crafted from a Figma design, demonstrating strong attention to detail and design fidelity.',
         details: [
@@ -104,7 +126,13 @@ export const PROJECTS = [
         platform: 'website',
         img: "images/projects-image/3legant.png",
         gitLink: 'https://github.com/najialjarwan/3legant',
-        stack: [t('html'), t('css'), t('javascript'), t('tailwindcss'), t('react')],
+        stack: [
+            TECHS_BY_TECH.html,
+            TECHS_BY_TECH.css,
+            TECHS_BY_TECH.javascript,
+            TECHS_BY_TECH.tailwindcss,
+            TECHS_BY_TECH.react,
+        ],
         duration: 'dec 29 - present',
         description: 'A scalable, component-driven e-commerce frontend built from an open-source Figma design, demonstrating advanced React patterns and clean architecture principles.',
         details: [
