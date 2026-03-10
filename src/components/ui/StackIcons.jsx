@@ -4,12 +4,13 @@ import { TechTooltip } from './';
 const StackIcons = ({ stack, className = '' }) => {
     return (
         <ul className={`inline-flex flex-wrap items-center gap-2 ${className}`}>
-            {stack.map((tech) => {
-                const Icon = iconMap[tech.tech];
+            {console.log(stack)}
+            {stack.map((skill) => {
+                const Icon = iconMap[skill.name];
 
                 return Icon ? (
                     <li
-                        key={tech.tech}
+                        key={skill.name}
                         className="
                             relative group
                             px-3 py-1
@@ -19,11 +20,11 @@ const StackIcons = ({ stack, className = '' }) => {
                     >
                         <Icon size={20} />
 
-                        <TechTooltip tech={tech.name} />
+                        <TechTooltip tech={skill.name} />
                     </li>
                 ) : (
-                    <li key={tech.tech} className="text-xs bg-jet/30 px-2 py-1 rounded-md">
-                        {tech.name}
+                    <li key={skill.name} className="text-xs bg-jet/30 px-2 py-1 rounded-md">
+                        {skill.name}
                     </li>
                 );
             })}
