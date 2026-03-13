@@ -8,7 +8,7 @@ export const PROJECTS = [
         role: 'full-stack',
         platform: 'website',
         img: 'images/projects-image/fitnesso.png',
-        stack: [
+        techStack: [
             TECHS_BY_TECH.html,
             TECHS_BY_TECH.css,
             TECHS_BY_TECH.javascript,
