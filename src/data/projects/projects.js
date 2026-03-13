@@ -109,7 +109,12 @@ export const PROJECTS = [
         duration: 'may 18 - jun 22',
         description: 'A scalable, component-driven portfolio website showcasing my skills, journey, and projects through a thoughtfully designed, fully responsive interface.',
         keyFeatures: [
-
+            "Centralized project and skills configuration enabling scalable data-driven content",
+            "Modular React architecture with reusable UI components",
+            "Dynamic rendering of projects, resume highlights, and development journey",
+            "Structured portfolio sections designed for clarity and easy navigation",
+            "Responsive interface optimized across desktop and mobile devices",
+            "Clean and maintainable frontend architecture focused on long-term scalability"
         ],
         challenges: [],
         futureImprovements: [],
