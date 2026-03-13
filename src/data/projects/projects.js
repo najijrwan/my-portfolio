@@ -20,7 +20,7 @@ export const PROJECTS = [
         liveLink: 'https://fitnesso.ct.ws/',
         gitLink: 'https://github.com/najialjarwan/Fitnesso',
         description: 'A fitness-focused web application that enables users to track health metrics and personal data through a clean, intuitive interface.',
-        details: [
+        keyFeatures: [
             'Developed a fully responsive multi-page website with emphasis on clean UI architecture and maintainable code structure',
             'Implemented PHP backend with secure user authentication, session management, and logout functionality',
             'Designed structured database for storing user metrics including weight, height, age, and more',
@@ -39,7 +39,7 @@ export const PROJECTS = [
         duration: 'fall 2024',
         gitLink: 'https://github.com/najijrwan/Quizo',
         description: 'An interactive Windows Forms-based quiz game built with C#, featuring progressive difficulty and comprehensive feedback systems.',
-        details: [
+        keyFeatures: [
             'Engineered a single-player quiz system with structured progression: 3 categories × 3 levels × 5 questions each',
             'Implemented real-time score tracking, countdown timers, and dynamic feedback mechanisms',
             'Designed linear question flow ensuring sequential completion of questions, levels, and categories',
@@ -64,7 +64,7 @@ export const PROJECTS = [
         duration: 'mar 15 - may 15',
         gitLink: 'https://github.com/najialjarwan/Ma7ali',
         description: 'A comprehensive Point of Sale progressive web application designed for small business workflows, featuring inventory management, sales tracking, and business analytics.',
-        details: [
+        keyFeatures: [
             'Implemented multi-currency toggling (LBP ↔ USD), advanced filtering, and automated PDF report generation',
             'Integrated Firebase Authentication with multiple providers: email, Google, and phone login options',
             'Designed Firestore database noSQL schema optimized for managing products, carts, sales (with profit & revenue), customers, and user settings',
@@ -91,6 +91,7 @@ export const PROJECTS = [
         gitLink: 'https://github.com/najialjarwan/my-portfolio',
         duration: 'may 18 - jun 22',
         description: 'A scalable, component-driven portfolio website showcasing my skills, journey, and projects through a thoughtfully designed, fully responsive interface.',
+        keyFeatures: [],
     },
     {
         name: 'hekto',
@@ -109,7 +110,7 @@ export const PROJECTS = [
         ],
         duration: 'dec 13 - dec 28',
         description: 'A pixel-perfect e-commerce landing page meticulously crafted from a Figma design, demonstrating strong attention to detail and design fidelity.',
-        details: [
+        keyFeatures: [
             'Translated Figma design into fully functional React components with pixel-perfect accuracy',
             'Implemented responsive layouts ensuring consistent experience across all screen sizes',
             'Built reusable UI components following DRY principles for maintainable codebase',
@@ -135,7 +136,7 @@ export const PROJECTS = [
         ],
         duration: 'dec 29 - present',
         description: 'A scalable, component-driven e-commerce frontend built from an open-source Figma design, demonstrating advanced React patterns and clean architecture principles.',
-        details: [
+        keyFeatures: [
             'Architected a modular frontend structure separating concerns: pages, UI components, hooks, state, and data layers',
             'Implemented dynamic product grid systems (4x2, 3x3, horizontal) with state-driven layout switching',
             'Built reusable component library including product cards, layout selectors, dropdown controls, and progressive rendering patterns',
