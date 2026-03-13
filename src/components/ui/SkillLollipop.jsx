@@ -13,7 +13,7 @@ const SkillLollipop = ({ skill, reversed = false }) => {
                     absolute ${reversed ? 'bottom-0' : 'top-0'} -right-2 translate-x-full z-30
                     min-w-11 min-h-13 px-2 box-content
                     flex-center flex-col gap-1
-                    text-vegas-gold text-[8px] sm:text-[10px] text-wrap text-center
+                    text-light-gray text-[8px] sm:text-[10px] text-wrap text-center
                     bg-jet opacity-0 group-hover:opacity-100 rounded-2xl
                     invisible group-hover:visible
                     custom-transition-1
