@@ -8,6 +8,7 @@ export const PROJECTS = [
         role: 'full-stack',
         platform: 'website',
         img: 'images/projects-image/fitnesso.png',
+        screenshots: [],
         techStack: [
             TECHS_BY_TECH.html,
             TECHS_BY_TECH.css,
@@ -26,7 +27,11 @@ export const PROJECTS = [
             'Designed structured database for storing user metrics including weight, height, age, and more',
             'Architected codebase for scalability, enabling seamless future feature integration and enhancements',
         ],
+        challenges: [],
+        futureImprovements: [],
+        tags: ["fitness", "health", "tracking", "web-app", "fullstack", "php", "mysql", "authentication", "user-data", "database", "responsive", "ui", "forms", "session-management", "crud", "dashboard", "personal-data", "university-project"],
         rank: 3,
+        status: 'completed',
     },
     {
         name: 'quizo',
@@ -35,6 +40,7 @@ export const PROJECTS = [
         role: "full-stack",
         platform: 'desktop app',
         img: "images/projects-image/quizo.png",
+        screenshots: [],
         stack: [TECHS_BY_TECH.csharp,],
         duration: 'fall 2024',
         gitLink: 'https://github.com/najijrwan/Quizo',
@@ -46,7 +52,11 @@ export const PROJECTS = [
             'Created intuitive UI with contextual explanations and system feedback to enhance user comprehension and engagement',
             'Built entirely from concept to completion as the sole developer, handling UI design, game logic, and progression systems'
         ],
+        challenges: [],
+        futureImprovements: [],
+        tags: ["quiz", "desktop-app", "windows-forms", "csharp", "game", "education", "interactive", "timer", "score-system", "logic", "oop", "ui", "game-logic", "state-management", "university-project"],
         rank: 4,
+        status: 'completed',
     },
     {
         name: 'ma7ali',
@@ -55,6 +65,7 @@ export const PROJECTS = [
         role: "full-stack",
         platform: 'PWA',
         img: "images/projects-image/ma7ali.png",
+        screenshots: [],
         stack: [
             TECHS_BY_TECH.html,
             TECHS_BY_TECH.css,
@@ -74,13 +85,19 @@ export const PROJECTS = [
             'Engineered the entire system with future growth in mind, enabling seamless integration of upcoming features',
             'Solely responsible for the complete project lifecycle: from initial concept and 54-page technical documentation to end-to-end architecture, UI/UX design, and full feature implementation with scalability as a core principle',
         ],
+        challenges: [],
+        futureImprovements: [],
+        tags: ["pos", "business", "inventory", "sales", "analytics", "dashboard", "pwa", "firebase", "firestore", "authentication", "google-auth", "phone-auth", "multi-currency", "reporting", "pdf-generation", "charts", "data-export", "responsive", "mobile-first", "small-business", "retail", "fullstack", "nosql", "university-project"],
+
         rank: 1,
+        status: 'completed',
     },
     {
         name: 'portfolio',
         title: 'modern responsive portfolio showcase',
         type: 'personal project',
         platform: 'website',
+        screenshots: [],
         stack: [
             TECHS_BY_TECH.html,
             TECHS_BY_TECH.css,
@@ -91,7 +108,14 @@ export const PROJECTS = [
         gitLink: 'https://github.com/najialjarwan/my-portfolio',
         duration: 'may 18 - jun 22',
         description: 'A scalable, component-driven portfolio website showcasing my skills, journey, and projects through a thoughtfully designed, fully responsive interface.',
-        keyFeatures: [],
+        keyFeatures: [
+
+        ],
+        challenges: [],
+        futureImprovements: [],
+        tags: ["portfolio", "personal-website", "react", "tailwind", "frontend", "ui", "responsive", "component-based", "design-system", "data-driven", "projects-showcase", "resume", "developer-portfolio", "react-components", "architecture", "scalable-ui"],
+        status: 'completed',
+        version: '2.0',
     },
     {
         name: 'hekto',
@@ -100,6 +124,7 @@ export const PROJECTS = [
         role: 'front-end',
         platform: 'website',
         img: "images/projects-image/hekto.png",
+        screenshots: [],
         gitLink: 'https://github.com/najialjarwan/Hekto',
         stack: [
             TECHS_BY_TECH.html,
@@ -117,7 +142,11 @@ export const PROJECTS = [
             'Optimized asset loading and rendering for improved performance metrics',
             'Independently translated Figma design to fully functional React application with responsive implementation'
         ],
+        challenges: [],
+        futureImprovements: [],
+        tags: ["ecommerce", "landing-page", "react", "tailwind", "frontend", "ui", "responsive", "figma-to-code", "pixel-perfect", "design-implementation", "component-based", "layout", "modern-ui", "frontend-practice"],
         rank: 5,
+        status: 'completed',
     },
     {
         name: '3legant',
@@ -126,6 +155,7 @@ export const PROJECTS = [
         role: 'front-end',
         platform: 'website',
         img: "images/projects-image/3legant.png",
+        screenshots: [],
         gitLink: 'https://github.com/najialjarwan/3legant',
         stack: [
             TECHS_BY_TECH.html,
@@ -144,6 +174,10 @@ export const PROJECTS = [
             'Designed codebase architecture to seamlessly accommodate future backend integration and full e-commerce functionality',
             'Solely implemented the frontend architecture, translating design specifications into scalable, production-ready code'
         ],
+        challenges: [],
+        futureImprovements: [],
+        tags: ["ecommerce", "frontend-architecture", "react", "tailwind", "component-library", "scalable-architecture", "ui-system", "product-grid", "responsive", "custom-hooks", "state-management", "layout-switching", "design-to-code", "modular-structure", "frontend-engineering", "react-patterns"],
         rank: 2,
+        status: 'active',
     },
 ]
