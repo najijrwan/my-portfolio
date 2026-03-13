@@ -41,7 +41,7 @@ export const PROJECTS = [
         platform: 'desktop app',
         img: "images/projects-image/quizo.png",
         screenshots: [],
-        stack: [TECHS_BY_TECH.csharp,],
+        techStack: [TECHS_BY_TECH.csharp,],
         duration: 'fall 2024',
         gitLink: 'https://github.com/najijrwan/Quizo',
         description: 'An interactive Windows Forms-based quiz game built with C#, featuring progressive difficulty and comprehensive feedback systems.',
@@ -66,7 +66,7 @@ export const PROJECTS = [
         platform: 'PWA',
         img: "images/projects-image/ma7ali.png",
         screenshots: [],
-        stack: [
+        techStack: [
             TECHS_BY_TECH.html,
             TECHS_BY_TECH.css,
             TECHS_BY_TECH.javascript,
@@ -98,7 +98,7 @@ export const PROJECTS = [
         type: 'personal project',
         platform: 'website',
         screenshots: [],
-        stack: [
+        techStack: [
             TECHS_BY_TECH.html,
             TECHS_BY_TECH.css,
             TECHS_BY_TECH.javascript,
@@ -126,7 +126,7 @@ export const PROJECTS = [
         img: "images/projects-image/hekto.png",
         screenshots: [],
         gitLink: 'https://github.com/najialjarwan/Hekto',
-        stack: [
+        techStack: [
             TECHS_BY_TECH.html,
             TECHS_BY_TECH.css,
             TECHS_BY_TECH.javascript,
@@ -157,7 +157,7 @@ export const PROJECTS = [
         img: "images/projects-image/3legant.png",
         screenshots: [],
         gitLink: 'https://github.com/najialjarwan/3legant',
-        stack: [
+        techStack: [
             TECHS_BY_TECH.html,
             TECHS_BY_TECH.css,
             TECHS_BY_TECH.javascript,
