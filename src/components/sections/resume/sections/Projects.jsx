@@ -12,7 +12,7 @@ const ProjectsSection = ({ project }) => (
 
       <h3 className='text-sm'>{project.duration}</h3>
 
-      <StackIcons stack={project.stack} className='my-1.25' />
+      <StackIcons stack={project.techStack} className='my-1.25' />
     </header>
 
     <ul>
