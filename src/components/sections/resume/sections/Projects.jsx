@@ -16,7 +16,7 @@ const ProjectsSection = ({ project }) => (
     </header>
 
     <ul>
-      {project.details?.map((detail) => (
+      {project.keyFeatures?.map((detail) => (
         <li
           key={detail}
           className="
