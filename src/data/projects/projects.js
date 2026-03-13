@@ -1,4 +1,4 @@
-import { TECHS_BY_TECH } from '../';
+import { TECHS_BY_TECH } from '../about/skills.js';
 
 export const PROJECTS = [
     {

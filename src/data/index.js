@@ -13,7 +13,7 @@ export { CATEGORIES } from './projects/projectRoles'
 // resume
 export { SUMMARY } from './resume/summary'
 // export { SKILLS } from './resume/skills'
-export { PROJECTS } from './resume/projects'
+export { PROJECTS } from './projects/projects'
 export { EDUCATIONS } from './resume/educations'
 export { HONORS } from './resume/honors'
 export { LANGUAGES } from './resume/languages'
