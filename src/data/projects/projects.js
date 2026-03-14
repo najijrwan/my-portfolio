@@ -9,6 +9,12 @@ export const PROJECTS = [
         type: 'university project',
         role: 'full-stack',
         platform: 'website',
+        status: 'completed',
+        rank: 3,
+        duration: 'spring 2024 & fall 2024',
+        liveLink: 'https://fitnesso.ct.ws/',
+        gitLink: 'https://github.com/najialjarwan/Fitnesso',
+        description: 'A fitness-focused web application that enables users to track health metrics and personal data through a clean, intuitive interface.',
         thumbnail: 'images/projects-image/fitnesso.png',
         screenshots: [],
         techStack: [
@@ -19,10 +25,6 @@ export const PROJECTS = [
             TECHS_BY_TECH.mysql,
             TECHS_BY_TECH.infinityfree,
         ],
-        duration: 'spring 2024 & fall 2024',
-        liveLink: 'https://fitnesso.ct.ws/',
-        gitLink: 'https://github.com/najialjarwan/Fitnesso',
-        description: 'A fitness-focused web application that enables users to track health metrics and personal data through a clean, intuitive interface.',
         keyFeatures: [
             'Developed a fully responsive multi-page website with emphasis on clean UI architecture and maintainable code structure',
             'Implemented PHP backend with secure user authentication, session management, and logout functionality',
@@ -32,22 +34,22 @@ export const PROJECTS = [
         challenges: [],
         futureImprovements: [],
         tags: ["fitness", "health", "tracking", "web-app", "fullstack", "php", "mysql", "authentication", "user-data", "database", "responsive", "ui", "forms", "session-management", "crud", "dashboard", "personal-data", "university-project"],
-        rank: 3,
-        status: 'completed',
     },
-    
+
     {
         name: 'quizo',
         title: 'desktop quiz application',
         type: 'university project',
         role: "full-stack",
         platform: 'desktop app',
-        thumbnail: "images/projects-image/quizo.png",
-        screenshots: [],
-        techStack: [TECHS_BY_TECH.csharp,],
+        status: 'completed',
+        rank: 4,
         duration: 'fall 2024',
         gitLink: 'https://github.com/najijrwan/Quizo',
         description: 'An interactive Windows Forms-based quiz game built with C#, featuring progressive difficulty and comprehensive feedback systems.',
+        thumbnail: "images/projects-image/quizo.png",
+        screenshots: [],
+        techStack: [TECHS_BY_TECH.csharp,],
         keyFeatures: [
             'Engineered a single-player quiz system with structured progression: 3 categories × 3 levels × 5 questions each',
             'Implemented real-time score tracking, countdown timers, and dynamic feedback mechanisms',
@@ -58,8 +60,6 @@ export const PROJECTS = [
         challenges: [],
         futureImprovements: [],
         tags: ["quiz", "desktop-app", "windows-forms", "csharp", "game", "education", "interactive", "timer", "score-system", "logic", "oop", "ui", "game-logic", "state-management", "university-project"],
-        rank: 4,
-        status: 'completed',
     },
 
     {
@@ -68,6 +68,11 @@ export const PROJECTS = [
         type: 'university project',
         role: "full-stack",
         platform: 'PWA',
+        status: 'completed',
+        rank: 1,
+        duration: 'mar 15 - may 15',
+        gitLink: 'https://github.com/najialjarwan/Ma7ali',
+        description: 'A comprehensive Point of Sale progressive web application designed for small business workflows, featuring inventory management, sales tracking, and business analytics.',
         thumbnail: "images/projects-image/ma7ali.png",
         screenshots: [],
         techStack: [
@@ -76,9 +81,6 @@ export const PROJECTS = [
             TECHS_BY_TECH.javascript,
             TECHS_BY_TECH.firebase,
         ],
-        duration: 'mar 15 - may 15',
-        gitLink: 'https://github.com/najialjarwan/Ma7ali',
-        description: 'A comprehensive Point of Sale progressive web application designed for small business workflows, featuring inventory management, sales tracking, and business analytics.',
         keyFeatures: [
             'Implemented multi-currency toggling (LBP ↔ USD), advanced filtering, and automated PDF report generation',
             'Integrated Firebase Authentication with multiple providers: email, Google, and phone login options',
@@ -92,9 +94,6 @@ export const PROJECTS = [
         challenges: [],
         futureImprovements: [],
         tags: ["pos", "business", "inventory", "sales", "analytics", "dashboard", "pwa", "firebase", "firestore", "authentication", "google-auth", "phone-auth", "multi-currency", "reporting", "pdf-generation", "charts", "data-export", "responsive", "mobile-first", "small-business", "retail", "fullstack", "nosql", "university-project"],
-
-        rank: 1,
-        status: 'completed',
     },
 
     {
@@ -102,6 +101,13 @@ export const PROJECTS = [
         title: 'modern responsive portfolio showcase',
         type: 'personal project',
         platform: 'website',
+        status: 'completed',
+        version: '2.0',
+        duration: 'may 18 - jun 22',
+        gitLink: 'https://github.com/najialjarwan/my-portfolio',
+        // liveLink: '',
+        description: 'A scalable, component-driven portfolio website showcasing my skills, journey, and projects through a thoughtfully designed, fully responsive interface.',
+        // thumbnail: '',
         screenshots: [],
         techStack: [
             TECHS_BY_TECH.html,
@@ -110,9 +116,6 @@ export const PROJECTS = [
             TECHS_BY_TECH.tailwindcss,
             TECHS_BY_TECH.react,
         ],
-        gitLink: 'https://github.com/najialjarwan/my-portfolio',
-        duration: 'may 18 - jun 22',
-        description: 'A scalable, component-driven portfolio website showcasing my skills, journey, and projects through a thoughtfully designed, fully responsive interface.',
         keyFeatures: [
             "Centralized project and skills configuration enabling scalable data-driven content",
             "Modular React architecture with reusable UI components",
@@ -124,8 +127,6 @@ export const PROJECTS = [
         challenges: [],
         futureImprovements: [],
         tags: ["portfolio", "personal-website", "react", "tailwind", "frontend", "ui", "responsive", "component-based", "design-system", "data-driven", "projects-showcase", "resume", "developer-portfolio", "react-components", "architecture", "scalable-ui"],
-        status: 'completed',
-        version: '2.0',
     },
 
     {
@@ -134,9 +135,13 @@ export const PROJECTS = [
         type: 'personal project',
         role: 'front-end',
         platform: 'website',
+        status: 'completed',
+        rank: 5,
+        duration: 'dec 13 - dec 28',
+        gitLink: 'https://github.com/najialjarwan/Hekto',
+        description: 'A pixel-perfect e-commerce landing page meticulously crafted from a Figma design, demonstrating strong attention to detail and design fidelity.',
         thumbnail: "images/projects-image/hekto.png",
         screenshots: [],
-        gitLink: 'https://github.com/najialjarwan/Hekto',
         techStack: [
             TECHS_BY_TECH.html,
             TECHS_BY_TECH.css,
@@ -144,8 +149,6 @@ export const PROJECTS = [
             TECHS_BY_TECH.tailwindcss,
             TECHS_BY_TECH.react,
         ],
-        duration: 'dec 13 - dec 28',
-        description: 'A pixel-perfect e-commerce landing page meticulously crafted from a Figma design, demonstrating strong attention to detail and design fidelity.',
         keyFeatures: [
             'Translated Figma design into fully functional React components with pixel-perfect accuracy',
             'Implemented responsive layouts ensuring consistent experience across all screen sizes',
@@ -156,8 +159,6 @@ export const PROJECTS = [
         challenges: [],
         futureImprovements: [],
         tags: ["ecommerce", "landing-page", "react", "tailwind", "frontend", "ui", "responsive", "figma-to-code", "pixel-perfect", "design-implementation", "component-based", "layout", "modern-ui", "frontend-practice"],
-        rank: 5,
-        status: 'completed',
     },
 
     {
@@ -166,9 +167,13 @@ export const PROJECTS = [
         type: 'personal project',
         role: 'front-end',
         platform: 'website',
+        rank: 2,
+        status: 'active',
+        duration: 'dec 29 - present',
+        gitLink: 'https://github.com/najialjarwan/3legant',
+        description: 'A scalable, component-driven e-commerce frontend built from an open-source Figma design, demonstrating advanced React patterns and clean architecture principles.',
         thumbnail: "images/projects-image/3legant.png",
         screenshots: [],
-        gitLink: 'https://github.com/najialjarwan/3legant',
         techStack: [
             TECHS_BY_TECH.html,
             TECHS_BY_TECH.css,
@@ -176,8 +181,6 @@ export const PROJECTS = [
             TECHS_BY_TECH.tailwindcss,
             TECHS_BY_TECH.react,
         ],
-        duration: 'dec 29 - present',
-        description: 'A scalable, component-driven e-commerce frontend built from an open-source Figma design, demonstrating advanced React patterns and clean architecture principles.',
         keyFeatures: [
             'Architected a modular frontend structure separating concerns: pages, UI components, hooks, state, and data layers',
             'Implemented dynamic product grid systems (4x2, 3x3, horizontal) with state-driven layout switching',
@@ -189,7 +192,5 @@ export const PROJECTS = [
         challenges: [],
         futureImprovements: [],
         tags: ["ecommerce", "frontend-architecture", "react", "tailwind", "component-library", "scalable-architecture", "ui-system", "product-grid", "responsive", "custom-hooks", "state-management", "layout-switching", "design-to-code", "modular-structure", "frontend-engineering", "react-patterns"],
-        rank: 2,
-        status: 'active',
     },
 ]
