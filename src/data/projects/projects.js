@@ -1,5 +1,7 @@
 import { TECHS_BY_TECH } from '../about/skills.js';
-
+// TODO: impvoe title, desctiption and keyFeatures for every project
+// TODO: Create a canonical project schema comment at the top
+// TODO: document code
 export const PROJECTS = [
     {
         name: 'fitnesso',
