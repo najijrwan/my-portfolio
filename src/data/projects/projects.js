@@ -9,7 +9,7 @@ export const PROJECTS = [
         type: 'university project',
         role: 'full-stack',
         platform: 'website',
-        img: 'images/projects-image/fitnesso.png',
+        thumbnail: 'images/projects-image/fitnesso.png',
         screenshots: [],
         techStack: [
             TECHS_BY_TECH.html,
@@ -35,13 +35,14 @@ export const PROJECTS = [
         rank: 3,
         status: 'completed',
     },
+    
     {
         name: 'quizo',
         title: 'desktop quiz application',
         type: 'university project',
         role: "full-stack",
         platform: 'desktop app',
-        img: "images/projects-image/quizo.png",
+        thumbnail: "images/projects-image/quizo.png",
         screenshots: [],
         techStack: [TECHS_BY_TECH.csharp,],
         duration: 'fall 2024',
@@ -60,13 +61,14 @@ export const PROJECTS = [
         rank: 4,
         status: 'completed',
     },
+
     {
         name: 'ma7ali',
         title: 'POS PWA for small businesses',
         type: 'university project',
         role: "full-stack",
         platform: 'PWA',
-        img: "images/projects-image/ma7ali.png",
+        thumbnail: "images/projects-image/ma7ali.png",
         screenshots: [],
         techStack: [
             TECHS_BY_TECH.html,
@@ -94,6 +96,7 @@ export const PROJECTS = [
         rank: 1,
         status: 'completed',
     },
+
     {
         name: 'portfolio',
         title: 'modern responsive portfolio showcase',
@@ -124,13 +127,14 @@ export const PROJECTS = [
         status: 'completed',
         version: '2.0',
     },
+
     {
         name: 'hekto',
         title: 'e-commerce landing page',
         type: 'personal project',
         role: 'front-end',
         platform: 'website',
-        img: "images/projects-image/hekto.png",
+        thumbnail: "images/projects-image/hekto.png",
         screenshots: [],
         gitLink: 'https://github.com/najialjarwan/Hekto',
         techStack: [
@@ -155,13 +159,14 @@ export const PROJECTS = [
         rank: 5,
         status: 'completed',
     },
+
     {
         name: '3legant',
         title: 'modular e-commerce architecture',
         type: 'personal project',
         role: 'front-end',
         platform: 'website',
-        img: "images/projects-image/3legant.png",
+        thumbnail: "images/projects-image/3legant.png",
         screenshots: [],
         gitLink: 'https://github.com/najialjarwan/3legant',
         techStack: [
