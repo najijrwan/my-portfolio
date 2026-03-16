@@ -2,6 +2,7 @@ import { TECHS_BY_TECH } from '../about/skills.js';
 // TODO: impvoe title, desctiption and keyFeatures for every project
 // TODO: Create a canonical project schema comment at the top
 // TODO: document code
+// TODO: transform all strings values to be all in lower case when
 export const PROJECTS = [
     {
         name: 'fitnesso',
@@ -10,11 +11,13 @@ export const PROJECTS = [
         role: 'full-stack',
         platform: 'website',
         status: 'completed',
+        version: '1.0.0',
         rank: 3,
         duration: 'spring 2024 & fall 2024',
         liveLink: 'https://fitnesso.ct.ws/',
-        gitLink: 'https://github.com/najialjarwan/Fitnesso',
+        gitLink: 'https://github.com/najialjarwan/fitnesso',
         description: 'A fitness-focused web application that enables users to track health metrics and personal data through a clean, intuitive interface.',
+        motivation: 'Fitnesso started as my first web development project during a university Web Programming course, where I learned HTML, CSS, JavaScript, and PHP. Initially built as a simple front-end fitness tracking interface, the project was later expanded in an advanced course to include authentication, sessions, and database storage using PHP and MySQL. This evolution allowed me to experience how a simple interface can grow into a full-stack system.',
         thumbnail: 'images/projects-image/fitnesso.png',
         screenshots: [],
         techStack: [
@@ -24,6 +27,7 @@ export const PROJECTS = [
             TECHS_BY_TECH.php,
             TECHS_BY_TECH.mysql,
             TECHS_BY_TECH.infinityfree,
+            TECHS_BY_TECH.vscode,
         ],
         keyFeatures: [
             'Developed a fully responsive multi-page website with emphasis on clean UI architecture and maintainable code structure',
@@ -31,8 +35,19 @@ export const PROJECTS = [
             'Designed structured database for storing user metrics including weight, height, age, and more',
             'Architected codebase for scalability, enabling seamless future feature integration and enhancements',
         ],
-        challenges: [],
-        futureImprovements: [],
+        futureImprovements: [
+            "Enhance analytics dashboard to visualize user health data over time.",
+            "Implement social/community features for sharing achievements.",
+            "Introduce gamification to motivate regular fitness tracking."
+        ],
+        credits: [
+            "Special thanks to Basshar for guidance on front-end & back-end structure",
+            "Developed front-end & back-end collaboratively",
+            "Inspiration from university course mid-semester project and browsing experience",
+        ],
+        notes: [
+            'This project served as an early exploration of full-stack development and database-driven applications. The focus was primarily on understanding authentication flows, PHP session management, and structured data storage.',
+        ],
         tags: ["fitness", "health", "tracking", "web-app", "fullstack", "php", "mysql", "authentication", "user-data", "database", "responsive", "ui", "forms", "session-management", "crud", "dashboard", "personal-data", "university-project"],
     },
 
@@ -43,10 +58,12 @@ export const PROJECTS = [
         role: "full-stack",
         platform: 'desktop app',
         status: 'completed',
+        version: '1.0.0',
         rank: 4,
         duration: 'fall 2024',
-        gitLink: 'https://github.com/najijrwan/Quizo',
+        gitLink: 'https://github.com/najijrwan/quizo',
         description: 'An interactive Windows Forms-based quiz game built with C#, featuring progressive difficulty and comprehensive feedback systems.',
+        motivation: 'Quizo was developed during a Visual Programming course to explore object-oriented programming and event-driven application design using C# and Windows Forms. The goal was to build a structured quiz game capable of managing categories, levels, timers, and player progression through controlled application state.',
         thumbnail: "images/projects-image/quizo.png",
         screenshots: [],
         techStack: [TECHS_BY_TECH.csharp,],
@@ -57,8 +74,17 @@ export const PROJECTS = [
             'Created intuitive UI with contextual explanations and system feedback to enhance user comprehension and engagement',
             'Built entirely from concept to completion as the sole developer, handling UI design, game logic, and progression systems'
         ],
-        challenges: [],
-        futureImprovements: [],
+        futureImprovements: [
+            "Add multiplayer or competitive mode with online leaderboard.",
+            "Include dynamic question database to avoid repetition and increase variability.",
+            "Improve UI/UX with better animations and progress feedback."
+        ],
+        credits: [
+            "Solely developed the full desktop quiz application",
+        ],
+        notes: [
+            'All questions are embedded directly within the application, emphasizing logic design and structured gameplay progression rather than external data management.',
+        ],
         tags: ["quiz", "desktop-app", "windows-forms", "csharp", "game", "education", "interactive", "timer", "score-system", "logic", "oop", "ui", "game-logic", "state-management", "university-project"],
     },
 
@@ -69,10 +95,12 @@ export const PROJECTS = [
         role: "full-stack",
         platform: 'PWA',
         status: 'completed',
+        version: '1.0.0',
         rank: 1,
         duration: 'mar 15 - may 15',
-        gitLink: 'https://github.com/najialjarwan/Ma7ali',
+        gitLink: 'https://github.com/najialjarwan/ma7ali',
         description: 'A comprehensive Point of Sale progressive web application designed for small business workflows, featuring inventory management, sales tracking, and business analytics.',
+        motivation: 'Ma7ali was developed as my final-year capstone project with the goal of building a practical system for small shopkeepers to manage sales, inventory, and customer debts. The project focused on designing a complete workflow—from database structure and system architecture to user experience and documentation—transforming coursework knowledge into a real operational product.',
         thumbnail: "images/projects-image/ma7ali.png",
         screenshots: [],
         techStack: [
@@ -91,8 +119,18 @@ export const PROJECTS = [
             'Engineered the entire system with future growth in mind, enabling seamless integration of upcoming features',
             'Solely responsible for the complete project lifecycle: from initial concept and 54-page technical documentation to end-to-end architecture, UI/UX design, and full feature implementation with scalability as a core principle',
         ],
-        challenges: [],
-        futureImprovements: [],
+        futureImprovements: [
+            "Integrate real-time reporting and automated alerts for low inventory.",
+            "Expand to include more business workflows like supplier management.",
+            "Add AI-based insights for sales and customer analytics."
+        ],
+        credits: [
+            "Fully developed by me as a full-stack PWA",
+            "Capstone project inspired from personal experiences and observations",
+        ],
+        notes: [
+            'This project represents the most ambitious system I developed and is intended as the foundation for a potential real-world business application in the future.',
+        ],
         tags: ["pos", "business", "inventory", "sales", "analytics", "dashboard", "pwa", "firebase", "firestore", "authentication", "google-auth", "phone-auth", "multi-currency", "reporting", "pdf-generation", "charts", "data-export", "responsive", "mobile-first", "small-business", "retail", "fullstack", "nosql", "university-project"],
     },
 
@@ -102,11 +140,12 @@ export const PROJECTS = [
         type: 'personal project',
         platform: 'website',
         status: 'completed',
-        version: '2.0',
+        version: '2.0.0',
         duration: 'may 18 - jun 22',
         gitLink: 'https://github.com/najialjarwan/my-portfolio',
         // liveLink: '',
         description: 'A scalable, component-driven portfolio website showcasing my skills, journey, and projects through a thoughtfully designed, fully responsive interface.',
+        motivation: 'This portfolio was created to present my development journey through a structured, maintainable system rather than a static showcase website. Over time it has been refactored to adopt a data-driven architecture where projects, skills, and experience are rendered dynamically from centralized configuration files, allowing the site to grow alongside my work.',
         // thumbnail: '',
         screenshots: [],
         techStack: [
@@ -124,8 +163,19 @@ export const PROJECTS = [
             "Responsive interface optimized across desktop and mobile devices",
             "Clean and maintainable frontend architecture focused on long-term scalability"
         ],
-        challenges: [],
-        futureImprovements: [],
+        futureImprovements: [
+            "Add multilingual support for wider audience reach.",
+            "Integrate more visualizations for dynamic journey tracking.",
+            "Implement dark mode toggle and additional accessibility options.",
+            "Enhance journey page animations and interactive visual storytelling.",
+        ],
+        credits: [
+            "Design inspired by open-source GitHub portfolio templates",
+            "Solely developed front-end and dynamic data-driven rendering",
+        ],
+        notes: [
+            'The architecture prioritizes long-term scalability. Most site content is controlled through structured data, allowing new sections, projects, or visual components to be integrated with minimal code changes.',
+        ],
         tags: ["portfolio", "personal-website", "react", "tailwind", "frontend", "ui", "responsive", "component-based", "design-system", "data-driven", "projects-showcase", "resume", "developer-portfolio", "react-components", "architecture", "scalable-ui"],
     },
 
@@ -135,11 +185,13 @@ export const PROJECTS = [
         type: 'personal project',
         role: 'front-end',
         platform: 'website',
-        status: 'completed',
+        status: 'archived',
+        version: '1.0.0',
         rank: 5,
         duration: 'dec 13 - dec 28',
-        gitLink: 'https://github.com/najialjarwan/Hekto',
+        gitLink: 'https://github.com/najialjarwan/hekto',
         description: 'A pixel-perfect e-commerce landing page meticulously crafted from a Figma design, demonstrating strong attention to detail and design fidelity.',
+        motivation: 'Hekto was built after graduation as a practical exercise in translating professional Figma designs into clean, production-ready frontend code using React and Tailwind CSS. The goal was to improve UI implementation accuracy and strengthen my workflow for turning static designs into responsive interfaces.',
         thumbnail: "images/projects-image/hekto.png",
         screenshots: [],
         techStack: [
@@ -156,8 +208,16 @@ export const PROJECTS = [
             'Optimized asset loading and rendering for improved performance metrics',
             'Independently translated Figma design to fully functional React application with responsive implementation'
         ],
-        challenges: [],
-        futureImprovements: [],
+        futureImprovements: [
+            "Add full e-commerce functionality with a complete frontend and backend integration.",
+        ],
+        credits: [
+            "Front-end landing page developed by me",
+            "Design sourced from Figma template",
+        ],
+        notes: [
+            'The project focuses primarily on frontend implementation and design accuracy rather than backend functionality.',
+        ],
         tags: ["ecommerce", "landing-page", "react", "tailwind", "frontend", "ui", "responsive", "figma-to-code", "pixel-perfect", "design-implementation", "component-based", "layout", "modern-ui", "frontend-practice"],
     },
 
@@ -169,9 +229,11 @@ export const PROJECTS = [
         platform: 'website',
         rank: 2,
         status: 'active',
+        version: '1.0.0',
         duration: 'dec 29 - present',
         gitLink: 'https://github.com/najialjarwan/3legant',
         description: 'A scalable, component-driven e-commerce frontend built from an open-source Figma design, demonstrating advanced React patterns and clean architecture principles.',
+        motivation: '3legant continues the exploration started with Hekto, focusing on building a more scalable and modular React architecture for an e-commerce interface. The project emphasizes reusable UI components, layout systems, and custom hooks designed to support future backend integration.',
         thumbnail: "images/projects-image/3legant.png",
         screenshots: [],
         techStack: [
@@ -189,8 +251,18 @@ export const PROJECTS = [
             'Designed codebase architecture to seamlessly accommodate future backend integration and full e-commerce functionality',
             'Solely implemented the frontend architecture, translating design specifications into scalable, production-ready code'
         ],
-        challenges: [],
-        futureImprovements: [],
+        futureImprovements: [
+            "Connect frontend with backend e-commerce functionality.",
+            "Expand component library and layout options for product displays.",
+            "Introduce advanced state management for full application interactivity."
+        ],
+        credits: [
+            "Frontend architecture solely implemented by me",
+            "UI/UX inspired by Figma open-source design",
+        ],
+        notes: [
+            'The project focuses primarily on frontend architecture and component design. Future iterations may integrate backend services to evolve the project into a complete e-commerce platform.',
+        ],
         tags: ["ecommerce", "frontend-architecture", "react", "tailwind", "component-library", "scalable-architecture", "ui-system", "product-grid", "responsive", "custom-hooks", "state-management", "layout-switching", "design-to-code", "modular-structure", "frontend-engineering", "react-patterns"],
     },
 ]
