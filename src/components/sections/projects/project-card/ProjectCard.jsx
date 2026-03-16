@@ -31,7 +31,7 @@ const ProjectCard = ({ project }) => (
             )}
 
             <img
-                src={project.img}
+                src={project.thumbnail}
                 alt={project.name}
                 loading="lazy"
                 className="w-full h-full object-cover custom-transition-1 group-hover:scale-[1.1]"
