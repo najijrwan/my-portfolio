@@ -1,7 +1,9 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg width="256px" height="256px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-<g id="SVGRepo_iconCarrier"> <path d="M12 1L24 22H0L12 1Z" fill="#ffffff"/> </g>
+<svg width="256px" height="256px" viewBox="-107.52 -107.52 471.04 471.04" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#ffffff" transform="rotate(0)" stroke="#ffffff">
+<g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(25.599999999999994,25.599999999999994), scale(0.8)">
+<rect x="-107.52" y="-107.52" width="471.04" height="471.04" rx="235.52" fill="#000000" strokewidth="0"/>
+</g>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffffCCCCCC" stroke-width="0.512"/>
+<g id="SVGRepo_iconCarrier"> <g> <polygon fill="#ffffff" points="128 0 256 221.705007 0 221.705007"> </polygon> </g> </g>
 </svg>
