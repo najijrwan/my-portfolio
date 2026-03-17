@@ -22,7 +22,7 @@ const Skills = () => (
                     '
                 >
                     <img
-                        src={tech.src}
+                        src={tech.imgSrc}
                         alt={tech.name}
                         className=""
                     />
