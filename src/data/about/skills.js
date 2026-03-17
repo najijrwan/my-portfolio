@@ -67,6 +67,12 @@ export const SKILLS = [
                 iconSrc: 'external-icons/python.svg',
                 imgSrc: 'images/skills-image/python.png',
             },
+            {
+                tech: 'nodejs',
+                name: 'Node JS',
+                iconSrc: 'external-icons/nodejs.svg',
+                imgSrc: 'images/skills-image/nodejs.png',
+            },
         ]
     },
     {
