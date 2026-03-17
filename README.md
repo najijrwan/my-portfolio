@@ -4,7 +4,7 @@
 
 
 <h1 align="center">
-⭐ Portfolio • Modern responsive portfolio showcase
+⭐ Portfolio • Modern Responsive Portfolio Showcase
 </h1>
 
 
