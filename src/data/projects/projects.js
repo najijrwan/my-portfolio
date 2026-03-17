@@ -19,7 +19,6 @@ export const PROJECTS = [
         description: 'A fitness-focused web application that enables users to track health metrics and personal data through a clean, intuitive interface.',
         motivation: 'Fitnesso started as my first web development project during a university Web Programming course, where I learned HTML, CSS, JavaScript, and PHP. Initially built as a simple front-end fitness tracking interface, the project was later expanded in an advanced course to include authentication, sessions, and database storage using PHP and MySQL. This evolution allowed me to experience how a simple interface can grow into a full-stack system.',
         thumbnail: 'images/projects-image/fitnesso.png',
-        screenshots: [],
         techStack: [
             TECHS_BY_TECH.html,
             TECHS_BY_TECH.css,
@@ -53,7 +52,7 @@ export const PROJECTS = [
 
     {
         name: 'quizo',
-        title: 'desktop quiz application',
+        title: 'simple quiz desktop application',
         type: 'university project',
         role: "full-stack",
         platform: 'desktop app',
@@ -65,7 +64,6 @@ export const PROJECTS = [
         description: 'An interactive Windows Forms-based quiz game built with C#, featuring progressive difficulty and comprehensive feedback systems.',
         motivation: 'Quizo was developed during a Visual Programming course to explore object-oriented programming and event-driven application design using C# and Windows Forms. The goal was to build a structured quiz game capable of managing categories, levels, timers, and player progression through controlled application state.',
         thumbnail: "images/projects-image/quizo.png",
-        screenshots: [],
         techStack: [
             TECHS_BY_TECH.csharp,
             TECHS_BY_TECH.visualstudio
@@ -93,7 +91,7 @@ export const PROJECTS = [
 
     {
         name: 'ma7ali',
-        title: 'POS PWA for small businesses',
+        title: 'POS PWA for managing small businesses',
         type: 'university project',
         role: "full-stack",
         platform: 'PWA',
@@ -105,7 +103,6 @@ export const PROJECTS = [
         description: 'A comprehensive Point of Sale progressive web application designed for small business workflows, featuring inventory management, sales tracking, and business analytics.',
         motivation: 'Ma7ali was developed as my final-year capstone project with the goal of building a practical system for small shopkeepers to manage sales, inventory, and customer debts. The project focused on designing a complete workflow—from database structure and system architecture to user experience and documentation—transforming coursework knowledge into a real operational product.',
         thumbnail: "images/projects-image/ma7ali.png",
-        screenshots: [],
         techStack: [
             TECHS_BY_TECH.html,
             TECHS_BY_TECH.css,
@@ -152,7 +149,6 @@ export const PROJECTS = [
         description: 'A scalable, component-driven portfolio website showcasing my skills, journey, and projects through a thoughtfully designed, fully responsive interface.',
         motivation: 'This portfolio was created to present my development journey through a structured, maintainable system rather than a static showcase website. Over time it has been refactored to adopt a data-driven architecture where projects, skills, and experience are rendered dynamically from centralized configuration files, allowing the site to grow alongside my work.',
         // thumbnail: '',
-        screenshots: [],
         techStack: [
             TECHS_BY_TECH.html,
             TECHS_BY_TECH.css,
@@ -202,7 +198,6 @@ export const PROJECTS = [
         description: 'A pixel-perfect e-commerce landing page meticulously crafted from a Figma design, demonstrating strong attention to detail and design fidelity.',
         motivation: 'Hekto was built after graduation as a practical exercise in translating professional Figma designs into clean, production-ready frontend code using React and Tailwind CSS. The goal was to improve UI implementation accuracy and strengthen my workflow for turning static designs into responsive interfaces.',
         thumbnail: "images/projects-image/hekto.png",
-        screenshots: [],
         techStack: [
             TECHS_BY_TECH.html,
             TECHS_BY_TECH.css,
@@ -248,7 +243,6 @@ export const PROJECTS = [
         description: 'A scalable, component-driven e-commerce frontend built from an open-source Figma design, demonstrating advanced React patterns and clean architecture principles.',
         motivation: '3legant continues the exploration started with Hekto, focusing on building a more scalable and modular React architecture for an e-commerce interface. The project emphasizes reusable UI components, layout systems, and custom hooks designed to support future backend integration.',
         thumbnail: "images/projects-image/3legant.png",
-        screenshots: [],
         techStack: [
             TECHS_BY_TECH.html,
             TECHS_BY_TECH.css,
