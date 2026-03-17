@@ -66,7 +66,10 @@ export const PROJECTS = [
         motivation: 'Quizo was developed during a Visual Programming course to explore object-oriented programming and event-driven application design using C# and Windows Forms. The goal was to build a structured quiz game capable of managing categories, levels, timers, and player progression through controlled application state.',
         thumbnail: "images/projects-image/quizo.png",
         screenshots: [],
-        techStack: [TECHS_BY_TECH.csharp,],
+        techStack: [
+            TECHS_BY_TECH.csharp,
+            TECHS_BY_TECH.visualstudio
+        ],
         keyFeatures: [
             'Engineered a single-player quiz system with structured progression: 3 categories × 3 levels × 5 questions each',
             'Implemented real-time score tracking, countdown timers, and dynamic feedback mechanisms',
@@ -108,6 +111,8 @@ export const PROJECTS = [
             TECHS_BY_TECH.css,
             TECHS_BY_TECH.javascript,
             TECHS_BY_TECH.firebase,
+            TECHS_BY_TECH.vscode,
+            TECHS_BY_TECH.git,
         ],
         keyFeatures: [
             'Implemented multi-currency toggling (LBP ↔ USD), advanced filtering, and automated PDF report generation',
@@ -154,6 +159,10 @@ export const PROJECTS = [
             TECHS_BY_TECH.javascript,
             TECHS_BY_TECH.tailwindcss,
             TECHS_BY_TECH.react,
+            TECHS_BY_TECH.vercel,
+            TECHS_BY_TECH.vscode,
+            TECHS_BY_TECH.git,
+            TECHS_BY_TECH.vite,
         ],
         keyFeatures: [
             "Centralized project and skills configuration enabling scalable data-driven content",
@@ -200,6 +209,10 @@ export const PROJECTS = [
             TECHS_BY_TECH.javascript,
             TECHS_BY_TECH.tailwindcss,
             TECHS_BY_TECH.react,
+            TECHS_BY_TECH.vscode,
+            TECHS_BY_TECH.git,
+            TECHS_BY_TECH.vite,
+            TECHS_BY_TECH.figma,
         ],
         keyFeatures: [
             'Translated Figma design into fully functional React components with pixel-perfect accuracy',
@@ -242,6 +255,10 @@ export const PROJECTS = [
             TECHS_BY_TECH.javascript,
             TECHS_BY_TECH.tailwindcss,
             TECHS_BY_TECH.react,
+            TECHS_BY_TECH.vscode,
+            TECHS_BY_TECH.git,
+            TECHS_BY_TECH.vite,
+            TECHS_BY_TECH.figma,
         ],
         keyFeatures: [
             'Architected a modular frontend structure separating concerns: pages, UI components, hooks, state, and data layers',
