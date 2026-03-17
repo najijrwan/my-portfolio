@@ -145,7 +145,7 @@ export const PROJECTS = [
         version: '2.0.0',
         duration: 'may 18 - jun 22',
         gitLink: 'https://github.com/najialjarwan/my-portfolio',
-        // liveLink: '',
+        liveLink: 'https://najialjarwan.vercel.app/',
         description: 'A scalable, component-driven portfolio website showcasing my skills, journey, and projects through a thoughtfully designed, fully responsive interface.',
         motivation: 'This portfolio was created to present my development journey through a structured, maintainable system rather than a static showcase website. Over time it has been refactored to adopt a data-driven architecture where projects, skills, and experience are rendered dynamically from centralized configuration files, allowing the site to grow alongside my work.',
         // thumbnail: '',
