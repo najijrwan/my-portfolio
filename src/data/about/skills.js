@@ -6,60 +6,66 @@ export const SKILLS = [
             {
                 tech: 'html',
                 name: 'HTML5',
-                src: 'images/skills-image/html.png',
+                iconSrc: 'external-icons/html.svg',
+                imgSrc: 'images/skills-image/html.png',
             },
             {
                 tech: 'css',
                 name: 'CSS3',
-                src: 'images/skills-image/css.png',
+                iconSrc: 'external-icons/css.svg',
+                imgSrc: 'images/skills-image/css.png',
             },
             {
                 tech: 'javascript',
                 name: 'JavaScript (ES6+)',
-                devIcon: 'JavaScript',
-                src: 'images/skills-image/javascript.png',
+                iconSrc: 'external-icons/javascript.svg',
+                imgSrc: 'images/skills-image/javascript.png',
             },
             {
                 tech: 'tailwindcss',
                 name: 'Tailwind CSS',
-                devIcon: 'TailwindCSS',
-                src: 'images/skills-image/tailwind-css.png',
+                iconSrc: 'external-icons/tailwindcss.svg',
+                imgSrc: 'images/skills-image/tailwind-css.png',
             },
             {
                 tech: 'react',
                 name: 'React',
-                src: 'images/skills-image/react.png',
+                iconSrc: 'external-icons/react.svg',
+                imgSrc: 'images/skills-image/react.png',
             },
         ],
         experienced: [
             {
-                tech: 'java',
-                name: 'Java',
-                src: 'images/skills-image/java.png',
-            },
-            {
                 tech: 'php',
                 name: 'PHP',
-                src: 'images/skills-image/php.png',
+                iconSrc: 'external-icons/php.svg',
+                imgSrc: 'images/skills-image/php.png',
             },
             {
                 tech: 'mysql',
                 name: 'MySQL',
-                devIcon: 'MySQL',
-                src: 'images/skills-image/mysql.png'
+                iconSrc: 'external-icons/mysql.svg',
+                imgSrc: 'images/skills-image/mysql.png'
+            },
+            {
+                tech: 'java',
+                name: 'Java',
+                iconSrc: 'external-icons/java.svg',
+                imgSrc: 'images/skills-image/java.png',
+            },
+            {
+                tech: 'csharp',
+                name: 'CSharp',
+                iconSrc: 'external-icons/csharp.svg',
+                imgSrc: 'images/skills-image/csharp.png',
             },
         ],
         familiar: [
             {
-                tech: 'csharp',
-                name: 'C#',
-                devIcon: 'CSharp',
-                src: 'images/skills-image/csharp.png',
-            },
-            {
                 tech: 'python',
                 name: 'Python',
-                src: 'images/skills-image/python.png',
+                iconSrc: 'external-icons/python.svg',
+                imgSrc: 'images/skills-image/python.png',
             },
         ]
     },
@@ -68,27 +74,52 @@ export const SKILLS = [
         type: 'list',
         tools: [
             {
+                tool: 'vscode',
+                name: 'VS Code',
+                iconSrc: 'external-icons/vscode.svg',
+                imgSrc: 'images/skills-image/vscode.png',
+            },
+            {
+                tool: 'visualstudio',
+                name: 'Visual Studio',
+                iconSrc: 'external-icons/visualstudio.svg',
+                imgSrc: 'images/skills-image/visualstudio.png',
+            },
+            {
                 tool: 'git',
                 name: 'Git',
-                devIcon: 'Github',
-                src: 'images/skills-image/github.png'
+                iconSrc: 'external-icons/git.svg',
+                imgSrc: 'images/skills-image/git.png',
+            },
+            {
+                tool: 'vite',
+                name: 'Vite',
+                iconSrc: 'external-icons/vite.svg',
+                imgSrc: 'images/skills-image/vite.png',
+            },
+            {
+                tool: 'figma',
+                name: 'Figma',
+                iconSrc: 'external-icons/figma.svg',
+                imgSrc: 'images/skills-image/figma.png',
+            },
+            {
+                tool: 'infinityfree',
+                name: 'InfinityFree',
+                iconSrc: 'external-icons/infinityfree.svg',
+                imgSrc: 'images/skills-image/infinityfree.png'
             },
             {
                 tool: 'firebase',
                 name: 'Firebase',
-                src: 'images/skills-image/firebase.png'
+                iconSrc: 'external-icons/firebase.svg',
+                imgSrc: 'images/skills-image/firebase.png'
             },
             {
                 tool: 'vercel',
                 name: 'Vercel',
-                devIcon: 'VercelLight',
-                src: 'images/skills-image/vercel.png'
-            },
-
-            {
-                tool: 'infinityfree',
-                name: 'InfinityFree',
-                src: 'images/skills-image/infinityfree.png'
+                iconSrc: 'external-icons/vercel.svg',
+                imgSrc: 'images/skills-image/vercel.png'
             },
         ],
     },
