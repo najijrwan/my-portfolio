@@ -31,7 +31,7 @@ const SkillLollipop = ({ skill, reversed = false }) => {
             </div>
 
             <div className="forward-box p-1 rounded-2xl">
-                <img src={skill.src} alt={skill.tech} className="size-11" />
+                <img src={skill.imgSrc} alt={skill.name} className="size-11" />
             </div>
 
             <div className="w-px h-5 bg-jet"></div>
