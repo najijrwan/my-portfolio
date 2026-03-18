@@ -1,8 +1,3 @@
-<div align="center">
-  <img src="" width="200">
-</div>
-
-
 <h1 align="center">
 ⭐ Portfolio • Modern Responsive Portfolio Showcase
 </h1>
@@ -27,7 +22,7 @@
 <tr><td>Duration</td><td>may 18 - jun 22</td></tr>
 <tr><td>Status</td><td>completed</td></tr>
 <tr><td>Version</td><td>2.0.0</td></tr>
-<tr><td>Live Demo</td><td>No public live deployment available</td></tr>
+<tr><td>Live Demo</td><td>https://najialjarwan.vercel.app</td></tr>
 </table>
 
 
