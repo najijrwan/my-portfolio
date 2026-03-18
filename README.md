@@ -45,14 +45,6 @@
     </td>
   </tr>
   <tr>
-    <td><strong>Backend</strong></td>
-    <td><strong>No Backend</strong></td>
-  </tr>
-  <tr>
-    <td><strong>Database</strong></td>
-    <td><strong>No Database</strong></td>
-  </tr>
-  <tr>
     <td><strong>Hosting</strong></td>
     <td>
       <img src="https://najialjarwan.vercel.app/external-icons/vercel.svg" height="40" title="Vercel" />
