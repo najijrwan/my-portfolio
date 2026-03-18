@@ -30,7 +30,17 @@
 
 <table>
   <tr>
-    <td><strong>Frontend</strong></td>
+    <td>
+      <strong>Frontend</strong>
+    </td>
+    <td>
+      <strong>Hosting</strong>
+    </td>
+    <td>
+      <strong>Tools</strong>
+    </td>
+  </tr>
+  <tr>
     <td>
       <img src="https://najialjarwan.vercel.app/external-icons/html.svg" height="40" title="HTML5" />
       <img src="https://najialjarwan.vercel.app/external-icons/css.svg" height="40" title="CSS3" />
@@ -38,15 +48,9 @@
       <img src="https://najialjarwan.vercel.app/external-icons/tailwindcss.svg" height="40" title="Tailwind CSS" />
       <img src="https://najialjarwan.vercel.app/external-icons/react.svg" height="40" title="React" />
     </td>
-  </tr>
-  <tr>
-    <td><strong>Hosting</strong></td>
     <td>
       <img src="https://najialjarwan.vercel.app/external-icons/vercel.svg" height="40" title="Vercel" />
     </td>
-  </tr>
-    <tr>
-    <td><strong>Tools</strong></td>
     <td>
       <img src="https://najialjarwan.vercel.app/external-icons/vscode.svg" height="40" title="VS Code" />
       <img src="https://najialjarwan.vercel.app/external-icons/git.svg" height="40" title="Git" />
