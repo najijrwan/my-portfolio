@@ -16,7 +16,7 @@
 
 
 ## 🔷 Project Overview
-<table>
+<table align="center">
 <tr><td>Type</td><td>personal project</td></tr>
 <tr><td>Platform</td><td>website</td></tr>
 <tr><td>Duration</td><td>may 18 - jun 22</td></tr>
@@ -28,7 +28,7 @@
 
 ## ⚙️ Tech Stack & Tools
 
-<table>
+<table align="center">
   <tr>
     <td>
       <strong>Frontend</strong>
