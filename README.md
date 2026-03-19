@@ -11,7 +11,7 @@
 ## 📸 Showcase
 <div align="center">
   <!-- <img src="" width="100%" title="*Name* Quick Look" alt="*NAME* GIF screenshots showcase" /> -->
-  Showcase coming soon... 📸
+  Showcase coming soon...
 </div>
 
 
