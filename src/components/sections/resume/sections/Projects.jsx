@@ -4,7 +4,7 @@ const ProjectsSection = ({ project }) => (
   <>
     <header className="mb-2.5 flex flex-col gap-0.5 justify-center text-white capitalize">
       <h1 className=''>
-        <span className='mr-2 text-highlight italic'>{project.name}</span>
+        <span className='mr-2 text-highlight italic'>{project.displayName ?? project.name}</span>
         <span className='text-sm text-highlight'>({project.role})</span>
       </h1>
 
