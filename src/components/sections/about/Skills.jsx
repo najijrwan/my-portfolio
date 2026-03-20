@@ -11,7 +11,9 @@ const Skills = () => (
                 flex-start-start gap-[15px] sm:gap-[50px]
                 has-scrollbar scroll-smooth overscroll-x-contain snap-both scroll-px-6 sm:scroll-px-[45px]"
         >
-            {Object.values(TECHS_BY_TECH).map((tech) => (
+            {Object.values(TECHS_BY_TECH)
+            .filter(tech => !['python', 'nodejs'].includes(tech.tech))
+            .map((tech) => (
                 <li
                     key={tech.tech ?? tech.tool}
                     className='
