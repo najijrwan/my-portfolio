@@ -24,8 +24,8 @@ export const Avatar = () => (
                 className="
                     absolute left-0 -translate-x-1/2 top-0
                     min-w-max px-2 py-1
-                    text-black
-                    bg-white rounded-2xl opacity-0 group-hover:opacity-100
+                    text-yellow-crayola
+                    bg-jet rounded-2xl opacity-0 group-hover:opacity-100
                     custom-transition-1 cursor-default pointer-events-none
                 "
             >
