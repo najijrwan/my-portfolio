@@ -6,7 +6,7 @@ const AboutMe = () => (
             flex flex-col gap-3 sm:gap-4'>
         <p>
             I'm a detail-oriented and growth-focused
-            <span className="text-white uppercase"> software developer (front-end focus) </span>
+            <span className="text-white capitalize"> software developer (front-end focus) </span>
             who takes pride in writing clean, maintainable code and building thoughtful,
             user-centered applications.
             I’m constantly refining my work to improve structure, performance, and experience,
