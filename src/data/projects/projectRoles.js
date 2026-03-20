@@ -9,5 +9,6 @@ export const CATEGORIES = [
     { id: "all", label: "All Projects", value: "all" },
     { id: "front-end", label: "Front-End", value: "front-end" },
     { id: "full-stack", label: "Full-Stack", value: "full-stack" },
+    { id: "tools", label: "Tools", value: "tool" },
 ];
 
