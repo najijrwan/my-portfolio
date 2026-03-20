@@ -283,10 +283,12 @@ export const timelineArrows = [
                 id: 'github-readme-generator',
                 ref: 'github-readme-generator',
                 info: `
-                    After refining my portfolio, I noticed how repetitive it will be to manually write and format 
-                    GitHub READMEs for each project I have built so far and for upcoming projects. To solve this, 
-                    I built a GitHub README Generator — a tool 
-                    that transforms structured project data into clean, consistent, and polished markdown.
+                    After refining my portfolio, I realized how repetitive it will be to manually write and format 
+                    GitHub READMEs for all the projects I had built so far — and for the ones I would build in 
+                    the future. To solve this, I built a GitHub README Generator — a CLI tool that collects 
+                    project data, injects it into my structured project.js file, and transforms that data into 
+                    clean, consistent, and polished README markdown. It works with my personal workflow and 
+                    supports generating individual or batch READMEs for all projects.
                 `,
                 chall: `
                     Designing a flexible structure that could support different project variations while keeping 
@@ -294,8 +296,9 @@ export const timelineArrows = [
                     edge cases like optional fields and formatting alignment required careful planning.
                 `,
                 outcome: `
-                    The result is a reusable system that speeds up documentation while maintaining quality and consistency. 
-                    It strengthened my ability to think in terms of data transformation, abstraction, and developer-focused tooling.
+                    The result is a reusable system that automates documentation across projects while maintaining 
+                    quality and consistency. It strengthened my ability to think in terms of data transformation, 
+                    abstraction, and developer-focused tooling.
                 `,
             },
         ],
