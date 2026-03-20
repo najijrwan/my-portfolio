@@ -1,5 +1,5 @@
 import { PageTitle } from '@ui';
-import { AboutMe, Roles, Skills } from '@about';
+import { AboutMe, Roles, Skills, Tools } from '@about';
 
 const About = () => (
     <>
@@ -10,6 +10,8 @@ const About = () => (
         <Roles />
 
         <Skills />
+
+        <Tools />
     </>
 )
 
