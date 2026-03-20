@@ -68,6 +68,12 @@ export const SKILLS = [
                 imgSrc: 'images/skills-image/python.png',
             },
             {
+                tech: 'mss',
+                name: 'Microsoft SQL Server',
+                iconSrc: 'external-icons/microsoftsqlserver.svg',
+                imgSrc: 'images/skills-image/microsoftsqlserver.png',
+            },
+            {
                 tech: 'nodejs',
                 name: 'Node JS',
                 iconSrc: 'external-icons/nodejs.svg',
