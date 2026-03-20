@@ -45,7 +45,7 @@ export const NameAndTitle = () => (
                     text-main text-[17px] sm:text-[26px] xl:text-2xl font-[600] tracking-tight 
                     xl:tracking-wider xl:whitespace-nowrap xl:text-center"
             >
-                <i className="tracking-wider">Naji AlJarwan</i>
+                <i className="tracking-wider">Naji Aljarwan</i>
             </h1>
             <p
                 className="
