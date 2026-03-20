@@ -66,6 +66,7 @@ export const PROJECTS = [
         thumbnail: "images/projects-image/quizo.png",
         techStack: [
             TECHS_BY_TECH.csharp,
+            TECHS_BY_TECH.mss,
             TECHS_BY_TECH.visualstudio
         ],
         keyFeatures: [
