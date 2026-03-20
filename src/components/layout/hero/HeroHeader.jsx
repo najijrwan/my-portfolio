@@ -39,7 +39,7 @@ export const NameAndTitle = () => (
                 className="
                     w-max px-[12px] sm:px-[18px] py-[3px] sm:py-[5px] xl:m-auto
                     text-[12px] font-[300]!
-                    text-main uppercase bg-onyx rounded-[8px]
+                    text-main capitalize bg-onyx rounded-[8px]
                 "
             >
                 Software Developer
