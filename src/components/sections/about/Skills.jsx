@@ -34,7 +34,7 @@ const SkillsList = ({ title, filterFn }) => (
 export const Skills = () => (
   <SkillsList
     title="Skills"
-    filterFn={(tech) => !tech.tool && !['python', 'nodejs'].includes(tech.tech)}
+    filterFn={(tech) => !tech.tool && !['python', 'mss', 'nodejs'].includes(tech.tech)}
   />
 );
 
