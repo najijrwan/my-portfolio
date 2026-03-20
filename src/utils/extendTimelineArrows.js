@@ -21,7 +21,7 @@ export const extendTimelineArrows = (timelineArrows, baseData) => {
       return {
         ...combinedProject,
         finalLabel: combinedProject.role
-          ? `${combinedProject.name} (${combinedProject.role})`
+          ? `${combinedProject.displayName ?? combinedProject.name} (${combinedProject.role})`
           : combinedProject.label || combinedProject.name
       };
     }),
