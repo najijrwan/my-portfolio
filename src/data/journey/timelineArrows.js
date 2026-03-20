@@ -279,6 +279,24 @@ export const timelineArrows = [
                     project, but rebuilt with professional discipline and refined technical insight.
                 `,
             },
+            {
+                id: 'github-readme-generator',
+                ref: 'github-readme-generator',
+                info: `
+                    After refining my portfolio, I noticed how repetitive it was to manually write and format 
+                    GitHub READMEs for each project. To solve this, I built a GitHub README Generator — a tool 
+                    that transforms structured project data into clean, consistent, and polished markdown.
+                `,
+                chall: `
+                    Designing a flexible structure that could support different project variations while keeping 
+                    output consistent was challenging. Mapping dynamic data into readable markdown and handling 
+                    edge cases like optional fields and formatting alignment required careful planning.
+                `,
+                outcome: `
+                    The result is a reusable system that speeds up documentation while maintaining quality and consistency. 
+                    It strengthened my ability to think in terms of data transformation, abstraction, and developer-focused tooling.
+                `,
+            },
         ],
         endDateMonth: 'Feb',
         endDateYear: '2026',
