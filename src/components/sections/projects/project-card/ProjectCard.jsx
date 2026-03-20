@@ -32,7 +32,7 @@ const ProjectCard = ({ project }) => (
 
             <img
                 src={project.thumbnail}
-                alt={project.name}
+                alt={project.displayName ?? project.name}
                 loading="lazy"
                 className="w-full h-full object-cover custom-transition-1 group-hover:scale-[1.1]"
             />
@@ -40,7 +40,7 @@ const ProjectCard = ({ project }) => (
 
         <div className='ml-2.5 flex items-center gap-2'>
             <p className="text-white capitalize text-[17px] lg:text-[15px]">
-                {project.name}
+                {project.displayName ?? project.name}
             </p>
 
             <span className='text-white'>|</span>
