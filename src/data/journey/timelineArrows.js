@@ -283,8 +283,9 @@ export const timelineArrows = [
                 id: 'github-readme-generator',
                 ref: 'github-readme-generator',
                 info: `
-                    After refining my portfolio, I noticed how repetitive it was to manually write and format 
-                    GitHub READMEs for each project. To solve this, I built a GitHub README Generator — a tool 
+                    After refining my portfolio, I noticed how repetitive it will be to manually write and format 
+                    GitHub READMEs for each project I have built so far and for upcoming projects. To solve this, 
+                    I built a GitHub README Generator — a tool 
                     that transforms structured project data into clean, consistent, and polished markdown.
                 `,
                 chall: `

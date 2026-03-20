@@ -314,13 +314,13 @@ export const PROJECTS = [
             'Build a web-based UI version for non-CLI users',
         ],
         credits: [
-            'Built and designed بالكامل independently',
+            'Built and designed fully independently',
             'Inspired by the need for structured documentation and reusable workflows',
         ],
         notes: [
             'This project reflects a shift toward building developer tools rather than just applications.',
             'Focus was placed on code structure, scalability, and maintainability rather than UI.',
-            'Serves as a foundation for future tooling and automation-focused projects.',
+            'Serves as a foundation for future tooling and automation-focused of my personal projects.',
         ],
     },
 ]
