@@ -42,21 +42,16 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 5px;
+  width: 8px;
 }
 
 body::-webkit-scrollbar-track {
-  background: #121212;
+  background: #414145;
 }
 
 body::-webkit-scrollbar-thumb {
   background: #ffe666;
   border-radius: 10px;
-}
-
-body::-webkit-scrollbar-button {
-  height: 0;
-  width: 0;
 }
 
 @theme {
