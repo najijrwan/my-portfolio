@@ -12,26 +12,26 @@ const Skills = () => (
                 has-scrollbar scroll-smooth overscroll-x-contain snap-both scroll-px-6 sm:scroll-px-[45px]"
         >
             {Object.values(TECHS_BY_TECH)
-            .filter(tech => !['python', 'nodejs'].includes(tech.tech))
-            .map((tech) => (
-                <li
-                    key={tech.tech ?? tech.tool}
-                    className='
+                .filter(tech => !tech.tool)
+                .map((tech) => (
+                    <li
+                        key={tech.tech ?? tech.tool}
+                        className='
                         relative group
                         min-w-[50%]
                         bg-white/10 snap-start rounded-4xl
                         clients-item
                     '
-                >
-                    <img
-                        src={tech.imgSrc}
-                        alt={tech.name}
-                        className=""
-                    />
+                    >
+                        <img
+                            src={tech.imgSrc}
+                            alt={tech.name}
+                            className=""
+                        />
 
-                    <TechTooltip tech={tech.name} />
-                </li>
-            ))}
+                        <TechTooltip tech={tech.name} />
+                    </li>
+                ))}
         </ul>
     </SectionContainer>
 )
