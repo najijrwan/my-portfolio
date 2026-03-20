@@ -1,4 +1,4 @@
-import { VariousActionsButton } from '@ui'
+import { PrimaryButton } from '@ui'
 
 const ResumeNote = () => (
     <div
@@ -15,7 +15,7 @@ const ResumeNote = () => (
             </p>
         </div>
 
-        <VariousActionsButton
+        <PrimaryButton
             onClick={() => window.open('/pdfs/Naji_Aljarwan_resume.pdf', '_blank')}
             variant='v1'
             iconName='document-text-outline'

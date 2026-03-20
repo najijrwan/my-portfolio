@@ -1,5 +1,5 @@
 import { useContactFormConfig } from '@hooks'
-import { VariousActionsButton } from '@ui';
+import { PrimaryButton } from '@ui';
 
 const ContactForm = () => {
     const { formData, loading, status, handleChange, handleSubmit } = useContactFormConfig();
@@ -52,7 +52,7 @@ const ContactForm = () => {
                     disabled={loading}
                 />
 
-                <VariousActionsButton
+                <PrimaryButton
                     type="submit"
                     disabled={loading}
                     variant="v1"
@@ -73,7 +73,7 @@ const ContactForm = () => {
                             "
                         />
                     )}
-                </VariousActionsButton>
+                </PrimaryButton>
             </form>
 
             <div

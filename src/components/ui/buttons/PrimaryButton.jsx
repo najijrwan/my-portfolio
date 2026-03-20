@@ -1,4 +1,4 @@
-const VariousActionsButton = ({ variant, className, iconName, label, children, ...props }) => {
+const PrimaryButton = ({ variant, className, iconName, label, children, ...props }) => {
     const VARIANTS = {
         v1: 'px-4 sm:px-5 py-4 md:ml-auto text-[15px] sm:text-[17px] rounded-[14px]',
         v2: 'px-2 py-1 text-[10px] sm:text-[12px] rounded-lg',
@@ -20,7 +20,7 @@ const VariousActionsButton = ({ variant, className, iconName, label, children, .
                 ${className}`}
         >
             {iconName && <ion-icon name={iconName} />}
-            
+
             {label && <span>{label}</span>}
 
             {children}
@@ -28,4 +28,4 @@ const VariousActionsButton = ({ variant, className, iconName, label, children, .
     )
 }
 
-export default VariousActionsButton;
+export default PrimaryButton;

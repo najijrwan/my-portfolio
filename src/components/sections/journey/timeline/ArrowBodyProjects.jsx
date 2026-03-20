@@ -1,4 +1,4 @@
-import { VariousActionsButton } from '@ui'
+import { PrimaryButton } from '@ui'
 
 const ArrowBodyProjects = ({ projects }) => {
 
@@ -18,7 +18,7 @@ const ArrowBodyProjects = ({ projects }) => {
             <div className="w-5 h-px bg-jet"></div>
 
             {projects.length === 1 ? (
-                <VariousActionsButton
+                <PrimaryButton
                     onClick={() => handleButtonClick(projects[0].id)}
                     variant='v2'
                     label={projects[0].finalLabel}
@@ -36,7 +36,7 @@ const ArrowBodyProjects = ({ projects }) => {
                     "
                 >
                     {projects.map((project) => (
-                        <VariousActionsButton
+                        <PrimaryButton
                             key={project.id}
                             onClick={() => handleButtonClick(project.id)}
                             variant='v2'
