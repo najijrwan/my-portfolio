@@ -13,7 +13,7 @@ const JumpToTopButton = () => {
         <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="
-                absolute bottom-5 sm:bottom-7.5 right-5 sm:right-7.5
+                fixed bottom-5 sm:bottom-7.5 right-5 sm:right-7.5
                 flex-center
                 text-eerie-2
                 bg-vegas-gold p-3 rounded-xl shadow-lg
