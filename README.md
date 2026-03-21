@@ -60,6 +60,35 @@
 </table>
 
 
+## 🗂️ Project Structure
+
+```bash
+├── index.html              # Entry HTML
+├── package.json
+├── vite.config.js
+├── vercel.json.local
+├── public/                 # Static files
+│   ├── external-icons/     # Technology & social icons
+│   ├── images/             # Portfolio, projects, skills images
+│   ├── pdfs/               # Resume & reports
+│   └── webmanifest/        # PWA manifest & favicons
+├── api/                    # Serverless functions
+│   └── contact.js
+├── src/
+│   ├── App.jsx             # Main React App
+│   ├── main.jsx            # Entry point
+│   ├── components/         # Reusable UI components
+│   │   ├── layout/         # Hero, Navbar, general layout
+│   │   ├── sections/       # About, Projects, Resume, Journey, Contact
+│   │   └── ui/             # Buttons, icons, skill visuals
+│   ├── data/               # Static data & constants
+│   ├── hooks/              # Custom hooks
+│   ├── pages/              # Application pages
+│   ├── index.css
+│   └── utils/              # Helper functions
+```
+
+
 ## 💡 Problem / Motivation
 
 This portfolio was created to present my development journey through a structured, maintainable system rather than a static showcase website. Over time it has been refactored to adopt a data-driven architecture where projects, skills, and experience are rendered dynamically from centralized configuration files, allowing the site to grow alongside my work.
