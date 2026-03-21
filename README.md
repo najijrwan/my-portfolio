@@ -24,9 +24,14 @@
 <tr><td>Live Demo</td><td>https://najialjarwan.vercel.app</td></tr>
 </table>
 
+## ✨ Highlights
+### Projects Interaction
+<div align="center">
+  <img src="public/demo/projects-interaction.gif" width="100%" title="*Name* Quick Look" alt="*NAME* GIF screenshots showcase" />
+</div>
+
 
 ## ⚙️ Tech Stack & Tools
-
 <table align="center">
   <tr>
     <td>
