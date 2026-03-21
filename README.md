@@ -8,9 +8,25 @@
 
 ---
 
+
 ## 📸 Showcase
+
+### 🎬 Overview
 <div align="center">
-  <img src="public/demo/preview.gif" width="100%" title="*Name* Quick Look" alt="*NAME* GIF screenshots showcase" />
+  <img src="public/demo/preview.gif" width="100%" alt="Website Overview"/>
+</div>
+
+### 🚀 Live Demo
+👉 https://najialjarwan.vercel.app/
+
+### ⚡ Key Interaction
+<div align="center">
+  <img src="public/demo/journey.gif" width="100%" alt="Key Interaction"/>
+</div>
+
+### 📱 Responsive Design
+<div align="center">
+  <img src="public/demo/responsive.gif" width="100%" alt="Responsive Desing"/>
 </div>
 
 
@@ -21,14 +37,7 @@
 <tr><td>Duration</td><td>may 18 - jun 22</td></tr>
 <tr><td>Status</td><td>completed</td></tr>
 <tr><td>Version</td><td>2.0.0</td></tr>
-<tr><td>Live Demo</td><td>https://najialjarwan.vercel.app</td></tr>
 </table>
-
-## ✨ Highlights
-### Projects Interaction
-<div align="center">
-  <img src="public/demo/projects-interaction.gif" width="100%" title="*Name* Quick Look" alt="*NAME* GIF screenshots showcase" />
-</div>
 
 
 ## ⚙️ Tech Stack & Tools
