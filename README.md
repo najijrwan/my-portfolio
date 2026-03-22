@@ -80,7 +80,8 @@
 ├── package.json
 ├── vite.config.js
 ├── vercel.json.local
-├── public/                 # Static files
+├── public/                 # Static file
+|   ├── demo                # Showcase GIFs
 │   ├── external-icons/     # Technology & social icons
 │   ├── images/             # Portfolio, projects, skills images
 │   ├── pdfs/               # Resume & reports
