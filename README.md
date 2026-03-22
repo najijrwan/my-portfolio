@@ -17,7 +17,7 @@
 </div>
 
 ### Live Demo
-👉 https://najialjarwan.vercel.app/
+👉 https://najialjarwan.vercel.app
 
 ### Key Interaction
 <div align="center">
