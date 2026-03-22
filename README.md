@@ -11,20 +11,20 @@
 
 ## 📸 Showcase
 
-### 🎬 Overview
+### Overview
 <div align="center">
   <img src="public/demo/preview.gif" width="100%" alt="Website Overview"/>
 </div>
 
-### 🚀 Live Demo
+### Live Demo
 👉 https://najialjarwan.vercel.app/
 
-### ⚡ Key Interaction
+### Key Interaction
 <div align="center">
   <img src="public/demo/journey.gif" width="100%" alt="Key Interaction"/>
 </div>
 
-### 📱 Responsive Design
+### Responsive Design
 <div align="center">
   <img src="public/demo/responsive.gif" width="100%" alt="Responsive Desing"/>
 </div>
