@@ -32,10 +32,10 @@
 
 ## 🔷 Project Overview
 <table align="center">
-<tr><td>Type</td><td>personal project</td></tr>
-<tr><td>Platform</td><td>website</td></tr>
-<tr><td>Duration</td><td>may 18 - jun 22</td></tr>
-<tr><td>Status</td><td>completed</td></tr>
+<tr><td>Type</td><td>Personal Project</td></tr>
+<tr><td>Platform</td><td>Website</td></tr>
+<tr><td>Duration</td><td>May 18 - Jun 22</td></tr>
+<tr><td>Status</td><td>Completed</td></tr>
 <tr><td>Version</td><td>2.0.0</td></tr>
 </table>
 
