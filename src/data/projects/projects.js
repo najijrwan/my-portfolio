@@ -282,7 +282,7 @@ export const PROJECTS = [
         title: 'CLI tool for generating structured GitHub README files',
         type: 'personal project',
         role: 'tool',
-        platform: 'cli',
+        platform: 'CLI',
         status: 'completed',
         version: '1.0.0',
         rank: 3,
