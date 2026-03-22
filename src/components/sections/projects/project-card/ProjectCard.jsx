@@ -39,7 +39,7 @@ const ProjectCard = ({ project }) => (
         </div>
 
         <div className='ml-2.5 flex items-center gap-2'>
-            <p className="text-white capitalize text-[17px] lg:text-[15px]">
+            <p className="text-white capitalize text-[17px] lg:text-[15px] italic">
                 {project.displayName ?? project.name}
             </p>
 
@@ -52,7 +52,7 @@ const ProjectCard = ({ project }) => (
             )}
         </div>
 
-        <p className="ml-2.5 text-light-gray-70 font-[300]">
+        <p className="ml-2.5 text-light-gray-70 font-[300] capitalize">
             {project.platform}
         </p>
     </>
