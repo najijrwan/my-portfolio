@@ -120,10 +120,10 @@ This portfolio was created to present my development journey through a structure
 
 ## 🚀 Future Improvements
 
-- Add multilingual support for wider audience reach.
-- Integrate more visualizations for dynamic journey tracking.
-- Implement dark mode toggle and additional accessibility options.
-- Enhance journey page animations and interactive visual storytelling.
+- Add multilingual support for wider audience reach
+- Integrate more visualizations for dynamic journey tracking
+- Implement dark mode toggle and additional accessibility options
+- Enhance journey page animations and interactive visual storytelling
 
 
 ## 🎨 Credits & Inspirations
